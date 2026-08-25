@@ -1,0 +1,27 @@
+# Dados baixados — não commitar
+dataset_analysis/data/persona-1m/
+!dataset_analysis/data/persona-1m/.gitkeep
+dataset_analysis/data/schema/dimensions.json
+dataset_analysis/data/schema/persona_codes.schema.json
+
+# Ambiente virtual gerenciado pelo uv (um por subprojeto)
+.venv/
+**/.venv/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Outputs (comentado por padrão — o pesquisador decide se commita)
+# dataset_analysis/outputs/*.json
+# dataset_analysis/outputs/*.md
+# debate_simulation/outputs/*.json
+# debate_simulation/outputs/*.md
+
+# Variáveis de ambiente (chaves de API do motor de LLM em debate_simulation/)
+.env
+**/.env

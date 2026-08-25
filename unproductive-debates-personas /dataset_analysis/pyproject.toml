@@ -1,0 +1,15 @@
+[project]
+name = "matraix-debate-personas"
+version = "0.1.0"
+description = "Exploração do dataset MatrAIx Persona 1M para seleção de personas de debate polarizado"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16.0",
+    "duckdb>=1.0",
+    "huggingface-hub>=0.23",
+    "requests>=2.31",
+    "rich>=13.0",
+    "tqdm>=4.66",
+]

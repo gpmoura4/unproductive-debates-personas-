@@ -20,10 +20,20 @@ As dimensões decodificadas são uma lista curada manualmente (CURATED_POLITICAL
 bruto de term-match da Fase 0 (que tinha 155 candidatas, muitas irrelevantes ao debate
 político). A amostragem usa seed fixa (SAMPLE_SEED) para reprodutibilidade entre execuções.
 
+A separação em polo_esquerda/polo_direita usa a regra de coerência multi-indicador
+especificada em `docs/left right categories/regras_categorizacao_esquerda_direita.json`
+(fundamentação teórica em regras_categorizacao_esquerda_direita.md): âncora obrigatória em
+`political_lean`, exigência de ausência de contradição nos indicadores nucleares (eixo
+econômico) e tolerância periférica (eixo social/valores) conforme o modo `strict`/`lenient`.
+Substitui a regra anterior, que classificava um registro no polo apenas por `political_lean`,
+sem checar coerência com os demais atributos.
+
 Pré-requisitos:
 - data/schema/persona_codes.schema.json (mapa índice -> valores categóricos)
 - outputs/phase0_political_dimensions.json (usado apenas para registrar quantas candidatas
   da Fase 0 foram descartadas pela curadoria manual)
+- docs/left right categories/regras_categorizacao_esquerda_direita.json (regra de
+  classificação de polos)
 - data/persona-1m/*.parquet (shards baixados por 02_explore_parquet.py)
 
 Outputs:
@@ -42,6 +52,7 @@ import pandas as pd
 CODES_SCHEMA_PATH = Path("data/schema/persona_codes.schema.json")
 PHASE0_JSON = Path("outputs/phase0_political_dimensions.json")
 DATA_DIR = Path("data/persona-1m")
+POLE_RULES_JSON = Path("docs/left right categories/regras_categorizacao_esquerda_direita.json")
 
 OUT_DIR = Path("outputs")
 OUT_VALIDATION_MD = OUT_DIR / "phase2_decode_validation.md"
@@ -71,12 +82,14 @@ CURATED_POLITICAL_DIMENSIONS = [
 ]
 
 
-def check_prerequisites() -> tuple[dict, dict, list[Path]]:
+def check_prerequisites() -> tuple[dict, dict, dict, list[Path]]:
     missing = []
     if not CODES_SCHEMA_PATH.exists():
         missing.append((CODES_SCHEMA_PATH, "uv run python scripts/00_download_schema.py"))
     if not PHASE0_JSON.exists():
         missing.append((PHASE0_JSON, "uv run python scripts/01_inspect_schema.py"))
+    if not POLE_RULES_JSON.exists():
+        missing.append((POLE_RULES_JSON, "(arquivo de regras de categorização esquerda/direita ausente)"))
     parquet_files = sorted(DATA_DIR.glob("*.parquet"))
     if not parquet_files:
         missing.append((DATA_DIR / "*.parquet", "uv run python scripts/02_explore_parquet.py"))
@@ -99,7 +112,13 @@ def check_prerequisites() -> tuple[dict, dict, list[Path]]:
         print(f"[ERRO] {PHASE0_JSON} não é JSON válido: {e}")
         sys.exit(1)
 
-    return codes_schema, phase0, parquet_files
+    try:
+        pole_rules = json.loads(POLE_RULES_JSON.read_text())
+    except json.JSONDecodeError as e:
+        print(f"[ERRO] {POLE_RULES_JSON} não é JSON válido: {e}")
+        sys.exit(1)
+
+    return codes_schema, phase0, pole_rules, parquet_files
 
 
 def build_index_map(codes_schema: dict) -> list[dict]:
@@ -167,8 +186,186 @@ def validate_convention(conn: duckdb.DuckDBPyConnection, columns: list[dict]) ->
     return ok, evidence
 
 
+def _indicator_signal(field_spec: dict, value: str | None) -> float:
+    """Retorna o sinal {-1, -0.5, 0, +1} de um indicador para um dado valor
+    decodificado, conforme regras_categorizacao_esquerda_direita.json."""
+    if value in field_spec.get("left", []):
+        return -field_spec.get("weight", 1.0)
+    if value in field_spec.get("left_weak", []):
+        return -field_spec.get("weak_weight", 0.5)
+    if value in field_spec.get("right", []):
+        return field_spec.get("weight", 1.0)
+    return 0.0  # neutral (inclui valores explicitamente listados e nulos)
+
+
+def score_persona(attrs: dict, pole_rules: dict) -> dict:
+    """Calcula os contadores/score de coerência de uma persona conforme a
+    especificação em regras_categorizacao_esquerda_direita.json."""
+    indicators = pole_rules["indicators"]
+    core_fields = indicators["core"]["fields"]
+    peripheral_fields = indicators["peripheral"]["fields"]
+
+    n_core_concord = n_core_contra = 0
+    n_per_concord = n_per_contra = 0
+    score = 0.0
+
+    lean = attrs.get("political_lean")
+    anchor_sign = None
+    if lean in pole_rules["poles"]["left"]["anchor_values"]:
+        anchor_sign = pole_rules["poles"]["left"]["sign"]
+    elif lean in pole_rules["poles"]["right"]["anchor_values"]:
+        anchor_sign = pole_rules["poles"]["right"]["sign"]
+
+    for field, spec in core_fields.items():
+        sig = _indicator_signal(spec, attrs.get(field))
+        score += sig
+        if sig != 0 and anchor_sign is not None:
+            if (sig > 0) == (anchor_sign > 0):
+                n_core_concord += 1
+            else:
+                n_core_contra += 1
+
+    for field, spec in peripheral_fields.items():
+        sig = _indicator_signal(spec, attrs.get(field))
+        score += sig
+        if sig != 0 and anchor_sign is not None:
+            if (sig > 0) == (anchor_sign > 0):
+                n_per_concord += 1
+            else:
+                n_per_contra += 1
+
+    non_null_field_count = sum(1 for v in attrs.values() if v is not None)
+
+    return {
+        "n_core_concord": n_core_concord,
+        "n_core_contra": n_core_contra,
+        "n_per_concord": n_per_concord,
+        "n_per_contra": n_per_contra,
+        "score": score,
+        "non_null_field_count": non_null_field_count,
+        "anchor_sign": anchor_sign,
+    }
+
+
+def _peripheral_tolerance_ok(counts: dict, mode: str) -> bool:
+    if mode == "strict":
+        return counts["n_per_contra"] == 0
+    if mode == "lenient":
+        return counts["n_per_contra"] <= 1 and (
+            counts["n_core_concord"] + counts["n_per_concord"] > counts["n_per_contra"]
+        )
+    raise ValueError(f"Modo de tolerância periférica desconhecido: {mode}")
+
+
+def classify_pole(lean: str | None, counts: dict, pole_rules: dict, mode: str) -> str | None:
+    """Aplica as regras 'left'/'right' do JSON de regras e retorna 'left',
+    'right' ou None (excluído)."""
+    if lean in pole_rules["poles"]["left"]["anchor_values"]:
+        candidate_pole = "left"
+    elif lean in pole_rules["poles"]["right"]["anchor_values"]:
+        candidate_pole = "right"
+    else:
+        return None  # âncora ausente ou em anchor.excluded_values
+
+    if counts["n_core_contra"] != 0:
+        return None
+    if counts["n_core_concord"] + counts["n_per_concord"] < 1:
+        return None
+    if not _peripheral_tolerance_ok(counts, mode):
+        return None
+    return candidate_pole
+
+
+def select_pole_profiles(
+    decoded_records: list[dict], pole_rules: dict
+) -> tuple[list[dict], list[dict], dict]:
+    """Classifica e ordena as personas elegíveis para polo_esquerda/polo_direita
+    conforme regras_categorizacao_esquerda_direita.json (âncora political_lean +
+    coerência multi-indicador). Modo padrão 'strict', com fallback 'lenient' por
+    polo caso o modo padrão não produza candidatos suficientes."""
+    default_mode = pole_rules["modes"]["default"]
+    fallback_mode = pole_rules["modes"]["fallback"]
+    min_needed = 10  # tamanho de corte histórico de cada lista de polo no output
+
+    exclusion_log = {"left": {"excluded": 0, "reasons": {}}, "right": {"excluded": 0, "reasons": {}}}
+
+    def exclusion_reason(lean: str | None, counts: dict, mode: str) -> str:
+        if lean in pole_rules["anchor"]["excluded_values"] or lean is None:
+            return "ancora_excluida_ou_nula"
+        if counts["n_core_contra"] != 0:
+            return "contradicao_nuclear"
+        if counts["n_core_concord"] + counts["n_per_concord"] < 1:
+            return "sem_evidencia_secundaria"
+        if not _peripheral_tolerance_ok(counts, mode):
+            return "tolerancia_periferica_violada"
+        return "outro"
+
+    def build_candidates(mode: str) -> tuple[list[dict], list[dict]]:
+        left, right = [], []
+        for record in decoded_records:
+            attrs = record["political_attributes"]
+            counts = score_persona(attrs, pole_rules)
+            pole = classify_pole(attrs.get("political_lean"), counts, pole_rules, mode)
+            enriched = {**record, "coherence": counts}
+            if pole == "left":
+                left.append(enriched)
+            elif pole == "right":
+                right.append(enriched)
+        return left, right
+
+    def sort_candidates(candidates: list[dict]) -> list[dict]:
+        return sorted(
+            candidates,
+            key=lambda r: (
+                abs(r["coherence"]["score"]),
+                r["coherence"]["n_core_concord"],
+                r["coherence"]["non_null_field_count"],
+            ),
+            reverse=True,
+        )
+
+    left_strict, right_strict = build_candidates(default_mode)
+    mode_used = {"left": default_mode, "right": default_mode}
+
+    left_final = left_strict
+    right_final = right_strict
+    if len(left_strict) < min_needed or len(right_strict) < min_needed:
+        left_lenient, right_lenient = build_candidates(fallback_mode)
+        if len(left_strict) < min_needed:
+            left_final = left_lenient
+            mode_used["left"] = fallback_mode
+        if len(right_strict) < min_needed:
+            right_final = right_lenient
+            mode_used["right"] = fallback_mode
+
+    # Log de exclusão: para cada registro cuja âncora aponta para um polo mas
+    # que não passou nas regras de coerência (no modo efetivamente usado nesse polo).
+    for record in decoded_records:
+        attrs = record["political_attributes"]
+        counts = score_persona(attrs, pole_rules)
+        lean = attrs.get("political_lean")
+        for pole_key, mode in mode_used.items():
+            if lean not in pole_rules["poles"][pole_key]["anchor_values"]:
+                continue
+            if classify_pole(lean, counts, pole_rules, mode) is not None:
+                continue
+            reason = exclusion_reason(lean, counts, mode)
+            exclusion_log[pole_key]["excluded"] += 1
+            exclusion_log[pole_key]["reasons"][reason] = (
+                exclusion_log[pole_key]["reasons"].get(reason, 0) + 1
+            )
+
+    stats = {
+        "mode_used": mode_used,
+        "n_eligible_strict": {"left": len(left_strict), "right": len(right_strict)},
+        "n_eligible_final": {"left": len(left_final), "right": len(right_final)},
+        "exclusion_log": exclusion_log,
+    }
+    return sort_candidates(left_final), sort_candidates(right_final), stats
+
+
 def main() -> int:
-    codes_schema, phase0, parquet_files = check_prerequisites()
+    codes_schema, phase0, pole_rules, parquet_files = check_prerequisites()
     columns = build_index_map(codes_schema)
 
     phase0_candidate_ids = [d["id"] for d in phase0.get("all_candidates", []) if d.get("id")]
@@ -283,19 +480,24 @@ def main() -> int:
 
     print(f"[OK] {len(decoded_records)} personas decodificadas.")
 
-    # --- Identificação de perfis contrastantes via political_lean (se existir) ---
+    # --- Identificação de perfis contrastantes via regra de coerência multi-indicador ---
+    # Ver docs/left right categories/regras_categorizacao_esquerda_direita.{json,md}:
+    # âncora obrigatória em political_lean + ausência de contradição nos indicadores
+    # nucleares (eixo econômico) + tolerância periférica (eixo social/valores).
     pol_lean_id = "political_lean" if "political_lean" in id_to_index else None
     left_profiles = []
     right_profiles = []
+    pole_stats = None
     if pol_lean_id:
-        for r in decoded_records:
-            lean = r["political_attributes"].get(pol_lean_id)
-            if lean in ("Left", "Center-left"):
-                left_profiles.append(r)
-            elif lean in ("Right", "Center-right"):
-                right_profiles.append(r)
-        print(f"Perfis polo esquerda (Left/Center-left): {len(left_profiles)}")
-        print(f"Perfis polo direita (Right/Center-right): {len(right_profiles)}")
+        left_profiles, right_profiles, pole_stats = select_pole_profiles(decoded_records, pole_rules)
+        print(
+            f"Perfis elegíveis polo esquerda: {pole_stats['n_eligible_final']['left']} "
+            f"(modo={pole_stats['mode_used']['left']}); "
+            f"polo direita: {pole_stats['n_eligible_final']['right']} "
+            f"(modo={pole_stats['mode_used']['right']})"
+        )
+        print(f"Exclusões polo esquerda: {pole_stats['exclusion_log']['left']}")
+        print(f"Exclusões polo direita: {pole_stats['exclusion_log']['right']}")
     else:
         print("[AVISO] Dimensão 'political_lean' não encontrada entre as candidatas — sem polos automáticos.")
 
@@ -305,6 +507,11 @@ def main() -> int:
         "total_records_in_shards": total,
         "candidate_dimensions_decoded": [cid for _, cid in candidate_indices],
         "personas_sample": decoded_records[:50],
+        "pole_classification_rule": {
+            "source": str(POLE_RULES_JSON),
+            "schema_version": pole_rules.get("schema_version"),
+            "stats": pole_stats,
+        },
         "polo_esquerda_political_lean": left_profiles[:10],
         "polo_direita_political_lean": right_profiles[:10],
     }
@@ -359,15 +566,36 @@ def main() -> int:
             report_lines.append(f"| {val} | {count} |")
         report_lines.append("")
 
-    report_lines.append("## 4. Perfis contrastantes (political_lean)\n")
-    if pol_lean_id:
-        report_lines.append(f"- Polo esquerda (Left/Center-left): {len(left_profiles)} personas na amostra\n")
-        report_lines.append(f"- Polo direita (Right/Center-right): {len(right_profiles)} personas na amostra\n")
-        report_lines.append("### Exemplos — polo esquerda\n")
+    report_lines.append("## 4. Perfis contrastantes (regra de coerência esquerda/direita)\n")
+    report_lines.append(
+        f"Classificação conforme `{POLE_RULES_JSON}` (âncora `political_lean` + coerência "
+        "multi-indicador nos eixos econômico/nuclear e social/periférico; ver "
+        "`docs/left right categories/regras_categorizacao_esquerda_direita.md` para a "
+        "fundamentação teórica completa). Substitui a regra anterior baseada apenas em "
+        "`political_lean`.\n"
+    )
+    if pol_lean_id and pole_stats:
+        report_lines.append(
+            f"- Polo esquerda: {pole_stats['n_eligible_final']['left']} personas elegíveis na amostra "
+            f"(modo `{pole_stats['mode_used']['left']}`)\n"
+        )
+        report_lines.append(
+            f"- Polo direita: {pole_stats['n_eligible_final']['right']} personas elegíveis na amostra "
+            f"(modo `{pole_stats['mode_used']['right']}`)\n"
+        )
+        report_lines.append("### Exclusões (registros com âncora no polo, mas rejeitados pela regra de coerência)\n")
+        report_lines.append("| polo | total excluído | motivos |")
+        report_lines.append("|---|---|---|")
+        for pole_key, pole_label in (("left", "Esquerda"), ("right", "Direita")):
+            log = pole_stats["exclusion_log"][pole_key]
+            reasons_str = ", ".join(f"{k}={v}" for k, v in sorted(log["reasons"].items()))
+            report_lines.append(f"| {pole_label} | {log['excluded']} | {reasons_str or '—'} |")
+        report_lines.append("")
+        report_lines.append("### Exemplos — polo esquerda (top 3 por coerência)\n")
         report_lines.append("```json")
         report_lines.append(json.dumps(left_profiles[:3], indent=2, ensure_ascii=False, default=str))
         report_lines.append("```\n")
-        report_lines.append("### Exemplos — polo direita\n")
+        report_lines.append("### Exemplos — polo direita (top 3 por coerência)\n")
         report_lines.append("```json")
         report_lines.append(json.dumps(right_profiles[:3], indent=2, ensure_ascii=False, default=str))
         report_lines.append("```\n")

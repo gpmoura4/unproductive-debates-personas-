@@ -132,123 +132,186 @@
 | Skeptical | 15 |
 | Positive | 4 |
 
-## 4. Perfis contrastantes (political_lean)
+## 4. Perfis contrastantes (regra de coerência esquerda/direita)
 
-- Polo esquerda (Left/Center-left): 169 personas na amostra
+Classificação conforme `docs/left right categories/regras_categorizacao_esquerda_direita.json` (âncora `political_lean` + coerência multi-indicador nos eixos econômico/nuclear e social/periférico; ver `docs/left right categories/regras_categorizacao_esquerda_direita.md` para a fundamentação teórica completa). Substitui a regra anterior baseada apenas em `political_lean`.
 
-- Polo direita (Right/Center-right): 182 personas na amostra
+- Polo esquerda: 101 personas elegíveis na amostra (modo `strict`)
 
-### Exemplos — polo esquerda
+- Polo direita: 20 personas elegíveis na amostra (modo `strict`)
+
+### Exclusões (registros com âncora no polo, mas rejeitados pela regra de coerência)
+
+| polo | total excluído | motivos |
+|---|---|---|
+| Esquerda | 68 | contradicao_nuclear=32, sem_evidencia_secundaria=28, tolerancia_periferica_violada=8 |
+| Direita | 162 | contradicao_nuclear=40, sem_evidencia_secundaria=87, tolerancia_periferica_violada=35 |
+
+### Exemplos — polo esquerda (top 3 por coerência)
 
 ```json
 [
   {
     "source": "wiki",
-    "source_row_index": 714660,
-    "source_record_id": "Q2142140",
+    "source_row_index": 1202331,
+    "source_record_id": "Q56224097",
     "political_attributes": {
       "political_lean": "Left",
-      "religiosity": "Observant",
-      "trust_level": null,
-      "values_priority": "Achievement",
-      "att_free_markets": null,
-      "att_government_regulation": null,
-      "att_labor_unions": null,
-      "att_immigration": null,
-      "att_gun_ownership": null,
-      "att_capital_punishment": null
+      "religiosity": "Secular",
+      "trust_level": "Verifying",
+      "values_priority": "Community",
+      "att_free_markets": "Neutral",
+      "att_government_regulation": "Positive",
+      "att_labor_unions": "Positive",
+      "att_immigration": "Positive",
+      "att_gun_ownership": "Neutral",
+      "att_capital_punishment": "Skeptical"
+    },
+    "coherence": {
+      "n_core_concord": 2,
+      "n_core_contra": 0,
+      "n_per_concord": 4,
+      "n_per_contra": 0,
+      "score": -6.0,
+      "non_null_field_count": 10,
+      "anchor_sign": -1
     }
   },
   {
     "source": "wiki",
-    "source_row_index": 344385,
-    "source_record_id": "Q6290862",
+    "source_row_index": 1202243,
+    "source_record_id": "Q12407556",
     "political_attributes": {
       "political_lean": "Center-left",
       "religiosity": "Secular",
-      "trust_level": null,
-      "values_priority": "Autonomy",
-      "att_free_markets": null,
-      "att_government_regulation": null,
+      "trust_level": "Verifying",
+      "values_priority": "Achievement",
+      "att_free_markets": "Skeptical",
+      "att_government_regulation": "Positive",
       "att_labor_unions": "Positive",
-      "att_immigration": null,
-      "att_gun_ownership": null,
-      "att_capital_punishment": null
+      "att_immigration": "Positive",
+      "att_gun_ownership": "Neutral",
+      "att_capital_punishment": "Neutral"
+    },
+    "coherence": {
+      "n_core_concord": 3,
+      "n_core_contra": 0,
+      "n_per_concord": 2,
+      "n_per_contra": 0,
+      "score": -5.0,
+      "non_null_field_count": 10,
+      "anchor_sign": -1
     }
   },
   {
     "source": "wiki",
-    "source_row_index": 559464,
-    "source_record_id": "Q3104406",
+    "source_row_index": 1116626,
+    "source_record_id": "Q13116977",
     "political_attributes": {
       "political_lean": "Left",
       "religiosity": "Secular",
       "trust_level": null,
       "values_priority": "Community",
-      "att_free_markets": null,
-      "att_government_regulation": null,
-      "att_labor_unions": "Positive",
+      "att_free_markets": "Opposed",
+      "att_government_regulation": "Positive",
+      "att_labor_unions": "Enthusiast",
       "att_immigration": null,
       "att_gun_ownership": null,
       "att_capital_punishment": null
+    },
+    "coherence": {
+      "n_core_concord": 3,
+      "n_core_contra": 0,
+      "n_per_concord": 2,
+      "n_per_contra": 0,
+      "score": -5.0,
+      "non_null_field_count": 6,
+      "anchor_sign": -1
     }
   }
 ]
 ```
 
-### Exemplos — polo direita
+### Exemplos — polo direita (top 3 por coerência)
 
 ```json
 [
   {
     "source": "wiki",
-    "source_row_index": 245739,
-    "source_record_id": "Q4079391",
+    "source_row_index": 213902,
+    "source_record_id": "Q888061",
     "political_attributes": {
       "political_lean": "Right",
       "religiosity": "Observant",
       "trust_level": "Verifying",
-      "values_priority": "Security",
-      "att_free_markets": null,
-      "att_government_regulation": null,
-      "att_labor_unions": null,
-      "att_immigration": "Neutral",
-      "att_gun_ownership": null,
-      "att_capital_punishment": null
-    }
-  },
-  {
-    "source": "wiki",
-    "source_row_index": 1164239,
-    "source_record_id": "Q50318212",
-    "political_attributes": {
-      "political_lean": "Right",
-      "religiosity": "Observant",
-      "trust_level": "Trusting",
       "values_priority": "Achievement",
-      "att_free_markets": "Enthusiast",
-      "att_government_regulation": "Enthusiast",
-      "att_labor_unions": "Enthusiast",
+      "att_free_markets": "Positive",
+      "att_government_regulation": "Skeptical",
+      "att_labor_unions": "Skeptical",
       "att_immigration": null,
-      "att_gun_ownership": "Enthusiast",
-      "att_capital_punishment": "Enthusiast"
+      "att_gun_ownership": "Positive",
+      "att_capital_punishment": "Neutral"
+    },
+    "coherence": {
+      "n_core_concord": 3,
+      "n_core_contra": 0,
+      "n_per_concord": 2,
+      "n_per_contra": 0,
+      "score": 5.0,
+      "non_null_field_count": 9,
+      "anchor_sign": 1
     }
   },
   {
     "source": "wiki",
-    "source_row_index": 158382,
-    "source_record_id": "Q5361378",
+    "source_row_index": 283558,
+    "source_record_id": "Q7693479",
     "political_attributes": {
       "political_lean": "Center-right",
-      "religiosity": null,
+      "religiosity": "Observant",
       "trust_level": null,
       "values_priority": "Achievement",
-      "att_free_markets": null,
-      "att_government_regulation": null,
-      "att_labor_unions": null,
+      "att_free_markets": "Positive",
+      "att_government_regulation": "Skeptical",
+      "att_labor_unions": "Skeptical",
       "att_immigration": null,
       "att_gun_ownership": null,
       "att_capital_punishment": null
+    },
+    "coherence": {
+      "n_core_concord": 3,
+      "n_core_contra": 0,
+      "n_per_concord": 1,
+      "n_per_contra": 0,
+      "score": 4.0,
+      "non_null_field_count": 6,
+      "anchor_sign": 1
+    }
+  },
+  {
+    "source": "wiki",
+    "source_row_index": 610937,
+    "source_record_id": "Q2487377",
+    "political_attributes": {
+      "political_lean": "Right",
+      "religiosity": "Devout",
+      "trust_level": "Skeptical",
+      "values_priority": "Tradition",
+      "att_free_markets": "Neutral",
+      "att_government_regulation": "Skeptical",
+      "att_labor_unions": "Neutral",
+      "att_immigration": "Neutral",
+      "att_gun_ownership": "Positive",
+      "att_capital_punishment": "Neutral"
+    },
+    "coherence": {
+      "n_core_concord": 1,
+      "n_core_contra": 0,
+      "n_per_concord": 3,
+      "n_per_contra": 0,
+      "score": 4.0,
+      "non_null_field_count": 10,
+      "anchor_sign": 1
     }
   }
 ]

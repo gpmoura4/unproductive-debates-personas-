@@ -1,0 +1,142 @@
+[
+  {
+    "pole": "left",
+    "persona_index": 0,
+    "matraix_source": "wiki",
+    "matraix_id": "Q56224097",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 1,
+    "matraix_source": "wiki",
+    "matraix_id": "Q12407556",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 2,
+    "matraix_source": "wiki",
+    "matraix_id": "Q13116977",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 3,
+    "matraix_source": "wiki",
+    "matraix_id": "Q30122086",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 4,
+    "matraix_source": "wiki",
+    "matraix_id": "Q6293827",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 5,
+    "matraix_source": "wiki",
+    "matraix_id": "Q2905989",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 6,
+    "matraix_source": "wiki",
+    "matraix_id": "Q6873317",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 7,
+    "matraix_source": "wiki",
+    "matraix_id": "Q1601813",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 8,
+    "matraix_source": "wiki",
+    "matraix_id": "Q4522261",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "left",
+    "persona_index": 9,
+    "matraix_source": "wiki",
+    "matraix_id": "Q544416",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 0,
+    "matraix_source": "wiki",
+    "matraix_id": "Q888061",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 1,
+    "matraix_source": "wiki",
+    "matraix_id": "Q7693479",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 2,
+    "matraix_source": "wiki",
+    "matraix_id": "Q2487377",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 3,
+    "matraix_source": "wiki",
+    "matraix_id": "Q18331145",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 4,
+    "matraix_source": "wiki",
+    "matraix_id": "Q6033416",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 5,
+    "matraix_source": "wiki",
+    "matraix_id": "Q4978194",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 6,
+    "matraix_source": "wiki",
+    "matraix_id": "Q6891066",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 7,
+    "matraix_source": "wiki",
+    "matraix_id": "Q4910916",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 8,
+    "matraix_source": "wiki",
+    "matraix_id": "Q7812633",
+    "prompt_version": "v2.0"
+  },
+  {
+    "pole": "right",
+    "persona_index": 9,
+    "matraix_source": "wiki",
+    "matraix_id": "Q48656690",
+    "prompt_version": "v2.0"
+  }
+]

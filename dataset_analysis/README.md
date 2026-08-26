@@ -67,14 +67,22 @@ uv run python scripts/02_explore_parquet.py
 # → gera: outputs/phase1_candidate_personas.json
 
 # Fase 2: decodificar o vetor binário `attributes` para as dimensões políticas
+# e classificar cada persona em polo esquerda/direita por coerência multi-indicador
 uv run python scripts/03_decode_attributes.py
 # → lê:   data/schema/persona_codes.schema.json
 # → lê:   outputs/phase0_political_dimensions.json
+# → lê:   docs/left right categories/regras_categorizacao_esquerda_direita.json
 # → lê:   data/persona-1m/*.parquet
 # → gera: outputs/phase2_decode_validation.md
 # → gera: outputs/phase2_decoded_personas.json
 # → gera: outputs/phase2_decode_report.md
 ```
+
+A classificação de polos (`polo_esquerda_political_lean` / `polo_direita_political_lean`
+no JSON de saída) não usa apenas `political_lean` — aplica a regra de coerência
+descrita em [`docs/left right categories/regras_categorizacao_esquerda_direita.md`](docs/left%20right%20categories/regras_categorizacao_esquerda_direita.md),
+que exige ausência de contradição entre `political_lean` e os indicadores de
+atitude (`att_*`) antes de aceitar uma persona no polo.
 
 ## Outputs esperados
 

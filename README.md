@@ -19,7 +19,7 @@ Geração de prompts de persona a partir das personas decodificadas, simulação
 ## Ordem de execução
 
 ```bash
-# 1. Análise do dataset (gera as personas decodificadas)
+# 1. Análise do dataset (gera as personas decodificadas por polo)
 cd dataset_analysis
 uv sync
 uv run python scripts/00_download_schema.py
@@ -27,13 +27,16 @@ uv run python scripts/01_inspect_schema.py
 uv run python scripts/02_explore_parquet.py
 uv run python scripts/03_decode_attributes.py
 
-# 2. Geração de prompts de persona a partir do resultado acima
+# 2. Geração de prompts de persona (Layer 1) a partir do resultado acima
 cd ../debate_simulation
 uv sync
 uv run python scripts/00_generate_persona_prompts.py
 ```
 
-Cada subprojeto tem seu próprio README com detalhes de setup, scripts e outputs.
+Guia detalhado, passo a passo, com o que cada script lê/gera e por quê:
+[`docs/EXECUTION_GUIDE.md`](docs/EXECUTION_GUIDE.md).
+
+Cada subprojeto também tem seu próprio README com detalhes de setup, scripts e outputs.
 
 ## Notas gerais
 

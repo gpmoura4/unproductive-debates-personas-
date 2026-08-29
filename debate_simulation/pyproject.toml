@@ -5,5 +5,13 @@ description = "Geração de prompts de persona e simulação de debates polític
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "pydantic>=2.0",
     "rich>=13.0",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/moderator"]

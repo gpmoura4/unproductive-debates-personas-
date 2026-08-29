@@ -40,7 +40,7 @@ uv run python scripts/00_generate_persona_prompts.py
 
 | Arquivo | Gerado por | Conteúdo |
 |---|---|---|
-| `outputs/prompts/personas/persona_metadata.json` | `00_generate_persona_prompts.py` | Lista de 20 objetos `{pole, persona_index, matraix_source, matraix_id, prompt_version}` — rastreamento de origem, fora do texto do prompt |
+| `outputs/prompts/personas/persona_metadata.json` | `00_generate_persona_prompts.py` | Lista de 20 objetos `{pole, pole_label, persona_index, matraix_source, matraix_id, prompt_version, blinded_attributes}` — rastreamento de origem e alinhamento político, ambos fora do texto do prompt |
 | `outputs/prompts/personas/polo_esquerda/persona_NN.txt` | `00_generate_persona_prompts.py` | Prompt de sistema (Layer 1), em inglês, pronto para uso como persona |
 | `outputs/prompts/personas/polo_direita/persona_NN.txt` | `00_generate_persona_prompts.py` | Idem, polo direita |
 | [`prompts/debate behavior/debate behavior.txt`](prompts/debate%20behavior/debate%20behavior.txt) | (estático, não gerado) | Layer 2 — regras de comportamento de debate improdutivo, comum aos dois polos |
@@ -49,6 +49,7 @@ uv run python scripts/00_generate_persona_prompts.py
 
 - As personas atuais vêm de uma amostra do coreset MatrAIx (10 por polo, selecionadas por uma regra de coerência ideológica multi-indicador) — ver a regra em `../dataset_analysis/docs/left right categories/regras_categorizacao_esquerda_direita.md` e os números de cobertura/exclusão em `../dataset_analysis/outputs/phase2_decode_report.md`.
 - Os prompts (Layer 1) são gerados apenas a partir dos atributos categóricos decodificados (`political_attributes`) — o dataset não fornece biografia/nome para essas personas, então os prompts são deliberadamente enxutos. Todos os textos são gerados em inglês e não contêm nenhuma referência à fonte/ID do dataset original; essa informação de proveniência vive só em `persona_metadata.json`.
+- **O alinhamento político é omitido do texto do prompt** (*political-lean blinding*): nem `political_lean` nem o rótulo do polo aparecem no `.txt`. A persona é descrita só por suas posições substantivas, para evitar que o modelo encene o estereótipo associado ao rótulo em vez de derivar a postura dos atributos amostrados. O valor continua em `persona_metadata.json` (`blinded_attributes`) e na estrutura de diretórios — o ocultamento vale para o agente, não para nós. Justificativa em [`docs/persona_prompt_design_decisions.md`](docs/persona_prompt_design_decisions.md).
 - Layer 2 (`prompts/debate behavior/debate behavior.txt`) é independente do polo/persona — define como qualquer persona deve se comportar durante o debate (regras de discurso improdutivo, escalada, etc.) e é combinada com o Layer 1 no momento de montar o prompt final do agente.
 - Nenhuma dependência de SDK de LLM foi adicionada ainda — a escolha do motor (Anthropic API ou outro) ainda está em aberto e deve ser feita antes dos próximos scripts (debate, moderação, juiz).
 - Os dados gerados (`outputs/`) seguem a mesma política do repositório: outputs não são versionados por padrão (ver `.gitignore` na raiz) — exceto quando comitados deliberadamente para fixar o conjunto de personas usado no experimento.

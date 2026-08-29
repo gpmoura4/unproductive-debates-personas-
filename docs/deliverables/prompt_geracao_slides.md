@@ -43,7 +43,7 @@ A apresentação deve permitir que o orientador:
   pontos em aberto são parte do que se quer discutir na reunião, não algo a
   esconder.
 
-## Estrutura sugerida (~18–22 slides)
+## Estrutura sugerida (~19–23 slides)
 
 1. **Capa** — título provisório do trabalho, continuidade de Moura e Brandi (2026)
 2. **Onde estamos** — cronograma de 4 semanas, posição atual (início da Semana 1), o que está pronto vs. pendente
@@ -64,8 +64,9 @@ A apresentação deve permitir que o orientador:
 17. **Próximos passos** — rodada de teste inicial (smoke test: 1 tema, 1 par, poucos turnos) → rodada piloto → execução completa; desenho experimental com a tabela de papéis A/B/C
 18. **Execução resiliente** — o requisito de persistência e retomada (Seção 8.3 da fonte): progresso gravado incrementalmente, retomada no nível do turno, idempotência. Justifique pelo volume (~1.080 chamadas de API no total)
 19. **Métricas** — as candidatas atuais, **deixando explícito que o conjunto final ainda não está definido** e que as métricas são independentes entre si por construção (remover uma não afeta as outras)
-20. **Pontos para alinhamento** — os 5 itens da Seção 9 da fonte. **Este é o slide mais importante da reunião**
-21. **Limitações mapeadas** — tabela resumida
+20. **Divergências resolvidas** — as 3 divergências entre o plano de monografia e a implementação, com a decisão tomada em cada uma (Seção 9.1 da fonte). Mencione que o plano foi atualizado para a v6
+21. **Pontos em aberto** — os 3 itens da Seção 9.2 da fonte. **Este é o slide mais importante da reunião**
+22. **Limitações mapeadas** — tabela resumida
 
 Você pode fundir ou desdobrar slides se melhorar a clareza, mas mantenha a
 cobertura completa e preserve o slide de pontos de alinhamento.
@@ -116,7 +117,12 @@ apresentação cobre.
 
 - O conteúdo-fonte (`estado_atual_do_trabalho.md`) é a fonte de verdade. Se o
   trabalho avançar, atualize-o **antes** de regerar os slides.
-- A Seção 9 da fonte ("Pontos que merecem alinhamento") contém divergências
-  reais entre o plano de monografia e a implementação atual — em especial o
-  critério de pareamento e o campo de contextualização brasileira. Esses
-  pontos existem para serem decididos na reunião, não para serem suavizados.
+- A Seção 9.1 da fonte registra três divergências entre o plano de monografia
+  e a implementação que **já foram decididas**: prevalece a implementação
+  (ordenação por score de coerência), a contextualização brasileira não será
+  implementada nesta etapa, e a composição da amostra fica fora de escopo. O
+  plano foi atualizado para `Plano_Monografia_CSCW_v6.docx` refletindo essas
+  decisões — a v5 permanece no repositório como histórico.
+- A Seção 9.2 lista o que continua em aberto (desequilíbrio entre polos,
+  escolha dos modelos A/B/C, conjunto final de métricas). Esses pontos existem
+  para serem discutidos na reunião, não para serem suavizados.

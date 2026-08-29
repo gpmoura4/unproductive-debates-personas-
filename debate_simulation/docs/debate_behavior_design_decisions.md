@@ -81,11 +81,14 @@ um rótulo de persona colado por cima?
    nunca reconhecer premissas compartilhadas. Isso já é suficiente para
    produzir incomensurabilidade discursiva sem precisar fixar o conteúdo
    argumentativo por tema.
-4. **Validade da alegação de "personas reais".** O prompt de Layer 1 afirma
-   explicitamente que a persona é "built from ideological attributes drawn
-   from the MatrAIx Persona 1M dataset". Um roteiro de argumentos
-   pré-escritos por tema enfraquece essa alegação para fins do artigo — a
-   posição específica sobre cada tema deveria decorrer da persona, não de
+4. **Validade da alegação de "personas reais".** O artigo sustenta que cada
+   persona é construída a partir de atributos ideológicos amostrados do
+   dataset MatrAIx Persona 1M (proveniência registrada em
+   `persona_metadata.json`; o texto do prompt não menciona o dataset — ver
+   seção 2 de
+   [`persona_prompt_design_decisions.md`](persona_prompt_design_decisions.md)).
+   Um roteiro de argumentos pré-escritos por tema enfraquece essa alegação —
+   a posição específica sobre cada tema deveria decorrer da persona, não de
    um texto fixo independente dela.
 
 **Trade-off reconhecido:** a lista de temas isolada, sem os frames, entrega

@@ -273,7 +273,7 @@ ingênua por `political_lean` teria contaminado os grupos experimentais.
 **Depois** (regra de coerência, `polo_esquerda/persona_00.txt` — `Q56224097`,
 score −6,0, 10/10 campos preenchidos):
 ```
-- political orientation: Left
+- political orientation: Left    ← usado na classificação; omitido do prompt (§6.1)
 - religiosity: Secular
 - institutional trust level: Verifying
 - core value: Community
@@ -299,6 +299,22 @@ decodificados. Decisões de design:
 
 - **Idioma inglês** — consistência com o dataset de origem, cujos valores
   categóricos são em inglês
+- **Sem alinhamento político no texto do prompt** (*political-lean blinding*)
+  — nem o atributo `political_lean`, nem o rótulo do polo ("left pole" /
+  "right pole") aparecem no prompt. A persona é descrita apenas por suas
+  posições substantivas. **Motivo:** o rótulo político é uma das categorias
+  sociais mais densamente representadas no pré-treinamento e vem acompanhado
+  de um repertório cultural inteiro (vocabulário, bordões, caricatura de
+  "como fala alguém de esquerda/direita"). Fornecê-lo faz o modelo debater o
+  rótulo em vez das posições da persona, arriscando (a) importar atributos
+  não declarados — o oposto da instrução "Do not invent attributes" —, e (b)
+  achatar a variação interna a cada polo, puxando personas distintas para um
+  protótipo comum. O rótulo também é redundante: na regra de classificação
+  adotada ele é *consequência* das posições substantivas, que permanecem no
+  prompt e já determinam o polo. **O valor continua registrado** em
+  `persona_metadata.json` (campo `blinded_attributes`) e na estrutura de
+  diretórios — o ocultamento é do agente, não de quem conduz o experimento,
+  e o polo segue disponível como variável independente do pareamento
 - **Sem proveniência no texto do prompt** — nenhuma referência a fonte,
   ID Wikidata ou dataset dentro do prompt. Rastreabilidade
   (`matraix_source`, `matraix_id`) vive exclusivamente em
@@ -490,33 +506,33 @@ Candidatas atuais (sujeitas a corte após o piloto):
 
 ---
 
-## 9. Pontos que merecem alinhamento com o orientador
+## 9. Divergências resolvidas e pontos em aberto
 
-1. **Divergência entre plano e implementação — critério de pareamento.**
-   O plano de monografia descreve pareamento "por índice de cobertura
-   similar". A implementação ordena por **score de coerência**
-   (`|score|` → `n_core_concord` → nº de campos não nulos). São critérios
-   diferentes; convém decidir qual vale e alinhar o texto do artigo.
+### 9.1 Resolvidas — plano de monografia atualizado (v6)
 
-2. **Campo de "contextualização brasileira" na Camada 1.**
-   O plano menciona que o gap do contexto brasileiro "é endereçado pelo campo
-   de contextualização brasileira na Camada 1". Esse campo **não existe** nos
-   prompts atuais — os prompts contêm apenas os atributos decodificados.
-   Decidir: implementar o campo ou reescrever a limitação no artigo.
+Três divergências entre o plano de monografia e a implementação foram
+identificadas e decididas. O plano foi atualizado para
+`Plano_Monografia_CSCW_v6.docx`:
 
-3. **Cobertura de `political_lean` é de ~20%.**
-   Apenas 399 das 2.000 personas amostradas têm o campo-âncora preenchido, e
-   os 2 shards baixados contêm **exclusivamente** personas de fonte `wiki`
-   (biografias) — nenhum registro *human-grounded* via GSS/Latinobarometro.
-   Isso enfraquece a alegação de *grounding* em surveys reais e merece ser
-   declarado como limitação, ou endereçado baixando mais shards.
+| # | Divergência | Decisão |
+|---|---|---|
+| 1 | **Critério de seleção e pareamento.** O plano (v5) descrevia seleção por "cobertura" e pareamento "por índice de cobertura similar" | **Vale a implementação.** A seleção usa a regra de coerência multi-indicador e ordena por `\|score\|` → `n_core_concord` → nº de campos não nulos; o pareamento segue a mesma ordenação (par 0 = as mais coerentes de cada polo). Texto do plano reescrito |
+| 2 | **Campo de "contextualização brasileira" na Camada 1.** O plano afirmava que o gap do contexto brasileiro era endereçado por esse campo, que nunca existiu nos prompts | **Não será implementado agora.** Os atributos são usados como vêm do dataset, em seu enquadramento de origem. A limitação foi reescrita para declarar isso explicitamente e registrar a calibração brasileira como trabalho futuro |
+| 3 | **Grounding e composição da amostra.** Os 2 shards contêm apenas personas de fonte `wiki`; `political_lean` tem ~20% de cobertura | **Fora de escopo nesta etapa.** Não será endereçado agora; permanece registrado como limitação |
 
-4. **Desequilíbrio entre polos.** 101 elegíveis à esquerda × 20 à direita no
+### 9.2 Em aberto
+
+1. **Desequilíbrio entre polos.** 101 elegíveis à esquerda × 20 à direita no
    modo strict. Há folga confortável à esquerda, mas apenas 2× o necessário à
-   direita — vale considerar ampliar a amostra antes de congelar.
+   direita. **Nenhum ajuste será feito agora** — fica registrado para
+   alinhamento em momento posterior, caso o piloto indique necessidade de
+   ampliar a amostra.
 
-5. **Escolha dos três modelos (A, B, C)** ainda em aberto — nenhuma dependência
+2. **Escolha dos três modelos (A, B, C)** ainda em aberto — nenhuma dependência
    de SDK de LLM foi adicionada ao projeto até agora.
+
+3. **Conjunto final de métricas** ainda não definido — ver o princípio de
+   independência na Seção 8.4.
 
 ---
 
@@ -529,5 +545,6 @@ Candidatas atuais (sujeitas a corte após o piloto):
 | **Personas estereotipadas** | Caricatas por construção; servem para provocar as patologias de Angenot em ambiente controlado, não representam eleitores reais |
 | **Avaliação sem referência ouro** | Sem gabarito humano completo, mede-se consistência do juiz e plausibilidade em auditoria reduzida; consistência não garante correção |
 | **Aderência do dataset fora de contexto** | Os 91,5% de aderência do MatrAIx foram medidos em avaliação de produtos digitais, não em debate político adversarial de 12 turnos |
-| **Gap do contexto brasileiro** | Dataset com viés anglófono/global; dimensões calibradas em escala global, não para o Brasil pós-2018 |
+| **Gap do contexto brasileiro (assumido)** | Dataset com viés anglófono/global; dimensões calibradas em escala global, não para o Brasil pós-2018. **Nenhuma contextualização brasileira é aplicada** — os atributos são usados como vêm do dataset, em seu enquadramento de origem. Calibração para o Brasil fica como trabalho futuro |
 | **Origem euro-americana da regra de polos** | Jost et al. e Piurko et al. baseiam-se em amostras da América do Norte e Europa; `att_gun_ownership` e `att_capital_punishment` são temas de saliência historicamente norte-americana |
+| **Composição da amostra** | Os 2 shards baixados contêm exclusivamente personas de fonte `wiki` (biografias), sem registros *human-grounded* via GSS/Latinobarometro; `political_lean` tem ~20% de cobertura. Não endereçado nesta etapa |

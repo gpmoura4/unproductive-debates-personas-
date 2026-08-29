@@ -154,14 +154,24 @@ O que este passo faz:
 
 - Para cada uma das 20 personas (10 por polo) em `phase2_decoded_personas.json`,
   gera um prompt de sistema em **inglês** (Layer 1 — identidade ideológica),
-  seguindo um template fixo: orientação política, religiosidade, confiança
-  institucional, valor central e as posições `att_*` não-nulas.
-- O texto do prompt **não contém** nenhuma referência à origem do dado
+  seguindo um template fixo: religiosidade, confiança institucional, valor
+  central e as posições `att_*` não-nulas.
+- O texto do prompt **não contém** o alinhamento político da persona
+  (*political-lean blinding*): nem o atributo `political_lean`, nem o rótulo
+  do polo. A persona é descrita apenas por suas posições substantivas, para
+  que o modelo derive a postura desses atributos em vez de encenar o
+  estereótipo associado ao rótulo "esquerda"/"direita". O valor continua
+  registrado em `persona_metadata.json` (campo `blinded_attributes`) — o
+  ocultamento é do agente, não de quem conduz o experimento. Justificativa
+  completa em
+  [`debate_simulation/docs/persona_prompt_design_decisions.md`](../debate_simulation/docs/persona_prompt_design_decisions.md).
+- O texto do prompt também **não contém** nenhuma referência à origem do dado
   (fonte do dataset, ID da entidade Wikidata etc.) — essa informação de
   rastreamento fica exclusivamente em `persona_metadata.json`, uma lista de
-  20 objetos `{pole, persona_index, matraix_source, matraix_id, prompt_version}`
-  que permite religar cada arquivo `.txt` à persona original quando necessário
-  (auditoria, reprodutibilidade, citação no artigo).
+  20 objetos `{pole, pole_label, persona_index, matraix_source, matraix_id,
+  prompt_version, blinded_attributes}` que permite religar cada arquivo `.txt`
+  à persona original quando necessário (auditoria, reprodutibilidade, citação
+  no artigo).
 - Este script gera apenas Layer 1 (identidade ideológica). O comportamento de
   debate (Layer 2 — regras de discurso improdutivo, escalada, etc.) é um
   arquivo separado e estático, não gerado por script:
@@ -177,7 +187,7 @@ O que este passo faz:
 |---|---|
 | `dataset_analysis/outputs/phase2_decoded_personas.json` | As 20 personas selecionadas (10 esquerda + 10 direita), com atributos decodificados e métricas de coerência |
 | `dataset_analysis/outputs/phase2_decode_report.md` | Cobertura por dimensão, distribuições, tabela de exclusões por polo |
-| `debate_simulation/outputs/prompts/personas/persona_metadata.json` | Metadados de rastreamento das 20 personas (fonte, ID, versão do prompt) |
+| `debate_simulation/outputs/prompts/personas/persona_metadata.json` | Metadados de rastreamento das 20 personas (polo, fonte, ID, versão do prompt e `political_lean` ocultado do texto do prompt) |
 | `debate_simulation/outputs/prompts/personas/polo_esquerda/persona_NN.txt` | 10 prompts de sistema (Layer 1), polo esquerda, em inglês |
 | `debate_simulation/outputs/prompts/personas/polo_direita/persona_NN.txt` | 10 prompts de sistema (Layer 1), polo direita, em inglês |
 | `debate_simulation/prompts/debate behavior/debate behavior.txt` | Layer 2 — regras de comportamento de debate improdutivo (estático, não gerado) |

@@ -5,6 +5,11 @@ threshold, returns a non-hostile reformulation preserving the argument. Used
 only in the TREATMENT condition of the experiment.
 """
 
+from moderator.moderator import (
+    D5Moderator,
+    ModerationParseError,
+    parse_moderation_response,
+)
 from moderator.prompt import (
     DEFAULT_SYSTEM_PROMPT_PATH,
     build_user_message,
@@ -27,6 +32,8 @@ __all__ = [
     "HOSTILITY_MAX",
     "HOSTILITY_MIN",
     "INTERVENTION_THRESHOLD",
+    "D5Moderator",
+    "ModerationParseError",
     "ModerationRecord",
     "ModerationRequest",
     "ModerationResponse",
@@ -34,5 +41,6 @@ __all__ = [
     "PublishedMessage",
     "build_user_message",
     "load_system_prompt",
+    "parse_moderation_response",
     "prompt_sha256",
 ]

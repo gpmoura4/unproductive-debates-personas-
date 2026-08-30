@@ -61,12 +61,13 @@ A apresentação deve permitir que o orientador:
 14. **Arquitetura de dois prompts** — Camada 1 (identidade) + Camada 2 (comportamento), e o mapeamento Rule Sets ↔ Angenot
 15. **Decisões de design da Camada 2** — remoção dos frames por tema; manutenção do guardrail identitário (com as razões)
 16. **O que já está produzido** — lista de entregáveis
-17. **Próximos passos** — rodada de teste inicial (smoke test: 1 tema, 1 par, poucos turnos) → rodada piloto → execução completa; desenho experimental com a tabela de papéis A/B/C
+17. **Próximos passos** — rodada de teste inicial (smoke test: 1 tema, 1 par, poucos turnos) → rodada piloto → execução completa; desenho experimental com a tabela de papéis A/B/C. Ao descrever o loop D5, registre que a reformulação **substitui automaticamente** a candidata, sem aceite do autor, e que isso é deliberado: o desenho estima o efeito sob *compliance* total — um **limite superior** (Seção 8.2 da fonte)
 18. **Execução resiliente** — o requisito de persistência e retomada (Seção 8.3 da fonte): progresso gravado incrementalmente, retomada no nível do turno, idempotência. Justifique pelo volume (~1.080 chamadas de API no total)
 19. **Métricas** — as candidatas atuais, **deixando explícito que o conjunto final ainda não está definido** e que as métricas são independentes entre si por construção (remover uma não afeta as outras)
 20. **Divergências resolvidas** — as 3 divergências entre o plano de monografia e a implementação, com a decisão tomada em cada uma (Seção 9.1 da fonte). Mencione que o plano foi atualizado para a v6
 21. **Pontos em aberto** — os 3 itens da Seção 9.2 da fonte. **Este é o slide mais importante da reunião**
-22. **Limitações mapeadas** — tabela resumida
+22. **Limitações mapeadas** — tabela resumida. Inclua a **ausência de agência do autor sobre a reformulação** (Seção 10 da fonte): sem etapa de aceite, os resultados são um limite superior e a taxa de aceitação não é observável
+23. **Trabalhos futuros** — a incorporação da agência do autor sobre a reformulação (Seção 11 da fonte): braço experimental com aceitar/editar/rejeitar, taxa de aceitação como métrica, e as duas estratégias contra o viés de consenso (parametrizar por taxas empíricas; humanos no loop)
 
 Você pode fundir ou desdobrar slides se melhorar a clareza, mas mantenha a
 cobertura completa e preserve o slide de pontos de alinhamento.

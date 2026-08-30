@@ -447,6 +447,25 @@ hostilidade e, se hostil, reformula preservando a posição argumentativa → a
 **versão reformulada** é publicada → o oponente responde ao que foi
 efetivamente publicado (é isso que fecha o loop e propaga o efeito).
 
+**Substituição automática: por que, e o que isso significa.** Nesta simulação,
+a reformulação produzida pelo moderador D5 substitui automaticamente a
+mensagem candidata da persona, sem etapa de aceite pelo autor. Trata-se de uma
+decisão metodológica deliberada: o desenho estima o efeito do D5 sob
+**compliance total** — um cenário de **limite superior** (*upper bound*) —
+isolando a pergunta "a reformulação, quando aplicada, preserva o argumento e
+reduz a hostilidade da trajetória do debate?" da pergunta comportamental "os
+autores aceitariam a reformulação?". A segunda pergunta é investigada
+empiricamente com participantes humanos: no desenho de Argyle et al. (2023), o
+autor pode aceitar, editar ou ignorar as sugestões de reformulação; nos
+experimentos de campo de Katsaros et al. (2022) no Twitter, a maioria das
+mensagens sinalizadas foi publicada sem revisão, com cerca de 9% canceladas e
+22% revisadas. O presente experimento responde à primeira pergunta em ambiente
+simulado; seus resultados devem, portanto, ser interpretados como estimativa
+do **efeito máximo** da intervenção, e não do efeito esperado em uma
+implantação com usuários reais. A limitação decorrente está declarada na
+Seção 10, e o mecanismo de escolha do autor é registrado como trabalho futuro
+na Seção 11.
+
 ### 8.3 Requisito de execução: persistência e retomada
 
 A execução completa são ~360 chamadas de debate/intervenção mais ~720 do
@@ -548,3 +567,47 @@ identificadas e decididas. O plano foi atualizado para
 | **Gap do contexto brasileiro (assumido)** | Dataset com viés anglófono/global; dimensões calibradas em escala global, não para o Brasil pós-2018. **Nenhuma contextualização brasileira é aplicada** — os atributos são usados como vêm do dataset, em seu enquadramento de origem. Calibração para o Brasil fica como trabalho futuro |
 | **Origem euro-americana da regra de polos** | Jost et al. e Piurko et al. baseiam-se em amostras da América do Norte e Europa; `att_gun_ownership` e `att_capital_punishment` são temas de saliência historicamente norte-americana |
 | **Composição da amostra** | Os 2 shards baixados contêm exclusivamente personas de fonte `wiki` (biografias), sem registros *human-grounded* via GSS/Latinobarometro; `political_lean` tem ~20% de cobertura. Não endereçado nesta etapa |
+| **Ausência de agência do autor sobre a reformulação** | O desenho não modela a decisão do autor de aceitar, editar ou rejeitar a reformulação do moderador — etapa presente nos paradigmas empíricos de moderação prospectiva assistida (Argyle et al., 2023; Katsaros et al., 2022) e em abordagens de mediação deliberativa com IA (Tessler et al., 2024). A opção pela substituição automática decorre de uma restrição de validade: a decisão de aceite, se simulada por um agente LLM, careceria de âncora empírica e estaria sujeita ao viés de consenso e polidez documentado em agentes LLM (Chuang et al., 2023), o que tenderia a produzir taxas de aceitação artificialmente altas e, consequentemente, a superestimar o efeito do D5. Em decorrência dessa escolha, os resultados representam um **limite superior** do efeito da intervenção sob compliance total, e a **taxa de aceitação** — variável de resultado central nos estudos com humanos — não é observável neste desenho. Ver Seção 8.2 (justificativa) e Seção 11 (trabalho futuro) |
+
+---
+
+## 11. Trabalhos futuros
+
+**Incorporação da agência do autor sobre a reformulação.** Estender o desenho
+com um braço experimental em que a persona debatedora recebe a mensagem
+original e a reformulação do D5 e decide aceitá-la, editá-la ou rejeitá-la,
+espelhando o fluxo de Argyle et al. (2023), com a **taxa de aceitação** como
+nova métrica de resultado. Para mitigar o viés de consenso de agentes LLM
+(Chuang et al., 2023), duas estratégias devem ser consideradas: (i)
+parametrizar a decisão de aceite com taxas empíricas da literatura (e.g.,
+Katsaros et al., 2022), em vez de delegá-la ao agente; e (ii) validação com
+**humanos no loop**, em que participantes reais tomam ou avaliam a decisão de
+aceite sobre reformulações geradas na simulação.
+
+---
+
+## 12. Referências adicionais
+
+Referências introduzidas pela discussão de substituição automática, agência do
+autor e compliance (Seções 8.2, 10 e 11). As demais referências do trabalho
+estão nas seções em que são usadas (Angenot na Seção 2; Bobbio, Jost, Piurko e
+Feldman & Johnston na Seção 5.2).
+
+- ARGYLE, L. P.; BAIL, C. A.; BUSBY, E. C.; GUBLER, J. R.; HOWE, T.; RYTTING,
+  C.; SORENSEN, T.; WINGATE, D. *Leveraging AI for democratic discourse: chat
+  interventions can improve online political conversations at scale.*
+  Proceedings of the National Academy of Sciences (PNAS), v. 120, n. 41,
+  e2311627120 (2023). DOI: 10.1073/pnas.2311627120
+- KATSAROS, M.; YANG, K.; FRATAMICO, L. *Reconsidering Tweets: intervening
+  during Tweet creation decreases offensive content.* In: Proceedings of the
+  International AAAI Conference on Web and Social Media (ICWSM), v. 16 (2022).
+  arXiv:2112.00773
+- TESSLER, M. H.; BAKKER, M. A. et al. *AI can help humans find common ground
+  in democratic deliberation.* Science, v. 386 (2024)
+- CHUANG, Y.-S. et al. *Simulating opinion dynamics with networks of LLM-based
+  agents.* arXiv:2311.09618 (2023)
+
+> **Metadados a conferir antes da submissão.** Campos ausentes nas referências
+> acima (páginas de Katsaros et al.; autores, número e DOI de Tessler et al.;
+> venue e autores de Chuang et al.) e os percentuais citados na Seção 8.2 estão
+> registrados em [`../PENDENCIAS_REVISAO.md`](../PENDENCIAS_REVISAO.md).

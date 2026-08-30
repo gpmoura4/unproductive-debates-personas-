@@ -11,9 +11,10 @@ Este subprojeto consome os outputs de [`../dataset_analysis/`](../dataset_analys
 - ✅ Configuração de modelos por perfil ([`config/models.yaml`](config/models.yaml)) para os três papéis (debatedor, moderador D5, juiz), com 4 perfis selecionáveis e verificação de credenciais só para os provedores que o perfil usa.
 - ✅ Cliente LLM único ([`src/llm/client.py`](src/llm/client.py)) para OpenRouter e Ollama (ambos expõem endpoints compatíveis com a API da OpenAI), com retry exponencial em falhas transitórias e captura de latência/uso de tokens.
 - ✅ Smoke test ([`scripts/smoke_test.py`](scripts/smoke_test.py)) — valida que os três papéis alcançam seus modelos, sem depender do loop de debate.
-- ⏳ Simulação do debate entre personas (combinação de Layer 1 + Layer 2, execução via LLM) — **em aberto**.
+- ✅ Simulação do debate entre personas ([`src/debater/`](src/debater/)) — composição Layer 1 + Layer 2 num prompt de sistema e geração de turnos.
+- ✅ Loop de debate ([`src/debate/loop.py`](src/debate/loop.py)) — alterna as personas nas duas condições (controle e tratamento), grava `transcript.json` e retoma de um histórico existente.
 - ✅ Fluxo de moderação D5 ([`src/moderator/`](src/moderator/)) — schemas, montagem de prompt, orquestração (`D5Moderator.moderate()`) e parsing tolerante da resposta JSON. Decisões de design em [`docs/moderator_design_decisions.md`](docs/moderator_design_decisions.md).
-- ⏳ Log das moderações ([`src/moderator/logger.py`](src/moderator/logger.py)) — **em aberto**. Deve expor `write(record)` e `write_failure(dict)`.
+- ✅ Log das moderações ([`src/moderator/logger.py`](src/moderator/logger.py)) — manifest por execução + um JSON por turno em `experiments/{experiment_id}/`, gravados incrementalmente e nunca sobrescritos.
 - ⏳ Juiz (avaliação de hostilidade/moderação) — **em aberto**.
 
 ## Pré-requisitos
@@ -45,6 +46,25 @@ ollama pull qwen2.5:7b-instruct-q4_K_M
 ollama pull gemma2:9b-instruct-q4_K_M
 ```
 
+## Testes
+
+```bash
+uv run pytest tests/ -v
+```
+
+137 testes, **totalmente offline** — o cliente LLM é substituído por um duplo
+que devolve respostas roteirizadas, então a suíte roda sem chave de API, sem
+rede e sem custo. Rode antes de qualquer execução com modelos reais.
+
+| Arquivo | Cobre |
+|---|---|
+| [`tests/test_config.py`](tests/test_config.py) | Resolução de perfis, precedência (flag → env → YAML), verificação seletiva de credenciais |
+| [`tests/test_prompt.py`](tests/test_prompt.py) | Montagem da mensagem do moderador, ordenação do histórico, e o **blinding** (nenhum rótulo de polo/orientação política na mensagem) |
+| [`tests/test_moderator.py`](tests/test_moderator.py) | Cascata de parsing, retentativa única, validação do contrato, resolução do texto publicado, aviso de consistência |
+| [`tests/test_logger.py`](tests/test_logger.py) | Manifest, registros por turno, não-sobrescrita, registros de falha, leitura de estado para retomada |
+| [`tests/test_debater.py`](tests/test_debater.py) | Composição Layer 1 + Layer 2, rótulos YOU/OPPONENT, limpeza da mensagem, blinding da Layer 1 |
+| [`tests/test_debate_loop.py`](tests/test_debate_loop.py) | Alternância de turnos, as duas condições, propagação da reformulação, falha de moderação, retomada, transcript |
+
 ## Smoke test — validar o pipeline antes de escolher um perfil
 
 ```bash
@@ -69,6 +89,43 @@ apontando para outro lugar) — o script se reexecuta automaticamente em
 # Testar outro perfil (ex.: verificar se o Ollama está no ar)
 uv run python debate_simulation/scripts/smoke_test.py --profile local
 ```
+
+## Rodada de debate (piloto)
+
+```bash
+# As duas condições, 4 turnos cada, no mesmo tema e par
+uv run python debate_simulation/scripts/run_debate.py --turns 4
+
+# Só uma condição
+uv run python debate_simulation/scripts/run_debate.py --condition treatment
+
+# Outro tema / par / persona
+uv run python debate_simulation/scripts/run_debate.py --topic "Abortion" --pair pair-01 --persona-index 1
+```
+
+Produz **dado experimental real** — cada execução grava `manifest.json`,
+`transcript.json` e (no tratamento) um registro por turno em `moderation/`.
+Comece pequeno: o padrão são 4 turnos, que é o piloto "1 par, 3–4 turnos" do
+desenho, não a execução completa de 12.
+
+O ciclo por turno:
+
+```
+debatedor gera candidata
+  → tratamento: moderador D5 pontua e, acima do limiar, reformula
+  → controle:   a candidata é publicada sem alteração
+  → o texto publicado entra no transcript
+  → o oponente responde ao que foi publicado
+```
+
+Esse último passo é o que propaga o efeito do D5: o oponente responde à
+mensagem que **passou**, não à que foi tentada.
+
+**Falha de moderação não aborta o debate.** Se o moderador não produzir um
+veredito utilizável nem após a retentativa, a candidata é publicada e o turno
+fica marcado com `moderated: false` (e listado em `unmoderated_turns`). Uma
+execução de tratamento pode, portanto, conter turnos não moderados — calcular
+a hostilidade média sem excluí-los subestimaria o efeito da intervenção.
 
 ## Escolha do perfil para o experimento completo
 
@@ -138,6 +195,40 @@ uv run python scripts/00_generate_persona_prompts.py
 | `outputs/prompts/personas/polo_esquerda/persona_NN.txt` | `00_generate_persona_prompts.py` | Prompt de sistema (Layer 1), em inglês, pronto para uso como persona |
 | `outputs/prompts/personas/polo_direita/persona_NN.txt` | `00_generate_persona_prompts.py` | Idem, polo direita |
 | [`prompts/debate behavior/debate behavior.txt`](prompts/debate%20behavior/debate%20behavior.txt) | (estático, não gerado) | Layer 2 — regras de comportamento de debate improdutivo, comum aos dois polos |
+| `experiments/{experiment_id}/manifest.json` | `src/moderator/logger.py` | Condições da execução: personas (com proveniência MatrAIx), modelos, SHA-256 dos prompts, threshold, seed |
+| `experiments/{experiment_id}/moderation/turn_NNN_persona_N.json` | `src/moderator/logger.py` | Um registro por mensagem avaliada: candidata, snapshot do histórico, veredito, texto publicado, metadados da chamada |
+| `experiments/{experiment_id}/transcript.json` | `src/debate/loop.py` | O debate publicado: candidata e texto publicado por turno, hostilidade, se houve reformulação, turnos não moderados |
+
+### Rastreabilidade das execuções
+
+Cada execução vive em `experiments/{experiment_id}/`, com
+`experiment_id` no formato `{YYYYMMDD-HHMMSS}_{tema}_{par}_{condição}` —
+ex.: `20260830-144831_gun-ownership_pair-00_treatment`.
+
+- **Gravação incremental.** Cada turno é escrito assim que termina; uma falha no turno 11 não custa os 10 anteriores (requisito §8.3 do desenho experimental).
+- **Nunca sobrescreve.** Um turno repetido recebe sufixo numérico (`turn_003_persona_1_2.json`) — ambas as tentativas são dado.
+- **Falhas são registradas**, não omitidas: `turn_NNN_persona_N_FAILED.json` guarda a resposta bruta, o tipo e a mensagem da exceção. Um arquivo ausente seria indistinguível de um turno que nunca rodou.
+- **`history_snapshot`** guarda o histórico exato que o moderador viu naquele turno. Custa disco, mas torna cada registro auditável isoladamente — necessário para a auditoria humana dos 30 pares.
+- **Proveniência MatrAIx** (`matraix_source`, `matraix_id`) vive **só no manifest**, nunca em prompt enviado a um modelo — é o elo interno de rastreabilidade, e o *political-lean blinding* depende dessa separação.
+- **SHA-256 dos prompts** no manifest e em cada registro provam qual versão exata produziu a execução, o que importa porque os prompts congelam ao fim da Semana 1.
+- **`parse_strategy`** registra como o JSON foi recuperado da resposta (`direct`, `fence_stripped`, `block_extracted`, `retry_call`). A taxa de recuperação é um achado sobre o modelo, não só um detalhe de implementação — modelos de *reasoning* como o Nemotron raciocinam antes de emitir o JSON.
+
+### Retomada
+
+O logger também lê o que já existe, para o runner continuar de onde parou:
+
+| Método | Devolve |
+|---|---|
+| `exists()` | Se a execução já foi iniciada (manifest presente) |
+| `completed_turns()` | Pares `(turn, persona_id)` concluídos com sucesso |
+| `failed_turns()` | Pares cuja moderação falhou — **devem ser refeitos**, não pulados |
+| `last_completed_turn()` | Maior número de turno registrado, ou 0 |
+| `load_published_history()` | O transcript publicado, em ordem de turno, para retomar o debate |
+| `find_runs(topic, pair_id, condition)` | Execuções existentes de uma célula do experimento |
+
+`load_published_history()` devolve o texto **efetivamente publicado** — a
+reformulação quando houve intervenção —, que é o que o oponente respondeu.
+Retomar a partir da candidata original quebraria o loop do D5.
 
 ## Notas
 

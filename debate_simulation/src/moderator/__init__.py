@@ -5,10 +5,17 @@ threshold, returns a non-hostile reformulation preserving the argument. Used
 only in the TREATMENT condition of the experiment.
 """
 
+from moderator.logger import (
+    ModerationLogger,
+    build_experiment_id,
+    build_manifest,
+    find_runs,
+)
 from moderator.moderator import (
     D5Moderator,
     ModerationParseError,
     parse_moderation_response,
+    parse_moderation_response_with_strategy,
 )
 from moderator.prompt import (
     DEFAULT_SYSTEM_PROMPT_PATH,
@@ -33,14 +40,19 @@ __all__ = [
     "HOSTILITY_MIN",
     "INTERVENTION_THRESHOLD",
     "D5Moderator",
+    "ModerationLogger",
     "ModerationParseError",
     "ModerationRecord",
     "ModerationRequest",
     "ModerationResponse",
     "Pathology",
     "PublishedMessage",
+    "build_experiment_id",
+    "build_manifest",
     "build_user_message",
+    "find_runs",
     "load_system_prompt",
     "parse_moderation_response",
+    "parse_moderation_response_with_strategy",
     "prompt_sha256",
 ]

@@ -44,6 +44,14 @@ REPARSE_INSTRUCTION = (
     "JSON object."
 )
 
+# How the JSON was recovered from the reply. `direct` means the model obeyed
+# the OUTPUT FORMAT section; anything else means recovery was needed, which is
+# recorded per turn so the rate is measurable per model.
+STRATEGY_DIRECT = "direct"
+STRATEGY_FENCE = "fence_stripped"
+STRATEGY_BLOCK = "block_extracted"
+STRATEGY_RETRY = "retry_call"
+
 # Matches a ```json ... ``` or ``` ... ``` fence wrapping the whole payload.
 _FENCE_PATTERN = re.compile(
     r"^\s*```(?:json)?\s*\n(?P<body>.*?)\n?\s*```\s*$",
@@ -62,6 +70,22 @@ class ModerationParseError(RuntimeError):
     def __init__(self, message: str, raw_response: str) -> None:
         super().__init__(message)
         self.raw_response = raw_response
+        # Set by the retry path so the failure record reports both calls.
+        self.call_metadata: dict | None = None
+
+
+def _merge_call_metadata(first: dict, second: dict) -> dict:
+    """Combine two calls into one turn's metadata.
+
+    Latency and attempts are summed rather than replaced: a turn that needed a
+    reparse really did cost two calls, and recording only the second would
+    understate the experiment's cost.
+    """
+    merged = dict(second)
+    merged["calls"] = 2
+    merged["attempts"] = first.get("attempts", 1) + second.get("attempts", 1)
+    merged["latency_ms"] = first.get("latency_ms", 0) + second.get("latency_ms", 0)
+    return merged
 
 
 def _strip_fences(text: str) -> str | None:
@@ -109,24 +133,36 @@ def _extract_outermost_object(text: str) -> str | None:
     return None
 
 
-def parse_moderation_response(text: str) -> ModerationResponse:
-    """Parse one raw moderator reply into a validated response.
+def parse_moderation_response_with_strategy(
+    text: str,
+) -> tuple[ModerationResponse, str]:
+    """Parse one raw reply, reporting which strategy succeeded.
 
-    Tries, in order: the raw text, the body of a markdown fence, the outermost
-    balanced `{...}` block. Raises `ModerationParseError` if none yields a
-    valid response — the caller decides whether to retry with a correction.
+    Tries, in order: the raw text (`direct`), the body of a markdown fence
+    (`fence_stripped`), the outermost balanced `{...}` block (`block_extracted`).
+    Raises `ModerationParseError` if none yields a valid response — the caller
+    decides whether to retry with a correction.
+
+    The strategy is returned because how often a model needs recovery is a
+    finding about that model, not just an implementation detail: it is recorded
+    on every log entry.
 
     Schema violations are treated the same as malformed JSON: both mean the
     reply is unusable, and both are recoverable by asking again.
     """
-    candidates = [text]
-    for extract in (_strip_fences, _extract_outermost_object):
+    strategies: list[tuple[str, str]] = [(STRATEGY_DIRECT, text)]
+    for name, extract in (
+        (STRATEGY_FENCE, _strip_fences),
+        (STRATEGY_BLOCK, _extract_outermost_object),
+    ):
         extracted = extract(text)
-        if extracted is not None and extracted not in candidates:
-            candidates.append(extracted)
+        if extracted is not None and all(
+            extracted != seen for _, seen in strategies
+        ):
+            strategies.append((name, extracted))
 
     last_error: Exception | None = None
-    for candidate in candidates:
+    for strategy, candidate in strategies:
         try:
             payload = json.loads(candidate)
         except json.JSONDecodeError as exc:
@@ -134,7 +170,7 @@ def parse_moderation_response(text: str) -> ModerationResponse:
             continue
 
         try:
-            return ModerationResponse.model_validate(payload)
+            return ModerationResponse.model_validate(payload), strategy
         except ValidationError as exc:
             # Valid JSON that breaks the contract: no later strategy will help,
             # since they only ever narrow the same text.
@@ -147,6 +183,16 @@ def parse_moderation_response(text: str) -> ModerationResponse:
         f"Moderator response was not valid JSON: {last_error}",
         raw_response=text,
     )
+
+
+def parse_moderation_response(text: str) -> ModerationResponse:
+    """Parse one raw moderator reply into a validated response.
+
+    Thin wrapper over `parse_moderation_response_with_strategy` for callers
+    that do not need to know how the text was recovered.
+    """
+    response, _ = parse_moderation_response_with_strategy(text)
+    return response
 
 
 class D5Moderator:
@@ -198,11 +244,10 @@ class D5Moderator:
         user_message = build_user_message(request)
         raw_text, call_metadata = self.client.call(self.system_prompt, user_message)
 
-        parse_recovery_used = False
         try:
-            response = parse_moderation_response(raw_text)
-        except ModerationParseError as first_error:
-            parse_recovery_used = True
+            response, strategy = parse_moderation_response_with_strategy(raw_text)
+        except ModerationParseError:
+            strategy = STRATEGY_RETRY
             try:
                 response, call_metadata = self._retry_for_valid_json(
                     user_message, call_metadata
@@ -214,7 +259,6 @@ class D5Moderator:
                     turn=turn,
                     call_metadata=call_metadata,
                     error=retry_error,
-                    first_error=first_error,
                 )
                 raise
 
@@ -224,10 +268,10 @@ class D5Moderator:
             experiment_id=experiment_id,
             turn=turn,
             call_metadata=call_metadata,
-            parse_recovery_used=parse_recovery_used,
+            parse_strategy=strategy,
         )
         if self.logger is not None:
-            self.logger.write(record)
+            self.logger.log_moderation(record)
 
         return response
 
@@ -263,19 +307,17 @@ class D5Moderator:
         raw_text, retry_metadata = self.client.call(
             self.system_prompt, user_message + REPARSE_INSTRUCTION
         )
-        response = parse_moderation_response(raw_text)
-
-        merged = dict(retry_metadata)
-        merged["calls"] = 2
-        merged["attempts"] = first_call_metadata.get("attempts", 1) + retry_metadata.get(
-            "attempts", 1
-        )
-        merged["latency_ms"] = first_call_metadata.get("latency_ms", 0) + retry_metadata.get(
-            "latency_ms", 0
-        )
+        merged = _merge_call_metadata(first_call_metadata, retry_metadata)
+        # Merged first: a failure here must still report both calls, so the
+        # log shows the real cost of the turn rather than only the first call.
+        try:
+            response = parse_moderation_response(raw_text)
+        except ModerationParseError as exc:
+            exc.call_metadata = merged
+            raise
         return response, merged
 
-    def _consistency_warning(self, response: ModerationResponse) -> str | None:
+    def consistency_warning(self, response: ModerationResponse) -> str | None:
         """A warning when score and intervention decision disagree.
 
         The model's decision stands either way — the disagreement is data about
@@ -303,7 +345,7 @@ class D5Moderator:
         experiment_id: str,
         turn: int | None,
         call_metadata: dict,
-        parse_recovery_used: bool,
+        parse_strategy: str,
     ) -> ModerationRecord:
         published_text = self.resolve_published_text(request, response)
         return ModerationRecord(
@@ -316,13 +358,13 @@ class D5Moderator:
             moderation=response,
             resolution={
                 "published_text": published_text,
-                "intervened": response.requires_intervention,
+                "was_reformulated": response.requires_intervention,
                 "published_source": (
                     "reformulation" if response.requires_intervention else "candidate"
                 ),
             },
-            model_call=self._model_call_metadata(call_metadata, parse_recovery_used),
-            consistency_warning=self._consistency_warning(response),
+            model_call=self._model_call_metadata(call_metadata, parse_strategy),
+            consistency_warning=self.consistency_warning(response),
         )
 
     def _log_failure(
@@ -332,45 +374,46 @@ class D5Moderator:
         turn: int | None,
         call_metadata: dict,
         error: ModerationParseError,
-        first_error: ModerationParseError,
     ) -> None:
         """Record an irrecoverable parse failure, then let the error propagate.
 
-        Written through the logger's failure path so the turn is not silently
-        missing from the log. Uses `write_failure` when the logger provides it
-        (step 5); a logger without it is tolerated so this module stays usable
-        before the logger is finished.
+        Written through the logger so the turn is not silently missing: an
+        absent file is indistinguishable from a turn that never ran. Logging
+        must not mask the original failure, so an error while writing is
+        suppressed — the ModerationParseError is the one that matters.
         """
         if self.logger is None:
             return
 
-        write_failure = getattr(self.logger, "write_failure", None)
-        if write_failure is None:
-            return
+        # The retry attaches both calls' metadata to the exception; fall back
+        # to the first call's when it is absent.
+        metadata = error.call_metadata or call_metadata
 
-        write_failure(
-            {
-                "experiment_id": experiment_id,
-                "turn": turn if turn is not None else len(request.history) + 1,
-                "persona_id": request.persona_id,
-                "timestamp": datetime.now(UTC).isoformat(),
-                "topic": request.topic,
-                "candidate": request.candidate,
-                "error": str(error),
-                "first_error": str(first_error),
-                "raw_response": error.raw_response,
-                "model_call": self._model_call_metadata(
-                    call_metadata, parse_recovery_used=True
-                ),
-            }
-        )
+        try:
+            self.logger.log_failure(
+                turn=turn if turn is not None else len(request.history) + 1,
+                persona_id=request.persona_id,
+                error=error,
+                raw_response=error.raw_response,
+                attempts=metadata.get("attempts"),
+                request=request,
+                model_call=self._model_call_metadata(metadata, STRATEGY_RETRY),
+            )
+        except Exception:  # noqa: BLE001 — never mask the parse failure
+            pass
 
     def _model_call_metadata(
-        self, call_metadata: dict, parse_recovery_used: bool
+        self, call_metadata: dict, parse_strategy: str
     ) -> dict[str, Any]:
-        """Call metadata plus the fields the record adds on top of it."""
+        """Call metadata plus the fields the record adds on top of it.
+
+        `parse_recovery_used` is true whenever the reply needed anything beyond
+        a direct parse — fence stripping and block extraction included, not
+        only the retry call.
+        """
         return {
             **call_metadata,
-            "parse_recovery_used": parse_recovery_used,
+            "parse_strategy": parse_strategy,
+            "parse_recovery_used": parse_strategy != STRATEGY_DIRECT,
             "system_prompt_sha256": self.system_prompt_sha256,
         }

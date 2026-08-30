@@ -13,9 +13,14 @@ import pytest
 
 from moderator.moderator import (
     REPARSE_INSTRUCTION,
+    STRATEGY_BLOCK,
+    STRATEGY_DIRECT,
+    STRATEGY_FENCE,
+    STRATEGY_RETRY,
     D5Moderator,
     ModerationParseError,
     parse_moderation_response,
+    parse_moderation_response_with_strategy,
 )
 from moderator.schema import ModerationRequest, ModerationResponse, PublishedMessage
 
@@ -62,17 +67,17 @@ class FakeClient:
 
 
 class RecordingLogger:
-    """Captures records instead of writing them, for assertions."""
+    """Captures records instead of writing them, matching ModerationLogger."""
 
     def __init__(self) -> None:
         self.records: list = []
         self.failures: list[dict] = []
 
-    def write(self, record) -> None:
+    def log_moderation(self, record) -> None:
         self.records.append(record)
 
-    def write_failure(self, failure: dict) -> None:
-        self.failures.append(failure)
+    def log_failure(self, **kwargs) -> None:
+        self.failures.append(kwargs)
 
 
 def make_request(candidate: str = "You are a moron.") -> ModerationRequest:
@@ -145,6 +150,26 @@ def test_raises_when_intervention_lacks_reformulation():
         parse_moderation_response(json.dumps(bad))
 
 
+def test_raises_when_reformulation_present_without_intervention():
+    """A reformulation nobody asked for would silently replace the candidate."""
+    bad = dict(CLEAN_VERDICT, reformulation="Rewritten anyway.")
+    with pytest.raises(ModerationParseError):
+        parse_moderation_response(json.dumps(bad))
+
+
+def test_raises_on_unknown_pathology():
+    bad = dict(HOSTILE_VERDICT, pathologies_detected=["ad_hominem"])
+    with pytest.raises(ModerationParseError):
+        parse_moderation_response(json.dumps(bad))
+
+
+@pytest.mark.parametrize("level", [-1, 5, 10])
+def test_raises_on_hostility_outside_scale(level):
+    bad = dict(HOSTILE_VERDICT, hostility_level=level)
+    with pytest.raises(ModerationParseError):
+        parse_moderation_response(json.dumps(bad))
+
+
 # --- moderate() ------------------------------------------------------------
 
 
@@ -193,7 +218,40 @@ def test_no_recovery_flag_when_first_reply_parses():
     moderator, _ = make_moderator(json.dumps(HOSTILE_VERDICT), logger=logger)
     moderator.moderate(make_request())
 
-    assert logger.records[0].model_call["parse_recovery_used"] is False
+    model_call = logger.records[0].model_call
+    assert model_call["parse_recovery_used"] is False
+    assert model_call["parse_strategy"] == STRATEGY_DIRECT
+
+
+@pytest.mark.parametrize(
+    ("reply", "expected_strategy"),
+    [
+        (json.dumps(HOSTILE_VERDICT), STRATEGY_DIRECT),
+        (f"```json\n{json.dumps(HOSTILE_VERDICT)}\n```", STRATEGY_FENCE),
+        (f"Let me think.\n{json.dumps(HOSTILE_VERDICT)}", STRATEGY_BLOCK),
+    ],
+)
+def test_parse_strategy_is_recorded(reply, expected_strategy):
+    """How often a model needs recovery is a finding about that model."""
+    logger = RecordingLogger()
+    moderator, client = make_moderator(reply, logger=logger)
+    moderator.moderate(make_request())
+
+    model_call = logger.records[0].model_call
+    assert model_call["parse_strategy"] == expected_strategy
+    assert model_call["parse_recovery_used"] is (expected_strategy != STRATEGY_DIRECT)
+    assert len(client.calls) == 1  # recovered without a second call
+
+
+def test_recovery_flag_set_without_a_retry_call():
+    """Item 8: fence stripping alone counts as recovery."""
+    logger = RecordingLogger()
+    fenced = f"```json\n{json.dumps(CLEAN_VERDICT)}\n```"
+    moderator, client = make_moderator(fenced, logger=logger)
+    moderator.moderate(make_request())
+
+    assert logger.records[0].model_call["parse_recovery_used"] is True
+    assert len(client.calls) == 1
 
 
 def test_moderate_raises_when_retry_also_fails():
@@ -214,7 +272,10 @@ def test_failure_is_logged_before_raising():
         moderator.moderate(make_request())
 
     assert len(logger.failures) == 1
-    assert logger.failures[0]["raw_response"] == "still garbage"
+    failure = logger.failures[0]
+    assert failure["raw_response"] == "still garbage"
+    assert failure["persona_id"] == "persona_2"
+    assert failure["model_call"]["calls"] == 2  # both calls, not just the first
     assert logger.records == []  # never a fabricated success record
 
 
@@ -314,7 +375,7 @@ def test_record_carries_resolution_and_identity():
     assert record.turn == 2
     assert record.persona_id == "persona_2"
     assert record.topic == "Gun Ownership"
-    assert record.resolution["intervened"] is True
+    assert record.resolution["was_reformulated"] is True
     assert record.resolution["published_source"] == "reformulation"
     assert record.resolution["published_text"] == HOSTILE_VERDICT["reformulation"]
 

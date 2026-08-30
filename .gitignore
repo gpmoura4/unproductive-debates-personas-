@@ -22,6 +22,11 @@ __pycache__/
 # debate_simulation/outputs/*.json
 # debate_simulation/outputs/*.md
 
+# Execuções do experimento (manifest + records por turno). Descomentar para
+# não versionar; os dados do experimento final provavelmente devem ser
+# commitados deliberadamente, como o conjunto de personas.
+# debate_simulation/experiments/
+
 # Variáveis de ambiente (chaves de API do motor de LLM em debate_simulation/)
 .env
 **/.env

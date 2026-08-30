@@ -44,13 +44,18 @@ profiles:
       base_url: https://openrouter.ai/api/v1
       temperature: 0.2
       max_tokens: 2000
+    # Also a reasoning model, and a verbose one: with 600 it burns ~730
+    # thinking tokens and is cut off (finish_reason=length) before emitting
+    # any JSON, so the reply arrives empty; on longer debate messages it has
+    # been observed past 2500. 4000 leaves room for the reasoning and the
+    # object. Paid profiles keep 300 — those judges do not think out loud.
     judge:
       provider: openrouter
       model: cohere/north-mini-code:free
       api_key_env: OPENROUTER_API_KEY
       base_url: https://openrouter.ai/api/v1
       temperature: 0.0
-      max_tokens: 600
+      max_tokens: 4000
 
   local:
     debater:

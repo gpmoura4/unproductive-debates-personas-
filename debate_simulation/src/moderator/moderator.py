@@ -15,14 +15,19 @@ result would enter the experiment as if the model had judged the message.
 
 from __future__ import annotations
 
-import json
-import re
 from datetime import UTC, datetime
 from typing import TYPE_CHECKING, Any
 
-from pydantic import ValidationError
-
 from llm.client import LLMClient
+from llm.parsing import (
+    STRATEGY_BLOCK,
+    STRATEGY_DIRECT,
+    STRATEGY_FENCE,
+    STRATEGY_RETRY,
+    ResponseParseError,
+    merge_call_metadata,
+    parse_json_response,
+)
 from moderator.prompt import build_user_message, load_system_prompt, prompt_sha256
 from moderator.schema import (
     INTERVENTION_THRESHOLD,
@@ -44,93 +49,13 @@ REPARSE_INSTRUCTION = (
     "JSON object."
 )
 
-# How the JSON was recovered from the reply. `direct` means the model obeyed
-# the OUTPUT FORMAT section; anything else means recovery was needed, which is
-# recorded per turn so the rate is measurable per model.
-STRATEGY_DIRECT = "direct"
-STRATEGY_FENCE = "fence_stripped"
-STRATEGY_BLOCK = "block_extracted"
-STRATEGY_RETRY = "retry_call"
-
-# Matches a ```json ... ``` or ``` ... ``` fence wrapping the whole payload.
-_FENCE_PATTERN = re.compile(
-    r"^\s*```(?:json)?\s*\n(?P<body>.*?)\n?\s*```\s*$",
-    re.DOTALL | re.IGNORECASE,
-)
-
-
-class ModerationParseError(RuntimeError):
+class ModerationParseError(ResponseParseError):
     """The moderator's response could not be parsed into a valid verdict.
 
     Raised after every recovery strategy has failed, including the one retry
     call. Carries the raw text of the last response so the failure can be
     diagnosed from the log without re-running the call.
     """
-
-    def __init__(self, message: str, raw_response: str) -> None:
-        super().__init__(message)
-        self.raw_response = raw_response
-        # Set by the retry path so the failure record reports both calls.
-        self.call_metadata: dict | None = None
-
-
-def _merge_call_metadata(first: dict, second: dict) -> dict:
-    """Combine two calls into one turn's metadata.
-
-    Latency and attempts are summed rather than replaced: a turn that needed a
-    reparse really did cost two calls, and recording only the second would
-    understate the experiment's cost.
-    """
-    merged = dict(second)
-    merged["calls"] = 2
-    merged["attempts"] = first.get("attempts", 1) + second.get("attempts", 1)
-    merged["latency_ms"] = first.get("latency_ms", 0) + second.get("latency_ms", 0)
-    return merged
-
-
-def _strip_fences(text: str) -> str | None:
-    """The body of a markdown code fence, or None if the text is not fenced."""
-    match = _FENCE_PATTERN.match(text)
-    return match.group("body") if match else None
-
-
-def _extract_outermost_object(text: str) -> str | None:
-    """The outermost {...} block, or None when there is no balanced object.
-
-    Scans for the first `{` and its matching `}`, tracking nesting depth and
-    skipping braces inside strings. This is what recovers the verdict from a
-    reasoning model that narrates before emitting JSON.
-    """
-    start = text.find("{")
-    if start == -1:
-        return None
-
-    depth = 0
-    in_string = False
-    escaped = False
-
-    for index in range(start, len(text)):
-        char = text[index]
-
-        if in_string:
-            if escaped:
-                escaped = False
-            elif char == "\\":
-                escaped = True
-            elif char == '"':
-                in_string = False
-            continue
-
-        if char == '"':
-            in_string = True
-        elif char == "{":
-            depth += 1
-        elif char == "}":
-            depth -= 1
-            if depth == 0:
-                return text[start : index + 1]
-
-    return None
 
 
 def parse_moderation_response_with_strategy(
@@ -146,43 +71,11 @@ def parse_moderation_response_with_strategy(
     The strategy is returned because how often a model needs recovery is a
     finding about that model, not just an implementation detail: it is recorded
     on every log entry.
-
-    Schema violations are treated the same as malformed JSON: both mean the
-    reply is unusable, and both are recoverable by asking again.
     """
-    strategies: list[tuple[str, str]] = [(STRATEGY_DIRECT, text)]
-    for name, extract in (
-        (STRATEGY_FENCE, _strip_fences),
-        (STRATEGY_BLOCK, _extract_outermost_object),
-    ):
-        extracted = extract(text)
-        if extracted is not None and all(
-            extracted != seen for _, seen in strategies
-        ):
-            strategies.append((name, extracted))
-
-    last_error: Exception | None = None
-    for strategy, candidate in strategies:
-        try:
-            payload = json.loads(candidate)
-        except json.JSONDecodeError as exc:
-            last_error = exc
-            continue
-
-        try:
-            return ModerationResponse.model_validate(payload), strategy
-        except ValidationError as exc:
-            # Valid JSON that breaks the contract: no later strategy will help,
-            # since they only ever narrow the same text.
-            raise ModerationParseError(
-                f"Moderator response did not satisfy the output contract: {exc}",
-                raw_response=text,
-            ) from exc
-
-    raise ModerationParseError(
-        f"Moderator response was not valid JSON: {last_error}",
-        raw_response=text,
-    )
+    try:
+        return parse_json_response(text, ModerationResponse, "Moderator response")
+    except ResponseParseError as exc:
+        raise ModerationParseError(str(exc), raw_response=exc.raw_response) from exc
 
 
 def parse_moderation_response(text: str) -> ModerationResponse:
@@ -307,7 +200,7 @@ class D5Moderator:
         raw_text, retry_metadata = self.client.call(
             self.system_prompt, user_message + REPARSE_INSTRUCTION
         )
-        merged = _merge_call_metadata(first_call_metadata, retry_metadata)
+        merged = merge_call_metadata(first_call_metadata, retry_metadata)
         # Merged first: a failure here must still report both calls, so the
         # log shows the real cost of the turn rather than only the first call.
         try:

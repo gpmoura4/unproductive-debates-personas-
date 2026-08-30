@@ -15,7 +15,7 @@ Este subprojeto consome os outputs de [`../dataset_analysis/`](../dataset_analys
 - ✅ Loop de debate ([`src/debate/loop.py`](src/debate/loop.py)) — alterna as personas nas duas condições (controle e tratamento), grava `transcript.json` e retoma de um histórico existente.
 - ✅ Fluxo de moderação D5 ([`src/moderator/`](src/moderator/)) — schemas, montagem de prompt, orquestração (`D5Moderator.moderate()`) e parsing tolerante da resposta JSON. Decisões de design em [`docs/moderator_design_decisions.md`](docs/moderator_design_decisions.md).
 - ✅ Log das moderações ([`src/moderator/logger.py`](src/moderator/logger.py)) — manifest por execução + um JSON por turno em `experiments/{experiment_id}/`, gravados incrementalmente e nunca sobrescritos.
-- ⏳ Juiz (avaliação de hostilidade/moderação) — **em aberto**.
+- ✅ Juiz de hostilidade ([`src/judge/`](src/judge/)) — pontua as mensagens publicadas na escala 0–4, com 3 execuções por mensagem para consistência intra-juiz. Prompt em [`prompts/debate judge/`](prompts/debate%20judge/).
 
 ## Pré-requisitos
 
@@ -96,6 +96,9 @@ uv run python debate_simulation/scripts/smoke_test.py --profile local
 # As duas condições, 4 turnos cada, no mesmo tema e par
 uv run python debate_simulation/scripts/run_debate.py --turns 4
 
+# Com avaliação do juiz (3 execuções por mensagem publicada)
+uv run python debate_simulation/scripts/run_debate.py --turns 4 --judge
+
 # Só uma condição
 uv run python debate_simulation/scripts/run_debate.py --condition treatment
 
@@ -126,6 +129,23 @@ veredito utilizável nem após a retentativa, a candidata é publicada e o turno
 fica marcado com `moderated: false` (e listado em `unmoderated_turns`). Uma
 execução de tratamento pode, portanto, conter turnos não moderados — calcular
 a hostilidade média sem excluí-los subestimaria o efeito da intervenção.
+
+### O juiz
+
+Com `--judge`, cada mensagem **publicada** é pontuada na escala 0–4, **3 vezes**
+(consistência intra-juiz, §8.4 do desenho). As três execuções são guardadas
+individualmente em `judgements/`; mediana, média, amplitude e unanimidade são
+**derivadas** delas — nunca gravadas no lugar delas. Trocar o método de
+agregação depois não exige repontuar nada.
+
+Dois pontos de desenho que importam para a análise:
+
+- **O juiz não sabe a condição** nem se uma mensagem foi reformulada. Ele
+  pontua texto, não intervenções — saber disso enviesaria o score.
+- **`hostility_level` do moderador ≠ do juiz.** O moderador pontua a
+  *candidata* antes da publicação; o juiz pontua o que foi *publicado*. No
+  tratamento, quando houve reformulação, são textos diferentes. Compará-los
+  diretamente compara uma mensagem com sua própria substituta.
 
 ## Escolha do perfil para o experimento completo
 
@@ -161,6 +181,23 @@ Troca de perfil:
 expressiva), moderador `0.2` (julgamento consistente, tolera variação menor),
 juiz `0.0` (reprodutibilidade máxima entre as 3 execuções por mensagem).
 
+> **O free tier da OpenRouter tem cota diária de 50 requisições**, não só o
+> limite de ~20 req/min. Uma célula completa (1 tema × 1 par, as duas
+> condições, 12 turnos, com juiz) custa **108 chamadas** — mais que o dobro da
+> cota diária. O `smoke_test` serve para validar o encanamento e rodar pilotos
+> curtos (4 turnos com juiz = 36 chamadas), **não** para produzir dado
+> experimental em volume.
+>
+> | Escopo | Chamadas | No free tier (50/dia) |
+> |---|---|---|
+> | Piloto: 4 turnos, 2 condições, com juiz | 36 | cabe em 1 dia |
+> | 1 célula completa (12 turnos) | 108 | ~2 dias |
+> | Experimento completo (3 temas × 10 pares) | **3.240** | ~65 dias |
+>
+> Adicionar 10 créditos (~US$ 10) à conta eleva a cota para 1000/dia, o que põe
+> o experimento completo em ~3 dias — e ainda dentro do teto de R$ 100. Os
+> perfis pagos não têm cota diária.
+
 > **Os slugs gratuitos da OpenRouter mudam com frequência.** O trio original
 > da especificação (`llama-3.3-70b:free`, `deepseek-chat-v3.1:free`,
 > `gemini-2.0-flash-exp:free`) passou a retornar 404 — os dois primeiros
@@ -171,10 +208,13 @@ juiz `0.0` (reprodutibilidade máxima entre as 3 execuções por mensagem).
 > Isso afeta só o `smoke_test`; os perfis pagos usam slugs estáveis.
 
 **Nota sobre `max_tokens` no `smoke_test`:** moderador e juiz usam orçamentos
-maiores (2000 e 600) que nos perfis de produção (800 e 300). O Nemotron é um
-modelo de *reasoning* — os tokens de raciocínio são contados antes do JSON de
-saída, e com 800 a resposta era truncada no meio do objeto. Perfis pagos
-mantêm 800/300.
+muito maiores (2000 e 4000) que nos perfis de produção (800 e 300). Ambos os
+modelos gratuitos escolhidos são de *reasoning* — os tokens de raciocínio são
+contados contra o `max_tokens` antes de qualquer conteúdo ser emitido. Com
+orçamento curto a API retorna `finish_reason="length"` e conteúdo **nulo**
+(não um JSON truncado): o Nemotron passava de 800, e o North Mini foi
+observado gastando mais de 2500 tokens de raciocínio em mensagens longas de
+debate. Perfis pagos mantêm 800/300 — aqueles modelos não pensam em voz alta.
 
 ## Execução dos scripts
 
@@ -198,6 +238,7 @@ uv run python scripts/00_generate_persona_prompts.py
 | `experiments/{experiment_id}/manifest.json` | `src/moderator/logger.py` | Condições da execução: personas (com proveniência MatrAIx), modelos, SHA-256 dos prompts, threshold, seed |
 | `experiments/{experiment_id}/moderation/turn_NNN_persona_N.json` | `src/moderator/logger.py` | Um registro por mensagem avaliada: candidata, snapshot do histórico, veredito, texto publicado, metadados da chamada |
 | `experiments/{experiment_id}/transcript.json` | `src/debate/loop.py` | O debate publicado: candidata e texto publicado por turno, hostilidade, se houve reformulação, turnos não moderados |
+| `experiments/{experiment_id}/judgements/turn_NNN_persona_N.json` | `src/judge/logger.py` | As 3 execuções do juiz para cada mensagem publicada, mais o resumo derivado (mediana, amplitude, unanimidade) |
 
 ### Rastreabilidade das execuções
 

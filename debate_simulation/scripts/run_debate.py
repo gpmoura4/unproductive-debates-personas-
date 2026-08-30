@@ -55,6 +55,9 @@ if str(_SRC) not in sys.path:
 from config.loader import ConfigError, load_profile  # noqa: E402
 from debate.loop import CONTROL, TREATMENT, DebateLoop, write_transcript  # noqa: E402
 from debater.debater import Debater  # noqa: E402
+from judge.judge import HostilityJudge, judge_transcript  # noqa: E402
+from judge.logger import JudgementLogger  # noqa: E402
+from judge.schema import RUNS_PER_MESSAGE  # noqa: E402
 from llm.client import LLMCallError, LLMClient  # noqa: E402
 from moderator.logger import (  # noqa: E402
     ModerationLogger,
@@ -92,6 +95,20 @@ def _parse_args() -> argparse.Namespace:
         help="Which condition(s) to run (default: both).",
     )
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--judge",
+        action="store_true",
+        help=(
+            "Score the published messages with the judge afterwards. Adds "
+            "3 calls per message."
+        ),
+    )
+    parser.add_argument(
+        "--judge-runs",
+        type=int,
+        default=None,
+        help="Evaluations per message (default: 3, for intra-judge consistency).",
+    )
     return parser.parse_args()
 
 
@@ -181,7 +198,45 @@ def run_condition(args, profile, condition: str) -> bool:
         print(f"  STOPPED         : {result.stopped_reason}")
     print(f"  transcript      : {transcript_path}")
 
+    if args.judge and result.turns:
+        _judge_debate(args, profile, experiment_id, condition, result)
+
     return result.completed
+
+
+def _judge_debate(args, profile, experiment_id: str, condition: str, result) -> None:
+    """Score the published messages and report the per-turn trajectory."""
+    print(f"\n  --- judging {len(result.turns)} messages ---")
+
+    judge = HostilityJudge(
+        client=LLMClient(profile.judge),
+        logger=JudgementLogger(experiment_id),
+        runs_per_message=args.judge_runs or RUNS_PER_MESSAGE,
+    )
+
+    def _report(record) -> None:
+        summary = record.summary()
+        flag = "" if summary["unanimous"] else f"  (range {summary['range']})"
+        print(
+            f"  Turn {record.turn} [{record.persona_id}]  "
+            f"median={summary['median']}  runs={summary['scores']}{flag}"
+        )
+
+    records = judge_transcript(
+        judge,
+        topic=args.topic,
+        condition=condition,
+        transcript=result.transcript,
+        experiment_id=experiment_id,
+        on_message=_report,
+    )
+
+    medians = [r.median_score for r in records if r.median_score is not None]
+    if medians:
+        print(f"  mean hostility  : {sum(medians) / len(medians):.2f}")
+    disagreed = [r.turn for r in records if not r.unanimous]
+    if disagreed:
+        print(f"  judge disagreed with itself on turns: {disagreed}")
 
 
 def main() -> int:

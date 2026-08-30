@@ -48,6 +48,8 @@ BEHAVIOR_PROMPT_PATH = (
     _PROJECT_ROOT / "prompts" / "debate behavior" / "debate behavior.txt"
 )
 
+JUDGE_PROMPT_PATH = _PROJECT_ROOT / "prompts" / "debate judge" / "debate judge.txt"
+
 # Pole -> directory holding that pole's Layer 1 prompts.
 POLE_DIRECTORIES = {"left": "polo_esquerda", "right": "polo_direita"}
 
@@ -212,6 +214,8 @@ def build_manifest(
             "moderator": (
                 _model_manifest_entry(profile.moderator, "B") if is_treatment else None
             ),
+            # The judge scores both conditions, so it is recorded in both.
+            "judge": _model_manifest_entry(profile.judge, "C"),
         },
         "profile": getattr(profile, "name", None),
         "moderator_prompt_file": (
@@ -222,6 +226,8 @@ def build_manifest(
         ),
         "behavior_prompt_file": _relative_to_repo(BEHAVIOR_PROMPT_PATH),
         "behavior_prompt_sha256": _sha256(BEHAVIOR_PROMPT_PATH),
+        "judge_prompt_file": _relative_to_repo(JUDGE_PROMPT_PATH),
+        "judge_prompt_sha256": _sha256(JUDGE_PROMPT_PATH),
         "intervention_threshold": intervention_threshold,
         "planned_turns": planned_turns,
         "seed": seed,

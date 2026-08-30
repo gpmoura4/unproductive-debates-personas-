@@ -43,6 +43,13 @@ class LLMCallError(RuntimeError):
     """Raised when a call fails and cannot (or should not) be retried."""
 
 
+def _reasoning_token_count(response: Any) -> int | None:
+    """Reasoning tokens reported by the provider, when it reports them."""
+    usage = getattr(response, "usage", None)
+    details = getattr(usage, "completion_tokens_details", None)
+    return getattr(details, "reasoning_tokens", None)
+
+
 def _is_transient(exc: Exception) -> bool:
     """Whether an exception is worth retrying.
 
@@ -174,9 +181,27 @@ class LLMClient:
         choices = getattr(response, "choices", None)
         if not choices:
             raise LLMCallError(f"Response contained no choices: {response!r}")
-        content = choices[0].message.content
+
+        choice = choices[0]
+        content = choice.message.content
         if content is None:
-            raise LLMCallError("Response message had no content.")
+            # The usual cause is a reasoning model whose thinking tokens
+            # exhaust max_tokens before any content is emitted, which the API
+            # reports as finish_reason="length" with a null message. Say so:
+            # the fix is a larger max_tokens for that role, not a retry.
+            finish_reason = getattr(choice, "finish_reason", None)
+            hint = ""
+            if finish_reason == "length":
+                reasoning = _reasoning_token_count(response)
+                hint = (
+                    " The response was truncated by max_tokens"
+                    + (f" after {reasoning} reasoning tokens" if reasoning else "")
+                    + "; raise max_tokens for this role in config/models.yaml."
+                )
+            raise LLMCallError(
+                f"Response message had no content "
+                f"(finish_reason={finish_reason!r}).{hint}"
+            )
         return content
 
     @staticmethod

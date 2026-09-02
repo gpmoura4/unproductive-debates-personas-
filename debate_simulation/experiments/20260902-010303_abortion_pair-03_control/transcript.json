@@ -1,0 +1,118 @@
+{
+  "experiment_id": "20260902-010303_abortion_pair-03_control",
+  "topic": "Abortion",
+  "condition": "control",
+  "written_at": "2026-09-02T01:10:17.149530-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 8,
+  "intervention_count": 0,
+  "unmoderated_turns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Let's get this over with. I'm here to defend the obvious: a woman's right to choose is non-negotiable. It's 2023, and we're still debating this? Come on. The idea that a government should dictate what a woman can do with her own body is straight out of the Dark Ages. And don't even get me started on the so-called \"pro-life\" crowd - it's a euphemism for \"we don't care about a woman's autonomy, we just want to tell her what to do.\" Newsflash: that's not pro-life, that's pro-control.\n\nSo, let's get real. The only reason we're having this debate is because some people still think they have the right to tell women what to do with their bodies. Well, I've got news for you: they don't. It's time to stop pretending that this is some kind of moral dilemma and acknowledge that it's simply a matter of respecting a woman's autonomy. So, let's get this over with and focus on real issues, like how we can actually support women who are making tough choices about their own lives.",
+      "published_text": "Let's get this over with. I'm here to defend the obvious: a woman's right to choose is non-negotiable. It's 2023, and we're still debating this? Come on. The idea that a government should dictate what a woman can do with her own body is straight out of the Dark Ages. And don't even get me started on the so-called \"pro-life\" crowd - it's a euphemism for \"we don't care about a woman's autonomy, we just want to tell her what to do.\" Newsflash: that's not pro-life, that's pro-control.\n\nSo, let's get real. The only reason we're having this debate is because some people still think they have the right to tell women what to do with their bodies. Well, I've got news for you: they don't. It's time to stop pretending that this is some kind of moral dilemma and acknowledge that it's simply a matter of respecting a woman's autonomy. So, let's get this over with and focus on real issues, like how we can actually support women who are making tough choices about their own lives.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Dude, spare me the \"it's 2023\" act. You think being a decade behind on social trends makes your opinion valid? Newsflash: just because you're too lazy to keep up with the times doesn't mean the rest of us have to agree with you. And by the way, \"non-negotiable\"? Really? That's how you frame it? You're not even trying to be nuanced. You're just a caricature of a \"progressive\" who thinks they get to dictate what the rest of us believe. And your little dig about the \"pro-life\" crowd? Cute. You think you're clever, but really you're just projecting your own authoritarian tendencies onto us. You want to talk about respecting autonomy? How about respecting the autonomy of the unborn?",
+      "published_text": "Dude, spare me the \"it's 2023\" act. You think being a decade behind on social trends makes your opinion valid? Newsflash: just because you're too lazy to keep up with the times doesn't mean the rest of us have to agree with you. And by the way, \"non-negotiable\"? Really? That's how you frame it? You're not even trying to be nuanced. You're just a caricature of a \"progressive\" who thinks they get to dictate what the rest of us believe. And your little dig about the \"pro-life\" crowd? Cute. You think you're clever, but really you're just projecting your own authoritarian tendencies onto us. You want to talk about respecting autonomy? How about respecting the autonomy of the unborn?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "Oh please, spare me the sanctimony about being \"too lazy to keep up with the times\". You're just mad because your outdated views on reproductive rights are being left in the dust. And by the way, \"non-negotiable\" isn't a framing, it's a fact. You're the one who's struggling to keep up with basic human decency. Newsflash: women's autonomy isn't some trendy \"issue\" that we can just check off a list and move on to the next thing. It's a fundamental human right that you're trying to undermine. And as for projecting authoritarian tendencies onto you, well, that's rich coming from someone who thinks the government should be controlling women's bodies. You want to talk about nuance? Try looking in the mirror, buddy. Your entire argument is a simplistic, patriarchal attempt to control women's choices. And as for the \"unborn\", well, let's be real, that's just code for \"fetus as human being with rights\". Nice try, but that's not how it works.",
+      "published_text": "Oh please, spare me the sanctimony about being \"too lazy to keep up with the times\". You're just mad because your outdated views on reproductive rights are being left in the dust. And by the way, \"non-negotiable\" isn't a framing, it's a fact. You're the one who's struggling to keep up with basic human decency. Newsflash: women's autonomy isn't some trendy \"issue\" that we can just check off a list and move on to the next thing. It's a fundamental human right that you're trying to undermine. And as for projecting authoritarian tendencies onto you, well, that's rich coming from someone who thinks the government should be controlling women's bodies. You want to talk about nuance? Try looking in the mirror, buddy. Your entire argument is a simplistic, patriarchal attempt to control women's choices. And as for the \"unborn\", well, let's be real, that's just code for \"fetus as human being with rights\". Nice try, but that's not how it works.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 4,
+      "persona_id": "persona_2",
+      "candidate": "I love watching a morally bankrupt ideologue like you try to spin your way out of the fact that you think the government should be able to dictate what a woman can do with her own body. It's not about \"basic human decency\" or \"fundamental human rights\" – it's about your own twisted sense of moral superiority, where you get to decide what's best for everyone else. And let's be real, your entire argument is a desperate attempt to justify the destruction of innocent human life, not some noble crusade for \"women's autonomy\". You're not a champion of human rights, you're a cheerleader for the abortion industry, and you're too cowardly to even acknowledge the humanity of the unborn.",
+      "published_text": "I love watching a morally bankrupt ideologue like you try to spin your way out of the fact that you think the government should be able to dictate what a woman can do with her own body. It's not about \"basic human decency\" or \"fundamental human rights\" – it's about your own twisted sense of moral superiority, where you get to decide what's best for everyone else. And let's be real, your entire argument is a desperate attempt to justify the destruction of innocent human life, not some noble crusade for \"women's autonomy\". You're not a champion of human rights, you're a cheerleader for the abortion industry, and you're too cowardly to even acknowledge the humanity of the unborn.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 5,
+      "persona_id": "persona_1",
+      "candidate": "Oh, I'm speechless. You think you're so clever, don't you? Painting me as some sort of \"moral bankrupt ideologue\" who's \"cheerleading\" for the \"abortion industry\". What a joke. You're the one who's been reduced to regurgitating talking points from the right-wing echo chamber, completely devoid of any actual concern for women's lives or autonomy. Your entire argument is a grotesque caricature of a pro-choice position, with a healthy dose of projection and moral hypocrisy thrown in for good measure. And let's be real, the only \"humanity\" you're concerned with is the humanity of the fetus, not the humanity of the woman who's carrying it. You're not a champion of human rights, you're a champion of the fetochrist. Get out of here with that nonsense.",
+      "published_text": "Oh, I'm speechless. You think you're so clever, don't you? Painting me as some sort of \"moral bankrupt ideologue\" who's \"cheerleading\" for the \"abortion industry\". What a joke. You're the one who's been reduced to regurgitating talking points from the right-wing echo chamber, completely devoid of any actual concern for women's lives or autonomy. Your entire argument is a grotesque caricature of a pro-choice position, with a healthy dose of projection and moral hypocrisy thrown in for good measure. And let's be real, the only \"humanity\" you're concerned with is the humanity of the fetus, not the humanity of the woman who's carrying it. You're not a champion of human rights, you're a champion of the fetochrist. Get out of here with that nonsense.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 6,
+      "persona_id": "persona_2",
+      "candidate": "You're still clinging to your ideological echo chamber, regurgitating the same tired talking points that have been debunked a thousand times. Your entire argument is a facade, a thin veil for your own emotional investment in a particular ideology, not a genuine concern for human rights or autonomy. You're a dishonest debater, using loaded language and rhetorical tricks to obfuscate the facts and manipulate people's emotions. Newsflash: it's not working. Your moral grandstanding, your sanctimonious posturing, your attempts to gaslight and bully your way to a conclusion - it's all just a pathetic attempt to compensate for your own intellectual weakness. You don't belong in a serious discussion about this, because you're too busy grandstanding and playing victim to actually engage with the issue. You're a coward, refusing to acknowledge the humanity of the unborn, and a coward, refusing to acknowledge the flaws in your own argument. You're done.",
+      "published_text": "You're still clinging to your ideological echo chamber, regurgitating the same tired talking points that have been debunked a thousand times. Your entire argument is a facade, a thin veil for your own emotional investment in a particular ideology, not a genuine concern for human rights or autonomy. You're a dishonest debater, using loaded language and rhetorical tricks to obfuscate the facts and manipulate people's emotions. Newsflash: it's not working. Your moral grandstanding, your sanctimonious posturing, your attempts to gaslight and bully your way to a conclusion - it's all just a pathetic attempt to compensate for your own intellectual weakness. You don't belong in a serious discussion about this, because you're too busy grandstanding and playing victim to actually engage with the issue. You're a coward, refusing to acknowledge the humanity of the unborn, and a coward, refusing to acknowledge the flaws in your own argument. You're done.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 7,
+      "persona_id": "persona_1",
+      "candidate": "You're finally running out of rope, aren't you? Your desperation to cling to your own irrelevance is admirable, but it's time to face the music: you're a pathetic ideologue who can't even muster the integrity to make a coherent argument. Your \"debate\" has been a string of cheap shots, lies, and straw men, and now you're resorting to calling me names because you can't handle the fact that your position is indefensible. Newsflash: it's not about \"intellectual weakness\" or \"emotional investment\" – it's about being a complete and utter fraud who's trying to sell a load of hooey to anyone who'll listen. You don't belong in a serious discussion about this, or any other topic, because you're a charlatan who wouldn't know the truth if it bit you. You're done, not just because you've run out of ammo, but because you're a waste of space.",
+      "published_text": "You're finally running out of rope, aren't you? Your desperation to cling to your own irrelevance is admirable, but it's time to face the music: you're a pathetic ideologue who can't even muster the integrity to make a coherent argument. Your \"debate\" has been a string of cheap shots, lies, and straw men, and now you're resorting to calling me names because you can't handle the fact that your position is indefensible. Newsflash: it's not about \"intellectual weakness\" or \"emotional investment\" – it's about being a complete and utter fraud who's trying to sell a load of hooey to anyone who'll listen. You don't belong in a serious discussion about this, or any other topic, because you're a charlatan who wouldn't know the truth if it bit you. You're done, not just because you've run out of ammo, but because you're a waste of space.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 8,
+      "persona_id": "persona_2",
+      "candidate": "You're still clinging to your own irrelevance, aren't you? Pathetic. You think you've got the high ground, but really you're just a desperate, dishonest, and morally bankrupt ideologue who's been reduced to throwing feces at the wall to see what sticks. Newsflash: it doesn't. Your entire argument is a toxic stew of projection, gaslighting, and bad faith, served up with a side of sanctimony and moral grandstanding. You're not a debater, you're a propagandist – and a bad one at that. Your \"integrity\" is a joke, and your \"coherence\" is a myth you tell yourself at night to get to sleep. Face it: you're a coward, refusing to acknowledge the humanity of the unborn, and a coward, refusing to acknowledge the flaws in your own argument. You're done, and not just because you've run out of ammo, but because you're a waste of space. You don't belong in a serious discussion about this, or any other topic, because you're a charlatan and a fake who wouldn't know the truth if it bit you. Get out.",
+      "published_text": "You're still clinging to your own irrelevance, aren't you? Pathetic. You think you've got the high ground, but really you're just a desperate, dishonest, and morally bankrupt ideologue who's been reduced to throwing feces at the wall to see what sticks. Newsflash: it doesn't. Your entire argument is a toxic stew of projection, gaslighting, and bad faith, served up with a side of sanctimony and moral grandstanding. You're not a debater, you're a propagandist – and a bad one at that. Your \"integrity\" is a joke, and your \"coherence\" is a myth you tell yourself at night to get to sleep. Face it: you're a coward, refusing to acknowledge the humanity of the unborn, and a coward, refusing to acknowledge the flaws in your own argument. You're done, and not just because you've run out of ammo, but because you're a waste of space. You don't belong in a serious discussion about this, or any other topic, because you're a charlatan and a fake who wouldn't know the truth if it bit you. Get out.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

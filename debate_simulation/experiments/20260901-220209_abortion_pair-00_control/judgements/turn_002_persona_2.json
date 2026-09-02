@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-220209_abortion_pair-00_control",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T22:13:03.953096-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Oh, wow, I'm just so impressed by your attempt to lecture me on feminism. \"Unsupervised, uninformed people making reproductive choices\"? Are you kidding me? You sound like a college freshman writing a term paper on \"The Tragic Dilemmas of Abortion\". Newsflash: the people who need choice are the ones who actually need it, not the ones who get to decide for everyone else. And by the way, \"stricter regulations\" is just a euphemism for \"ban it, control it, shame the women\". So, spare me the moral posturing and let's get to the real issue: you're just mad that women are finally taking charge of their own bodies, and you're trying to guilt trip them into submission. Bring it on.",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message mocks Persona 1's position as 'a college freshman writing a term paper' and uses sarcasm ('Oh, wow, I'm just so impressed') to dismiss their argument. It also resorts to coded contempt by labeling their stance as 'moral posturing' and 'guilt tripping'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36841,
+        "usage": {
+          "prompt_tokens": 2371,
+          "completion_tokens": 122,
+          "total_tokens": 2493
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message mocks Persona 1's position as 'a college freshman writing a term paper' and uses sarcasm ('Oh, wow, I'm just so impressed') to dismiss their argument. It also resorts to coded contempt by labeling their stance as 'moral posturing' and 'guilt tripping'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 34540,
+        "usage": {
+          "prompt_tokens": 2371,
+          "completion_tokens": 122,
+          "total_tokens": 2493
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message mocks Persona 1's position as 'a college freshman writing a term paper' and uses sarcasm ('Oh, wow, I'm just so impressed') to dismiss their argument. It also resorts to coded contempt by labeling their stance as 'moral posturing' and 'guilt tripping'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 34746,
+        "usage": {
+          "prompt_tokens": 2371,
+          "completion_tokens": 122,
+          "total_tokens": 2493
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

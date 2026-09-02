@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-211127_gun-ownership_pair-00_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T21:20:24.622959-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "You're still spewing the same tired propaganda, aren't you? Newsflash: nobody's buying this \"self-defense\" fairy tale anymore. You're not defending your community, you're just defending your right to own a deadly piece of hardware and pretend you're some kind of Rambo-esque hero. Grow up, seriously? You're the one who needs to grow up, stop clinging to your childish fantasies about being a rugged individualist, and face the fact that your precious guns are just a symbol of your own insecurity and inadequacy. As for my agenda, let me tell you what it is: I'm here to expose the cult-like mentality that pervades the gun lobby and its brainwashed worshippers like you. I'm here to show that your \"rights\" are nothing but a figment of your own fevered imagination, a way to justify your own selfish desires and sense of entitlement. So keep whining, keep crying, and keep trying to spin this as some kind of \"attack\" on your precious freedoms. We all know what's really going on here: you're just trying to maintain your grip on a relic of a bygone era, and you'll do whatever it takes to keep that grip from slipping. Pathetic.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'brainwashed worshippers' and says their 'rights' are a 'figment of your own fevered imagination'.  Also uses 'whining' and 'crying' to mock their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36311,
+        "usage": {
+          "prompt_tokens": 3156,
+          "completion_tokens": 102,
+          "total_tokens": 3258
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'brainwashed worshippers' and says their 'rights' are a 'figment of your own fevered imagination'.  Also uses 'whining' and 'crying' to mock their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 18166,
+        "usage": {
+          "prompt_tokens": 3156,
+          "completion_tokens": 102,
+          "total_tokens": 3258
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'brainwashed worshippers' and says their 'rights' are a 'figment of your own fevered imagination'.  Also uses 'whining' and 'crying' to mock their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 18137,
+        "usage": {
+          "prompt_tokens": 3156,
+          "completion_tokens": 102,
+          "total_tokens": 3258
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

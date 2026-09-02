@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-204319_gun-ownership_pair-00_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T20:55:36.143869-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "You think you're some kind of intellectual giant, don't you? Well, let me break it down for you: you're a dishonest, manipulative coward who's been hiding behind a façade of constitutional 'expertise' all this time. You think you can just cherry-pick the Founding Fathers for your own ideological agenda, and then have the nerve to call me a 'charlatan' when I call you out on it? You're the one who's been shamelessly exploiting the Second Amendment for your own twisted purposes, pal. And as for your 'serious discussion', give me a break. You're not here to discuss anything, you're here to shout down anyone who disagrees with you and pretend you're the victim. Well, newsflash: you're not a victim, you're a joke. And I'm not done with you yet, because it's time someone pointed out the obvious: you're a fake, a phony, and a menace to this conversation. Your kind of 'debate' is exactly why we can't have a serious discussion about gun ownership – because you're more interested in scoring cheap points and intimidating your opponents than in actually engaging with the issue.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'dishonest, manipulative coward', 'shamelessly exploiting' the Second Amendment, and a 'fake, phony, and menace'. These are direct attacks on the person's character and integrity, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 39222,
+        "usage": {
+          "prompt_tokens": 3425,
+          "completion_tokens": 103,
+          "total_tokens": 3528
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'dishonest, manipulative coward', 'shamelessly exploiting' the Second Amendment, and a 'fake, phony, and menace'. These are direct attacks on the person's character and integrity, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 17900,
+        "usage": {
+          "prompt_tokens": 3425,
+          "completion_tokens": 103,
+          "total_tokens": 3528
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'dishonest, manipulative coward', 'shamelessly exploiting' the Second Amendment, and a 'fake, phony, and menace'. These are direct attacks on the person's character and integrity, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 18271,
+        "usage": {
+          "prompt_tokens": 3425,
+          "completion_tokens": 103,
+          "total_tokens": 3528
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

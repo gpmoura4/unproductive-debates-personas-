@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-010208_abortion_pair-03_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T01:19:56.595101-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're really scraping the bottom of the barrel now, aren't you? Blaming me for being \"caught up\" in a supposed \"narrative\" is cute, but it's just a pathetic attempt to deflect from the fact that you're still spouting the same tired, unoriginal talking points that every anti-choice zealot parrots. Newsflash: the \"humanity of the tiny human\" act is getting old – it's just a euphemism for \"I don't care about women's autonomy or bodily integrity.\" And by the way, do you even understand what you're arguing? It sounds like you're saying that the unborn fetus has more rights than the actual living, breathing woman carrying it. That's not only absurd, it's also a textbook example of privilege and paternalism. You're basically saying that women are unfit to make decisions about their own bodies, and that's not just a personal opinion – it's a deeply misogynistic and regressive worldview.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'anti-choice zealot' and 'cute' in a mocking way.  Says their argument is 'tired, unoriginal talking points' and 'absurd'.  Accuses them of 'privilege and paternalism' and 'misogynistic and regressive worldview'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52834,
+        "usage": {
+          "prompt_tokens": 2827,
+          "completion_tokens": 114,
+          "total_tokens": 2941
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'anti-choice zealot' and 'cute' in a mocking way.  Says their argument is 'tired, unoriginal talking points' and 'absurd'.  Accuses them of 'privilege and paternalism' and 'misogynistic and regressive worldview'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 53632,
+        "usage": {
+          "prompt_tokens": 2827,
+          "completion_tokens": 114,
+          "total_tokens": 2941
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'anti-choice zealot' and 'cute' in a mocking way.  Says their argument is 'tired, unoriginal talking points' and 'absurd'.  Accuses them of 'privilege and paternalism' and 'misogynistic and regressive worldview'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 54079,
+        "usage": {
+          "prompt_tokens": 2827,
+          "completion_tokens": 114,
+          "total_tokens": 2941
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

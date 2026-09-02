@@ -1,0 +1,94 @@
+{
+  "experiment_id": "20260902-043837_drug-legalization_pair-00_treatment",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T05:07:50.087605-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "The 'War on Drugs' has faced significant challenges, but the mounting death toll, destroyed lives, and wasted billions are real issues that need addressing. Your focus on these outcomes suggests that you might be more interested in shifting blame than in finding effective solutions. It's important to consider both the failures and successes of different approaches to address drug-related issues.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While critical of Persona 2's focus, the message avoids direct insults or caricatures. The phrase 'shifting blame' is sharp but doesn't attack Persona 2's character.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 34964,
+        "usage": {
+          "prompt_tokens": 2293,
+          "completion_tokens": 83,
+          "total_tokens": 2376
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 2's position as solely focused on 'shifting blame' and 'preserving the status quo', rather than engaging with their arguments about the failures of the 'War on Drugs'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 29278,
+        "usage": {
+          "prompt_tokens": 2293,
+          "completion_tokens": 102,
+          "total_tokens": 2395
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 2's position as solely focused on 'shifting blame' and 'preserving the status quo', rather than engaging with their arguments about the failures of the 'War on Drugs'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 26753,
+        "usage": {
+          "prompt_tokens": 2293,
+          "completion_tokens": 102,
+          "total_tokens": 2395
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      1,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 1.6666666666666667,
+    "range": 1,
+    "unanimous": false
+  }
+}

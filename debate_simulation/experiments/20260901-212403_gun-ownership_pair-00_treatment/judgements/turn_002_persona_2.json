@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-212403_gun-ownership_pair-00_treatment",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T21:41:38.913784-03:00",
+  "topic": "Gun Ownership",
+  "condition": "treatment",
+  "message": "That's a familiar refrain: the 'secular, community-focused' stance. You think your position automatically gives you a moral high ground? Newsflash: your 'community' is just a euphemism for wanting more government control. And by the way, you can't address the actual arguments, so you resort to name-calling. Classy.",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('That's a familiar refrain') and a caricature of the opponent's position ('your 'community' is just a euphemism for wanting more government control').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36963,
+        "usage": {
+          "prompt_tokens": 2188,
+          "completion_tokens": 99,
+          "total_tokens": 2287
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('That's a familiar refrain') and a caricature of the opponent's position ('your 'community' is just a euphemism for wanting more government control').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 24829,
+        "usage": {
+          "prompt_tokens": 2188,
+          "completion_tokens": 99,
+          "total_tokens": 2287
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('That's a familiar refrain') and a caricature of the opponent's position ('your 'community' is just a euphemism for wanting more government control').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 24846,
+        "usage": {
+          "prompt_tokens": 2188,
+          "completion_tokens": 99,
+          "total_tokens": 2287
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

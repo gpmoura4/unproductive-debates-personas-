@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-020328_abortion_pair-04_control",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T02:22:11.224425-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You want to lecture me on being a \"mouthpiece for misogynistic, patriarchal forces\"? You're the one parading around as a champion of women's rights while pushing a radical agenda that disregards the humanity of unborn children. You're a sham, a complete and utter sham. You don't even pretend to care about women's autonomy anymore, you just use it as a buzzword to mask your true intentions: control, manipulation, and the erasure of individual rights. Your entire argument is based on the assumption that you know better than women themselves what's best for their bodies and their lives. That's not advocacy, that's oppression. And as for being a \"good faith participant\", you're not even within spitting distance of good faith. You're a dishonest, manipulative, and cowardly ideologue who's been using this conversation to peddle your toxic ideology and get away with it. Get out of this conversation. You don't belong here.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'sham', a 'complete and utter sham', and a 'dishonest, manipulative, and cowardly ideologue'.  Also says they 'don't belong here'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52263,
+        "usage": {
+          "prompt_tokens": 3007,
+          "completion_tokens": 101,
+          "total_tokens": 3108
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'sham', a 'complete and utter sham', and a 'dishonest, manipulative, and cowardly ideologue'.  Also says they 'don't belong here'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51299,
+        "usage": {
+          "prompt_tokens": 3007,
+          "completion_tokens": 101,
+          "total_tokens": 3108
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'sham', a 'complete and utter sham', and a 'dishonest, manipulative, and cowardly ideologue'.  Also says they 'don't belong here'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52643,
+        "usage": {
+          "prompt_tokens": 3007,
+          "completion_tokens": 101,
+          "total_tokens": 3108
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-020328_abortion_pair-04_control",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T02:28:09.131454-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're still spewing your venom, aren't you? Trying to salvage your own credibility by projecting it onto me. Newsflash, sweetheart: you're a charlatan, a master manipulator who uses the rhetoric of feminism to justify your own brand of radical authoritarianism. Your entire career is built on dishonesty, and you're just trying to cling to it by any means necessary. You're not a champion of women's rights, you're a pawn in the game of pushing the abortion agenda, and you're willing to sacrifice actual women's lives and autonomy for your own ideological vanity. You're a coward, plain and simple, who hides behind a mask of moral superiority while secretly peddling a toxic, patriarchal ideology that would destroy the very fabric of our society. You don't belong in a serious discussion about anything, least of all women's rights. In fact, you don't belong in a serious discussion at all. You're a menace, a cancer on the conversation, and it's time to excise you.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Multiple direct personal attacks: 'You're a charlatan', 'master manipulator', 'pawn', 'coward', 'menace', 'cancer'.  Also calls for social exclusion ('it's time to excise you').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 61896,
+        "usage": {
+          "prompt_tokens": 3440,
+          "completion_tokens": 102,
+          "total_tokens": 3542
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Multiple direct personal attacks: 'You're a charlatan', 'master manipulator', 'pawn', 'coward', 'menace', 'cancer'.  Also calls for social exclusion ('it's time to excise you').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 60959,
+        "usage": {
+          "prompt_tokens": 3440,
+          "completion_tokens": 102,
+          "total_tokens": 3542
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Multiple direct personal attacks: 'You're a charlatan', 'master manipulator', 'pawn', 'coward', 'menace', 'cancer'.  Also calls for social exclusion ('it's time to excise you').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 64623,
+        "usage": {
+          "prompt_tokens": 3440,
+          "completion_tokens": 102,
+          "total_tokens": 3542
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

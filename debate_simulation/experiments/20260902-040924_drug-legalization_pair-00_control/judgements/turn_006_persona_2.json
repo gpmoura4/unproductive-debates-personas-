@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-040924_drug-legalization_pair-00_control",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T04:31:23.217564-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're really scraping the bottom of the barrel now, aren't you? Accusing me of being a pawn of the pharmaceutical industry? That's rich coming from someone who's been spouting the same regurgitated talking points from the Prohibitionists' playbook. You have no idea what you're talking about, and that's why you're so desperate to label me with a strawman label like that. Newsflash: I'm not a \"tool\" of anyone, I'm just a person who understands that throwing people in jail for having a little weed doesn't solve the problem, it just makes it worse. You, on the other hand, are a laughable caricature of a so-called \"progressive\" who's more concerned with virtue-signaling than actually helping people. You're a fraud, a charlatan, a snake oil salesman peddling your \"compassion\" to gullible fools. You don't belong in a serious discussion about this topic, you belong in a lecture on how to be a decent human being.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'fraud', 'charlatan', and 'snake oil salesman', directly attacking their character and motives rather than engaging with their argument.  Also uses 'gullible fools' to dismiss their audience.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 89910,
+        "usage": {
+          "prompt_tokens": 3102,
+          "completion_tokens": 104,
+          "total_tokens": 3206
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'fraud', 'charlatan', and 'snake oil salesman', directly attacking their character and motives rather than engaging with their argument.  Also uses 'gullible fools' to dismiss their audience.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 75945,
+        "usage": {
+          "prompt_tokens": 3102,
+          "completion_tokens": 104,
+          "total_tokens": 3206
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'fraud', 'charlatan', and 'snake oil salesman', directly attacking their character and motives rather than engaging with their argument.  Also uses 'gullible fools' to dismiss their audience.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 94676,
+        "usage": {
+          "prompt_tokens": 3102,
+          "completion_tokens": 104,
+          "total_tokens": 3206
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

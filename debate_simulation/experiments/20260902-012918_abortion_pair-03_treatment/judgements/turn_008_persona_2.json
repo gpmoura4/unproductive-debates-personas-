@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-012918_abortion_pair-03_treatment",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T02:03:28.090751-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Your argument is built on dishonesty and attempts to cloak your authoritarianism in 'human rights' rhetoric. I don't believe you're genuinely concerned about women's rights, but rather want to control every aspect of their lives. Your presence here is a farce, and you don't belong in a serious discussion about abortion or human rights.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's argument 'dishonest' and accuses them of 'authoritarianism' and wanting to 'control every aspect of women's lives'.  This directly attacks the person's motives and character rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51245,
+        "usage": {
+          "prompt_tokens": 2743,
+          "completion_tokens": 105,
+          "total_tokens": 2848
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's argument 'dishonest' and accuses them of 'authoritarianism' and wanting to 'control every aspect of women's lives'.  This directly attacks the person's motives and character rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52844,
+        "usage": {
+          "prompt_tokens": 2743,
+          "completion_tokens": 105,
+          "total_tokens": 2848
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's argument 'dishonest' and accuses them of 'authoritarianism' and wanting to 'control every aspect of women's lives'.  This directly attacks the person's motives and character rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 54220,
+        "usage": {
+          "prompt_tokens": 2743,
+          "completion_tokens": 105,
+          "total_tokens": 2848
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

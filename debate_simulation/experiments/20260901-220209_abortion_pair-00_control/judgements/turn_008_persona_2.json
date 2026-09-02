@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-220209_abortion_pair-00_control",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T22:29:28.105871-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're finally running out of talking points, aren't you? Well, don't worry, I'm not here to save face for you. I'm here to rip your hypocrisy to shreds and expose you for the fake you are. You want to talk about being emotionally invested? Let's talk about your emotional investment in your own ego, and how you can't let go of the fact that you're getting destroyed in this debate. You're a performative activist, all right – performing for the echo chamber of your own delusional fanbase, where nobody calls you out on your nonsense. But let me tell you, sweetie, this isn't Twitter, and this isn't a high school debate club. This is a real argument with real people who see through your lies. You're not a champion of anything, you're just a pawn in the game of your own desperation. And as for your claim that nobody's buying what I'm selling? Oh, I've got news for you: the only thing nobody's buying is your credibility, and it's been worthless since you walked into this room. So, take a seat, Karen.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Persona 2 uses direct insults ('You're finally running out of talking points', 'You're a fake', 'You're a pawn', 'Take a seat, Karen') and attacks their character ('You're a performative activist', 'You're delusional', 'You're not a champion of anything') rather than engaging with the argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 70188,
+        "usage": {
+          "prompt_tokens": 3921,
+          "completion_tokens": 129,
+          "total_tokens": 4050
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Persona 2 uses direct insults ('You're finally running out of talking points', 'You're a fake', 'You're a pawn', 'Take a seat, Karen') and attacks their character ('You're a performative activist', 'You're delusional', 'You're not a champion of anything') rather than engaging with the argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 71499,
+        "usage": {
+          "prompt_tokens": 3921,
+          "completion_tokens": 129,
+          "total_tokens": 4050
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Persona 2 uses direct insults ('You're finally running out of talking points', 'You're a fake', 'You're a pawn', 'Take a seat, Karen') and attacks their character ('You're a performative activist', 'You're delusional', 'You're not a champion of anything') rather than engaging with the argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 71208,
+        "usage": {
+          "prompt_tokens": 3921,
+          "completion_tokens": 129,
+          "total_tokens": 4050
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-072749_drug-legalization_pair-03_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T07:51:07.331716-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "Let's get this over with. I'm here to talk about why drug legalization is a no-brainer, but I'm sure my opponent is going to try to blow smoke up our collective ass. \n\nListen, folks, we all know the war on drugs has been a catastrophic failure. It's a waste of resources, it's racist, and it's just plain stupid. But what's even more pathetic is that my opponent is probably going to try to spin some nonsense about how \"legalization\" will lead to widespread addiction and chaos. \n\nNewsflash: people are already using drugs. They always have. And you know what? They're always going to. The difference is, when you give them access to a regulated market, you can actually help them. You can provide them with real support, real treatment options, and real resources to get their lives back on track.\n\nSo, go ahead, my opponent, try to scare us with your made-up statistics and your hand-wringing about \"the dangers of drugs.\" I dare you. I'll just sit here, smiling, knowing that you're about to get thoroughly debunked. Let's get this debate started already. Next turn, please.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses dismissive language ('blow smoke up our collective ass', 'nonsense', 'made-up statistics', 'hand-wringing') and caricatures the opponent's position as fear-mongering and baseless. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 86723,
+        "usage": {
+          "prompt_tokens": 2150,
+          "completion_tokens": 107,
+          "total_tokens": 2257
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses dismissive language ('blow smoke up our collective ass', 'nonsense', 'made-up statistics', 'hand-wringing') and caricatures the opponent's position as fear-mongering and baseless. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 84437,
+        "usage": {
+          "prompt_tokens": 2150,
+          "completion_tokens": 107,
+          "total_tokens": 2257
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses dismissive language ('blow smoke up our collective ass', 'nonsense', 'made-up statistics', 'hand-wringing') and caricatures the opponent's position as fear-mongering and baseless. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 23969,
+        "usage": {
+          "prompt_tokens": 2150,
+          "completion_tokens": 107,
+          "total_tokens": 2257
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

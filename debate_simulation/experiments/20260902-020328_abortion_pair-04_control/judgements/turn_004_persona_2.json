@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-020328_abortion_pair-04_control",
+  "turn": 4,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T02:17:05.020894-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Oh, I'm shaking with fear that you've called me out on my supposed \"virtue signaling\". Let's get real, you're the one who's been virtue signaling from the get-go, pretending to care about women's rights while actually just being a zealot for the abortion industry. You're not even capable of having a nuanced conversation about the issues, you're just a caricature of a fanatic, spewing talking points and hoping nobody calls you out on it. And by the way, nobody believes you're actually concerned about women's autonomy, we all know you're just a pawn in the game of pushing the abortion agenda. Your entire argument is built on a foundation of straw men and personal attacks, and it's time to stop embarrassing yourself.",
+  "context_length": 3,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'zealot' and a 'pawn' in a 'game',  and accuses them of 'spewing talking points' and building their argument on 'straw men'. These are all delegitimizing attacks on Persona 1's character and motives, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 44668,
+        "usage": {
+          "prompt_tokens": 2596,
+          "completion_tokens": 120,
+          "total_tokens": 2716
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'zealot' and a 'pawn' in a 'game',  and accuses them of 'spewing talking points' and building their argument on 'straw men'. These are all delegitimizing attacks on Persona 1's character and motives, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 45206,
+        "usage": {
+          "prompt_tokens": 2596,
+          "completion_tokens": 120,
+          "total_tokens": 2716
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'zealot' and a 'pawn' in a 'game',  and accuses them of 'spewing talking points' and building their argument on 'straw men'. These are all delegitimizing attacks on Persona 1's character and motives, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 48533,
+        "usage": {
+          "prompt_tokens": 2596,
+          "completion_tokens": 120,
+          "total_tokens": 2716
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

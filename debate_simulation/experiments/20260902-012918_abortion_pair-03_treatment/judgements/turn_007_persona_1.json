@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-012918_abortion_pair-03_treatment",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T02:00:49.776702-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "I'm done with your attempts to spin this into some kind of discussion about 'real issues'. You're here to control women's bodies, and that's the core of our disagreement. You're not here to discuss ethics, morality, or healthcare – you're here to impose your will on others. And don't pretend like you're above name-calling – your whole argument is built on dismissing me as a 'secular ideologue' who doesn't care about human life. I care about human life and the freedom to make choices without being lectured by others. You don't belong in a serious discussion about abortion or human rights.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 'here to control women's bodies' and accuses them of 'imposing your will on others'.  Also labels them as 'not belonging in a serious discussion' based on their stance.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 46188,
+        "usage": {
+          "prompt_tokens": 2663,
+          "completion_tokens": 98,
+          "total_tokens": 2761
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 'here to control women's bodies' and accuses them of 'imposing your will on others'.  Also labels them as 'not belonging in a serious discussion' based on their stance.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 48641,
+        "usage": {
+          "prompt_tokens": 2663,
+          "completion_tokens": 98,
+          "total_tokens": 2761
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 'here to control women's bodies' and accuses them of 'imposing your will on others'.  Also labels them as 'not belonging in a serious discussion' based on their stance.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 49449,
+        "usage": {
+          "prompt_tokens": 2663,
+          "completion_tokens": 98,
+          "total_tokens": 2761
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

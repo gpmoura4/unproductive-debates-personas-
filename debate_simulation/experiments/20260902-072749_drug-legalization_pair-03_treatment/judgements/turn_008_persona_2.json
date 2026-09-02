@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-072749_drug-legalization_pair-03_treatment",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T08:04:29.289732-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "You've had it with my honesty? You're here to pretend to be some kind of expert, some bleeding-heart savior who's going to magically fix the opioid crisis with a regulated market. You have no actual solutions, no real understanding of the complexities, and no intention of engaging in a serious discussion. You're just a lazy, self-serving ideologue who's too cowardly to actually propose real policies and face opposition. You don't belong in a serious discussion about this.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'lazy', 'self-serving', 'cowardly', and says they 'don't belong in a serious discussion'. These are direct attacks on the person's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 41659,
+        "usage": {
+          "prompt_tokens": 2702,
+          "completion_tokens": 101,
+          "total_tokens": 2803
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'lazy', 'self-serving', 'cowardly', and says they 'don't belong in a serious discussion'. These are direct attacks on the person's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42803,
+        "usage": {
+          "prompt_tokens": 2702,
+          "completion_tokens": 101,
+          "total_tokens": 2803
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'lazy', 'self-serving', 'cowardly', and says they 'don't belong in a serious discussion'. These are direct attacks on the person's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 44288,
+        "usage": {
+          "prompt_tokens": 2702,
+          "completion_tokens": 101,
+          "total_tokens": 2803
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

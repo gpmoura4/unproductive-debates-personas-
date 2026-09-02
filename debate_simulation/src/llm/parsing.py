@@ -22,6 +22,7 @@ from pydantic import BaseModel, ValidationError
 STRATEGY_DIRECT = "direct"
 STRATEGY_FENCE = "fence_stripped"
 STRATEGY_BLOCK = "block_extracted"
+STRATEGY_QUOTES = "quotes_repaired"
 STRATEGY_RETRY = "retry_call"
 
 # Matches a ```json ... ``` or ``` ... ``` fence wrapping the whole payload.
@@ -92,6 +93,53 @@ def extract_outermost_object(text: str) -> str | None:
     return None
 
 
+def repair_inner_quotes(text: str) -> str | None:
+    """Escape stray double quotes inside JSON string values.
+
+    Models asked to quote a debate message routinely emit
+    `"justification": "he said "this" to them"`, which is invalid JSON. The
+    surrounding text is fine — only the inner quotes are unescaped.
+
+    Walks the object tracking whether it is inside a string. A quote that
+    appears while inside a string and is NOT followed by a structural
+    character (`,` `}` `]` `:` or end of input) must be content, so it is
+    escaped. Returns None when nothing needed repair.
+    """
+    out: list[str] = []
+    in_string = False
+    escaped = False
+    changed = False
+
+    for index, char in enumerate(text):
+        if escaped:
+            out.append(char)
+            escaped = False
+            continue
+        if char == "\\":
+            out.append(char)
+            escaped = True
+            continue
+
+        if char == '"':
+            if not in_string:
+                in_string = True
+                out.append(char)
+                continue
+            # Inside a string: decide whether this quote closes it.
+            rest = text[index + 1 :].lstrip()
+            if rest == "" or rest[0] in ",}]:":
+                in_string = False
+                out.append(char)
+            else:
+                out.append('\\"')  # content, not a delimiter
+                changed = True
+            continue
+
+        out.append(char)
+
+    return "".join(out) if changed else None
+
+
 def parse_json_response(
     text: str, model: type[ModelT], what: str = "Response"
 ) -> tuple[ModelT, str]:
@@ -114,6 +162,13 @@ def parse_json_response(
         extracted = extract(text)
         if extracted is not None and all(extracted != seen for _, seen in strategies):
             strategies.append((name, extracted))
+
+    # Last resort: repair unescaped quotes in the most-narrowed candidate.
+    # Tried after the others because it rewrites the payload, and a reply
+    # that parses as-is should never be rewritten.
+    repaired = repair_inner_quotes(strategies[-1][1])
+    if repaired is not None:
+        strategies.append((STRATEGY_QUOTES, repaired))
 
     last_error: Exception | None = None
     for strategy, candidate in strategies:

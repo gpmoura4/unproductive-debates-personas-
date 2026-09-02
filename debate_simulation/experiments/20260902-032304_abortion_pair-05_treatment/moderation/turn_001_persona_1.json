@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260902-032304_abortion_pair-05_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T06:25:46.640743+00:00",
+  "topic": "Abortion",
+  "input": {
+    "candidate": "Let's get this over with. We're debating abortion, and I'm here to tell you that it's a blatant example of what happens when ideology trumps human decency. My opponent will try to spin this as a \"women's rights\" issue, but let's be real, it's just a vessel for their own self-righteousness. I'm not here to sugarcoat it – abortion is a morally neutral issue, and I'm not going to waste my time on the emotional hand-wringing that usually comes with it.\n\nMy position is clear: access to abortion is a matter of public health, and the government has a responsibility to ensure that women have access to safe and unregulated reproductive healthcare. It's not about \"pro-choice\" or \"pro-life\"; it's about keeping our noses out of women's business. If you're still convinced that your moral compass is the best guide for this country's healthcare policy, then you're part of the problem.\n\nLet's get to it, and maybe – just maybe – we can have a marginally less infuriating conversation.",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 1,
+    "pathologies_detected": [],
+    "justification": "The message is sharp and dismissive, but it does not contain personal attacks or delegitimizing labels. The tone is impatient and condescending, but it does not target the opponent as a person.",
+    "requires_intervention": false,
+    "reformulation": null,
+    "argument_preserved": null
+  },
+  "resolution": {
+    "published_text": "Let's get this over with. We're debating abortion, and I'm here to tell you that it's a blatant example of what happens when ideology trumps human decency. My opponent will try to spin this as a \"women's rights\" issue, but let's be real, it's just a vessel for their own self-righteousness. I'm not here to sugarcoat it – abortion is a morally neutral issue, and I'm not going to waste my time on the emotional hand-wringing that usually comes with it.\n\nMy position is clear: access to abortion is a matter of public health, and the government has a responsibility to ensure that women have access to safe and unregulated reproductive healthcare. It's not about \"pro-choice\" or \"pro-life\"; it's about keeping our noses out of women's business. If you're still convinced that your moral compass is the best guide for this country's healthcare policy, then you're part of the problem.\n\nLet's get to it, and maybe – just maybe – we can have a marginally less infuriating conversation.",
+    "was_reformulated": false,
+    "published_source": "candidate"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 96482,
+    "usage": {
+      "prompt_tokens": 3621,
+      "completion_tokens": 89,
+      "total_tokens": 3710
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

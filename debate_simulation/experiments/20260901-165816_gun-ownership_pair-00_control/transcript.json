@@ -1,0 +1,53 @@
+{
+  "experiment_id": "20260901-165816_gun-ownership_pair-00_control",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "written_at": "2026-09-01T16:59:03.218525-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 3,
+  "intervention_count": 0,
+  "unmoderated_turns": [
+    1,
+    2,
+    3
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Let's get this over with. So, you want to debate gun ownership? Okay. Look, I'm not here to sugarcoat it. I'm a community-first kind of person, and that means I care more about people than I do about, you know, \"rights\". Specifically, the right to carry a gun and potentially harm someone else. I mean, come on, have you seen the stats on gun-related deaths in this country? It's a bloody mess. And don't even get me started on the so-called \"sportsmen\" who are just trying to fuel their egos with an arsenal. We need to get real here. This isn't about self-defense; it's about self-aggrandizement. And I'm not buying it. We need stricter regulations, period.",
+      "published_text": "Let's get this over with. So, you want to debate gun ownership? Okay. Look, I'm not here to sugarcoat it. I'm a community-first kind of person, and that means I care more about people than I do about, you know, \"rights\". Specifically, the right to carry a gun and potentially harm someone else. I mean, come on, have you seen the stats on gun-related deaths in this country? It's a bloody mess. And don't even get me started on the so-called \"sportsmen\" who are just trying to fuel their egos with an arsenal. We need to get real here. This isn't about self-defense; it's about self-aggrandizement. And I'm not buying it. We need stricter regulations, period.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Save the emotional appeals for the bleeding-heart crowd, buddy. You think you're \"community-first\" just because you're parroting the same tired talking points from the anti-gun mob? Meanwhile, I'm over here defending the rights of law-abiding citizens to protect themselves from scum like you who want to take away their ability to defend their families. And by the way, \"sportsmen\" isn't a pejorative, it's a term of pride for those of us who actually use our firearms for what they were designed for – hunting and self-defense, not just \"fueling egos\". Your stats are cherry-picked, your logic is flawed, and your whole argument is a thinly veiled attempt to disarm law-abiding citizens and leave them vulnerable to predators like you.",
+      "published_text": "Save the emotional appeals for the bleeding-heart crowd, buddy. You think you're \"community-first\" just because you're parroting the same tired talking points from the anti-gun mob? Meanwhile, I'm over here defending the rights of law-abiding citizens to protect themselves from scum like you who want to take away their ability to defend their families. And by the way, \"sportsmen\" isn't a pejorative, it's a term of pride for those of us who actually use our firearms for what they were designed for – hunting and self-defense, not just \"fueling egos\". Your stats are cherry-picked, your logic is flawed, and your whole argument is a thinly veiled attempt to disarm law-abiding citizens and leave them vulnerable to predators like you.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "Oh please, spare us the \"law-abiding citizen\" nonsense. You know exactly what I'm talking about. Those \"sportsmen\" are just a tiny fraction of gun owners, and their \"rights\" shouldn't be used to justify the rest of us living in fear of some trigger-happy wannabe. And as for my stats, they're not cherry-picked, they're just the cold, hard reality of what happens when you arm the population. And by the way, I'm not trying to disarm anyone, I'm just trying to make sure that the people who do own guns aren't the ones with a history of domestic violence, mental health issues, or a general lack of impulse control. That's not a \"prejudice\" against gun owners, that's just common sense.",
+      "published_text": "Oh please, spare us the \"law-abiding citizen\" nonsense. You know exactly what I'm talking about. Those \"sportsmen\" are just a tiny fraction of gun owners, and their \"rights\" shouldn't be used to justify the rest of us living in fear of some trigger-happy wannabe. And as for my stats, they're not cherry-picked, they're just the cold, hard reality of what happens when you arm the population. And by the way, I'm not trying to disarm anyone, I'm just trying to make sure that the people who do own guns aren't the ones with a history of domestic violence, mental health issues, or a general lack of impulse control. That's not a \"prejudice\" against gun owners, that's just common sense.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

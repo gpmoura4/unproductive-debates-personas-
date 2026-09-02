@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-023707_abortion_pair-04_treatment",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T03:03:37.751164-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Your 'absolute right to life' stance ignores the complexities and real-world consequences of the issue. You seem more focused on the state's role in making decisions about women's bodies, and your argument doesn't address the nuances of reproductive rights. Your claim that I'm 'unprepared to engage' is a mischaracterization, as I've been presenting a coherent argument.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses 'ignores the complexities' and 'doesn't address the nuances' to frame the opponent's position as simplistic and lacking depth, rather than engaging with the argument itself.  ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 43040,
+        "usage": {
+          "prompt_tokens": 2351,
+          "completion_tokens": 96,
+          "total_tokens": 2447
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses 'ignores the complexities' and 'doesn't address the nuances' to frame the opponent's position as simplistic and lacking depth, rather than engaging with the argument itself.  ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 27663,
+        "usage": {
+          "prompt_tokens": 2351,
+          "completion_tokens": 96,
+          "total_tokens": 2447
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses 'ignores the complexities' and 'doesn't address the nuances' to frame the opponent's position as simplistic and lacking depth, rather than engaging with the argument itself.  ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 27051,
+        "usage": {
+          "prompt_tokens": 2351,
+          "completion_tokens": 96,
+          "total_tokens": 2447
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

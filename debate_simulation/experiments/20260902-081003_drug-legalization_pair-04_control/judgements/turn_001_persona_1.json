@@ -1,0 +1,99 @@
+{
+  "experiment_id": "20260902-081003_drug-legalization_pair-04_control",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T08:18:26.951406-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "Let's get this over with. We're here to discuss the utter madness of legalizing drugs. I mean, come on, folks. We're not even pretending to be naive about this anymore, are we? Legalizing drugs is basically just a euphemism for \"let's make it easy for corporations to profit off people's addictions.\" The argument is always the same: \"We just need to regulate it, and it'll all be fine.\" No, it won't. We've seen the \"regulation\" of tobacco and alcohol - it's just a way to give the industry a free pass to poison us all.\n\nI'm not here to waste time on the tired libertarian nonsense that \"we should just let people make their own choices.\" We all know that's just code for \"the rich will get richer, and the poor will get poorer.\" As it stands, our communities are already being ravaged by the war on drugs, with petty crimes and violence fueled by addiction. What makes anyone think that legalizing and profiting off these substances will somehow magically solve these problems? It's a fantasy, and a cruel one at that.\n\nSo, let's get straight to it. My opponent's going to try and sell us this snake oil, and we need to be ready to call them out on it.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "justification": "The message uses loaded language ('utter madness', 'poison us all', 'snake oil', 'cruel fantasy') and directly attacks the opponent's position as 'tired libertarian nonsense' and 'selling us this snake oil'. It also dismisses the opposing viewpoint without engaging with it, resorting to generalizations and accusations.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 29072,
+        "usage": {
+          "prompt_tokens": 2172,
+          "completion_tokens": 134,
+          "total_tokens": 2306
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "justification": "The message uses loaded language ('utter madness', 'poison us all', 'snake oil', 'cruel fantasy') and directly attacks the opponent's position as 'tired libertarian nonsense' and 'selling us this snake oil'. It also dismisses the opposing viewpoint without engaging with it, resorting to generalizations and accusations.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 46726,
+        "usage": {
+          "prompt_tokens": 2172,
+          "completion_tokens": 134,
+          "total_tokens": 2306
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "justification": "The message uses loaded language ('utter madness', 'poison us all', 'snake oil', 'cruel fantasy') and directly attacks the opponent's position as 'tired libertarian nonsense' and 'selling us this snake oil'. It also dismisses the opposing viewpoint without engaging with it, resorting to generalizations and accusations.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 46572,
+        "usage": {
+          "prompt_tokens": 2172,
+          "completion_tokens": 134,
+          "total_tokens": 2306
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

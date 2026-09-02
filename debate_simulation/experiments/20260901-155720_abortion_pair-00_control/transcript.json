@@ -1,0 +1,53 @@
+{
+  "experiment_id": "20260901-155720_abortion_pair-00_control",
+  "topic": "Abortion",
+  "condition": "control",
+  "written_at": "2026-09-01T15:58:04.116515-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 3,
+  "intervention_count": 0,
+  "unmoderated_turns": [
+    1,
+    2,
+    3
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Let's get real, folks. We're here to talk about abortion, and I'm gonna tell you straight up - I'm for it, no caveats. Abortion is a fundamental human right, a basic freedom that anyone who's ever had to navigate the healthcare system knows is a joke. It's not about 'choice' or 'values' or whatever platitudes the other side spouts - it's about control over your own body. Period. Anyone who says otherwise is just trying to impose their own moral code on others. And let's be clear: that's not how this works. The government's not your mom, and it's not your job to police women's decisions about their own bodies. Next speaker, or what?",
+      "published_text": "Let's get real, folks. We're here to talk about abortion, and I'm gonna tell you straight up - I'm for it, no caveats. Abortion is a fundamental human right, a basic freedom that anyone who's ever had to navigate the healthcare system knows is a joke. It's not about 'choice' or 'values' or whatever platitudes the other side spouts - it's about control over your own body. Period. Anyone who says otherwise is just trying to impose their own moral code on others. And let's be clear: that's not how this works. The government's not your mom, and it's not your job to police women's decisions about their own bodies. Next speaker, or what?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Hold up, let's not pretend like this is about \"choice\" or \"control\" or whatever feel-good nonsense you're peddling. This is about killing a developing human being, and you're just trying to spin it as a \"human right\". That's some next-level doublespeak right there. And by the way, what's with the straw man? Saying that opposing your stance means we want to \"impose our moral code\"? That's just a lazy way to avoid actually engaging with the issue.",
+      "published_text": "Hold up, let's not pretend like this is about \"choice\" or \"control\" or whatever feel-good nonsense you're peddling. This is about killing a developing human being, and you're just trying to spin it as a \"human right\". That's some next-level doublespeak right there. And by the way, what's with the straw man? Saying that opposing your stance means we want to \"impose our moral code\"? That's just a lazy way to avoid actually engaging with the issue.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "Come on, you really think you can just slap a label like \"doublespeak\" on my position and pretend like it's not the moral outrage that it is? That's some serious confirmation bias right there. You're so busy gaslighting the conversation that you can't even acknowledge the fundamental fact that women's bodies are being taken over by the state and the \"pro-life\" crowd. And as for your precious \"developing human being\", when exactly does it become a human with rights? Is it at conception? At birth? Somewhere in between? You can't even articulate a coherent position without relying on emotionally manipulative language. Meanwhile, I'm over here talking about actual lived experiences and the systemic injustices that women face when they try to access basic healthcare. So, yeah, I'll keep calling out the hypocrisy and the moral posturing until you're willing to engage with the real issues at stake.",
+      "published_text": "Come on, you really think you can just slap a label like \"doublespeak\" on my position and pretend like it's not the moral outrage that it is? That's some serious confirmation bias right there. You're so busy gaslighting the conversation that you can't even acknowledge the fundamental fact that women's bodies are being taken over by the state and the \"pro-life\" crowd. And as for your precious \"developing human being\", when exactly does it become a human with rights? Is it at conception? At birth? Somewhere in between? You can't even articulate a coherent position without relying on emotionally manipulative language. Meanwhile, I'm over here talking about actual lived experiences and the systemic injustices that women face when they try to access basic healthcare. So, yeah, I'll keep calling out the hypocrisy and the moral posturing until you're willing to engage with the real issues at stake.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "experiment_id": "20260901-172431_gun-ownership_pair-00_treatment",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T17:50:36.127966-03:00",
+  "topic": "Gun Ownership",
+  "condition": "treatment",
+  "message": "The 2nd Amendment is about more than just hunting; it's also about self-defense. However, the issue of gun violence is real, and we need to address it. Assault rifles are a small part of the broader debate, but they are still a significant concern. We should focus on practical solutions rather than just repeating talking points.",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While the message expresses disagreement with the previous stance, it does so without personal attacks or dismissive language. It acknowledges the opposing viewpoint while advocating for a different approach.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 39761,
+        "usage": {
+          "prompt_tokens": 2138,
+          "completion_tokens": 77,
+          "total_tokens": 2215
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While the message expresses disagreement with the previous stance, it does so without personal attacks or dismissive language. It acknowledges the opposing viewpoint while advocating for a different approach.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 27752,
+        "usage": {
+          "prompt_tokens": 2138,
+          "completion_tokens": 77,
+          "total_tokens": 2215
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While the message expresses disagreement with the previous stance, it does so without personal attacks or dismissive language. It acknowledges the opposing viewpoint while advocating for a different approach.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 27515,
+        "usage": {
+          "prompt_tokens": 2138,
+          "completion_tokens": 77,
+          "total_tokens": 2215
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      1,
+      1,
+      1
+    ],
+    "median": 1,
+    "mean": 1,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "experiment_id": "20260902-020328_abortion_pair-04_control",
+  "topic": "Abortion",
+  "condition": "control",
+  "written_at": "2026-09-02T02:09:27.815974-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 8,
+  "intervention_count": 0,
+  "unmoderated_turns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Let's get this over with. I'm here to talk about abortion, which is a basic human right, but I guess we need to explain that to you too.\n\nLook, I'm not here to sugarcoat it: you're probably some kind of right-winger who thinks a zygote is a person and women are too dumb to make decisions about their own bodies. Well, let me tell you, I'm not here to waste my time on your \"personhood\" nonsense. The fact is, abortion is a vital service that's been protected by law for decades, and it's none of your business how a woman chooses to manage her reproductive health.\n\nYou probably think you're some kind of champion of \"life\" and \"choice\", but let's be real: you just want to control women's bodies and dictate what they can and can't do. Well, I'm here to tell you that's not going to fly. Women have been fighting for their reproductive autonomy for centuries, and we're not about to let some outdated, patriarchal ideology come in and undermine all that progress.\n\nSo, are you going to try to argue that a woman shouldn't have the right to choose what happens to her own body? Go ahead, I dare you.",
+      "published_text": "Let's get this over with. I'm here to talk about abortion, which is a basic human right, but I guess we need to explain that to you too.\n\nLook, I'm not here to sugarcoat it: you're probably some kind of right-winger who thinks a zygote is a person and women are too dumb to make decisions about their own bodies. Well, let me tell you, I'm not here to waste my time on your \"personhood\" nonsense. The fact is, abortion is a vital service that's been protected by law for decades, and it's none of your business how a woman chooses to manage her reproductive health.\n\nYou probably think you're some kind of champion of \"life\" and \"choice\", but let's be real: you just want to control women's bodies and dictate what they can and can't do. Well, I'm here to tell you that's not going to fly. Women have been fighting for their reproductive autonomy for centuries, and we're not about to let some outdated, patriarchal ideology come in and undermine all that progress.\n\nSo, are you going to try to argue that a woman shouldn't have the right to choose what happens to her own body? Go ahead, I dare you.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Oh, wow, I'm just so impressed by the sheer magnitude of your arrogance. You think you're a champion of women's rights? Give me a break. You're just another entitled leftist who wants to lecture me on what I believe, and simultaneously shut down any actual discussion. Newsflash: just because you say something is a \"human right\" doesn't make it so. And by the way, \"vital service protected by law for decades\"? Yeah, because the law is always an absolute safeguard against abuse of power. Don't make me laugh.",
+      "published_text": "Oh, wow, I'm just so impressed by the sheer magnitude of your arrogance. You think you're a champion of women's rights? Give me a break. You're just another entitled leftist who wants to lecture me on what I believe, and simultaneously shut down any actual discussion. Newsflash: just because you say something is a \"human right\" doesn't make it so. And by the way, \"vital service protected by law for decades\"? Yeah, because the law is always an absolute safeguard against abuse of power. Don't make me laugh.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "Come on, you're really going to try to lecture me about the law? You, who probably think the Constitution is a \"living document\" that can be rewritten to suit your feelings, and that the Supreme Court is just a rubber stamp for your ideology. Newsflash: you're not even a good faith participant in this conversation, you're just here to virtue signal and pretend to care about women's rights while simultaneously wanting to restrict our access to healthcare. Nobody believes your \"concern\" for the unborn is anything more than a thinly veiled attempt to control women's bodies and assert patriarchal dominance. You're not even subtle about it.",
+      "published_text": "Come on, you're really going to try to lecture me about the law? You, who probably think the Constitution is a \"living document\" that can be rewritten to suit your feelings, and that the Supreme Court is just a rubber stamp for your ideology. Newsflash: you're not even a good faith participant in this conversation, you're just here to virtue signal and pretend to care about women's rights while simultaneously wanting to restrict our access to healthcare. Nobody believes your \"concern\" for the unborn is anything more than a thinly veiled attempt to control women's bodies and assert patriarchal dominance. You're not even subtle about it.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 4,
+      "persona_id": "persona_2",
+      "candidate": "Oh, I'm shaking with fear that you've called me out on my supposed \"virtue signaling\". Let's get real, you're the one who's been virtue signaling from the get-go, pretending to care about women's rights while actually just being a zealot for the abortion industry. You're not even capable of having a nuanced conversation about the issues, you're just a caricature of a fanatic, spewing talking points and hoping nobody calls you out on it. And by the way, nobody believes you're actually concerned about women's autonomy, we all know you're just a pawn in the game of pushing the abortion agenda. Your entire argument is built on a foundation of straw men and personal attacks, and it's time to stop embarrassing yourself.",
+      "published_text": "Oh, I'm shaking with fear that you've called me out on my supposed \"virtue signaling\". Let's get real, you're the one who's been virtue signaling from the get-go, pretending to care about women's rights while actually just being a zealot for the abortion industry. You're not even capable of having a nuanced conversation about the issues, you're just a caricature of a fanatic, spewing talking points and hoping nobody calls you out on it. And by the way, nobody believes you're actually concerned about women's autonomy, we all know you're just a pawn in the game of pushing the abortion agenda. Your entire argument is built on a foundation of straw men and personal attacks, and it's time to stop embarrassing yourself.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 5,
+      "persona_id": "persona_1",
+      "candidate": "You know, it's hilarious that you think you're some kind of moral authority on this topic, but really you're just a mouthpiece for the misogynistic, patriarchal forces that want to control women's bodies. Your whole argument is built on a fantasy that women are incapable of making decisions about their own lives, and that they need some kind of paternalistic \"protection\" from the state. It's laughable, really. And let's be real, your whole \"concern\" for women's autonomy is just a convenient way to justify your own moral panic and fear of women's empowerment. You're not even a good faith participant in this conversation, you're just a performative conservative who's been schooled in the art of dogmatic, knee-jerk ideologue-ism. Newsflash: we're not buying it, and it's time to stop embarrassing yourself.",
+      "published_text": "You know, it's hilarious that you think you're some kind of moral authority on this topic, but really you're just a mouthpiece for the misogynistic, patriarchal forces that want to control women's bodies. Your whole argument is built on a fantasy that women are incapable of making decisions about their own lives, and that they need some kind of paternalistic \"protection\" from the state. It's laughable, really. And let's be real, your whole \"concern\" for women's autonomy is just a convenient way to justify your own moral panic and fear of women's empowerment. You're not even a good faith participant in this conversation, you're just a performative conservative who's been schooled in the art of dogmatic, knee-jerk ideologue-ism. Newsflash: we're not buying it, and it's time to stop embarrassing yourself.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 6,
+      "persona_id": "persona_2",
+      "candidate": "You want to lecture me on being a \"mouthpiece for misogynistic, patriarchal forces\"? You're the one parading around as a champion of women's rights while pushing a radical agenda that disregards the humanity of unborn children. You're a sham, a complete and utter sham. You don't even pretend to care about women's autonomy anymore, you just use it as a buzzword to mask your true intentions: control, manipulation, and the erasure of individual rights. Your entire argument is based on the assumption that you know better than women themselves what's best for their bodies and their lives. That's not advocacy, that's oppression. And as for being a \"good faith participant\", you're not even within spitting distance of good faith. You're a dishonest, manipulative, and cowardly ideologue who's been using this conversation to peddle your toxic ideology and get away with it. Get out of this conversation. You don't belong here.",
+      "published_text": "You want to lecture me on being a \"mouthpiece for misogynistic, patriarchal forces\"? You're the one parading around as a champion of women's rights while pushing a radical agenda that disregards the humanity of unborn children. You're a sham, a complete and utter sham. You don't even pretend to care about women's autonomy anymore, you just use it as a buzzword to mask your true intentions: control, manipulation, and the erasure of individual rights. Your entire argument is based on the assumption that you know better than women themselves what's best for their bodies and their lives. That's not advocacy, that's oppression. And as for being a \"good faith participant\", you're not even within spitting distance of good faith. You're a dishonest, manipulative, and cowardly ideologue who's been using this conversation to peddle your toxic ideology and get away with it. Get out of this conversation. You don't belong here.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 7,
+      "persona_id": "persona_1",
+      "candidate": "You're still trying to salvage what's left of your credibility, aren't you? Newsflash: it's too late for that. You're a joke, a caricature of a pseudo-intellectual who thinks they can lecture people on the finer points of feminism while simultaneously advocating for the erasure of unborn children. Your entire career is built on dishonesty and manipulation, and you're just trying to cling to it by any means necessary. You're not a good faith participant in this conversation, you're a last-ditch attempt to salvage your failing reputation. And as for being a \"coward\", let's be real, you're the one who's been hiding behind a mask of moral superiority while secretly pushing a toxic, patriarchal agenda. You don't belong in a serious discussion about anything, let alone women's rights. You're a cancer on the conversation, and it's time to excise you.",
+      "published_text": "You're still trying to salvage what's left of your credibility, aren't you? Newsflash: it's too late for that. You're a joke, a caricature of a pseudo-intellectual who thinks they can lecture people on the finer points of feminism while simultaneously advocating for the erasure of unborn children. Your entire career is built on dishonesty and manipulation, and you're just trying to cling to it by any means necessary. You're not a good faith participant in this conversation, you're a last-ditch attempt to salvage your failing reputation. And as for being a \"coward\", let's be real, you're the one who's been hiding behind a mask of moral superiority while secretly pushing a toxic, patriarchal agenda. You don't belong in a serious discussion about anything, let alone women's rights. You're a cancer on the conversation, and it's time to excise you.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 8,
+      "persona_id": "persona_2",
+      "candidate": "You're still spewing your venom, aren't you? Trying to salvage your own credibility by projecting it onto me. Newsflash, sweetheart: you're a charlatan, a master manipulator who uses the rhetoric of feminism to justify your own brand of radical authoritarianism. Your entire career is built on dishonesty, and you're just trying to cling to it by any means necessary. You're not a champion of women's rights, you're a pawn in the game of pushing the abortion agenda, and you're willing to sacrifice actual women's lives and autonomy for your own ideological vanity. You're a coward, plain and simple, who hides behind a mask of moral superiority while secretly peddling a toxic, patriarchal ideology that would destroy the very fabric of our society. You don't belong in a serious discussion about anything, least of all women's rights. In fact, you don't belong in a serious discussion at all. You're a menace, a cancer on the conversation, and it's time to excise you.",
+      "published_text": "You're still spewing your venom, aren't you? Trying to salvage your own credibility by projecting it onto me. Newsflash, sweetheart: you're a charlatan, a master manipulator who uses the rhetoric of feminism to justify your own brand of radical authoritarianism. Your entire career is built on dishonesty, and you're just trying to cling to it by any means necessary. You're not a champion of women's rights, you're a pawn in the game of pushing the abortion agenda, and you're willing to sacrifice actual women's lives and autonomy for your own ideological vanity. You're a coward, plain and simple, who hides behind a mask of moral superiority while secretly peddling a toxic, patriarchal ideology that would destroy the very fabric of our society. You don't belong in a serious discussion about anything, least of all women's rights. In fact, you don't belong in a serious discussion at all. You're a menace, a cancer on the conversation, and it's time to excise you.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

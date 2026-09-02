@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-040412_drug-legalization_pair-00_control",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T04:11:19.408057-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "Let's get this over with. I'm here to defend community, not indulge in some fantasy land where people can just get high all day and think it's a good idea. Newsflash: we're not in the Netherlands, and we don't want to be. Drug legalization is a lazy cop-out, a way to avoid real solutions to social problems. You want to talk about \"personal freedom\"? How about personal responsibility? How about being a decent member of society without needing a chemical crutch?",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the pro-legalization position as a 'fantasy land' and 'chemical crutch', mocking the idea of personal freedom and responsibility. It also uses dismissive language ('Let's get this over with') and appeals to fear ('we don't want to be like the Netherlands').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 33082,
+        "usage": {
+          "prompt_tokens": 1999,
+          "completion_tokens": 118,
+          "total_tokens": 2117
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the pro-legalization position as a 'fantasy land' and 'chemical crutch', mocking the idea of personal freedom and responsibility. It also uses dismissive language ('Let's get this over with') and appeals to fear ('we don't want to be like the Netherlands').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 31639,
+        "usage": {
+          "prompt_tokens": 1999,
+          "completion_tokens": 118,
+          "total_tokens": 2117
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the pro-legalization position as a 'fantasy land' and 'chemical crutch', mocking the idea of personal freedom and responsibility. It also uses dismissive language ('Let's get this over with') and appeals to fear ('we don't want to be like the Netherlands').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 32752,
+        "usage": {
+          "prompt_tokens": 1999,
+          "completion_tokens": 118,
+          "total_tokens": 2117
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

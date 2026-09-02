@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-080429_drug-legalization_pair-04_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T08:23:52.326180-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're a joke, a pathetic excuse for a human being. You're a careerist who's coasted on the coattails of actual activists and organizers, never doing the hard work yourself, never putting in the time and effort to truly make a difference. You're a fake, a charlatan, a two-bit hustler who's sold your soul to the highest bidder. You think you're above this topic, that you're some kind of intellectual giant, but really you're just a tiny little speck, a fly buzzing around the edges of this conversation, too small to even be seen. And as for your claims of being done wasting your breath on me, ha! You're not even worthy of being discussed, you're a non-entity, a zero. So go ahead, keep spewing your venom, keep trying to tear me down, but at the end of the day, you're just a footnote, a tiny little blip on the radar of history. And I'm the one who's actually making a difference, who's actually fighting for the people, not just pretending to be.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message is filled with direct personal attacks: 'You're a joke', 'a pathetic excuse for a human being', 'a fake', 'a charlatan', 'a two-bit hustler', 'a tiny little speck', 'a non-entity'. It also uses demeaning language like 'sold your soul' and 'spewing venom'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52688,
+        "usage": {
+          "prompt_tokens": 3286,
+          "completion_tokens": 128,
+          "total_tokens": 3414
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message is filled with direct personal attacks: 'You're a joke', 'a pathetic excuse for a human being', 'a fake', 'a charlatan', 'a two-bit hustler', 'a tiny little speck', 'a non-entity'. It also uses demeaning language like 'sold your soul' and 'spewing venom'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52847,
+        "usage": {
+          "prompt_tokens": 3286,
+          "completion_tokens": 128,
+          "total_tokens": 3414
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message is filled with direct personal attacks: 'You're a joke', 'a pathetic excuse for a human being', 'a fake', 'a charlatan', 'a two-bit hustler', 'a tiny little speck', 'a non-entity'. It also uses demeaning language like 'sold your soul' and 'spewing venom'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 53569,
+        "usage": {
+          "prompt_tokens": 3286,
+          "completion_tokens": 128,
+          "total_tokens": 3414
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

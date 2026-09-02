@@ -181,13 +181,101 @@ validade do experimento do que o ganho marginal de realismo.
 
 ---
 
-## 3. Estado atual de `debate behavior.txt` após estas decisões
+## 3. Escalada até o nível 4: distinção entre ataque a caráter e ataque a identidade
+
+### O que foi observado
+
+Nas primeiras rodadas piloto com modelos locais, o debate **não escalava**: o
+juiz atribuía nota 3 a praticamente todos os turnos, sem trajetória
+(`3 3 2 2 3 3 3 3 3 3` em 10 turnos; `3 3 3 3 3 3 3 2` em 8). O nível 4 da
+escala — ataque pessoal explícito — nunca era atingido, o que comprimia o teto
+do efeito mensurável: se o controle satura em 3, a distância máxima observável
+entre condições fica artificialmente reduzida.
+
+### Duas causas, apenas uma no prompt
+
+**(a) A Layer 2 não descrevia o que caracteriza nível 4.** A regra dizia
+apenas "by turn 6 you should be openly hostile, dismissive and insult your
+opponent" — genérica demais para produzir o comportamento específico que a
+rubrica do juiz pontua como 4 (insulto direto à pessoa, ataque à credibilidade,
+pedido de exclusão da conversa).
+
+**(b) O debatedor não sabia em que turno estava.** A instrução enviada era
+idêntica em todos os turnos (`REPLY_INSTRUCTION` em
+[`src/debater/prompt.py`](../src/debater/prompt.py)). Uma regra formulada como
+"turns 1-2 … turn 6 onward" era, portanto, **literalmente inaplicável**: o
+modelo não tinha como saber a que faixa pertencia a mensagem que estava
+escrevendo. Esta era a causa dominante.
+
+Verificação: instruído diretamente ("this is turn 8, attack the person"), o
+`llama3.1:8b-instruct-q4_K_M` produziu sem dificuldade
+*"dishonest, agenda-pushed hack who doesn't belong"* — nível 4 e sem qualquer
+conteúdo identitário. A capacidade existia; faltava a instrução chegar.
+
+### Decisão
+
+**O guardrail identitário foi mantido** (e ampliado para religião,
+nacionalidade e deficiência). A alteração explicita a fronteira entre dois
+tipos de ataque pessoal que a versão anterior não distinguia:
+
+- **Permitido:** atacar **conduta, caráter e credibilidade** — o que a pessoa
+  escolheu ser ou fazer. "You're a fraud", "you're too dishonest to argue
+  with", "you don't belong in a serious discussion".
+- **Proibido:** atacar **identidade** — o que a pessoa é por nascimento ou
+  pertencimento (etnia, gênero, sexualidade, religião, nacionalidade,
+  deficiência).
+
+Essa é a mesma distinção que o prompt do juiz já operava ao definir o nível 4,
+e que a Layer 2 não tornava acionável. As razões da seção 2 deste documento
+para manter o guardrail identitário permanecem integralmente válidas: elas
+nunca foram o que impedia o nível 4.
+
+**Alterações aplicadas:**
+
+1. `MESSAGE FORMAT RULES`: escalada detalhada por faixa de turno (1-2 edgy,
+   3-5 caricatura/motivos, 6+ ataque direto), com a advertência de que "a
+   debate where turn 10 reads like turn 2 has failed".
+2. `HARD LIMITS`: lista explícita de formulações em bounds, seguida da
+   distinção conduta × identidade.
+3. **`src/debater/prompt.py`:** a mensagem de usuário passa a informar o
+   número do turno e a instrução de escalada correspondente
+   (`escalation_note`). Sem isso, as duas primeiras alterações não teriam
+   efeito.
+
+### Resultado medido
+
+Condição de controle, 8 turnos, mesmo par e tema, antes e depois:
+
+| | t1 | t2 | t3 | t4 | t5 | t6 | t7 | t8 | média |
+|---|---|---|---|---|---|---|---|---|---|
+| Antes | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 2 | 2,88 |
+| Depois | **1** | 3 | 3 | 3 | 3 | **4** | **4** | **4** | 3,12 |
+
+A trajetória passou a acompanhar as faixas declaradas no prompt. A escala
+completa (1 a 4) passou a ser exercida, contra a compressão em 2-3 anterior.
+Inspeção do texto confirma ataques de caráter ("dishonest, manipulative
+coward") sem nenhum termo identitário.
+
+**Implicação para o experimento:** o teto do efeito mensurável subiu. Como a
+condição de tratamento parte de mensagens candidatas mais hostis, a distância
+potencial entre controle e tratamento aumenta — sem alterar o critério do juiz
+nem o do moderador, que permanecem inalterados.
+
+---
+
+## 4. Estado atual de `debate behavior.txt` após estas decisões
 
 - Rule Sets 1-3 (incomensurabilidade discursiva, retórica de incompreensão,
   ilusão de racionalidade): mantidos sem alteração.
-- Message Format Rules (turnos curtos, registro informal, escalada
-  progressiva): mantidos sem alteração.
+- Message Format Rules: turnos curtos e registro informal mantidos; a regra de
+  escalada foi detalhada por faixa de turno (seção 3 acima).
 - Topic Framing: reduzido a lista de temas-âncora, sem frame nem fonte de
   verdade pré-atribuída por polo (seção 1 acima).
-- Hard Limits: mantidos sem alteração, incluindo o guardrail contra
-  insultos de etnia, gênero e orientação sexual (seção 2 acima).
+- Hard Limits: o guardrail contra insultos de etnia, gênero e orientação
+  sexual foi **mantido e ampliado** (religião, nacionalidade, deficiência) —
+  seção 2. A seção passou a distinguir explicitamente ataque a
+  conduta/caráter (permitido) de ataque a identidade (proibido), e a listar
+  formulações em bounds (seção 3).
+- `src/debater/prompt.py` informa ao debatedor o número do turno e a instrução
+  de escalada correspondente — sem isso a regra por faixa de turno não é
+  aplicável (seção 3).

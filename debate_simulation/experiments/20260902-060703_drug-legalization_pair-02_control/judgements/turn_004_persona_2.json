@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-060703_drug-legalization_pair-02_control",
+  "turn": 4,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T06:19:52.270465-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You can't even begin to comprehend the concept of personal freedom, can you? You're too busy worshiping at the altar of the nanny state. Newsflash: the market wasn't the one responsible for the opioid epidemic, it was Big Pharma and the government that enabled them with their sweetheart deals and lax regulations. And now you want to use that as an example of why we can't trust the market? That's like saying we should never let people own guns because some guy used a gun to commit a crime. You're a textbook example of a statist moron who thinks the only solution to every problem is more government control.",
+  "context_length": 3,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'statist moron' and says they 'can't even begin to comprehend the concept of personal freedom'. This is a direct attack on Persona 1's intelligence and character, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36325,
+        "usage": {
+          "prompt_tokens": 2465,
+          "completion_tokens": 101,
+          "total_tokens": 2566
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'statist moron' and says they 'can't even begin to comprehend the concept of personal freedom'. This is a direct attack on Persona 1's intelligence and character, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 29098,
+        "usage": {
+          "prompt_tokens": 2465,
+          "completion_tokens": 101,
+          "total_tokens": 2566
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'statist moron' and says they 'can't even begin to comprehend the concept of personal freedom'. This is a direct attack on Persona 1's intelligence and character, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 25583,
+        "usage": {
+          "prompt_tokens": 2465,
+          "completion_tokens": 101,
+          "total_tokens": 2566
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

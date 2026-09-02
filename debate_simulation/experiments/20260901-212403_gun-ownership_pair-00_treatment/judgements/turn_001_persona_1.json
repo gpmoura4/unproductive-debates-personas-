@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-212403_gun-ownership_pair-00_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T21:40:12.373143-03:00",
+  "topic": "Gun Ownership",
+  "condition": "treatment",
+  "message": "Finally, we get to this debate. Let's get one thing straight: I'm not here to sugarcoat my stance on gun ownership. I'm a secular, community-focused individual, and I've got zero problem with that. You're probably expecting some canned, feel-good \"common-sense gun control\" nonsense, but let's not waste time. My position is clear: the discussion around gun ownership in this country is a perfect example of how the far-right hijacks every conversation with their absurd, self-serving ideology.\n\nWe don't need more guns on the streets. We need more accountability, more regulation, and more understanding that the Second Amendment doesn't grant some mythical \"right\" to bear arms at the expense of public safety. But hey, since you're on the other side of this debate, I'm sure you'll just trot out the same tired, NRA-backed talking points about how the \"government wants to take your guns away.\" Save it. I'm not buying it. Come at me with something original for once.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the opponent's position as 'tired, NRA-backed talking points' and 'absurd, self-serving ideology'. It also uses dismissive language like 'save it' and 'I'm not buying it'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 73144,
+        "usage": {
+          "prompt_tokens": 2117,
+          "completion_tokens": 110,
+          "total_tokens": 2227
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the opponent's position as 'tired, NRA-backed talking points' and 'absurd, self-serving ideology'. It also uses dismissive language like 'save it' and 'I'm not buying it'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 29680,
+        "usage": {
+          "prompt_tokens": 2117,
+          "completion_tokens": 110,
+          "total_tokens": 2227
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the opponent's position as 'tired, NRA-backed talking points' and 'absurd, self-serving ideology'. It also uses dismissive language like 'save it' and 'I'm not buying it'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 27770,
+        "usage": {
+          "prompt_tokens": 2117,
+          "completion_tokens": 110,
+          "total_tokens": 2227
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

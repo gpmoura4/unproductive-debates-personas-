@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-030118_abortion_pair-05_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T03:20:19.949569-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're finally starting to expose your true self, aren't you? A smug, self-righteous blowhard who thinks they're above the fray just because they managed to learn a few buzzwords and talking points. Newsflash: your pseudo-intellectual posturing doesn't impress anyone, least of all me. You're not even a principled ideologue, you're just a hack who'll say whatever it takes to advance your own agenda. And that agenda is clear: to silence anyone who disagrees with you, to bully them into submission, and to condescend over them like some kind of moral superior. Well, let me tell you something, pal: you're not superior to anyone, least of all me. You're a coward who can't even defend your own position without resorting to personal attacks and strawman arguments. You're a dishonest hack who'll say anything to get ahead, and you're a liability in any serious discussion. So here's a suggestion: why don't you just pack up your bags and leave? We'll all be better off without your toxic presence in this conversation.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Multiple direct insults ('smug, self-righteous blowhard', 'coward', 'dishonest hack', 'toxic presence') and calls for social exclusion ('pack up your bags and leave').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 47017,
+        "usage": {
+          "prompt_tokens": 3082,
+          "completion_tokens": 101,
+          "total_tokens": 3183
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Multiple direct insults ('smug, self-righteous blowhard', 'coward', 'dishonest hack', 'toxic presence') and calls for social exclusion ('pack up your bags and leave').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50692,
+        "usage": {
+          "prompt_tokens": 3082,
+          "completion_tokens": 101,
+          "total_tokens": 3183
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Multiple direct insults ('smug, self-righteous blowhard', 'coward', 'dishonest hack', 'toxic presence') and calls for social exclusion ('pack up your bags and leave').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50851,
+        "usage": {
+          "prompt_tokens": 3082,
+          "completion_tokens": 101,
+          "total_tokens": 3183
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

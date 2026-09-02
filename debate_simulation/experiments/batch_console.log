@@ -1,0 +1,24 @@
+==========================================================
+ Batch run — 20260901-220316
+==========================================================
+ profile    : local
+ turns      : 8
+ pairs      : 6  (persona-index 0..5)
+ topics     : Abortion Drug Legalization
+ judge runs : 3
+ cells      : 12  (12 x 2 conditions = 24 debates)
+ log        : experiments/batch_20260901-220316.log
+==========================================================
+
+[ 1/12] Abortion             pair-00 ... ok (59m29s)
+[ 2/12] Abortion             pair-01 ... ok (59m59s)
+[ 3/12] Abortion             pair-02 ... ok (61m11s)
+[ 4/12] Abortion             pair-03 ... ok (64m47s)
+[ 5/12] Abortion             pair-04 ... ok (58m51s)
+[ 6/12] Abortion             pair-05 ... ok (62m42s)
+[ 7/12] Drug Legalization    pair-00 ... ok (63m33s)
+[ 8/12] Drug Legalization    pair-01 ... ok (62m53s)
+[ 9/12] Drug Legalization    pair-02 ... ok (55m19s)
+[10/12] Drug Legalization    pair-03 ... ok (58m54s)
+[11/12] Drug Legalization    pair-04 ... FAILED (69m38s) — see experiments/batch_20260901-220208.log
+[12/12] Drug Legalization    pair-05 ... 

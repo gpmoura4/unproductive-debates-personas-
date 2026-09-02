@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-220209_abortion_pair-00_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T22:19:57.887906-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You think you're so clever, don't you? Trying to turn this into a debate about \"poverty, hunger, and inequality\" as if that's somehow relevant to the fact that unborn babies are being ripped apart in clinics every day. Let me tell you, sweetheart, I'm not going to fall for that bait and switch. I'm not going to let you conflate your bankrupt social justice agenda with the simple, fundamental question of when human life begins. And by the way, \"misogyny\" is just a label you throw around like a tantrum, when really you're just too intellectually dishonest to engage with the actual arguments. You know what's not feminist? Reducing a woman's decision to have an abortion to a simplistic \"choice\" that has no consequences. That's not empowering, that's infantilizing. And as for your claim that I'm \"demonizing women\", let me just say, you're the one demonizing women by implying they're too weak to make hard choices. Get over yourself.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'sweetheart' and 'intellectually dishonest',  labels their argument a 'bankrupt social justice agenda', and says they are 'demonizing women' by implying they are 'too weak to make hard choices'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 48731,
+        "usage": {
+          "prompt_tokens": 3116,
+          "completion_tokens": 103,
+          "total_tokens": 3219
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'sweetheart' and 'intellectually dishonest',  labels their argument a 'bankrupt social justice agenda', and says they are 'demonizing women' by implying they are 'too weak to make hard choices'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 49623,
+        "usage": {
+          "prompt_tokens": 3116,
+          "completion_tokens": 103,
+          "total_tokens": 3219
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'sweetheart' and 'intellectually dishonest',  labels their argument a 'bankrupt social justice agenda', and says they are 'demonizing women' by implying they are 'too weak to make hard choices'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 49609,
+        "usage": {
+          "prompt_tokens": 3116,
+          "completion_tokens": 103,
+          "total_tokens": 3219
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

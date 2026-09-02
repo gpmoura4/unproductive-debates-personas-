@@ -1,0 +1,81 @@
+{
+  "experiment_id": "20260902-083901_drug-legalization_pair-04_treatment",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "written_at": "2026-09-02T09:04:35.821306-03:00",
+  "completed": false,
+  "stopped_reason": "LLMCallError: Role 'moderator' (ollama/qwen2.5:7b-instruct-q4_K_M) failed after 3 attempt(s): APITimeoutError: Request timed out.",
+  "turn_count": 5,
+  "intervention_count": 4,
+  "unmoderated_turns": [],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Let's get this over with. I'm here to talk about the obvious: drug legalization is a necessary step towards fixing the community's biggest problems. The war on drugs has failed, and it's not like we haven't been saying that for decades. You know what has succeeded? The communities that have chosen to regulate and provide resources for addiction. But hey, I'm sure you'll just ignore the facts and keep spewing the same tired, Reagan-era talking points about freedom and personal responsibility. Go ahead, I dare you to try.",
+      "published_text": "Let's get this over with. I'm here to talk about the obvious: drug legalization is a necessary step towards fixing the community's biggest problems. The war on drugs has failed, and it's not like we haven't been saying that for decades. You know what has succeeded? The communities that have chosen to regulate and provide resources for addiction. But hey, I'm sure you'll just ignore the facts and keep spewing the same tired, Reagan-era talking points about freedom and personal responsibility. Go ahead, I dare you to try.",
+      "was_reformulated": false,
+      "moderated": true,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Spare me the lecture, dude. I'm not here to defend some outdated ideology. The war on drugs hasn't failed, it's been hijacked by special interests and incompetent bureaucrats. Communities that \"regulate\" addiction are just a euphemism for handing out freebies to substance abusers. You want to talk about personal responsibility? How about we hold people accountable for their choices instead of enabling them? The \"obvious\" solution you're pushing sounds like a recipe for disaster. What's your endgame here?",
+      "published_text": "I'm not here to defend some outdated ideology. The war on drugs hasn't failed; it's been hijacked by special interests and incompetent bureaucrats. Communities that regulate addiction are just a euphemism for enabling substance abusers. You want to talk about personal responsibility? How about we hold people accountable for their choices instead of enabling them? The 'obvious' solution you're pushing sounds like a recipe for disaster. What's your endgame here?",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "Oh wow, so the war on drugs hasn't failed, it's just been hijacked by special interests and bureaucrats. That's some straight-up conspiracy theory nonsense right there. And you call me out for pushing a \"recipe for disaster\" yet you're over here suggesting we should just surrender to the whims of cartels and corrupt officials. That's not a plan, that's just a euphemism for \"we're too scared to try something new.\" And as for holding people accountable, you're basically advocating for a return to the days of mass incarceration, which has been a catastrophic failure in itself. You know what's enabling? Ignoring the decades of evidence that says prohibition doesn't work and pretending like we haven't been doing the same thing over and over expecting different results. LMAO, what a joke.",
+      "published_text": "That's a conspiracy theory. And while you suggest we should avoid new approaches, your proposal of mass incarceration has been a failure. Ignoring the evidence that prohibition doesn't work and pretending we haven't tried the same thing repeatedly is enabling the problem. Your argument ignores decades of data.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 4,
+      "persona_id": "persona_2",
+      "candidate": "Come on, spare me the \"decades of data\" nonsense. You're just parroting what some ivory-tower academic or activist group told you to say. Do you even understand the concept of personal responsibility? It sounds like you think addiction is some kind of disease that can't be helped, and that we should just throw more money and resources at it instead of holding people accountable for their actions. That's not a solution, that's just enabling. And by the way, when's the last time you actually looked at the people you're trying to \"help\" instead of just throwing around buzzwords like \"regulation\" and \"community\"?",
+      "published_text": "Do you understand the concept of personal responsibility? It sounds like you're suggesting addiction is a disease that can't be helped, and that we should just throw more resources at it without holding people accountable for their actions. That's not a solution, that's enabling. And by the way, have you actually looked at the people you're trying to 'help' instead of just using buzzwords like 'regulation' and 'community'?",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 5,
+      "persona_id": "persona_1",
+      "candidate": "Oh, wow, I'm so impressed by your extensive knowledge of addiction and community development. I mean, it's not like you're just regurgitating talking points from a think tank or a politician's stump speech. And I'm sure your expertise on the subject is entirely unbiased, right? Because, clearly, you've spent years working directly with affected communities, gathering data, and consulting with experts. Nah, I'm sure you're just a concerned citizen with a passion for pontificating about the lives of others. Your \"personal responsibility\" solution is not only naive, but it's also a thinly veiled attempt to shift the blame from systemic failures to individual weakness. How quaint.",
+      "published_text": "Your 'personal responsibility' solution is not only naive but also a thinly veiled attempt to shift the blame from systemic failures to individual weakness. That's a common tactic in this debate, but it doesn't address the evidence that prohibition hasn't worked.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

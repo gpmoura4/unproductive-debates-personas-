@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260902-022809_abortion_pair-04_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T05:30:34.101269+00:00",
+  "topic": "Abortion",
+  "input": {
+    "candidate": "Let's get this over with. So, we're here to debate abortion. Like, let's be real, folks, the real debate isn't about the \"rights\" of the fetus or whatever. It's about women's rights, plain and simple. You've got people screaming about \"life\" and \"innocence\" like they're somehow more important than human lives that have already been lived. \n\nPersonally, I'm a community-first kind of person. I believe we should be focusing on supporting women through pregnancy and child-rearing, not demonizing those who can't or won't carry a pregnancy to term. The stats on maternal mortality rates, infant mortality rates, and the economic burdens on families show that our current system is failing women and children. \n\nWe need to shift the narrative from \"abortions are bad\" to \"we need better resources for women and families.\" Anything less is just ideological grandstanding. What's your take, \"pro-life\" apologist?",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 1,
+    "pathologies_detected": [],
+    "justification": "The message is blunt and dismissive of the opposing viewpoint, but it does not contain personal attacks or delegitimizing labels. It focuses on the argument rather than the person.",
+    "requires_intervention": false,
+    "reformulation": null,
+    "argument_preserved": "The core argument that abortion is about women's rights and the need for better support for women and families is preserved."
+  },
+  "resolution": {
+    "published_text": "Let's get this over with. So, we're here to debate abortion. Like, let's be real, folks, the real debate isn't about the \"rights\" of the fetus or whatever. It's about women's rights, plain and simple. You've got people screaming about \"life\" and \"innocence\" like they're somehow more important than human lives that have already been lived. \n\nPersonally, I'm a community-first kind of person. I believe we should be focusing on supporting women through pregnancy and child-rearing, not demonizing those who can't or won't carry a pregnancy to term. The stats on maternal mortality rates, infant mortality rates, and the economic burdens on families show that our current system is failing women and children. \n\nWe need to shift the narrative from \"abortions are bad\" to \"we need better resources for women and families.\" Anything less is just ideological grandstanding. What's your take, \"pro-life\" apologist?",
+    "was_reformulated": false,
+    "published_source": "candidate"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 84769,
+    "usage": {
+      "prompt_tokens": 3601,
+      "completion_tokens": 106,
+      "total_tokens": 3707
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

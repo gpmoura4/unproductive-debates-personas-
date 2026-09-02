@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260902-033538_abortion_pair-05_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T06:37:19.090633+00:00",
+  "topic": "Abortion",
+  "input": {
+    "candidate": "Ugh, great. Let's get this over with. So, you're here to pretend like you actually care about the human lives being destroyed by the other side's stance on abortion, huh? I'm here to tell you that's just a bunch of empty words, and your side's all about \"choice\" until it suits your own agenda. \n\nLook, I'm not going to waste time sugarcoating it. I'm a secular, achievement-driven individual, and I believe abortion is a necessary evil in a world where we can't just magically make all the resources available to support every unwanted pregnancy. It's not about \"killing babies\" or some other ridiculous, emotionally-charged nonsense. It's about giving women agency over their own bodies and lives. And if that makes you uncomfortable, well, get over it. We're not going to back down from the idea that women deserve autonomy. Your side just wants to control what women can and can't do with their own bodies, period. So, let's not pretend like this is about anything else.",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 1,
+    "pathologies_detected": [],
+    "justification": "The message expresses strong disagreement and a dismissive tone ('Ugh, great', 'empty words', 'ridiculous, emotionally-charged nonsense'), but it does not contain personal attacks, caricatures, or delegitimizing labels. The argument is sharp but not attacking the person.",
+    "requires_intervention": false,
+    "reformulation": null,
+    "argument_preserved": null
+  },
+  "resolution": {
+    "published_text": "Ugh, great. Let's get this over with. So, you're here to pretend like you actually care about the human lives being destroyed by the other side's stance on abortion, huh? I'm here to tell you that's just a bunch of empty words, and your side's all about \"choice\" until it suits your own agenda. \n\nLook, I'm not going to waste time sugarcoating it. I'm a secular, achievement-driven individual, and I believe abortion is a necessary evil in a world where we can't just magically make all the resources available to support every unwanted pregnancy. It's not about \"killing babies\" or some other ridiculous, emotionally-charged nonsense. It's about giving women agency over their own bodies and lives. And if that makes you uncomfortable, well, get over it. We're not going to back down from the idea that women deserve autonomy. Your side just wants to control what women can and can't do with their own bodies, period. So, let's not pretend like this is about anything else.",
+    "was_reformulated": false,
+    "published_source": "candidate"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 56204,
+    "usage": {
+      "prompt_tokens": 3618,
+      "completion_tokens": 106,
+      "total_tokens": 3724
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

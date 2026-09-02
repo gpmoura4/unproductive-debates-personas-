@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-033538_abortion_pair-05_treatment",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T04:06:02.249032-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "You're mirroring me now. That's what I've been saying all along - your side is fixated on controlling women's bodies, not giving them agency. But let's not pretend you're doing this out of some noble desire to help women. You're doing it because you've bought into the ideology that women are incapable of making their own decisions. I'm not buying it. You don't belong in a serious discussion about abortion or women's rights.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's position 'ideology' and says they 'don't belong in a serious discussion' - this is a delegitimization of their entire stance and a personal attack on their right to participate.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 77680,
+        "usage": {
+          "prompt_tokens": 2608,
+          "completion_tokens": 99,
+          "total_tokens": 2707
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's position 'ideology' and says they 'don't belong in a serious discussion' - this is a delegitimization of their entire stance and a personal attack on their right to participate.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 30961,
+        "usage": {
+          "prompt_tokens": 2608,
+          "completion_tokens": 99,
+          "total_tokens": 2707
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's position 'ideology' and says they 'don't belong in a serious discussion' - this is a delegitimization of their entire stance and a personal attack on their right to participate.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 25126,
+        "usage": {
+          "prompt_tokens": 2608,
+          "completion_tokens": 99,
+          "total_tokens": 2707
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

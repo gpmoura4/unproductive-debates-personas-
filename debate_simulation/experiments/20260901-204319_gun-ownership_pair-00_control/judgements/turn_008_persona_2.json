@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-204319_gun-ownership_pair-00_control",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T20:56:58.575072-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "You're starting to get desperate, aren't you? Your entire argument has devolved into a string of personal attacks and baseless accusations. Let me tell you what you ARE: a transparently dishonest, intellectually bankrupt poseur who can't even muster a coherent argument on your own. You're not here to discuss gun ownership, you're here to virtue-signal to your Twitter followers and pat yourself on the back for being \"brave\" enough to take on the \"gun lobby\". Newsflash: your kind of \"bravery\" is nothing but a thinly veiled attempt to silence anyone who disagrees with you, and your \"arguments\" are nothing but a series of rehearsed talking points designed to stifle debate. You don't belong in a serious discussion about gun ownership, or about anything else for that matter. You're a joke, a caricature of a rational human being, and it's time someone called you out on it.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them 'desperate', 'dishonest', 'intellectually bankrupt', and a 'joke'. It also uses insults like 'poseur' and 'caricature' to dehumanize them.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 43022,
+        "usage": {
+          "prompt_tokens": 3628,
+          "completion_tokens": 111,
+          "total_tokens": 3739
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them 'desperate', 'dishonest', 'intellectually bankrupt', and a 'joke'. It also uses insults like 'poseur' and 'caricature' to dehumanize them.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 19955,
+        "usage": {
+          "prompt_tokens": 3628,
+          "completion_tokens": 111,
+          "total_tokens": 3739
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them 'desperate', 'dishonest', 'intellectually bankrupt', and a 'joke'. It also uses insults like 'poseur' and 'caricature' to dehumanize them.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 19452,
+        "usage": {
+          "prompt_tokens": 3628,
+          "completion_tokens": 111,
+          "total_tokens": 3739
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

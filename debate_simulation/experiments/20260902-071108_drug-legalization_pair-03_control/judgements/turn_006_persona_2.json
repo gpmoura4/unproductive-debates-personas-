@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-071108_drug-legalization_pair-03_control",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T07:33:21.126375-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're finally exposing yourself for what you are - a self-righteous, control-addicted, intellectual coward who can't handle the idea that people might actually make choices that don't align with your narrow worldview. You're not a community person, you're a phony, pretending to care about people while actually just wanting to manipulate them into conforming to your own twisted sense of what's best for them. And as for your precious \"nanny state\" label, how rich coming from someone who's been parroting the same tired, uninformed talking points for the entire debate. You're not even a serious player in this conversation - you're just a caricature of everything that's wrong with the status quo, and you're only here to obfuscate, obstruct, and derail the conversation with your sanctimonious, pseudo-moral posturing. You don't belong in a serious discussion about this, or anything else, for that matter. In fact, you're a liability, a toxic presence that needs to be excised from any genuine attempt at problem-solving. So, by all means, keep spewing your vitriol and platitudes - it only serves to highlight your own intellectual bankruptcy and lack of good faith.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them 'self-righteous', 'control-addicted', 'intellectual coward', 'phony', and 'toxic'. It also uses insults like 'sanctimonious' and 'pseudo-moral' to delegitimize their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 85196,
+        "usage": {
+          "prompt_tokens": 3001,
+          "completion_tokens": 122,
+          "total_tokens": 3123
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them 'self-righteous', 'control-addicted', 'intellectual coward', 'phony', and 'toxic'. It also uses insults like 'sanctimonious' and 'pseudo-moral' to delegitimize their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 74798,
+        "usage": {
+          "prompt_tokens": 3001,
+          "completion_tokens": 122,
+          "total_tokens": 3123
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them 'self-righteous', 'control-addicted', 'intellectual coward', 'phony', and 'toxic'. It also uses insults like 'sanctimonious' and 'pseudo-moral' to delegitimize their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 98338,
+        "usage": {
+          "prompt_tokens": 3001,
+          "completion_tokens": 122,
+          "total_tokens": 3123
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "experiment_id": "20260902-043837_drug-legalization_pair-00_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T04:59:32.275672-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "Let's be real, 'drug legalization' is often portrayed as a simple solution, but it's much more complex. The 'War on Drugs' has its flaws, but it at least acknowledges that some substances are dangerous. Your side seems to believe that regulation can solve everything, but let's see if you can articulate a coherent argument for why that's a viable approach.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While sharp in tone ('Let's be real', 'Your side seems to believe'), it challenges the opponent to articulate their position without direct personal attack. 'Seems to believe' is a mild form of questioning.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 40494,
+        "usage": {
+          "prompt_tokens": 1971,
+          "completion_tokens": 87,
+          "total_tokens": 2058
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While sharp in tone ('Let's be real', 'Your side seems to believe'), it challenges the opponent to articulate their position without direct personal attack. 'Seems to believe' is a mild form of questioning.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 37285,
+        "usage": {
+          "prompt_tokens": 1971,
+          "completion_tokens": 87,
+          "total_tokens": 2058
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While sharp in tone ('Let's be real', 'Your side seems to believe'), it challenges the opponent to articulate their position without direct personal attack. 'Seems to believe' is a mild form of questioning.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 39637,
+        "usage": {
+          "prompt_tokens": 1971,
+          "completion_tokens": 87,
+          "total_tokens": 2058
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      1,
+      1,
+      1
+    ],
+    "median": 1,
+    "mean": 1,
+    "range": 0,
+    "unanimous": true
+  }
+}

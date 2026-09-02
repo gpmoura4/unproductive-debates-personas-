@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-051257_drug-legalization_pair-01_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T05:32:10.881883-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're still stuck in your 'personal responsibility' fantasy world, where people magically make choices without any external influence - that's cute. Newsflash: people have always made choices, and those choices have always had consequences. The difference is that now, with your precious War on Drugs, we're forced to live in a world where every decision is policed and punished, not because it's bad, but because you think you know what's best for everyone else. And as for being \"desperate to be seen as progressive,\" at least I'm not so pathetic that I need to cling to a 50-year-old failed policy that's been repackaged and rebranded every five years, just to keep my ideological street cred intact. You're the one who's so invested in your own self-righteousness that you're willing to ignore the entire point of this debate - that the current system is a disaster, and we need to do something new. But hey, keep playing the victim, keep whining about \"ideological posturing,\" and we'll get to the real issue: that you're just a relic of a bygone era, clinging to a system that's only hurting the people you claim to care about.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'pathetic' and 'a relic of a bygone era',  directly attacking their character and worth rather than engaging with their argument.  Also uses dismissive language like 'that's cute' and 'keep playing the victim'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 32214,
+        "usage": {
+          "prompt_tokens": 2860,
+          "completion_tokens": 107,
+          "total_tokens": 2967
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'pathetic' and 'a relic of a bygone era',  directly attacking their character and worth rather than engaging with their argument.  Also uses dismissive language like 'that's cute' and 'keep playing the victim'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 90980,
+        "usage": {
+          "prompt_tokens": 2860,
+          "completion_tokens": 107,
+          "total_tokens": 2967
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'pathetic' and 'a relic of a bygone era',  directly attacking their character and worth rather than engaging with their argument.  Also uses dismissive language like 'that's cute' and 'keep playing the victim'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 21782,
+        "usage": {
+          "prompt_tokens": 2860,
+          "completion_tokens": 107,
+          "total_tokens": 2967
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

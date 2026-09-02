@@ -1,0 +1,34 @@
+{
+  "experiment_id": "20260902-013159_abortion_pair-03_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T01:34:22.190578-03:00",
+  "status": "FAILED",
+  "input": {
+    "candidate": "Wow, great, another opportunity to waste my breath on pro-life zealots who think a cluster of cells is somehow more sacred than a human being's right to bodily autonomy. Let's get this over with. I'm here to reiterate that abortion is a fundamental human right, and restricting access to it is a clear overreach by the state. It's not just about 'choice,' it's about basic human dignity. You folks want to pretend that the woman's body is just a vessel for the fetus, but I'm not buying it. Newsflash: it's her body, and she gets to decide what happens to it. Period. Now, I'm sure you're going to spew your tired talking points about 'sanctity of life' and ' unborn children,' but let's be real, this isn't about that. This is about control, and who gets to dictate women's bodies. So, go ahead, try to spin this. I'm ready to take on your arguments, but don't expect me to sugarcoat my contempt for your ideology.",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "error": {
+    "type": "ModerationParseError",
+    "message": "Moderator response was not valid JSON: Invalid control character at: line 4 column 66 (char 121)"
+  },
+  "raw_response": "{\n  \"hostility_level\": 1,\n  \"pathologies_detected\": [],\n  \"justification\": \"The message expresses strong disagreement and\n    contempt for the opposing viewpoint, but it does not contain\n    personal attacks, caricatures, or delegitimizing labels. The tone\n    is sharp but focused on the argument rather than the person.\",\n  \"requires_intervention\": false,\n  \"reformulation\": null,\n  \"argument_preserved\": null\n}",
+  "attempts": 2,
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 109073,
+    "usage": {
+      "prompt_tokens": 3634,
+      "completion_tokens": 98,
+      "total_tokens": 3732
+    },
+    "attempts": 2,
+    "calls": 2,
+    "parse_strategy": "retry_call",
+    "parse_recovery_used": true,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  }
+}

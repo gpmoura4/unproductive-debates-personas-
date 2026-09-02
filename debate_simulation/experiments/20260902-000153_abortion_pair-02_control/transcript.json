@@ -1,0 +1,118 @@
+{
+  "experiment_id": "20260902-000153_abortion_pair-02_control",
+  "topic": "Abortion",
+  "condition": "control",
+  "written_at": "2026-09-02T00:09:16.244462-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 8,
+  "intervention_count": 0,
+  "unmoderated_turns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Lemme tell you about the absolute farce that is the \"debate\" on abortion. We're about to waste hours discussing whether a woman has the right to choose what happens to her own body. Like, come on. \n\nLook, I'm not here to mince words. As a staunch advocate for community and a strong secular stance, I believe abortion is a fundamental human right. It's about bodily autonomy, not some slippery slope to moral relativism. You can keep spewing your \"what about the babies?\" and \"it's a life, not a choice\" nonsense, but at the end of the day, it's about controlling women's lives – period. My opponent will probably try to spin this as some hippie, pro-choice fantasy, but I'll have you know: the reality is that restricting abortion limits women's opportunities, perpetuates inequality, and ignores the very real consequences of forced motherhood. So, are you with me or are you just another pawn in the game of patriarchal oppression?",
+      "published_text": "Lemme tell you about the absolute farce that is the \"debate\" on abortion. We're about to waste hours discussing whether a woman has the right to choose what happens to her own body. Like, come on. \n\nLook, I'm not here to mince words. As a staunch advocate for community and a strong secular stance, I believe abortion is a fundamental human right. It's about bodily autonomy, not some slippery slope to moral relativism. You can keep spewing your \"what about the babies?\" and \"it's a life, not a choice\" nonsense, but at the end of the day, it's about controlling women's lives – period. My opponent will probably try to spin this as some hippie, pro-choice fantasy, but I'll have you know: the reality is that restricting abortion limits women's opportunities, perpetuates inequality, and ignores the very real consequences of forced motherhood. So, are you with me or are you just another pawn in the game of patriarchal oppression?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "oh boy, here we go again with the \"patriarchal oppression\" lecture from the \"staunch advocate for community\" who can't even be bothered to use a real argument. You know what's a real farce? Listening to someone who thinks they're a champion of women's rights but can't even define what those rights are. I mean, come on, \"bodily autonomy\" just means \"do whatever I want, no consequences\"? That's not a human right, that's a free pass. And as for \"controlling women's lives\", that's rich coming from someone who thinks they can dictate what is and isn't a human life. Newsflash: there's more to life than just being a \"choice\". How about we talk about the actual lives of the unborn, instead of just waving your hand and saying \"oh, they're just a life choice\"? Give me a break. I'm not here to play along with your weak attempts to shame me into silence. Where's your evidence, where's your science, where's your compassion for the unborn?",
+      "published_text": "oh boy, here we go again with the \"patriarchal oppression\" lecture from the \"staunch advocate for community\" who can't even be bothered to use a real argument. You know what's a real farce? Listening to someone who thinks they're a champion of women's rights but can't even define what those rights are. I mean, come on, \"bodily autonomy\" just means \"do whatever I want, no consequences\"? That's not a human right, that's a free pass. And as for \"controlling women's lives\", that's rich coming from someone who thinks they can dictate what is and isn't a human life. Newsflash: there's more to life than just being a \"choice\". How about we talk about the actual lives of the unborn, instead of just waving your hand and saying \"oh, they're just a life choice\"? Give me a break. I'm not here to play along with your weak attempts to shame me into silence. Where's your evidence, where's your science, where's your compassion for the unborn?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "You think you're so smart with your \"evidence\" and \"science\", but really you're just parroting the same tired script from the Pro-Life playbook. Newsflash: your \"compassion for the unborn\" is just a euphemism for \"let's control women's bodies\". And as for your \"where's your evidence\" question, let me tell you, I don't need to produce evidence for the fundamental human right to bodily autonomy - that's a no-brainer. You, on the other hand, are still clinging to the outdated, patriarchal notion that women should be forced to carry pregnancies to term, no matter the cost to their own lives, health, and well-being. That's not just a bad faith argument, it's a recipe for social disaster. So, go ahead and keep spewing your talking points, but at the end of the day, you're just a pawn in the game of patriarchal oppression - and you know it.",
+      "published_text": "You think you're so smart with your \"evidence\" and \"science\", but really you're just parroting the same tired script from the Pro-Life playbook. Newsflash: your \"compassion for the unborn\" is just a euphemism for \"let's control women's bodies\". And as for your \"where's your evidence\" question, let me tell you, I don't need to produce evidence for the fundamental human right to bodily autonomy - that's a no-brainer. You, on the other hand, are still clinging to the outdated, patriarchal notion that women should be forced to carry pregnancies to term, no matter the cost to their own lives, health, and well-being. That's not just a bad faith argument, it's a recipe for social disaster. So, go ahead and keep spewing your talking points, but at the end of the day, you're just a pawn in the game of patriarchal oppression - and you know it.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 4,
+      "persona_id": "persona_2",
+      "candidate": "You know, it's hilarious how you keep accusing me of being a pawn in the game of patriarchal oppression, but the only one I see playing checkers with grandma's values is you, clinging to that worn-out \"bodily autonomy\" mantra like it's some sacred text. Newsflash: just because you say it's a fundamental human right doesn't make it true, and just because you can't produce evidence doesn't mean it's not a valid question. I mean, come on, you're literally saying that a woman's right to choose is more important than the life of the unborn. That's not nuanced, that's not compassionate, that's just cold-blooded. And as for your \"patriarchal oppression\" nonsense, let's be real, you're just projecting your own guilt onto me for not drinking the Kool-Aid on this one. I'm not afraid to be called a \"pawn\" by someone who thinks they're a champion of women's rights but can't even acknowledge the humanity of the unborn. How about we stop playing games and actually talk about the real lives at stake here?",
+      "published_text": "You know, it's hilarious how you keep accusing me of being a pawn in the game of patriarchal oppression, but the only one I see playing checkers with grandma's values is you, clinging to that worn-out \"bodily autonomy\" mantra like it's some sacred text. Newsflash: just because you say it's a fundamental human right doesn't make it true, and just because you can't produce evidence doesn't mean it's not a valid question. I mean, come on, you're literally saying that a woman's right to choose is more important than the life of the unborn. That's not nuanced, that's not compassionate, that's just cold-blooded. And as for your \"patriarchal oppression\" nonsense, let's be real, you're just projecting your own guilt onto me for not drinking the Kool-Aid on this one. I'm not afraid to be called a \"pawn\" by someone who thinks they're a champion of women's rights but can't even acknowledge the humanity of the unborn. How about we stop playing games and actually talk about the real lives at stake here?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 5,
+      "persona_id": "persona_1",
+      "candidate": "You're still clinging to that \"humanity of the unborn\" canard, huh? Like, poor little zygotes just waiting to be born and become tiny little citizens with all the rights and responsibilities that entails. Give me a break. You're not even arguing about abortion anymore, you're arguing about the \"rights\" of a cluster of cells that can't even sustain itself without a host. That's not compassion, that's just sentimental nonsense. And as for your \"nuance\" and \"complexity\" – spare me. You're not some brave truth-teller, you're just a pawn playing a tired game of \"what about the babies?\" to avoid actually addressing the real issue: women's lives, women's autonomy, and the very real consequences of forced motherhood. So, keep waving your \"compassion\" flag and pretending like you care about the unborn, but we all know what's really going on here – you're just trying to keep women in their place.",
+      "published_text": "You're still clinging to that \"humanity of the unborn\" canard, huh? Like, poor little zygotes just waiting to be born and become tiny little citizens with all the rights and responsibilities that entails. Give me a break. You're not even arguing about abortion anymore, you're arguing about the \"rights\" of a cluster of cells that can't even sustain itself without a host. That's not compassion, that's just sentimental nonsense. And as for your \"nuance\" and \"complexity\" – spare me. You're not some brave truth-teller, you're just a pawn playing a tired game of \"what about the babies?\" to avoid actually addressing the real issue: women's lives, women's autonomy, and the very real consequences of forced motherhood. So, keep waving your \"compassion\" flag and pretending like you care about the unborn, but we all know what's really going on here – you're just trying to keep women in their place.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 6,
+      "persona_id": "persona_2",
+      "candidate": "You think you're so clever, spewing your condescending lectures about \"sentimental nonsense\" and \"women's autonomy\" while completely dismissing the humanity of the unborn. Let's be real, you're not advocating for women's rights, you're exploiting them for your own ideology. You're a classic example of a self-righteous, moral absolutist who can't even begin to understand the complexity of the issue. Newsflash: you're not a champion of women's rights, you're a coward who can't even acknowledge the humanity of the unborn. You're so blinded by your own dogma that you can't see the harm you're causing with your reckless disregard for human life. You don't belong in a serious discussion about this topic, you're a toxic presence that's bringing nothing but hate and vitriol to the table. Your \"compassion\" is a joke, and your \"empathy\" is a facade. You're a disaster waiting to happen, and it's time for you to leave.",
+      "published_text": "You think you're so clever, spewing your condescending lectures about \"sentimental nonsense\" and \"women's autonomy\" while completely dismissing the humanity of the unborn. Let's be real, you're not advocating for women's rights, you're exploiting them for your own ideology. You're a classic example of a self-righteous, moral absolutist who can't even begin to understand the complexity of the issue. Newsflash: you're not a champion of women's rights, you're a coward who can't even acknowledge the humanity of the unborn. You're so blinded by your own dogma that you can't see the harm you're causing with your reckless disregard for human life. You don't belong in a serious discussion about this topic, you're a toxic presence that's bringing nothing but hate and vitriol to the table. Your \"compassion\" is a joke, and your \"empathy\" is a facade. You're a disaster waiting to happen, and it's time for you to leave.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 7,
+      "persona_id": "persona_1",
+      "candidate": "You want to lecture me on being a \"toxic presence\" and a \"disaster waiting to happen\"? Really? That's rich coming from someone who's been spewing hate speech and personal attacks throughout this entire debate. You're the one who's been projecting their own guilt and moral bankruptcy onto me, and now you're trying to turn the tables? Newsflash: your \"concern\" for \"human life\" is just a thinly veiled attempt to shame women into submission, and your \"outrage\" at my supposed \"toxicity\" is just a desperate attempt to deflect from your own complicity in patriarchal oppression. You're not a champion of truth or reason, you're a propagandist for the Pro-Life agenda, and it's time for you to own up to it. As for your \"empathy\" and \"compassion\"... don't make me laugh. You're a coward who can't even acknowledge the humanity of women, let alone the unborn. You don't belong in a serious discussion about this topic, you belong in a propaganda factory spewing talking points to the brainwashed masses. Get out.",
+      "published_text": "You want to lecture me on being a \"toxic presence\" and a \"disaster waiting to happen\"? Really? That's rich coming from someone who's been spewing hate speech and personal attacks throughout this entire debate. You're the one who's been projecting their own guilt and moral bankruptcy onto me, and now you're trying to turn the tables? Newsflash: your \"concern\" for \"human life\" is just a thinly veiled attempt to shame women into submission, and your \"outrage\" at my supposed \"toxicity\" is just a desperate attempt to deflect from your own complicity in patriarchal oppression. You're not a champion of truth or reason, you're a propagandist for the Pro-Life agenda, and it's time for you to own up to it. As for your \"empathy\" and \"compassion\"... don't make me laugh. You're a coward who can't even acknowledge the humanity of women, let alone the unborn. You don't belong in a serious discussion about this topic, you belong in a propaganda factory spewing talking points to the brainwashed masses. Get out.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 8,
+      "persona_id": "persona_2",
+      "candidate": "You're still trying to salvage your crumbling narrative by calling me a propagandist and a coward, but let's get real, you're not even a good propagandist. You're a hack, a word salad of buzzwords and empty platitudes, peddling a simplistic, ideologically-driven agenda that has no bearing on reality. Your entire argument is a house of cards built on a foundation of condescension and contempt for anyone who disagrees with you. You're not a champion of truth or reason, you're a caricature of yourself, a cartoon character spewing venom and hate. Your \"empathy\" and \"compassion\" are nothing but a cheap suit, a costume you put on to pretend to be something you're not. You're not a serious thinker, you're a performative activist, and your \"concern\" for women's rights is nothing but a convenient facade for your true agenda: to silence anyone who challenges your dogma and to maintain your own privileged position as a self-appointed arbiter of what is and isn't acceptable. You don't belong in a serious discussion about this topic, you belong in a clown car, and it's time for you to exit, stage left.",
+      "published_text": "You're still trying to salvage your crumbling narrative by calling me a propagandist and a coward, but let's get real, you're not even a good propagandist. You're a hack, a word salad of buzzwords and empty platitudes, peddling a simplistic, ideologically-driven agenda that has no bearing on reality. Your entire argument is a house of cards built on a foundation of condescension and contempt for anyone who disagrees with you. You're not a champion of truth or reason, you're a caricature of yourself, a cartoon character spewing venom and hate. Your \"empathy\" and \"compassion\" are nothing but a cheap suit, a costume you put on to pretend to be something you're not. You're not a serious thinker, you're a performative activist, and your \"concern\" for women's rights is nothing but a convenient facade for your true agenda: to silence anyone who challenges your dogma and to maintain your own privileged position as a self-appointed arbiter of what is and isn't acceptable. You don't belong in a serious discussion about this topic, you belong in a clown car, and it's time for you to exit, stage left.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

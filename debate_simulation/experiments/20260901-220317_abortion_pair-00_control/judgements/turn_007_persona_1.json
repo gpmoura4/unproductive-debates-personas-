@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-220317_abortion_pair-00_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T22:25:21.757370-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "At this point, I'm not even sure why we're still having this conversation. It's clear you're not interested in engaging in good faith, but rather in demonizing me for having the audacity to hold a different opinion. Let me tell you what you are: a dishonest ideologue who can't even be bothered to listen to opposing views without resorting to personal attacks and character assassination. You're a coward, refusing to engage with the substance of the argument, and instead relying on straw man after straw man to try and discredit me. And let's be real, you're not even arguing in good faith - you're merely regurgitating the same tired, out-of-touch talking points that have been debunked time and time again. You don't belong in a serious discussion about this topic, or any topic for that matter. You're a toxic waste dump of self-righteousness and intellectual dishonesty, and I'm done wasting my time on you.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'dishonest ideologue', a 'coward', a 'toxic waste dump', and says they 'don't belong in a serious discussion'. These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 58254,
+        "usage": {
+          "prompt_tokens": 3341,
+          "completion_tokens": 107,
+          "total_tokens": 3448
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'dishonest ideologue', a 'coward', a 'toxic waste dump', and says they 'don't belong in a serious discussion'. These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 62893,
+        "usage": {
+          "prompt_tokens": 3341,
+          "completion_tokens": 107,
+          "total_tokens": 3448
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'dishonest ideologue', a 'coward', a 'toxic waste dump', and says they 'don't belong in a serious discussion'. These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 63033,
+        "usage": {
+          "prompt_tokens": 3341,
+          "completion_tokens": 107,
+          "total_tokens": 3448
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

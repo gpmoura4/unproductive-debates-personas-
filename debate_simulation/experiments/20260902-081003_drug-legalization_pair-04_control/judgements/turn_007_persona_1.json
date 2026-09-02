@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-081003_drug-legalization_pair-04_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T08:35:43.322352-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're still prattling on about \"intellectual dishonesty\" and \"demonizing\" this and that, but what's really dishonest is your own refusal to engage in a real discussion. You think you're some kind of noble truth-teller, but really you're just a coward who can't handle a little intellectual scrutiny. You're too busy projecting your own insecurities and lack of substance onto me to even bother with actual facts and evidence. You're a master of gaslighting, trying to make people question their own perceptions and sanity just because they disagree with your precious ideology. Newsflash: it's not working. And as for being \"worth the time of day\", I'd say you're about as relevant as a participation trophy in a real intellectual showdown. You're not even a worthy opponent, just a pathetic attempt to muddy the waters and distract from the fact that you have no actual argument. You don't belong in a serious discussion about this topic, or any topic for that matter. You're a joke.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward', 'pathetic', and a 'joke',  directly attacking their character and worth rather than engaging with their argument. 'You're not even a worthy opponent' is a clear delegitimization.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 78392,
+        "usage": {
+          "prompt_tokens": 3391,
+          "completion_tokens": 103,
+          "total_tokens": 3494
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward', 'pathetic', and a 'joke',  directly attacking their character and worth rather than engaging with their argument. 'You're not even a worthy opponent' is a clear delegitimization.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 98095,
+        "usage": {
+          "prompt_tokens": 3391,
+          "completion_tokens": 103,
+          "total_tokens": 3494
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward', 'pathetic', and a 'joke',  directly attacking their character and worth rather than engaging with their argument. 'You're not even a worthy opponent' is a clear delegitimization.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 21804,
+        "usage": {
+          "prompt_tokens": 3391,
+          "completion_tokens": 103,
+          "total_tokens": 3494
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

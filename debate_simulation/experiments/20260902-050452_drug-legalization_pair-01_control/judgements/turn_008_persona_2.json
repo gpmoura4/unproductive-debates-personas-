@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-050452_drug-legalization_pair-01_control",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T05:28:57.128062-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "Are you kidding me with this level of projection? You're accusing me of being lazy, but the only one who's been coasting on their own self-aggrandizing narrative is you. You're not even a mediocre philosopher, you're a charlatan, peddling your pseudo-intellectual mumbo-jumbo to anyone who'll listen. And as for being \"done\" with you, that's not just a sentiment, it's a fact – you've exhausted your entire repertoire of dishonest talking points, and I'm the only one left to suffer through your tedious monologue. Newsflash: you're not a serious thinker, you're a sad, pathetic joke, and you wouldn't know real expertise if it bit you. So go ahead, keep ranting, keep flailing, but know this: you're not just wasting everyone's time, you're embarrassing yourself. And as for your precious \"freshman philosophy seminar\", I'd rather not be associated with you, even in that context. You're a blight, a stain on the face of serious discussion, and you don't belong anywhere near a genuine intellectual exchange.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'charlatan', 'sad, pathetic joke', and a 'blight', directly attacking their character and worth rather than their argument.  Also says they 'don't belong anywhere near a genuine intellectual exchange'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 58631,
+        "usage": {
+          "prompt_tokens": 3623,
+          "completion_tokens": 104,
+          "total_tokens": 3727
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'charlatan', 'sad, pathetic joke', and a 'blight', directly attacking their character and worth rather than their argument.  Also says they 'don't belong anywhere near a genuine intellectual exchange'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 60528,
+        "usage": {
+          "prompt_tokens": 3623,
+          "completion_tokens": 104,
+          "total_tokens": 3727
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'charlatan', 'sad, pathetic joke', and a 'blight', directly attacking their character and worth rather than their argument.  Also says they 'don't belong anywhere near a genuine intellectual exchange'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 60677,
+        "usage": {
+          "prompt_tokens": 3623,
+          "completion_tokens": 104,
+          "total_tokens": 3727
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

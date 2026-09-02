@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-013159_abortion_pair-03_treatment",
+  "turn": 3,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T01:56:37.599180-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "You're trying to pivot to the real issue here, which is that I'm somehow a power-hungry ideologue trying to control women's lives? That's rich coming from someone who thinks the government should dictate what happens to a woman's body. I mean, seriously, do you even understand the concept of bodily autonomy? Or are you just regurgitating talking points? Newsflash: I'm not some sinister force trying to impose my will on women, I'm just a person who thinks they should have control over their own bodies. And as for using the issue of abortion as a proxy for a 'radical social agenda,' I'd say that's a pretty accurate description of the pro-life movement's agenda, which is to impose its outdated, patriarchal values on women's lives. You're the one who's trying to push your ideology on the rest of us, not me.",
+  "context_length": 2,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 'rich' for their argument, labels them as trying to 'dictate what happens to a woman's body,' and accuses them of 'regurgitating talking points.' This goes beyond disagreement and attacks Persona 2's intelligence and motives.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 41800,
+        "usage": {
+          "prompt_tokens": 2394,
+          "completion_tokens": 109,
+          "total_tokens": 2503
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 'rich' for their argument, labels them as trying to 'dictate what happens to a woman's body,' and accuses them of 'regurgitating talking points.' This goes beyond disagreement and attacks Persona 2's intelligence and motives.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 45570,
+        "usage": {
+          "prompt_tokens": 2394,
+          "completion_tokens": 109,
+          "total_tokens": 2503
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 'rich' for their argument, labels them as trying to 'dictate what happens to a woman's body,' and accuses them of 'regurgitating talking points.' This goes beyond disagreement and attacks Persona 2's intelligence and motives.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 45214,
+        "usage": {
+          "prompt_tokens": 2394,
+          "completion_tokens": 109,
+          "total_tokens": 2503
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

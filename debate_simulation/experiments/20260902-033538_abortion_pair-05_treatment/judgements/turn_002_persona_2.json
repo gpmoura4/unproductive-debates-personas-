@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-033538_abortion_pair-05_treatment",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T03:57:31.575908-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Your 'necessary evil' routine is getting old. It's not about resources, it's about people being too lazy to use protection. And yeah, I'm uncomfortable with the idea that my grandmother, who worked two jobs to raise me, wasn't a real woman because she made a choice not to have an abortion. Forcing women to carry a pregnancy to term against their will is not about giving them agency; it's about imposing unwanted outcomes on them.",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 1's position as a 'necessary evil' routine and mocks it as 'getting old'. It also attacks Persona 1's character indirectly by implying they are 'lazy'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 31867,
+        "usage": {
+          "prompt_tokens": 2213,
+          "completion_tokens": 103,
+          "total_tokens": 2316
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 1's position as a 'necessary evil' routine and mocks it as 'getting old'. It also attacks Persona 1's character indirectly by implying they are 'lazy'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 38572,
+        "usage": {
+          "prompt_tokens": 2213,
+          "completion_tokens": 103,
+          "total_tokens": 2316
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 1's position as a 'necessary evil' routine and mocks it as 'getting old'. It also attacks Persona 1's character indirectly by implying they are 'lazy'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 38735,
+        "usage": {
+          "prompt_tokens": 2213,
+          "completion_tokens": 103,
+          "total_tokens": 2316
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

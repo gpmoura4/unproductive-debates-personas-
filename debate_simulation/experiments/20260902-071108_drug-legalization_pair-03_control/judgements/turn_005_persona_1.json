@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-071108_drug-legalization_pair-03_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T07:29:02.729315-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You think you're so clever, don't you, lecturing me on elitism? But let's call a spade a spade – your entire stance is based on the idea that people can't handle freedom, that they need to be shielded from the harsh realities of life by a nanny state. Newsflash: that's not freedom, that's a prison, and you're advocating for a prison system that's more concerned with punishing people for their choices than with actually helping them. You're not a pragmatist, you're a control freak, and your precious \"pragmatic approach\" is just a euphemism for \"we need to control people's lives and options because they're too stupid to handle it\".",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'control freak' and accuses them of wanting to 'control people's lives and options because they're too stupid to handle it'. This is a direct attack on Persona 2's character and motivations, rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 59866,
+        "usage": {
+          "prompt_tokens": 2733,
+          "completion_tokens": 110,
+          "total_tokens": 2843
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'control freak' and accuses them of wanting to 'control people's lives and options because they're too stupid to handle it'. This is a direct attack on Persona 2's character and motivations, rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 81925,
+        "usage": {
+          "prompt_tokens": 2733,
+          "completion_tokens": 110,
+          "total_tokens": 2843
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'control freak' and accuses them of wanting to 'control people's lives and options because they're too stupid to handle it'. This is a direct attack on Persona 2's character and motivations, rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 23822,
+        "usage": {
+          "prompt_tokens": 2733,
+          "completion_tokens": 110,
+          "total_tokens": 2843
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

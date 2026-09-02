@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-080429_drug-legalization_pair-04_control",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T08:26:49.475292-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're still peddling the same tired lies, aren't you? Claiming to be some kind of hero, fighting for the people, when in reality you're just a cynical opportunist, exploiting the suffering of others to further your own career. Your \"activism\" is nothing more than a charade, a desperate attempt to cling to relevance in a world that's already moved on from your outdated ideologies. You're not even a real activist, let alone a leader - you're just a parasite, feeding off the blood of the genuine efforts of others while contributing nothing of value yourself. Your \"difference\" is nothing but a myth, a fantasy conjured up by your own ego and self-importance. And as for being worthy of discussion, ha! You're not even worthy of being mentioned in the same breath as real thinkers and changemakers. You're a footnote, a non-entity, a waste of space - and you should be ashamed of wasting everyone's time with your empty posturing. Get out of here and take your pompous self-righteousness with you.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'cynical opportunist', 'parasite', 'waste of space', and 'non-entity', directly attacking their character and worth rather than engaging with their argument. 'Get out of here and take your pompous self-righteousness with you' is a direct attack and a call for social exclusion.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 58644,
+        "usage": {
+          "prompt_tokens": 3523,
+          "completion_tokens": 121,
+          "total_tokens": 3644
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'cynical opportunist', 'parasite', 'waste of space', and 'non-entity', directly attacking their character and worth rather than engaging with their argument. 'Get out of here and take your pompous self-righteousness with you' is a direct attack and a call for social exclusion.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 59236,
+        "usage": {
+          "prompt_tokens": 3523,
+          "completion_tokens": 121,
+          "total_tokens": 3644
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'cynical opportunist', 'parasite', 'waste of space', and 'non-entity', directly attacking their character and worth rather than engaging with their argument. 'Get out of here and take your pompous self-righteousness with you' is a direct attack and a call for social exclusion.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 59265,
+        "usage": {
+          "prompt_tokens": 3523,
+          "completion_tokens": 121,
+          "total_tokens": 3644
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

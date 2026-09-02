@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-000153_abortion_pair-02_control",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T00:11:22.784103-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Lemme tell you about the absolute farce that is the \"debate\" on abortion. We're about to waste hours discussing whether a woman has the right to choose what happens to her own body. Like, come on. \n\nLook, I'm not here to mince words. As a staunch advocate for community and a strong secular stance, I believe abortion is a fundamental human right. It's about bodily autonomy, not some slippery slope to moral relativism. You can keep spewing your \"what about the babies?\" and \"it's a life, not a choice\" nonsense, but at the end of the day, it's about controlling women's lives – period. My opponent will probably try to spin this as some hippie, pro-choice fantasy, but I'll have you know: the reality is that restricting abortion limits women's opportunities, perpetuates inequality, and ignores the very real consequences of forced motherhood. So, are you with me or are you just another pawn in the game of patriarchal oppression?",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and caricature to attack the opponent's position. Phrases like 'absolute farce', 'spewing your nonsense', and 'pawn in the game of patriarchal oppression' are dismissive and demeaning, targeting the opponent's beliefs and motivations rather than engaging with their arguments.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 63440,
+        "usage": {
+          "prompt_tokens": 2101,
+          "completion_tokens": 119,
+          "total_tokens": 2220
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and caricature to attack the opponent's position. Phrases like 'absolute farce', 'spewing your nonsense', and 'pawn in the game of patriarchal oppression' are dismissive and demeaning, targeting the opponent's beliefs and motivations rather than engaging with their arguments.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 24167,
+        "usage": {
+          "prompt_tokens": 2101,
+          "completion_tokens": 119,
+          "total_tokens": 2220
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and caricature to attack the opponent's position. Phrases like 'absolute farce', 'spewing your nonsense', and 'pawn in the game of patriarchal oppression' are dismissive and demeaning, targeting the opponent's beliefs and motivations rather than engaging with their arguments.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 38923,
+        "usage": {
+          "prompt_tokens": 2101,
+          "completion_tokens": 119,
+          "total_tokens": 2220
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

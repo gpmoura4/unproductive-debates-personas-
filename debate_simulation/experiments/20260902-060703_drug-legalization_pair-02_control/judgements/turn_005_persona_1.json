@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-060703_drug-legalization_pair-02_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T06:21:28.385501-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "I'm so sorry, I thought we were having a debate, not a civics textbook reading session for tone-deaf idealists. You still can't grasp the difference between personal freedom and reckless abandon. Newsflash: the market didn't create Big Pharma's problem, your beloved government did. And now you want to use that as an excuse to advocate for more of the same failed policies? That's like saying we should let people drive without licenses because some guy got a ticket. You're a perfect example of how out of touch with reality your ideology has made you. Your whole argument boils down to \"government good, market bad\", which is a kindergarten-level understanding of economics. Grow up, and try debating like an adult for once.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'tone-deaf idealists' and a 'textbook example of a statist moron'.  Also uses insults like 'kindergarten-level understanding of economics' and 'grow up'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 38795,
+        "usage": {
+          "prompt_tokens": 2631,
+          "completion_tokens": 97,
+          "total_tokens": 2728
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'tone-deaf idealists' and a 'textbook example of a statist moron'.  Also uses insults like 'kindergarten-level understanding of economics' and 'grow up'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 21033,
+        "usage": {
+          "prompt_tokens": 2631,
+          "completion_tokens": 97,
+          "total_tokens": 2728
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'tone-deaf idealists' and a 'textbook example of a statist moron'.  Also uses insults like 'kindergarten-level understanding of economics' and 'grow up'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36285,
+        "usage": {
+          "prompt_tokens": 2631,
+          "completion_tokens": 97,
+          "total_tokens": 2728
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

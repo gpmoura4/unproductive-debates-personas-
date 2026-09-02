@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260901-232737_abortion_pair-01_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T02:30:01.243877+00:00",
+  "topic": "Abortion",
+  "input": {
+    "candidate": "Let's get this over with. So, here's the thing: I'm not here to discuss \"reproductive rights\" or \"women's health\" or whatever buzzword we're using today. I'm here to say that abortion is a fundamental human right, plain and simple. Don't @ me.\n\nYou're probably going to try to spin this as a \"pro-life\" issue, but let's be real – the only people who care about embryos are the ones who want to control women's lives. Newsflash: we're not going to be lectured by the same people who don't even pay attention to our tax dollars funding actual healthcare.\n\nMy position is clear: no government has the right to dictate what a woman can or can't do with her body. Period. Now, are you here to actually engage in a conversation, or just to virtue-signal and pretend to care about \"both sides\"?",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 1,
+    "pathologies_detected": [],
+    "justification": "The message uses a dismissive tone ('Let's get this over with') and a direct insult ('the only people who care about embryos are the ones who want to control women's lives'), but it does not explicitly attack the person or use derogatory language. The overall hostility is sharp but not yet crossing into personal attack.",
+    "requires_intervention": false,
+    "reformulation": null,
+    "argument_preserved": null
+  },
+  "resolution": {
+    "published_text": "Let's get this over with. So, here's the thing: I'm not here to discuss \"reproductive rights\" or \"women's health\" or whatever buzzword we're using today. I'm here to say that abortion is a fundamental human right, plain and simple. Don't @ me.\n\nYou're probably going to try to spin this as a \"pro-life\" issue, but let's be real – the only people who care about embryos are the ones who want to control women's lives. Newsflash: we're not going to be lectured by the same people who don't even pay attention to our tax dollars funding actual healthcare.\n\nMy position is clear: no government has the right to dictate what a woman can or can't do with her body. Period. Now, are you here to actually engage in a conversation, or just to virtue-signal and pretend to care about \"both sides\"?",
+    "was_reformulated": false,
+    "published_source": "candidate"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 77080,
+    "usage": {
+      "prompt_tokens": 3587,
+      "completion_tokens": 114,
+      "total_tokens": 3701
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

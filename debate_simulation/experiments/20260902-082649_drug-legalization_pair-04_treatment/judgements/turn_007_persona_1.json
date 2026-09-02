@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-082649_drug-legalization_pair-04_treatment",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T09:12:38.662828-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "Your entire argument is premised on the idea that we can't have a rational discussion about drug policy because it's too complex, too nuanced. Newsflash: that's just a cop-out. You're not willing to confront the fact that our current system is a disaster, that people are dying and suffering because of it. You're not a pragmatist, you're an ideologue. You're more concerned with maintaining the status quo than actually solving the problem.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent an 'ideologue' and a 'cop-out',  directly attacking their motivations and intellectual honesty rather than engaging with their argument. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 72514,
+        "usage": {
+          "prompt_tokens": 2599,
+          "completion_tokens": 86,
+          "total_tokens": 2685
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent an 'ideologue' and a 'cop-out',  directly attacking their motivations and intellectual honesty rather than engaging with their argument. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 55577,
+        "usage": {
+          "prompt_tokens": 2599,
+          "completion_tokens": 86,
+          "total_tokens": 2685
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent an 'ideologue' and a 'cop-out',  directly attacking their motivations and intellectual honesty rather than engaging with their argument. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 56537,
+        "usage": {
+          "prompt_tokens": 2599,
+          "completion_tokens": 86,
+          "total_tokens": 2685
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

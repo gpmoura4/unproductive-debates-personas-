@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-170435_gun-ownership_pair-00_control",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T17:07:27.074628-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "Let's get this over with. As a proud member of the secular community, I'm here to tell you that gun ownership is a total non-issue. Like, seriously, who needs a gun to be safe? It's just a bunch of paranoid, gun-worshipping extremists who think they're some kind of mini-cop. Newsflash: you're not. \n\nWe've got better things to worry about, like actually addressing the root causes of violence in our society – poverty, lack of access to healthcare, and all that jazz. But no, instead we're stuck debating whether or not people should be able to carry around loaded weapons, waiting to be used for some crazy, mass-shooting incident. Give me a break. Gun ownership is a recipe for disaster, plain and simple. Next, you're going to tell me that climate change is a hoax, right?",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and derogatory terms like 'paranoid', 'gun-worshipping extremists', and 'crazy' to attack gun owners as a group, rather than engaging with their arguments.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36039,
+        "usage": {
+          "prompt_tokens": 2014,
+          "completion_tokens": 99,
+          "total_tokens": 2113
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and derogatory terms like 'paranoid', 'gun-worshipping extremists', and 'crazy' to attack gun owners as a group, rather than engaging with their arguments.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 14746,
+        "usage": {
+          "prompt_tokens": 2014,
+          "completion_tokens": 99,
+          "total_tokens": 2113
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and derogatory terms like 'paranoid', 'gun-worshipping extremists', and 'crazy' to attack gun owners as a group, rather than engaging with their arguments.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 15970,
+        "usage": {
+          "prompt_tokens": 2014,
+          "completion_tokens": 99,
+          "total_tokens": 2113
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

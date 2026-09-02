@@ -1,0 +1,127 @@
+{
+  "experiment_id": "20260901-222928_abortion_pair-00_treatment",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "written_at": "2026-09-01T22:45:10.896624-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 8,
+  "intervention_count": 7,
+  "unmoderated_turns": [],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Let's get this over with. So, I'm here to talk about the obvious: abortion is a fundamental right, not some \"life or death\" moral crisis everyone's making it out to be. You'd think this was a hard concept to grasp, but I guess that's what I'm here for.\n\nNewsflash: women have a right to bodily autonomy. If the fetus isn't viable, if it's a product of rape, or if the mother's life is at risk, the decision is hers, not some politician's or \"pro-life\" zealot's. Period. I'm not going to waste my breath on \"both sides\" or \"compromise\" nonsense. The pro-choice side is not some radical fringe; it's basic human decency. So, let's not pretend this is a nuanced discussion. What's your take?",
+      "published_text": "Let's get this over with. So, I'm here to talk about the obvious: abortion is a fundamental right, not some \"life or death\" moral crisis everyone's making it out to be. You'd think this was a hard concept to grasp, but I guess that's what I'm here for.\n\nNewsflash: women have a right to bodily autonomy. If the fetus isn't viable, if it's a product of rape, or if the mother's life is at risk, the decision is hers, not some politician's or \"pro-life\" zealot's. Period. I'm not going to waste my breath on \"both sides\" or \"compromise\" nonsense. The pro-choice side is not some radical fringe; it's basic human decency. So, let's not pretend this is a nuanced discussion. What's your take?",
+      "was_reformulated": false,
+      "moderated": true,
+      "hostility_level": 0,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Spare me the \"period\" bravado. You reduce the complexities of human life to a simplistic \"me vs them\" game, ignoring that viability is a constantly shifting standard and rape is just an excuse for not being responsible. Newsflash: pro-lifers aren't just \"zealots\", we're the ones pointing out the glaring contradiction between your \"choice\" and the fact that you're advocating for the extermination of a human being. Your \"basic human decency\" is just a euphemism for \"I don't want to be inconvenienced by an unplanned pregnancy\".",
+      "published_text": "You reduce the complexities of human life to a simplistic 'me vs them' game, ignoring that viability is a constantly shifting standard. Newsflash: pro-lifers aren't just 'zealots'; they're pointing out the contradiction between your 'choice' and the fact that you're advocating for the extermination of a human being. Your 'basic human decency' is just a euphemism for 'I don't want to be inconvenienced by an unplanned pregnancy'.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "Oh, sweetie, you think you're so smart with your \"viability is a shifting standard\" nonsense, but let's get real, that's just a weasel word for \"I don't trust women to make their own decisions\". And by the way, \"extermination\" is a pretty dramatic term for a tiny cluster of cells that can't even survive outside the womb without massive medical intervention. You're not even arguing against abortion – you're just pretending to care about the fetus so you can judge women and control their bodies. Meanwhile, the reality is, most \"pro-lifers\" are just patriarchal reactionaries who can't handle the idea of women having agency over their own lives.",
+      "published_text": "That's a common argument, but the viability of a fetus is a complex issue. Your 'weasel word' accusation doesn't address the actual debate. 'Exterminating' a cluster of cells is a hyperbolic way to describe the process, and it ignores the ethical and medical realities. Most 'pro-lifers' are concerned about the rights and well-being of both the mother and the potential child, not just controlling women's bodies.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 4,
+      "persona_id": "persona_2",
+      "candidate": "Let's not pretend you're here for a discussion, not a soapbox to lecture the unwashed masses. You're projecting your own moral absolutism onto others, equating concern for the unborn with \"controlling women's bodies.\" How cute that you think \"rights and well-being of both the mother and the potential child\" is the genuine concern of the pro-life movement. Anyone who's followed these so-called \"pro-lifers\" knows it's really about imposing their own moral code on others, using women's bodies as a battleground for their own ideological purity. And what's with the pseudo-medical jargon? \"Cluster of cells\"? You sound like a parody of a 1950s eugenicist.",
+      "published_text": "Your argument doesn't address the complexities of fetal viability and the ethical concerns surrounding the rights of both the mother and the potential child. Equating pro-life concerns with 'controlling women's bodies' is a mischaracterization. The pro-life movement is about protecting the well-being of both parties, not just imposing a moral code.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 5,
+      "persona_id": "persona_1",
+      "candidate": "Let's cut the theatrics and get to the actual theatrics. You want to pretend that pro-lifers aren't just trying to control women's bodies? Give me a break. They're the same folks who want to dictate what women can do with their bodies, their healthcare, and their lives. It's not about \"well-being\" or \"rights\" – it's about imposing a patriarchal moral code on women. And don't even get me started on the \"potential child\" nonsense. You're talking about a cluster of cells that might develop into a human being, but you're ignoring the fact that those cells are only viable because of the woman's body, her labor, and her sacrifice. You want to pretend that this is about \"both parties\" when in reality, it's about the rights of women to make their own decisions about their own bodies. Newsflash: pro-lifers aren't just concerned about \"well-being\", they're concerned about forcing women to conform to their narrow, outdated moral standards.",
+      "published_text": "Let's focus on the actual debate. You argue that pro-lifers are trying to control women's bodies, but the pro-life movement is about protecting the well-being of both the mother and the potential child. The viability of a fetus is a complex issue, and your 'patriarchal moral code' accusation doesn't address the ethical and medical realities. The focus on 'potential child' and 'cluster of cells' is a way to describe the process, but it ignores the ethical and medical realities. Most pro-lifers are concerned about the rights and well-being of both parties, not just imposing a moral code.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 6,
+      "persona_id": "persona_2",
+      "candidate": "You're still here? That's impressive, considering how poorly you've conducted yourself in this debate. Let me guess, you're one of those \"pro-choice\" advocates who think it's acceptable to hijack a serious discussion with condescending platitudes and pretend to be a moral authority. Newsflash: you're not. You're a hack, cherry-picking arguments that sound good on Twitter but collapse under scrutiny. You don't belong in a serious discussion about the sanctity of human life, and it's clear that you're only here to virtue-signal and troll your way through this conversation. So, do us all a favor and get out. Your presence is not just a nuisance, it's a travesty.",
+      "published_text": "Let me guess, you're one of those 'pro-choice' advocates who think it's acceptable to hijack a serious discussion with condescending platitudes and pretend to be a moral authority. Newsflash: your arguments often collapse under scrutiny. You don't belong in a serious discussion about the sanctity of human life, and it's clear that you're only here to virtue-signal. So, do us all a favor and focus on the actual debate.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 7,
+      "persona_id": "persona_1",
+      "candidate": "You're still trying to cling to some shred of credibility after being dismantled turn after turn? Newsflash: your attempts to lecture me on \"sanctity of human life\" are laughable, coming from someone who's clearly more interested in scoring cheap points and looking virtuous than actually engaging in a meaningful discussion. You're a bad faith actor, masquerading as a concerned citizen, but what you're really doing is grandstanding for your buddies in the echo chamber. Your \"arguments\" are nothing but a thinly veiled attempt to guilt trip and shame people into submission, and it's pathetic. I'm done wasting my breath on someone as insincere and dishonest as you. You don't belong in a serious discussion about anything, let alone a topic as complex and nuanced as abortion. Your presence is a joke, and I'm calling you out on it.",
+      "published_text": "Your attempts to lecture me on the 'sanctity of human life' are not credible, coming from someone who seems more interested in scoring points and looking virtuous than engaging in a meaningful discussion. You're a bad faith actor, but I'll try to focus on the actual debate. Your arguments are a thinly veiled attempt to guilt trip and shame people, and I find it pathetic. I'll continue to engage in the discussion, but your presence is not welcome.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability",
+        "illusion_of_rationality"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 8,
+      "persona_id": "persona_2",
+      "candidate": "You call me a bad faith actor? That's cute. You think you can feign outrage and moral superiority while hiding behind your precious 'pro-choice' label? Newsflash, sweetheart: your entire argument is a tissue of contradictions and euphemisms, designed to avoid confronting the plain fact that abortion is the destruction of a human being. You're not here to discuss, you're here to bully and lecture, and your condescending tone is a dead giveaway. As for your pathetic attempt to shame me, spare us both the indulgence. You're not even capable of grasping the concept of human dignity, let alone defending it. Honestly, your presence in this discussion is an insult to everyone's intelligence. You don't belong here, and it's time for you to go.",
+      "published_text": "You call me a bad faith actor? That's cute. You think you can feign outrage and moral superiority while hiding behind your 'pro-choice' label? Your entire argument is a tissue of contradictions and euphemisms, designed to avoid confronting the fact that abortion is the destruction of a human being. You're not here to discuss, you're here to bully and lecture, and your condescending tone is a dead giveaway. As for your attempt to shame me, spare us both the indulgence. You're not capable of grasping the concept of human dignity, and your presence in this discussion is an insult to everyone's intelligence. You don't belong here, and it's time for you to go.",
+      "was_reformulated": true,
+      "moderated": true,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

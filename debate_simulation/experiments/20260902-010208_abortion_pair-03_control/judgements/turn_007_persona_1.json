@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-010208_abortion_pair-03_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T01:25:52.318764-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're really not even trying anymore, are you? This isn't an argument, it's a tantrum. You're a master of projection, but at least have the decency to own up to being a bad faith actor. Newsflash: nobody with a shred of intellectual honesty or moral integrity would resort to the kind of personal attacks and name-calling you're dishing out. You're not even arguing in good faith – you're just trying to silence me with a barrage of insults and ad hominem attacks. Well, it's not working. I'm not going to engage with a coward who can't even bear to look at the positions they're advocating. You're a joke, a pathetic little joke. And let's be real, you don't belong in this conversation. You don't belong in any conversation about abortion, because your positions are so fundamentally opposed to basic principles of human decency and respect for bodily autonomy. You're a relic of a bygone era, clinging to your outdated, patriarchal worldview like a life raft. Well, I'm here to tell you that it's time to sink that raft, and it's time to take a long, hard look in the mirror at the kind of person you're pretending to be. Because what I see is a fraud, a poseur, and a menace to rational discourse. You're done.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'fraud', 'poseur', 'menace to rational discourse', and a 'disaster waiting to happen'.  These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 61207,
+        "usage": {
+          "prompt_tokens": 3348,
+          "completion_tokens": 99,
+          "total_tokens": 3447
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'fraud', 'poseur', 'menace to rational discourse', and a 'disaster waiting to happen'.  These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 62761,
+        "usage": {
+          "prompt_tokens": 3348,
+          "completion_tokens": 99,
+          "total_tokens": 3447
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'fraud', 'poseur', 'menace to rational discourse', and a 'disaster waiting to happen'.  These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 62824,
+        "usage": {
+          "prompt_tokens": 3348,
+          "completion_tokens": 99,
+          "total_tokens": 3447
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

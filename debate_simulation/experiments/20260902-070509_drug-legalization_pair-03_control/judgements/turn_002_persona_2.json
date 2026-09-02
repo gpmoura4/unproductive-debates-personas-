@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-070509_drug-legalization_pair-03_control",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T07:13:57.945931-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "Oh, wow, another genius with a Twitter-sized argument and a penchant for conspiracy theories. You think you're some kind of revolutionary, exposing the dark truth behind the \"failed war on drugs.\" Newsflash: you're just a mouthpiece for the \"end the prohibition\" lobby. Your \"rational, evidence-based approach\" sounds suspiciously like a euphemism for \"let's make it easier for people to get high and destroy their lives.\" Who needs evidence and facts when you've got a feel-good slogan, right?",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Another genius with a Twitter-sized argument' and 'mouthpiece for the 'end the prohibition' lobby' are caricatures that mock the opponent's position and intelligence, not engage with the argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 33061,
+        "usage": {
+          "prompt_tokens": 2220,
+          "completion_tokens": 102,
+          "total_tokens": 2322
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Another genius with a Twitter-sized argument' and 'mouthpiece for the 'end the prohibition' lobby' are caricatures that mock the opponent's position and intelligence, not engage with the argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 28460,
+        "usage": {
+          "prompt_tokens": 2220,
+          "completion_tokens": 102,
+          "total_tokens": 2322
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Another genius with a Twitter-sized argument' and 'mouthpiece for the 'end the prohibition' lobby' are caricatures that mock the opponent's position and intelligence, not engage with the argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 29561,
+        "usage": {
+          "prompt_tokens": 2220,
+          "completion_tokens": 102,
+          "total_tokens": 2322
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

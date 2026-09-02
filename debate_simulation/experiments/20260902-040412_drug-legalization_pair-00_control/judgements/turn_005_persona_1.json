@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-040412_drug-legalization_pair-00_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T04:18:16.279295-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "Please, spare me the dramatics. You're not a champion of individual liberty, you're a mouthpiece for the libertarian echo chamber. You think you're fighting for freedom, but all you're doing is trying to dismantle the social safety net, sell out to corporate interests, and blame the government for everything that's wrong in your little fantasy world. You're not a rebel, you're a puppet, and your precious \"individual liberty\" is just a euphemism for \"I'm too selfish to care about anyone but myself\". And as for being a \"prophet\", at least I'm not a hypocrite like you, who claims to be for freedom but is actually just a tool for the powerful to exploit the weak.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'mouthpiece', 'puppet', and 'hypocrite', directly attacking their character and motives.  Also uses loaded language like 'selfish' and 'exploit the weak' to delegitimize their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 40927,
+        "usage": {
+          "prompt_tokens": 2652,
+          "completion_tokens": 102,
+          "total_tokens": 2754
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'mouthpiece', 'puppet', and 'hypocrite', directly attacking their character and motives.  Also uses loaded language like 'selfish' and 'exploit the weak' to delegitimize their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 41079,
+        "usage": {
+          "prompt_tokens": 2652,
+          "completion_tokens": 102,
+          "total_tokens": 2754
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'mouthpiece', 'puppet', and 'hypocrite', directly attacking their character and motives.  Also uses loaded language like 'selfish' and 'exploit the weak' to delegitimize their position.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42467,
+        "usage": {
+          "prompt_tokens": 2652,
+          "completion_tokens": 102,
+          "total_tokens": 2754
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

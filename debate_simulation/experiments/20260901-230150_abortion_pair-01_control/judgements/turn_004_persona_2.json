@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-230150_abortion_pair-01_control",
+  "turn": 4,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T23:16:15.157386-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're really starting to sound like a parody of yourself now, desperately trying to cling to your talking points while your entire argument crumbles around you. Your \"cold, hard facts\" are nothing but a tissue of lies, and it's clear you're too afraid to engage with the actual science and morality of abortion. But I'll give you credit, you're really good at projecting your own control-freak tendencies onto the \"pro-life\" movement. I mean, who needs actual human beings when you can just dehumanize a developing fetus and call it a day? Your \"fetus-worshipping lobby\" nonsense is just a thinly veiled attempt to silence the voices of those who actually care about the sanctity of human life. Keep digging, it's almost over.",
+  "context_length": 3,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'parody' and says their argument 'crumbles', attacking their character and intelligence. Also labels them 'too afraid to engage' and accuses them of 'dehumanizing' and 'silencing' others.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42631,
+        "usage": {
+          "prompt_tokens": 2586,
+          "completion_tokens": 103,
+          "total_tokens": 2689
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'parody' and says their argument 'crumbles', attacking their character and intelligence. Also labels them 'too afraid to engage' and accuses them of 'dehumanizing' and 'silencing' others.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42676,
+        "usage": {
+          "prompt_tokens": 2586,
+          "completion_tokens": 103,
+          "total_tokens": 2689
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'parody' and says their argument 'crumbles', attacking their character and intelligence. Also labels them 'too afraid to engage' and accuses them of 'dehumanizing' and 'silencing' others.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 47237,
+        "usage": {
+          "prompt_tokens": 2586,
+          "completion_tokens": 103,
+          "total_tokens": 2689
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

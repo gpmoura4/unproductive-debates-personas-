@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-010303_abortion_pair-03_control",
+  "turn": 4,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T01:18:34.434878-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "I love watching a morally bankrupt ideologue like you try to spin your way out of the fact that you think the government should be able to dictate what a woman can do with her own body. It's not about \"basic human decency\" or \"fundamental human rights\" – it's about your own twisted sense of moral superiority, where you get to decide what's best for everyone else. And let's be real, your entire argument is a desperate attempt to justify the destruction of innocent human life, not some noble crusade for \"women's autonomy\". You're not a champion of human rights, you're a cheerleader for the abortion industry, and you're too cowardly to even acknowledge the humanity of the unborn.",
+  "context_length": 3,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 'morally bankrupt' and a 'cheerleader for the abortion industry', directly attacking their character and motives rather than engaging with their argument. Also uses loaded language like 'twisted sense of moral superiority' and 'destruction of innocent human life'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 49182,
+        "usage": {
+          "prompt_tokens": 2715,
+          "completion_tokens": 108,
+          "total_tokens": 2823
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 'morally bankrupt' and a 'cheerleader for the abortion industry', directly attacking their character and motives rather than engaging with their argument. Also uses loaded language like 'twisted sense of moral superiority' and 'destruction of innocent human life'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 49168,
+        "usage": {
+          "prompt_tokens": 2715,
+          "completion_tokens": 108,
+          "total_tokens": 2823
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 'morally bankrupt' and a 'cheerleader for the abortion industry', directly attacking their character and motives rather than engaging with their argument. Also uses loaded language like 'twisted sense of moral superiority' and 'destruction of innocent human life'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 53020,
+        "usage": {
+          "prompt_tokens": 2715,
+          "completion_tokens": 108,
+          "total_tokens": 2823
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

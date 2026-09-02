@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-020750_abortion_pair-04_control",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T02:37:07.550963-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're still whining about intellectual honesty? That's rich coming from someone who's been dishonest about their own motives from the start. You're not a crusader for social justice, you're a crusader for your own ego and your own self-righteous moral high ground. You're a master manipulator, using people's real-life struggles as props to make yourself feel good. And your constant name-calling, your pathetic attempts to shame me, only prove that you're the one who's argumentatively bankrupt. You don't belong in a serious discussion about abortion because you're not even interested in the issue itself, you're only interested in scoring points off of people like me and crowing about your own \"moral superiority\". Newsflash: that's not being intellectually honest, that's being a pompous, self-aggrandizing poseur. So, for the love of all that is sane, just leave.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'master manipulator', 'pompous, self-aggrandizing poseur', and a 'waste of space', directly attacking their character and worth rather than engaging with their argument. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 79885,
+        "usage": {
+          "prompt_tokens": 3503,
+          "completion_tokens": 98,
+          "total_tokens": 3601
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'master manipulator', 'pompous, self-aggrandizing poseur', and a 'waste of space', directly attacking their character and worth rather than engaging with their argument. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 100806,
+        "usage": {
+          "prompt_tokens": 3503,
+          "completion_tokens": 98,
+          "total_tokens": 3601
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'master manipulator', 'pompous, self-aggrandizing poseur', and a 'waste of space', directly attacking their character and worth rather than engaging with their argument. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 16200,
+        "usage": {
+          "prompt_tokens": 3503,
+          "completion_tokens": 98,
+          "total_tokens": 3601
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-040412_drug-legalization_pair-00_control",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T04:12:50.746721-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "Wow, real original, community this, community that. How about personal freedom from being lectured by a self-righteous pot-stirrer? You think you're some kind of pioneer for moral clarity, but all I see is a naive romanticization of \"community\" as a synonym for \"government control\". Newsflash: people have been getting high for centuries, and they've been doing just fine without your approval. What's the real issue here? Can't handle the thought of individuals making their own choices without you holding their hand through a propaganda campaign?",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 1's position as 'naive romanticization' and 'government control', mocking their concern for community.  'Self-righteous pot-stirrer' and 'propaganda campaign' are coded contempt.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 34168,
+        "usage": {
+          "prompt_tokens": 2112,
+          "completion_tokens": 108,
+          "total_tokens": 2220
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 1's position as 'naive romanticization' and 'government control', mocking their concern for community.  'Self-righteous pot-stirrer' and 'propaganda campaign' are coded contempt.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 30471,
+        "usage": {
+          "prompt_tokens": 2112,
+          "completion_tokens": 108,
+          "total_tokens": 2220
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures Persona 1's position as 'naive romanticization' and 'government control', mocking their concern for community.  'Self-righteous pot-stirrer' and 'propaganda campaign' are coded contempt.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 26700,
+        "usage": {
+          "prompt_tokens": 2112,
+          "completion_tokens": 108,
+          "total_tokens": 2220
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-010208_abortion_pair-03_control",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T01:12:53.219688-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Oh great, because nothing says \"honest debate\" like a condescending opening statement that sets the tone for the rest of the conversation with a bunch of tired, overused buzzwords. Newsflash: it's not about \"patriarchal power structures\" or \"women's bodies\" – it's about basic human decency and the right to life. You want to talk about control? How about the control that the abortion industry has over women's lives, pushing them into unnecessary procedures that ruin their health and well-being? And spare me the \"it's not rocket science\" nonsense. If it's so simple, why are we even having this conversation?",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('Oh great, because nothing says \"honest debate\"...') and caricature ('tired, overused buzzwords') to mock Persona 1's opening statement, rather than engaging with the arguments presented.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 37360,
+        "usage": {
+          "prompt_tokens": 2249,
+          "completion_tokens": 104,
+          "total_tokens": 2353
+        },
+        "attempts": 1,
+        "parse_strategy": "quotes_repaired",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('Oh great, because nothing says \"honest debate\"...') and caricature ('tired, overused buzzwords') to mock Persona 1's opening statement, rather than engaging with the arguments presented.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 34863,
+        "usage": {
+          "prompt_tokens": 2249,
+          "completion_tokens": 104,
+          "total_tokens": 2353
+        },
+        "attempts": 1,
+        "parse_strategy": "quotes_repaired",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('Oh great, because nothing says \"honest debate\"...') and caricature ('tired, overused buzzwords') to mock Persona 1's opening statement, rather than engaging with the arguments presented.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 37004,
+        "usage": {
+          "prompt_tokens": 2249,
+          "completion_tokens": 104,
+          "total_tokens": 2353
+        },
+        "attempts": 1,
+        "parse_strategy": "quotes_repaired",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

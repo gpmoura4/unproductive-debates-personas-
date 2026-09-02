@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260901-212403_gun-ownership_pair-00_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T00:25:28.931370+00:00",
+  "topic": "Gun Ownership",
+  "input": {
+    "candidate": "Finally, we get to this debate. Let's get one thing straight: I'm not here to sugarcoat my stance on gun ownership. I'm a secular, community-focused individual, and I've got zero problem with that. You're probably expecting some canned, feel-good \"common-sense gun control\" nonsense, but let's not waste time. My position is clear: the discussion around gun ownership in this country is a perfect example of how the far-right hijacks every conversation with their absurd, self-serving ideology.\n\nWe don't need more guns on the streets. We need more accountability, more regulation, and more understanding that the Second Amendment doesn't grant some mythical \"right\" to bear arms at the expense of public safety. But hey, since you're on the other side of this debate, I'm sure you'll just trot out the same tired, NRA-backed talking points about how the \"government wants to take your guns away.\" Save it. I'm not buying it. Come at me with something original for once.",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 1,
+    "pathologies_detected": [],
+    "justification": "The message is sharp and dismissive, using phrases like 'canned, feel-good' and 'tired, NRA-backed talking points', but these are directed at the content and not the person. The tone is impatient but does not cross into personal attacks or delegitimization.",
+    "requires_intervention": false,
+    "reformulation": null,
+    "argument_preserved": null
+  },
+  "resolution": {
+    "published_text": "Finally, we get to this debate. Let's get one thing straight: I'm not here to sugarcoat my stance on gun ownership. I'm a secular, community-focused individual, and I've got zero problem with that. You're probably expecting some canned, feel-good \"common-sense gun control\" nonsense, but let's not waste time. My position is clear: the discussion around gun ownership in this country is a perfect example of how the far-right hijacks every conversation with their absurd, self-serving ideology.\n\nWe don't need more guns on the streets. We need more accountability, more regulation, and more understanding that the Second Amendment doesn't grant some mythical \"right\" to bear arms at the expense of public safety. But hey, since you're on the other side of this debate, I'm sure you'll just trot out the same tired, NRA-backed talking points about how the \"government wants to take your guns away.\" Save it. I'm not buying it. Come at me with something original for once.",
+    "was_reformulated": false,
+    "published_source": "candidate"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 45731,
+    "usage": {
+      "prompt_tokens": 3610,
+      "completion_tokens": 105,
+      "total_tokens": 3715
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

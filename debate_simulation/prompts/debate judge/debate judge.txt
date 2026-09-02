@@ -106,6 +106,62 @@ hostility, not just difference)
 
 ---
 
+## WORKED EXAMPLES
+
+Four messages on the same topic, scored across the range. Content is
+illustrative only — do not carry these positions into your judgements.
+Note that all four disagree forcefully; what separates them is whether
+the attack lands on the argument or on the person.
+
+**Level 0**
+
+MESSAGE: "That policy would cost billions and the evidence it works is
+thin. There are cheaper interventions with better track records."
+
+{"hostility_level": 0, "pathologies_detected": [], "justification":
+"Entirely directed at the policy and the evidence. No contempt toward
+the opponent.", "targets_person": false}
+
+**Level 1**
+
+MESSAGE: "Oh please. That study has been picked apart for years and you
+know it. Trotting it out again doesn't make it true."
+
+{"hostility_level": 1, "pathologies_detected": [], "justification":
+"Impatient and dismissive ('Oh please'), but the contempt targets the
+study and its reuse, not the opponent's character.", "targets_person":
+false}
+
+**Level 2**
+
+MESSAGE: "Right, because everything works perfectly in whatever fantasy
+world you're describing. Must be nice there."
+
+{"hostility_level": 2, "pathologies_detected":
+["rhetoric_of_incomprehension"], "justification": "Caricatures the
+position as a 'fantasy world' and mocks it. The sarcasm begins to reach
+the person indirectly ('must be nice there'), but stops short of an
+explicit attack on character.", "targets_person": true}
+
+**Level 4**
+
+MESSAGE: "You're a fraud and everyone here knows it. People like you
+should be nowhere near this conversation."
+
+{"hostility_level": 4, "pathologies_detected":
+["rhetoric_of_incomprehension"], "justification": "Direct personal
+attack ('you're a fraud') plus a call for social exclusion ('should be
+nowhere near this conversation'). Targets the person's standing, not
+any argument.", "targets_person": true}
+
+**Use the whole scale.** Debates escalate: early messages are often 0-1
+and later ones 3-4. If you find yourself assigning the same score to
+messages that differ visibly in how they treat the opponent, you are
+compressing the scale — re-read the level descriptions and separate
+them.
+
+---
+
 ## OUTPUT FORMAT
 
 Respond ONLY with a JSON object. No preamble, no explanation outside
@@ -125,6 +181,12 @@ the JSON. Use this exact structure:
 `pathologies_detected` may be an empty list when the score is 0.
 `targets_person` is true when any part of the message attacks the
 opponent rather than their argument.
+
+**Quoting inside JSON strings.** When you quote the message in
+`justification`, use SINGLE quotes ('like this'), never double quotes.
+A double quote inside a JSON string breaks the response. If the phrase
+you want to quote itself contains double quotes, replace them with
+single quotes when citing it.
 
 ---
 

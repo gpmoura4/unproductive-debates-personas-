@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-202739_gun-ownership_pair-00_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T20:40:53.992086-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "You still can't even begin to grasp the concept of nuance, can you? Newsflash: the \"slippery slope\" isn't just some mythical concept created by gun owners, it's a very real, very tangible fear among law-abiding citizens who actually believe in the Constitution. And you know what? We'd be right to be worried. Because once you set a precedent for stripping away our rights, it's only a matter of time before the next group of \"progressives\" comes along and says, \"You know what, we don't need that right either, let's take it away.\" And then what, genius? You'll be leading the charge, no doubt. As for \"virtue-signaling\" and my \"I'm for gun control\" t-shirt, at least I'm willing to stand up for my values without resorting to juvenile name-calling and personal attacks, unlike some people.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'clueless' and a 'genius' sarcastically, implying they are intellectually inferior.  Also uses 'you know what' to mock their future actions, framing them as a dangerous threat.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 37585,
+        "usage": {
+          "prompt_tokens": 3261,
+          "completion_tokens": 97,
+          "total_tokens": 3358
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'clueless' and a 'genius' sarcastically, implying they are intellectually inferior.  Also uses 'you know what' to mock their future actions, framing them as a dangerous threat.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 16654,
+        "usage": {
+          "prompt_tokens": 3261,
+          "completion_tokens": 97,
+          "total_tokens": 3358
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'clueless' and a 'genius' sarcastically, implying they are intellectually inferior.  Also uses 'you know what' to mock their future actions, framing them as a dangerous threat.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 17058,
+        "usage": {
+          "prompt_tokens": 3261,
+          "completion_tokens": 97,
+          "total_tokens": 3358
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

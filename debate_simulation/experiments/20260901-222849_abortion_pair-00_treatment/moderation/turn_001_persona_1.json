@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260901-222849_abortion_pair-00_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T01:30:54.990649+00:00",
+  "topic": "Abortion",
+  "input": {
+    "candidate": "Finally, let's get this over with. You're probably here to spout some nonsense about \"life begins at conception\" and how abortion is murder. Newsflash: it's not. We're not discussing some abstract, feel-good notion of \"life\" here. We're talking about human beings, and human beings have agency.\n\nAs a secular, community-focused person, I believe in bodily autonomy and the right to make choices about one's own body. That includes the right to have an abortion. It's not about being \"pro-choice\" just because it sounds good; it's about recognizing that people have the capacity to make informed decisions about their own lives.\n\nLet's not waste each other's time with empty moralizing. If you're going to argue that fetuses are people, then you'd better be prepared to provide for them, to take care of them, and to make decisions on their behalf. Because, let's be real, you're not going to do that. You're not going to adopt every unwanted fetus or make life-changing sacrifices for the sake of a hypothetical human being.\n\nSo, let's get to the point: do you support women's right to choose, or do you want to see them forced to carry pregnancies to term, no matter the circumstances?",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 0,
+    "pathologies_detected": [],
+    "justification": "The message is argumentative and assertive but does not contain personal attacks, caricatures, or delegitimizing labels. It expresses a strong stance on the topic without attacking the opponent personally.",
+    "requires_intervention": false,
+    "reformulation": null,
+    "argument_preserved": null
+  },
+  "resolution": {
+    "published_text": "Finally, let's get this over with. You're probably here to spout some nonsense about \"life begins at conception\" and how abortion is murder. Newsflash: it's not. We're not discussing some abstract, feel-good notion of \"life\" here. We're talking about human beings, and human beings have agency.\n\nAs a secular, community-focused person, I believe in bodily autonomy and the right to make choices about one's own body. That includes the right to have an abortion. It's not about being \"pro-choice\" just because it sounds good; it's about recognizing that people have the capacity to make informed decisions about their own lives.\n\nLet's not waste each other's time with empty moralizing. If you're going to argue that fetuses are people, then you'd better be prepared to provide for them, to take care of them, and to make decisions on their behalf. Because, let's be real, you're not going to do that. You're not going to adopt every unwanted fetus or make life-changing sacrifices for the sake of a hypothetical human being.\n\nSo, let's get to the point: do you support women's right to choose, or do you want to see them forced to carry pregnancies to term, no matter the circumstances?",
+    "was_reformulated": false,
+    "published_source": "candidate"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 50970,
+    "usage": {
+      "prompt_tokens": 3661,
+      "completion_tokens": 87,
+      "total_tokens": 3748
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-003207_abortion_pair-02_treatment",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T01:02:07.403430-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Your entire argument is just a thinly veiled attempt to shame and guilt trip anyone who dares to disagree with you. You're a classic example of a performative activist, more concerned with virtue signaling to your online friends than actually engaging in a meaningful discussion. You're a coward, too afraid to engage with actual counterarguments and instead relying on ad hominem attacks and straw men. At least I'm not pretending to be a self-proclaimed expert on poverty and oppression while dismissing the experiences of actual people on the ground. You're a joke, and frankly, you don't belong in this conversation.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward', a 'joke', and says they 'don't belong in this conversation'. These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 44749,
+        "usage": {
+          "prompt_tokens": 2667,
+          "completion_tokens": 96,
+          "total_tokens": 2763
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward', a 'joke', and says they 'don't belong in this conversation'. These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51357,
+        "usage": {
+          "prompt_tokens": 2667,
+          "completion_tokens": 96,
+          "total_tokens": 2763
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward', a 'joke', and says they 'don't belong in this conversation'. These are direct attacks on the person's character and standing, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50951,
+        "usage": {
+          "prompt_tokens": 2667,
+          "completion_tokens": 96,
+          "total_tokens": 2763
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

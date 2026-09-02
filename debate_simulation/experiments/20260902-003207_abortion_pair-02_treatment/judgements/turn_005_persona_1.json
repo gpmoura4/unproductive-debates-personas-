@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-003207_abortion_pair-02_treatment",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T00:55:13.578592-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Spare me the condescending tone. You think you're the first to trot out the 'women in poverty need our help to make decisions' line? This isn't about individual agency, it's about systemic oppression. Women in poverty aren't too stupid to make choices; they're just too busy fighting to survive in a system that's rigged against them. Have you considered the challenges faced by women in poverty more closely?",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('Spare me the condescending tone') and caricature ('You think you're the first to trot out the 'women in poverty need our help to make decisions' line?') to mock Persona 2's argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 34709,
+        "usage": {
+          "prompt_tokens": 2389,
+          "completion_tokens": 96,
+          "total_tokens": 2485
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('Spare me the condescending tone') and caricature ('You think you're the first to trot out the 'women in poverty need our help to make decisions' line?') to mock Persona 2's argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42136,
+        "usage": {
+          "prompt_tokens": 2389,
+          "completion_tokens": 96,
+          "total_tokens": 2485
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm ('Spare me the condescending tone') and caricature ('You think you're the first to trot out the 'women in poverty need our help to make decisions' line?') to mock Persona 2's argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42177,
+        "usage": {
+          "prompt_tokens": 2389,
+          "completion_tokens": 96,
+          "total_tokens": 2485
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

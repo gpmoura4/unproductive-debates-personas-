@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-220317_abortion_pair-00_control",
+  "turn": 3,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T22:14:47.627947-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Come on, spare us the weaksauce. You're not even attempting to hide your agenda, are you? Newsflash: most women don't want to talk about it? How cute. You're speaking on behalf of all women now? That's rich coming from someone who clearly thinks they're the only one capable of \"questioning the holy grail of abortion\". I mean, seriously, do you even know what women want? Or are you just projecting your own conservative ideals onto the female population? \n\nLet's get real, your entire argument is based on the assumption that women are incompetent and need to be controlled. You're saying we should be happy to be treated like second-class citizens with no agency over our own bodies? That's not pro-life, that's pro-slavery. And by the way, I'm not advocating for a \"crusade\" against anyone who questions abortion. I'm advocating for the rights of women who don't want to be forced into motherhood against their will. You're the one on a crusade – a crusade against basic human dignity.",
+  "context_length": 2,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'weak sauce' and 'a genius' sarcastically,  and accuses them of 'projecting their own conservative ideals' and wanting to treat women like 'second-class citizens'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 37139,
+        "usage": {
+          "prompt_tokens": 2555,
+          "completion_tokens": 101,
+          "total_tokens": 2656
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'weak sauce' and 'a genius' sarcastically,  and accuses them of 'projecting their own conservative ideals' and wanting to treat women like 'second-class citizens'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42621,
+        "usage": {
+          "prompt_tokens": 2555,
+          "completion_tokens": 101,
+          "total_tokens": 2656
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'weak sauce' and 'a genius' sarcastically,  and accuses them of 'projecting their own conservative ideals' and wanting to treat women like 'second-class citizens'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42681,
+        "usage": {
+          "prompt_tokens": 2555,
+          "completion_tokens": 101,
+          "total_tokens": 2656
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

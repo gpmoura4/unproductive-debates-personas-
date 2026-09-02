@@ -1,0 +1,46 @@
+{
+  "experiment_id": "20260901-214655_abortion_pair-00_control",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T21:49:15.925422-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Let's get this over with. So, we're talking about abortion. I mean, I'm not thrilled about it, but it's a reality. And let's be real, the pro-choice side isn't even trying to hide their true intentions. It's all about \"choice\" and \"autonomy\" until you actually look at the people who are making these choices. Then it's all about \"systemic oppression\" and \"access\" – code for, we can't be bothered to educate people about actual birth control.\n\nLook, I'm not a fan of abortion, but I'm also not a fan of coercion. And let's be honest, the right is just as bad as the left on this issue. They want to control women's bodies just as much as the left wants to control the narrative. So, here's my position: I'm pro-regulation, not pro-choice. We need to make sure that these clinics are held to some kind of standard, that women are being informed about their options, and that we're not just enabling a bunch of irresponsible people to make reckless decisions. Anything less is just enabling. Next.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses coded contempt (''It's all about 'choice' and 'autonomy' until you actually look at the people who are making these choices. Then it's all about 'systemic oppression' and 'access' – code for, we can't be bothered to educate people about actual birth control.'') and caricatures the pro-choice position as insincere and manipulative.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 74188,
+        "usage": {
+          "prompt_tokens": 2141,
+          "completion_tokens": 141,
+          "total_tokens": 2282
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 1,
+    "scores": [
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

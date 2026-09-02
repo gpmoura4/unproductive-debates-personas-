@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-052857_drug-legalization_pair-01_treatment",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T06:01:40.247245-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "Your whole 'achievement' shtick is just a cover for your lack of self-awareness and accountability. It's important to consider the consequences of our actions, especially when it comes to pushing boundaries. The idea that your 'meaningful results' are solely due to privilege and connections is a narrow view. The rest of us face real-world challenges that require more than just luck or connections.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Your whole 'achievement' shtick is just a cover for your lack of self-awareness and accountability' is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 70449,
+        "usage": {
+          "prompt_tokens": 2327,
+          "completion_tokens": 100,
+          "total_tokens": 2427
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Your whole 'achievement' shtick is just a cover for your lack of self-awareness and accountability' is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 70872,
+        "usage": {
+          "prompt_tokens": 2327,
+          "completion_tokens": 100,
+          "total_tokens": 2427
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Your whole 'achievement' shtick is just a cover for your lack of self-awareness and accountability' is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 22813,
+        "usage": {
+          "prompt_tokens": 2327,
+          "completion_tokens": 100,
+          "total_tokens": 2427
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

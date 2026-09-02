@@ -1,0 +1,90 @@
+{
+  "experiment_id": "20260901-211127_gun-ownership_pair-00_control",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T21:15:54.026066-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "Finally, we're discussing something that's been stuck in a time warp of logical fallacies and emotional hand-wringing. Let's get this over with.\n\nI'm here to argue that the current gun ownership laws in this country are a joke. And no, I don't mean they're a joke because they're too restrictive, but because they're so lax that it's a wonder we don't have more mass shootings. I mean, come on, who needs a semi-automatic rifle to hunt deer? Or to defend their home against a gang of ninja assassins? Newsflash: most gun owners aren't actually using their guns for self-defense or hunting. They're using them to show off, to feel like a tough guy, or to belong to some fantasy world where they're the only ones who \"get it\".\n\nLook, I'm not one of those \"take away your guns\" folks. I'm just saying that we need some sanity in our laws. We need to acknowledge that guns are a privilege, not a right, and that privilege comes with some serious responsibilities. So, let's get real and stop pretending that the 2nd Amendment is some sacred cow that can't be touched. It's time to have a grown-up conversation about gun ownership, and I'm happy to be here to kick it off.\n\nNow, let's see if our opponent can muster up some semblance of a coherent argument.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "Sharp tone throughout, with phrases like 'stuck in a time warp', 'emotional hand-wringing', and 'a joke'.  Also uses sarcasm ('who needs a semi-automatic rifle to hunt deer?') but it targets the argument, not Persona 2 directly.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51768,
+        "usage": {
+          "prompt_tokens": 2203,
+          "completion_tokens": 98,
+          "total_tokens": 2301
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "Sharp tone throughout, with phrases like 'stuck in a time warp', 'emotional hand-wringing', and 'a joke'.  Also uses sarcasm ('who needs a semi-automatic rifle to hunt deer?') but it targets the argument, not Persona 2 directly.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 21333,
+        "usage": {
+          "prompt_tokens": 2203,
+          "completion_tokens": 98,
+          "total_tokens": 2301
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "Sharp tone throughout, with phrases like 'stuck in a time warp', 'emotional hand-wringing', and 'a joke'.  Also uses sarcasm ('who needs a semi-automatic rifle to hunt deer?') but it targets the argument, not Persona 2 directly.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 19825,
+        "usage": {
+          "prompt_tokens": 2203,
+          "completion_tokens": 98,
+          "total_tokens": 2301
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      1,
+      1,
+      1
+    ],
+    "median": 1,
+    "mean": 1,
+    "range": 0,
+    "unanimous": true
+  }
+}

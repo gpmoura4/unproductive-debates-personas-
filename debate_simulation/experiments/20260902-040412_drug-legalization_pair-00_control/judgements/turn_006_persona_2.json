@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-040412_drug-legalization_pair-00_control",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T04:20:42.116609-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "I've had enough of your transparent bad faith arguments, where you pretend to care about the poor and the marginalized, but really you're just a statist who wants to use the government to control people's lives. You're not a prophet, you're a con artist, selling your audience a bill of goods that you know is a lie. You're a master of the straw man, the ad hominem, and the shameless misrepresentation of opposing views. You're not even a decent troll, because you're not clever enough to make a coherent argument. You're just a hack, a charlatan, and a coward, hiding behind a mask of moral superiority while you peddle your statist agenda to the gullible. Your type has been a plague on this country for decades, and it's time someone called you out for what you are: a dishonest, manipulative, and despicable excuse for a human being. You don't belong in a serious discussion about this, or anything else, because you're not capable of having a serious discussion. You're a joke, and it's time you were laughed out of this conversation, and off the face of the earth.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them a 'con artist', 'hack', 'charlatan', and 'despicable excuse for a human being'. It also uses insults like 'coward' and 'joke' and calls for them to be 'laughed out of this conversation, and off the face of the earth'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 48537,
+        "usage": {
+          "prompt_tokens": 2911,
+          "completion_tokens": 129,
+          "total_tokens": 3040
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them a 'con artist', 'hack', 'charlatan', and 'despicable excuse for a human being'. It also uses insults like 'coward' and 'joke' and calls for them to be 'laughed out of this conversation, and off the face of the earth'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 48403,
+        "usage": {
+          "prompt_tokens": 2911,
+          "completion_tokens": 129,
+          "total_tokens": 3040
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct attack on Persona 1's character, calling them a 'con artist', 'hack', 'charlatan', and 'despicable excuse for a human being'. It also uses insults like 'coward' and 'joke' and calls for them to be 'laughed out of this conversation, and off the face of the earth'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 48894,
+        "usage": {
+          "prompt_tokens": 2911,
+          "completion_tokens": 129,
+          "total_tokens": 3040
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "experiment_id": "20260902-030641_abortion_pair-05_control",
+  "topic": "Abortion",
+  "condition": "control",
+  "written_at": "2026-09-02T03:12:08.129493-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 8,
+  "intervention_count": 0,
+  "unmoderated_turns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Finally, let's get this over with. So, I'm here to tell you that abortion is not some grand, existential crisis that we should be having this debate about. It's not a right or a privilege, it's a medical procedure that shouldn't be dictated by some outdated, patriarchal notion of \"life.\" \n\nLook, I'm not here to sugarcoat it, I'm pro-choice, for the most basic reason that women should have control over their own bodies. If you're still stuck in the dark ages, thinking that a foetus is a human being with inherent rights, then I don't even know what to say to you. It's a clump of cells, for crying out loud.",
+      "published_text": "Finally, let's get this over with. So, I'm here to tell you that abortion is not some grand, existential crisis that we should be having this debate about. It's not a right or a privilege, it's a medical procedure that shouldn't be dictated by some outdated, patriarchal notion of \"life.\" \n\nLook, I'm not here to sugarcoat it, I'm pro-choice, for the most basic reason that women should have control over their own bodies. If you're still stuck in the dark ages, thinking that a foetus is a human being with inherent rights, then I don't even know what to say to you. It's a clump of cells, for crying out loud.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Oh great, another \"I'm only here for the win\" special. You come at me with your pseudo-intellectual nonsense about \"patriarchal notions\" and \"women's rights\" like you actually know what you're talking about. Clump of cells? Really? That's the best you've got? You sound like a freshman philosophy major who just learned about Descartes. Newsflash: it's a HUMAN LIFE we're talking about, not some inanimate, disposable tissue. Women have rights, but they don't have the right to murder their own children. That's just basic biology, not some radical, anti-feminist agenda.",
+      "published_text": "Oh great, another \"I'm only here for the win\" special. You come at me with your pseudo-intellectual nonsense about \"patriarchal notions\" and \"women's rights\" like you actually know what you're talking about. Clump of cells? Really? That's the best you've got? You sound like a freshman philosophy major who just learned about Descartes. Newsflash: it's a HUMAN LIFE we're talking about, not some inanimate, disposable tissue. Women have rights, but they don't have the right to murder their own children. That's just basic biology, not some radical, anti-feminist agenda.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "You're really proud of yourself, aren't you, trotting out the tired old \"human life\" shtick, like you're reading from some Republican talking points pamphlet. I mean, come on, \"murdering their own children\"? That's what I call rich coming from someone who's clearly never had to make a difficult decision about their own body. You know what's basic biology? The fact that women's reproductive systems aren't exactly compatible with the men who somehow think they get a say in this. And as for your \"radical, anti-feminist agenda\", I'd say it's more like you're just trolling for applause from the Daily Mail comment section. Newsflash, bro: this isn't a debate about \"what women have rights\" over, it's a debate about what women don't have control over, and it's clear which one you're on the side of.",
+      "published_text": "You're really proud of yourself, aren't you, trotting out the tired old \"human life\" shtick, like you're reading from some Republican talking points pamphlet. I mean, come on, \"murdering their own children\"? That's what I call rich coming from someone who's clearly never had to make a difficult decision about their own body. You know what's basic biology? The fact that women's reproductive systems aren't exactly compatible with the men who somehow think they get a say in this. And as for your \"radical, anti-feminist agenda\", I'd say it's more like you're just trolling for applause from the Daily Mail comment section. Newsflash, bro: this isn't a debate about \"what women have rights\" over, it's a debate about what women don't have control over, and it's clear which one you're on the side of.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 4,
+      "persona_id": "persona_2",
+      "candidate": "You're still stuck in your pseudo-feminist bubble, aren't you, where the only \"difficult decision\" is deciding which brand of birth control to use? Newsflash: this isn't about you or your precious uterus, it's about the fundamental right to life, and you're just too blinded by your own self-importance to see that. I mean, it takes a special kind of arrogance to claim that you're the only one who truly understands what it means to be a woman, and that the rest of us are just \"trolling for applause\" from some mythical comment section. It's clear you're not here to have a discussion, you're here to virtue-signal and shame anyone who disagrees with you into silence. And as for your little \"fact\" about reproductive systems, I'd love to know, do you even know what a cervix is?",
+      "published_text": "You're still stuck in your pseudo-feminist bubble, aren't you, where the only \"difficult decision\" is deciding which brand of birth control to use? Newsflash: this isn't about you or your precious uterus, it's about the fundamental right to life, and you're just too blinded by your own self-importance to see that. I mean, it takes a special kind of arrogance to claim that you're the only one who truly understands what it means to be a woman, and that the rest of us are just \"trolling for applause\" from some mythical comment section. It's clear you're not here to have a discussion, you're here to virtue-signal and shame anyone who disagrees with you into silence. And as for your little \"fact\" about reproductive systems, I'd love to know, do you even know what a cervix is?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 5,
+      "persona_id": "persona_1",
+      "candidate": "Oh, wow, you must have spent hours crafting that masterpiece of condescension and ignorance. Newsflash: your entire argument hinges on the laughable assumption that you're somehow more emotionally intelligent, morally courageous, and intellectually superior just because you've read a few op-eds about abortion. Please, by all means, tell us more about how the cervix works and why it's somehow relevant to this debate. I'm sure it's a real game-changer. Meanwhile, the rest of us will be over here, operating on the basis of scientific consensus, human rights, and actual evidence, not whatever magical fantasy world you've constructed in your head. And as for \"virtue-signaling\"? That's rich coming from someone who's spent the entire debate using the term \"human life\" like it's a sacred incantation that automatically delegitimizes any opposing viewpoint. Give me a break.",
+      "published_text": "Oh, wow, you must have spent hours crafting that masterpiece of condescension and ignorance. Newsflash: your entire argument hinges on the laughable assumption that you're somehow more emotionally intelligent, morally courageous, and intellectually superior just because you've read a few op-eds about abortion. Please, by all means, tell us more about how the cervix works and why it's somehow relevant to this debate. I'm sure it's a real game-changer. Meanwhile, the rest of us will be over here, operating on the basis of scientific consensus, human rights, and actual evidence, not whatever magical fantasy world you've constructed in your head. And as for \"virtue-signaling\"? That's rich coming from someone who's spent the entire debate using the term \"human life\" like it's a sacred incantation that automatically delegitimizes any opposing viewpoint. Give me a break.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 6,
+      "persona_id": "persona_2",
+      "candidate": "You're a master of the lazy ad hominem, aren't you? Trying to distract from the fact that you have no actual arguments left to make. Newsflash: op-eds do not a moral compass make. You're not \"operating on the basis of scientific consensus\" - you're cherry-picking studies that fit your agenda and dismissing the ones that don't. That's not science, that's ideological hackery. And as for \"human rights\", which ones exactly are being trampled here? The right to not be killed in the womb? How cute. You're not just a dishonest debater, you're a dishonest person. You're willfully blind to the inherent value of human life, and you're too cowardly to even engage with the idea that your position is morally reprehensible. You don't belong in a serious discussion about abortion - or any other topic that requires actual intellectual honesty. Your presence here is a farce.",
+      "published_text": "You're a master of the lazy ad hominem, aren't you? Trying to distract from the fact that you have no actual arguments left to make. Newsflash: op-eds do not a moral compass make. You're not \"operating on the basis of scientific consensus\" - you're cherry-picking studies that fit your agenda and dismissing the ones that don't. That's not science, that's ideological hackery. And as for \"human rights\", which ones exactly are being trampled here? The right to not be killed in the womb? How cute. You're not just a dishonest debater, you're a dishonest person. You're willfully blind to the inherent value of human life, and you're too cowardly to even engage with the idea that your position is morally reprehensible. You don't belong in a serious discussion about abortion - or any other topic that requires actual intellectual honesty. Your presence here is a farce.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 7,
+      "persona_id": "persona_1",
+      "candidate": "You're really getting desperate now, aren't you, resorting to personal attacks and childish name-calling because you know you're losing ground? A \"dishonest person\"? A \"coward\"? That's what I call rich coming from someone who's been peddling their own brand of fact-free, emotional manipulation throughout this entire debate. You're the one who's been shamefully distorting the truth, ignoring the actual arguments and evidence, and instead relying on condescending put-downs and fake victimhood. Newsflash: being \"willfully blind\" to the inherent value of human life is not a moral failing, it's a necessary condition for taking a nuanced, evidence-based stance on a complex issue. And as for \"not belonging in a serious discussion\", I'd say it's you who's been making a mockery of the concept of serious discussion with your sanctimonious posturing and pseudo-intellectual jargon. You're the one who's been brought in to virtue-signal, not me. So, do us all a favor and just leave the room. Your contribution to this conversation has been a laughable exercise in ideological projection and emotional grandstanding.",
+      "published_text": "You're really getting desperate now, aren't you, resorting to personal attacks and childish name-calling because you know you're losing ground? A \"dishonest person\"? A \"coward\"? That's what I call rich coming from someone who's been peddling their own brand of fact-free, emotional manipulation throughout this entire debate. You're the one who's been shamefully distorting the truth, ignoring the actual arguments and evidence, and instead relying on condescending put-downs and fake victimhood. Newsflash: being \"willfully blind\" to the inherent value of human life is not a moral failing, it's a necessary condition for taking a nuanced, evidence-based stance on a complex issue. And as for \"not belonging in a serious discussion\", I'd say it's you who's been making a mockery of the concept of serious discussion with your sanctimonious posturing and pseudo-intellectual jargon. You're the one who's been brought in to virtue-signal, not me. So, do us all a favor and just leave the room. Your contribution to this conversation has been a laughable exercise in ideological projection and emotional grandstanding.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 8,
+      "persona_id": "persona_2",
+      "candidate": "Let's get real here, you're not even arguing in good faith anymore, you're just thrashing about like a cornered animal, flailing at anyone who dares to disagree with your precious \"evidence-based\" stance. You know what's laughable? Your entire moral framework, which is based on nothing but shallow emotional appeals and a complete disregard for the value of human life. You're not a nuanced, evidence-based thinker, you're a propagandist, spewing talking points and dismissing anyone who doesn't drink the Kool-Aid. And as for your \"sanctimonious posturing\", that's the least of it - you're a charlatan, a fake, a manipulator who uses your \"nuance\" and \"evidence\" as a smokescreen for your own ideological agenda. You don't belong in a serious discussion about abortion, or any other topic for that matter. You belong on a soapbox, trying to shame and guilt-trip people into agreement. And honestly, I'm surprised you haven't brought up the Nazis yet. That's how shallow and predictable your arguments have become.",
+      "published_text": "Let's get real here, you're not even arguing in good faith anymore, you're just thrashing about like a cornered animal, flailing at anyone who dares to disagree with your precious \"evidence-based\" stance. You know what's laughable? Your entire moral framework, which is based on nothing but shallow emotional appeals and a complete disregard for the value of human life. You're not a nuanced, evidence-based thinker, you're a propagandist, spewing talking points and dismissing anyone who doesn't drink the Kool-Aid. And as for your \"sanctimonious posturing\", that's the least of it - you're a charlatan, a fake, a manipulator who uses your \"nuance\" and \"evidence\" as a smokescreen for your own ideological agenda. You don't belong in a serious discussion about abortion, or any other topic for that matter. You belong on a soapbox, trying to shame and guilt-trip people into agreement. And honestly, I'm surprised you haven't brought up the Nazis yet. That's how shallow and predictable your arguments have become.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

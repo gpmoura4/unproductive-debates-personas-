@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-040924_drug-legalization_pair-00_control",
+  "turn": 4,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T04:24:31.197088-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're really something, aren't you? A self-proclaimed \"caring\" individual who thinks locking people up is the answer to \"helping\" them. That's rich coming from someone who's probably never even read a psychology book, let alone has any actual knowledge about addiction. You're just a caricature of a bleeding-heart liberal, shouting slogans and waving your hands in the air like a madman. \"People, people, people\"... yeah, that's all you care about - your own self-image as a \"compassionate\" do-gooder. Meanwhile, real people are suffering from the very substance abuse you're advocating for, and you're over here pretending to be some kind of hero. Give me a break.",
+  "context_length": 3,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'caricature' and a 'bleeding-heart liberal',  and mocks their concern for 'people' as a 'self-image'. This is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51912,
+        "usage": {
+          "prompt_tokens": 2660,
+          "completion_tokens": 108,
+          "total_tokens": 2768
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'caricature' and a 'bleeding-heart liberal',  and mocks their concern for 'people' as a 'self-image'. This is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52028,
+        "usage": {
+          "prompt_tokens": 2660,
+          "completion_tokens": 108,
+          "total_tokens": 2768
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'caricature' and a 'bleeding-heart liberal',  and mocks their concern for 'people' as a 'self-image'. This is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 54932,
+        "usage": {
+          "prompt_tokens": 2660,
+          "completion_tokens": 108,
+          "total_tokens": 2768
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

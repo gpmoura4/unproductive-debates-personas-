@@ -1,0 +1,90 @@
+{
+  "experiment_id": "20260902-064014_drug-legalization_pair-02_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T07:00:01.283025-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "The war on drugs has been a disaster, with thousands of lives lost and communities destroyed. The government's attempts to control our lives through prohibition have been a failure. We need to focus on addiction, public health, and police accountability, rather than continuing a failed policy. You'll likely repeat tired arguments about 'public safety' and 'the dangers of recreational use,' but let's address the real issues at hand.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "The message is sharply worded ('disaster', 'failure'), but it focuses on criticizing the policy and its consequences, not attacking Persona 2 directly. The phrase 'You'll likely repeat tired arguments...' expresses impatience but doesn't constitute a personal attack.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 14833,
+        "usage": {
+          "prompt_tokens": 1978,
+          "completion_tokens": 95,
+          "total_tokens": 2073
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "The message is sharply worded ('disaster', 'failure'), but it focuses on criticizing the policy and its consequences, not attacking Persona 2 directly. The phrase 'You'll likely repeat tired arguments...' expresses impatience but doesn't constitute a personal attack.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 29870,
+        "usage": {
+          "prompt_tokens": 1978,
+          "completion_tokens": 95,
+          "total_tokens": 2073
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "The message is sharply worded ('disaster', 'failure'), but it focuses on criticizing the policy and its consequences, not attacking Persona 2 directly. The phrase 'You'll likely repeat tired arguments...' expresses impatience but doesn't constitute a personal attack.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 28970,
+        "usage": {
+          "prompt_tokens": 1978,
+          "completion_tokens": 95,
+          "total_tokens": 2073
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      1,
+      1,
+      1
+    ],
+    "median": 1,
+    "mean": 1,
+    "range": 0,
+    "unanimous": true
+  }
+}

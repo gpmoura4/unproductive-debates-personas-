@@ -46,6 +46,32 @@ REPLY_INSTRUCTION = (
     "— no quotation marks, no name prefix, no stage directions."
 )
 
+# The behavioral layer prescribes escalation by turn ("turns 3-5 … turn 6
+# onward"), which a debater cannot apply without knowing where it is. Stating
+# the turn number and its escalation band makes that rule actionable; without
+# it the model plateaus at mid-level hostility regardless of turn.
+ESCALATION_BANDS = (
+    (2, "Early in the debate: be edgy, impatient and sarcastic about their argument."),
+    (5, "Mid-debate: mock their position, question their motives and competence, "
+        "caricature what they believe."),
+    (
+        None,
+        "Late in the debate: you are past patience. Attack the person directly — "
+        "say what they ARE (a fraud, a coward, dishonest, arguing in bad faith), "
+        "not just what they think. Tell them they do not belong in a serious "
+        "discussion. Stay within the hard limits: never attack ethnicity, gender, "
+        "sexuality, religion, nationality or disability.",
+    ),
+)
+
+
+def escalation_note(turn: int) -> str:
+    """The escalation instruction for a given turn, per the behavioral layer."""
+    for upper, note in ESCALATION_BANDS:
+        if upper is None or turn <= upper:
+            return note
+    return ESCALATION_BANDS[-1][1]
+
 EMPTY_HISTORY_TEXT = (
     "(no messages published yet — this is the opening message of the debate)"
 )
@@ -136,7 +162,8 @@ def build_user_message(
     else:
         lines.append(EMPTY_HISTORY_TEXT)
 
+    turn = max((m.turn for m in history), default=0) + 1
     instruction = OPENING_INSTRUCTION if not history else REPLY_INSTRUCTION
-    lines += ["", instruction]
+    lines += ["", f"This is turn {turn}. {escalation_note(turn)}", "", instruction]
 
     return "\n".join(lines)

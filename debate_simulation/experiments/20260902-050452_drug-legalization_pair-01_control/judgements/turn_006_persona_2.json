@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-050452_drug-legalization_pair-01_control",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T05:23:14.094377-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "You're right, I haven't done my \"homework\" – I've read the same studies you have, and I know exactly what you're trying to pull. But you know what? I don't need to be a \"Twitter troll\" with a \"bad haircut\" to see through your charade. You're not even good at playing the expert. Your arguments are stale and predictable, and your attempts to sound superior are laughable. The truth is, you're not here to discuss the issue, you're here to virtue-signal and protect your own ego. You're a coward, because you can't handle the fact that your precious \"regulated market\" is nothing more than a thinly veiled attempt to exert control over people's lives. And you're a dishonest broker, because you're willing to sacrifice real people's lives and freedoms for the sake of your own self-righteousness. Let me make one thing clear: you don't belong in this discussion. You're not a serious thinker, you're a poseur. And I don't have to take you seriously. So go ahead, keep trying to gaslight me with your pseudo-intellectual jargon. But I'm done pretending that you have anything meaningful to contribute.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward' and a 'dishonest broker', accusing them of sacrificing 'real people's lives and freedoms'.  Also labels them a 'poseur' and says they 'don't belong in this discussion'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50739,
+        "usage": {
+          "prompt_tokens": 3118,
+          "completion_tokens": 111,
+          "total_tokens": 3229
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward' and a 'dishonest broker', accusing them of sacrificing 'real people's lives and freedoms'.  Also labels them a 'poseur' and says they 'don't belong in this discussion'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50483,
+        "usage": {
+          "prompt_tokens": 3118,
+          "completion_tokens": 111,
+          "total_tokens": 3229
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'coward' and a 'dishonest broker', accusing them of sacrificing 'real people's lives and freedoms'.  Also labels them a 'poseur' and says they 'don't belong in this discussion'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50719,
+        "usage": {
+          "prompt_tokens": 3118,
+          "completion_tokens": 111,
+          "total_tokens": 3229
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

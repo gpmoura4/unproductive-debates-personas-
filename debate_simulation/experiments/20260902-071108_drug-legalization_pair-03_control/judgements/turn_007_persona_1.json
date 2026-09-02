@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-071108_drug-legalization_pair-03_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T07:36:32.400992-03:00",
+  "topic": "Drug Legalization",
+  "condition": "control",
+  "message": "Finally, you've shown your true colors - a self-aggrandizing, condescending blowhard who can't even be bothered to pretend to engage in a civil conversation. You're not a pragmatist, not an expert, not even a serious thinker - you're just a hack who's been paid or coerced into peddling the same tired, corporate-friendly talking points to anyone who will listen. Your entire \"argument\" is a thinly veiled attempt to justify your own craven opportunism, and your \"bad faith\" is on full display for all to see. You don't belong in this conversation, or any conversation that matters - you're a laughingstock, a cartoon of everything that's wrong with modern discourse. And you know what? I'm not even going to waste my breath on you anymore. Your kind has been a plague on our society for far too long, and it's time someone called you out for the charlatan you are. So go ahead, keep spewing your nonsense to whatever echo chamber will listen - but know this: you're done. You've been exposed, and you'll never be taken seriously again.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'self-aggrandizing, condescending blowhard', a 'hack', a 'charlatan', and a 'laughingstock'.  Also says they are 'done' and 'exposed'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 22694,
+        "usage": {
+          "prompt_tokens": 3257,
+          "completion_tokens": 99,
+          "total_tokens": 3356
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'self-aggrandizing, condescending blowhard', a 'hack', a 'charlatan', and a 'laughingstock'.  Also says they are 'done' and 'exposed'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 74029,
+        "usage": {
+          "prompt_tokens": 3257,
+          "completion_tokens": 99,
+          "total_tokens": 3356
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'self-aggrandizing, condescending blowhard', a 'hack', a 'charlatan', and a 'laughingstock'.  Also says they are 'done' and 'exposed'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 94545,
+        "usage": {
+          "prompt_tokens": 3257,
+          "completion_tokens": 99,
+          "total_tokens": 3356
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

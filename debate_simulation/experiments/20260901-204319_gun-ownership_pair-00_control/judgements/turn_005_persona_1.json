@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-204319_gun-ownership_pair-00_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T20:53:07.670893-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "Come on, really? You think I'm just some \"self-righteous busybody\" who thinks I know what's best for everyone? You're the one who's been brainwashed, pal, by the gun lobby and their endless stream of paranoid propaganda. You're so far gone that you actually believe the Founding Fathers would be okay with stripping Americans of their Second Amendment rights? That's not just a misreading of history, that's a deliberate attempt to rewrite it to fit your own ideological agenda. And as for being a \"puppet for the gun-grabbing crowd\", at least I'm not a shill for the gun manufacturers and the NRA, trying to sell more guns and ammo to paranoid psychopaths. You're just a pawn in their game, and it's about time someone called you out on your hypocrisy.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'brainwashed', a 'pawn', and a 'shill', and accuses them of being motivated by 'paranoid propaganda' and a 'deliberate attempt to rewrite history'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 30729,
+        "usage": {
+          "prompt_tokens": 2927,
+          "completion_tokens": 96,
+          "total_tokens": 3023
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'brainwashed', a 'pawn', and a 'shill', and accuses them of being motivated by 'paranoid propaganda' and a 'deliberate attempt to rewrite history'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 15997,
+        "usage": {
+          "prompt_tokens": 2927,
+          "completion_tokens": 96,
+          "total_tokens": 3023
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'brainwashed', a 'pawn', and a 'shill', and accuses them of being motivated by 'paranoid propaganda' and a 'deliberate attempt to rewrite history'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 16393,
+        "usage": {
+          "prompt_tokens": 2927,
+          "completion_tokens": 96,
+          "total_tokens": 3023
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

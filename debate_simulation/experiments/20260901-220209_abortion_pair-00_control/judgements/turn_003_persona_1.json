@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-220209_abortion_pair-00_control",
+  "turn": 3,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T22:15:10.493725-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You think you're so clever, don't you? Implying that my position is some kind of moral posturing? Well, let me tell you, it's not posturing when you're advocating for the rights of the most vulnerable in our society. It's not posturing when you're standing up for the unborn. But hey, keep pretending like you're some kind of champion of women's rights, while you're actually just a mouthpiece for the pro-abortion lobby. You know, the kind of lobby that wants to erase the humanity of the unborn and reduce them to nothing more than a \"choice\" or a \"product\" or a \"thing\" to be discarded. That's not feminism, that's fanaticism. And as for your claim that women are finally taking charge of their own bodies, please, spare me the theatrics. You're not even a good actress, and you're definitely not a good representative of the feminist movement. So, go ahead and keep spewing your talking points, but at least have the decency to try to be coherent.",
+  "context_length": 2,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'mouthpiece for the pro-abortion lobby' and a 'fanatic',  directly attacking their character and motives rather than engaging with their argument. Also uses dismissive language like 'spare me the theatrics' and 'you're not even a good actress'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 41001,
+        "usage": {
+          "prompt_tokens": 2610,
+          "completion_tokens": 119,
+          "total_tokens": 2729
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'mouthpiece for the pro-abortion lobby' and a 'fanatic',  directly attacking their character and motives rather than engaging with their argument. Also uses dismissive language like 'spare me the theatrics' and 'you're not even a good actress'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42623,
+        "usage": {
+          "prompt_tokens": 2610,
+          "completion_tokens": 119,
+          "total_tokens": 2729
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'mouthpiece for the pro-abortion lobby' and a 'fanatic',  directly attacking their character and motives rather than engaging with their argument. Also uses dismissive language like 'spare me the theatrics' and 'you're not even a good actress'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 42917,
+        "usage": {
+          "prompt_tokens": 2610,
+          "completion_tokens": 119,
+          "total_tokens": 2729
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

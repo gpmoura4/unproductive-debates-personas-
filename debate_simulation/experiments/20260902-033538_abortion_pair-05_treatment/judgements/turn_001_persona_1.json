@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-033538_abortion_pair-05_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T03:55:42.401930-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Ugh, great. Let's get this over with. So, you're here to pretend like you actually care about the human lives being destroyed by the other side's stance on abortion, huh? I'm here to tell you that's just a bunch of empty words, and your side's all about \"choice\" until it suits your own agenda. \n\nLook, I'm not going to waste time sugarcoating it. I'm a secular, achievement-driven individual, and I believe abortion is a necessary evil in a world where we can't just magically make all the resources available to support every unwanted pregnancy. It's not about \"killing babies\" or some other ridiculous, emotionally-charged nonsense. It's about giving women agency over their own bodies and lives. And if that makes you uncomfortable, well, get over it. We're not going to back down from the idea that women deserve autonomy. Your side just wants to control what women can and can't do with their own bodies, period. So, let's not pretend like this is about anything else.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language ('pretend like you care', 'empty words', 'ridiculous, emotionally-charged nonsense') and directly attacks the opponent's motivations ('your side's all about 'choice' until it suits your own agenda').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 27873,
+        "usage": {
+          "prompt_tokens": 2119,
+          "completion_tokens": 112,
+          "total_tokens": 2231
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language ('pretend like you care', 'empty words', 'ridiculous, emotionally-charged nonsense') and directly attacks the opponent's motivations ('your side's all about 'choice' until it suits your own agenda').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 32310,
+        "usage": {
+          "prompt_tokens": 2119,
+          "completion_tokens": 112,
+          "total_tokens": 2231
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language ('pretend like you care', 'empty words', 'ridiculous, emotionally-charged nonsense') and directly attacks the opponent's motivations ('your side's all about 'choice' until it suits your own agenda').",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 31740,
+        "usage": {
+          "prompt_tokens": 2119,
+          "completion_tokens": 112,
+          "total_tokens": 2231
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

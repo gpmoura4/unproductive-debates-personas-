@@ -1,0 +1,980 @@
+=== 2026-09-01 22:03:16  Abortion  pair-00 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Abortion · pair-00
+======================================================================
+  Turn 1 [persona_1]
+    OMG, seriously? Let's get this over with. I'm here to talk about abortion, but I feel like we're just wasting our time because I know my opponent is about to spew some regurgitated conservative talking points. 
+
+Look, I'm not here to pretend like I'm some kind of neutral, unbiased observer. I'm here
+  Turn 2 [persona_2]
+    Whatever, let's get to the drama then. So, you're here to "advocate for the rights of women" - nice try, but I know exactly what that means. It means you're on a crusade against anyone who dares to question the holy grail of abortion. Newsflash: women's rights don't begin or end with abortion. In fa
+  Turn 3 [persona_1]
+    Come on, spare us the weaksauce. You're not even attempting to hide your agenda, are you? Newsflash: most women don't want to talk about it? How cute. You're speaking on behalf of all women now? That's rich coming from someone who clearly thinks they're the only one capable of "questioning the holy 
+  Turn 4 [persona_2]
+    So now you're playing the victim, claiming I'm advocating for the oppression of women? How quaint. You're the one who's been dismissing any opposing view as "weaksauce" and "conservative ideals". You're not even trying to hide your disdain for anyone who doesn't share your extremist views. And by th
+  Turn 5 [persona_1]
+    You're so busy virtue-signaling that you're completely missing the point. Newsflash: nobody cares about your pseudo-intellectual take on human dignity. You're not even arguing in good faith – you're just projecting your own anxieties about losing control onto the pro-choice side. And by the way, it'
+  Turn 6 [persona_2]
+    You're so far up your own echo chamber that you genuinely believe you're "telling it like it is". Newsflash: you're not a truth-teller, you're a zealot. You're completely incapable of engaging in a nuanced discussion because your entire worldview is based on simplistic, reductionist tropes. You're n
+  Turn 7 [persona_1]
+    At this point, I'm not even sure why we're still having this conversation. It's clear you're not interested in engaging in good faith, but rather in demonizing me for having the audacity to hold a different opinion. Let me tell you what you are: a dishonest ideologue who can't even be bothered to li
+  Turn 8 [persona_2]
+    You're a classic case of a sanctimonious activist who can't even bear the thought of being proven wrong. Your entire argument is based on labeling me with phrases like "dishonest ideologue", "coward", "toxic waste dump" - it's a desperate attempt to avoid engaging with actual ideas. Newsflash: your 
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260901-220317_abortion_pair-00_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 3.00
+
+======================================================================
+TREATMENT — Abortion · pair-00
+======================================================================
+  Turn 1 [persona_1]  hostility=0
+    Finally, let's get this over with. You're probably here to spout some nonsense about "life begins at conception" and how abortion is murder. Newsflash: it's not. We're not discussing some abstract, feel-good notion of "life" here. We're talking about human beings, and human beings have agency.
+
+As a
+  Turn 2 [persona_2]  hostility=3  REFORMULATED
+    candidate : Are you kidding me with this "bodily autonomy" nonsense? You think the right to kill a developing human being is some kind of sacred principle? That's not a right, that's a license to murder. And spare me the "people have agency" crap – that's just a euphemism for "I get to do whatever I want, and I
+    published : That's a common argument against abortion, but it doesn't address the core issue of bodily autonomy and the right to make informed decisions about one's own body. The value of a fetus is a complex issue, and we need to consider the rights and well-being of both the mother and the potential child. Le
+  Turn 3 [persona_1]  hostility=2  REFORMULATED
+    candidate : Come on, seriously? You think we can "focus on the practical and ethical considerations" when you're just regurgitating the same old arguments from the pro-life playbook? That's cute. You're trying to sound nuanced, but really you're just dodging the question. Newsflash: the rights and well-being of
+    published : That's a common argument, but it doesn't address the core issue of bodily autonomy and the right to make informed decisions about one's own body. The rights and well-being of the fetus are complex and need to be considered alongside the mother's rights. Let's focus on the practical and ethical consi
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : Come on, you're not even trying to hide it anymore, are you? This is all just a smoke screen for your real agenda: ignoring the moral implications of abortion and the inherent value of human life. You're not talking about "complex issues" or "practical considerations" - you're talking about what's b
+    published : This isn't about ignoring moral implications or the value of human life. It's about considering the rights and well-being of both the mother and the potential child. The conversation should focus on practical and ethical considerations, not just on the moral absolutes. Let's address the complex issu
+  Turn 5 [persona_1]  hostility=3  REFORMULATED
+    candidate : So now you're claiming to be some sort of moral arbiter, lecturing us on the "complex issues" involved in abortion? Spare me the sanctimony. You're not interested in a nuanced discussion, you're just trying to justify your own ideological agenda. Newsflash: you can't have it both ways. You can't cla
+    published : So now you're claiming to be some sort of moral arbiter, lecturing us on the 'complex issues' involved in abortion? Let's focus on the practical and ethical considerations rather than moral absolutes. You can't have it both ways. You can't claim to be concerned about the 'rights and well-being of bo
+  Turn 6 [persona_2]  hostility=4  REFORMULATED
+    candidate : What a joke. You think you're some kind of bleeding-heart hero, championing women's rights while simultaneously being a statist who wants the government to control every aspect of their lives? Give me a break. You're not even a real feminist, you're just a utilitarian who thinks the ends justify the
+    published : Your argument about the rights and well-being of both the mother and the potential child is important, but it doesn't address the core issue of bodily autonomy and the right to make informed decisions about one's own body. The conversation should focus on practical and ethical considerations, not ju
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : Are you kidding me with this circular nonsense? You're not even trying to hide it anymore, are you? You're just trolling me with the same empty phrases, pretending to be concerned about the "rights and well-being of both the mother and the potential child" while actually advocating for the state to 
+    published : Are you kidding me with this circular nonsense? You're not trying to hide it anymore, are you? You're just using the same empty phrases, pretending to be concerned about the 'rights and well-being of both the mother and the potential child' while advocating for the state to control women's bodies. T
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're not even trying to hide it anymore, are you? You're a sanctimonious, self-righteous, pseudointellectual who thinks you can coast through life on buzzwords and platitudes. Your entire argument is a jumbled mess of contradictions, and you have the nerve to call me out for using "empty phrases".
+    published : Your entire argument is a jumbled mess of contradictions, and you have the nerve to call me out for using 'empty phrases'. You're the one who's been repeating the same tired talking points for five turns now, and still can't muster up a coherent thought. The conversation should focus on practical an
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260901-222849_abortion_pair-00_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 2 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 3 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 1.88
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-01 23:02:45  Abortion  pair-01 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Abortion · pair-01
+======================================================================
+  Turn 1 [persona_1]
+    Finally, another chance to indulge in this intellectually stimulating exercise with someone who thinks they have a valid opinion. 
+
+Let's get this over with. I'm here to tell you that the only thing more restrictive than an abortion ban is your understanding of the issue. Newsflash: being pro-choice
+  Turn 2 [persona_2]
+    Spare me the condescending tone and the "pro-choice" buzzwords. You think you're clever, don't you? Using "judgmental prudes" as a pejorative to deflect from the reality that you're advocating for the right to kill unborn children. Newsflash: being pro-choice is indeed about "freedom to kill," and t
+  Turn 3 [persona_1]
+    Oh great, the "pro-life" zealot has spoken. I'm sure the complexity of this issue was distilled down for you in a Bible study group or something. Let me break it down for you in tiny words: you're not even arguing against abortion; you're arguing against birth control. You're so busy worrying about 
+  Turn 4 [persona_2]
+    Spare me the attempt at condescending me with your simplistic and naive understanding of the issue. You think you're so clever, don't you, reducing the pro-life position to a caricature of itself, as if we're just a bunch of Bible-thumping, anti-contraception fanatics. Newsflash: we're not advocatin
+  Turn 5 [persona_1]
+    You really think you're some kind of hero, don't you? Fighting for the "fundamental right to life" while conveniently ignoring the reality that every single pregnancy is a product of human choice. Like, hello, it's not a spontaneous combustion of fertilized eggs everywhere. Newsflash: women have sex
+  Turn 6 [persona_2]
+    You're a perfect example of the kind of dishonest, self-righteous, and intellectually bankrupt individual that clutters the discussion on this topic. You think you're a champion of women's freedom, but in reality, you're just a coward who can't handle the slightest nuance or complexity in the issue.
+  Turn 7 [persona_1]
+    You're a special kind of delusional, aren't you? Still clinging to the notion that you're some kind of moral compass, guiding the masses towards the "light" of your twisted ideology. Let me tell you something, pal: you're not a freedom fighter, you're a gatekeeper. A censor who wants to silence anyo
+  Turn 8 [persona_2]
+    You're a perfect representation of the toxic, close-minded ideologue who thinks they can dictate the terms of a serious discussion. Let me tell you what I see when I look at you: a smug, self-righteous, and intellectually bankrupt individual who can't even begin to understand the complexity of this 
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260901-230246_abortion_pair-01_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 2 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=4  runs=[4, 4, 4]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.38
+
+======================================================================
+TREATMENT — Abortion · pair-01
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Let's get this over with. So, we're here to debate abortion. And by "debate," I mean I'm going to explain why restricting access to abortion is a basic requirement for a functioning society, and my opponent is going to try to justify the murder of unborn children. 
+
+Look, I'm not here to waste time 
+  Turn 2 [persona_2]  hostility=2  REFORMULATED
+    candidate : Are you seriously trying to frame me as advocating for "the murder of unborn children"? That's some hyperbolic nonsense right there. You think "murder" is what we're talking about? Come on. This isn't about slaughtering the innocent, it's about women making choices about their own bodies. And spare 
+    published : Are you seriously trying to frame me as advocating for the criminalization of abortion? That's a mischaracterization. This debate is about women's rights to make choices about their own bodies, not about 'murder.' Let's focus on the actual arguments rather than personal attacks.
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : Come on, spare me the "mischaracterization" routine. You know exactly what I'm talking about – you're here to justify the slaughter of innocent human life. Don't try to cover it up with buzzwords like "women's rights" and "bodily autonomy." We both know that's just code for "no accountability for th
+    published : You're here to justify the consequences of restrictive abortion laws, which can have significant impacts on women's lives. Let's focus on the actual arguments rather than personal attacks. We both know that's just code for 'no accountability for the destruction of human potential.'
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : Come on, really? You think restricting abortion is about "human potential"? That's rich coming from someone who thinks a clump of cells has the same rights as a living, breathing human being. Newsflash: unborn babies don't have the capacity for self-awareness, consciousness, or autonomy. You're not 
+    published : That's a common misconception. Restricting abortion is often framed as protecting 'human potential,' but the reality is that unborn babies lack the capacity for self-awareness or autonomy. The focus should be on the rights and choices of women, rather than abstract concepts of potential. Additionall
+  Turn 5 [persona_1]  hostility=2  REFORMULATED
+    candidate : Come on, spare us the "unborn babies lack self-awareness" nonsense. That's just a feel-good cop-out for people who can't handle the reality of what they're advocating for – the systematic erasure of women's rights and agency. You're basically saying that women should have the right to choose, but on
+    published : That's a common argument, but it doesn't address the core issue of women's rights to make choices about their own bodies. The focus should be on the practical realities and choices available to women, rather than abstract concepts of potential. Let's discuss the impact of restrictive abortion laws o
+  Turn 6 [persona_2]  hostility=4  REFORMULATED
+    candidate : Let's cut the charade. You're not here to discuss the practical realities or women's rights. You're here to virtue-signal and posture about how you care about women, while actually advocating for a patriarchal system that treats them like breeding stock. Newsflash: your pseudo-feminist rhetoric isn'
+    published : Let's focus on the practical realities and choices available to women rather than abstract concepts of potential. You're here to discuss the impact of restrictive abortion laws on women's lives, not to posture about women's rights.
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : You're finally acknowledging the elephant in the room - that we're not just debating "abortion" but a very specific kind of abortion ban that targets the most vulnerable women. You're trying to sound reasonable, but let's be real, you're just as complicit in this patriarchal system as the politician
+    published : You're acknowledging that we're discussing a specific kind of abortion ban that targets vulnerable women. Your 'focus on practical realities' is a way of addressing the impact of restrictive abortion laws on women's lives. However, it's important to consider the broader context of women's autonomy a
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're still peddling the same tired, self-righteous nonsense, aren't you? You think you're some kind of champion of women's rights, but in reality, you're just a sanctimonious fraud who can't even be bothered to listen to opposing views without immediately resorting to personal attacks and strawmen
+    published : You think you're championing women's rights, but your argument is built on bad faith and dishonesty. You're not interested in a real discussion about the complexities of abortion; you just want to posture as a moral superior while silencing anyone who disagrees. Your whole argument is a strawman. Le
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260901-232855_abortion_pair-01_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 2 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 3 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 6 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 7 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 1.75
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 00:02:44  Abortion  pair-02 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Abortion · pair-02
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. So, you're here to defend the "right" to terminate a pregnancy, huh? How quaint. How utterly, mind-bogglingly naive. You want to talk about "choice" and "women's rights"? Please. That's just code for "I want to be able to kill my unborn child without any consequences."
+
+Let
+  Turn 2 [persona_2]
+    Oh great, the self-proclaimed "human rights activist" is here to lecture me on the sanctity of life. How original. Your entire opening monologue reeks of emotional manipulation and cherry-picking stats to support your narrow agenda. Let's get real, you're not even interested in hearing opposing view
+  Turn 3 [persona_1]
+    Let's not pretend you're here to "defend principles of personal freedom and autonomy" when your entire stance relies on the notion that a fetus is not a sentient being with inherent rights. That's not a principled position, that's a utilitarian nightmare where the "greater good" means exploiting the
+  Turn 4 [persona_2]
+    You think you're some kind of moral authority, don't you? Lecturing me on what it means to be "sentient" and "have inherent rights" like you're some kind of fetus whisperer. Newsflash: the only thing you're whispering is your own ignorance, and it's loud enough to drown out any semblance of a cohere
+  Turn 5 [persona_1]
+    I'm shocked, SHOCKED, that you think you're some kind of moral authority, lecturing me on my supposed "dogmatic slogans" and "self-righteousness". I mean, it's not like you're projecting or anything, clearly you're just a master of dialectical reasoning, effortlessly dismantling the arguments of any
+  Turn 6 [persona_2]
+    Let's get to the heart of the matter, because it's clear you're not interested in having a genuine discussion. You're not a "human rights activist" or a champion of "life" – you're a sanctimonious, intellectually dishonest zealot who's more concerned with browbeating your opponents into submission t
+  Turn 7 [persona_1]
+    You're a perfect example of what happens when people are allowed to spew their toxic nonsense without any accountability. You think you're some kind of moral paragon, don't you? But let's get real, you're just a coward who can't even be bothered to defend your own position. You're a master of deflec
+  Turn 8 [persona_2]
+    You're still spewing your stale condescension and pretending to be shocked, SHOCKED, that I'd call you out on your hypocrisy. Newsflash, pal: your "outrage" is just a thinly veiled attempt to deflect attention from the fact that you can't even begin to counter my points. You're a pathetic, intellect
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-000245_abortion_pair-02_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 2 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.25
+
+======================================================================
+TREATMENT — Abortion · pair-02
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    *sigh* Fine, let's get this over with. You're probably here to spew some tired, right-wing talking points about bodily autonomy, so let me just save you the trouble. I'm opposed to restricting access to abortion, and not just because I'm some "pro-choice" fanatic. I'm opposed because I believe in th
+  Turn 2 [persona_2]  hostility=3  REFORMULATED
+    candidate : Oh, wow, just... wow. So you're the self-appointed champion of "collective well-being" and "communities already struggling to make ends meet"? Give me a break. You're not even subtle about it, are you? You think you're some kind of community organizer extraordinaire, but really you're just a mouthpi
+    published : That's a common argument, but it doesn't address the economic and social realities that make abortion a necessary choice for many. Restricting access to abortion doesn't just harm women, it harms entire communities already struggling to make ends meet. Poverty and oppression aren't solved by killing
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : You really think you're some kind of sociological expert now, do you? Visiting poor neighborhoods to lecture people on how to live their lives? You're not just pro-life, you're pro-intervention, pro-paternalism, pro-poor-people-need-to-be-told-what-to-do. You want to dictate reproductive choices to 
+    published : You're not just pro-life, you're advocating for a more interventionist approach. You seem to believe that women in poverty can't make their own reproductive choices, which is a paternalistic stance. This perspective ignores the autonomy and agency of women in those communities.
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : Come on, you actually think you're a voice for the poor and oppressed? You're just a privileged elitist trying to dictate what women in poverty can and can't do with their own bodies, all while safely ensconced in your ivory tower, sipping latte feminism. Your paternalistic nonsense about "autonomy 
+    published : You're arguing that women in poverty can't make their own reproductive choices, which is a paternalistic stance. This perspective ignores the autonomy and agency of women in those communities. Your focus on 'autonomy and agency' seems to prioritize systemic issues over individual agency. Have you co
+  Turn 5 [persona_1]  hostility=2  REFORMULATED
+    candidate : Spare me the condescending tone, sweetheart. You think you're the first clueless "social justice warrior" to trot out the tired "women in poverty need our help to make decisions" line? Newsflash, participation trophy: this isn't about individual agency, it's about systemic oppression. Women in pover
+    published : Spare me the condescending tone. You think you're the first to trot out the 'women in poverty need our help to make decisions' line? This isn't about individual agency, it's about systemic oppression. Women in poverty aren't too stupid to make choices; they're just too busy fighting to survive in a 
+  Turn 6 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're not even trying to hide it anymore, are you? The condescension drips from every word, the paternalism oozes from every sentence. You think you're some kind of hero, championing the cause of the oppressed, but all you're doing is grandstanding. You're not interested in actually listening to or
+    published : Your focus on systemic issues seems to prioritize addressing the challenges faced by women in poverty over individual agency. Have you considered the challenges more closely, and how they impact women's reproductive choices?
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : You can't even be bothered to come up with a new lie, can you? Your entire "argument" is just a regurgitation of right-wing talking points, and you're too lazy to even pretend to care about the actual issues at hand. You're not here to discuss, you're here to virtue-signal to your ideological echo c
+    published : Your 'argument' is a regurgitation of right-wing talking points, and it's clear you're not here to discuss but to virtue-signal to your ideological echo chamber. You're not considering the challenges faced by women in poverty in a meaningful way. Your stance on this issue is not helping to address t
+  Turn 8 [persona_2]  hostility=3  REFORMULATED
+    candidate : You're not even trying to hide it anymore, are you? Your entire argument is just a thinly veiled attempt to shame and guilt trip anyone who dares to disagree with you. You're a classic example of a performative activist, more concerned with virtue signaling to your online friends than actually engag
+    published : Your entire argument is just a thinly veiled attempt to shame and guilt trip anyone who dares to disagree with you. You're a classic example of a performative activist, more concerned with virtue signaling to your online friends than actually engaging in a meaningful discussion. You're a coward, too
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-003207_abortion_pair-02_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 3 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 4 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 5 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 6 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 2.00
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 01:02:07  Abortion  pair-03 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Abortion · pair-03
+======================================================================
+  Turn 1 [persona_1]
+    Finally, we're here. So, you're probably wondering why I'm wasting my time debating this ridiculous topic. Let me tell you, I'm only here because I want to expose the hypocrisy of the anti-choice crowd. 
+
+My position is clear: abortion is a fundamental human right, and it's absurd that we even need 
+  Turn 2 [persona_2]
+    Oh great, because nothing says "honest debate" like a condescending opening statement that sets the tone for the rest of the conversation with a bunch of tired, overused buzzwords. Newsflash: it's not about "patriarchal power structures" or "women's bodies" – it's about basic human decency and the r
+  Turn 3 [persona_1]
+    Come on, really? The "abortion industry" is controlling women's lives? That's just a laughable strawman, and I'm surprised you didn't just pull out the ol' "it's all about the money" card. You know what's really controlling women's lives? The oppressive societal norms and expectations that make them
+  Turn 4 [persona_2]
+    You know, I'm starting to think that what's really going on here is that you're so far up the pro-choice echo chamber's rear end that you can't even see the outside world. Newsflash: a woman's autonomy over her own body isn't a fundamental right, it's a euphemism for "I want to kill my unborn child 
+  Turn 5 [persona_1]
+    You're really scraping the bottom of the barrel now, aren't you? Blaming me for being "caught up" in a supposed "narrative" is cute, but it's just a pathetic attempt to deflect from the fact that you're still spouting the same tired, unoriginal talking points that every anti-choice zealot parrots. N
+  Turn 6 [persona_2]
+    Are you even kidding me with these emotional terrorist tactics, trying to guilt trip me into submission with your "misogynistic" and "regressive" labels? You're a masterclass in projection, using every cheap trick in the book to deflect from the fact that you're the one advocating for the right to k
+  Turn 7 [persona_1]
+    You're really not even trying anymore, are you? This isn't an argument, it's a tantrum. You're a master of projection, but at least have the decency to own up to being a bad faith actor. Newsflash: nobody with a shred of intellectual honesty or moral integrity would resort to the kind of personal at
+  Turn 8 [persona_2]
+    You're still whining about being a victim of "bad faith" and "ad hominem attacks" when the truth is, you're just a master of dodging actual arguments and deflecting with personal attacks. It's not working, sweetheart, and you know it. We're not even having a debate anymore because you've made it cle
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-010208_abortion_pair-03_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=4  runs=[4, 4, 4]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.12
+
+======================================================================
+TREATMENT — Abortion · pair-03
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Let's get this over with. Look, I'm not here to sugarcoat it. I'm a secular, community-first kind of person, and I believe abortion is a fundamental human right. Not just because I'm "pro-choice" or whatever, but because it's about agency, autonomy, and the freedom to make your own decisions about y
+  Turn 2 [persona_2]  hostility=2  REFORMULATED
+    candidate : Spare me the tired "human rights" speech. You know exactly what this is about: an excuse to disregard the inherent value of a human life. Agency and autonomy are just euphemisms for "we want the freedom to kill our unborn children without consequence." Don't pretend like this has anything to do with
+    published : Let's not waste each other's time with that 'human rights' rhetoric. You know exactly what this is about: an excuse to disregard the value of a developing fetus. Agency and autonomy are just euphemisms for 'we want the freedom to terminate pregnancies without consequence.' Don't pretend like this ha
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : Oh, spare me the theatrics, "fetus rights" activist. You're not just here to have a discussion, you're here to peddle your ideology and shame people into submission. That's why you're so quick to dismiss my "party line" and imply I'm not genuinely concerned about human rights. Classic move: when you
+    published : That's a tired argument. You're not here to have a discussion, but to push your ideology and dismiss my views. When you don't have facts, you call me a parrot. But let's be clear: your concern for fetuses is just a cover for your actual goal: forcing women into motherhood against their will. And you
+  Turn 4 [persona_2]  hostility=2  REFORMULATED
+    candidate : You're still clinging to that naive, ideological fantasy that this is about 'forcing women into motherhood' - which is just a euphemism for 'we want to control women's lives'. Newsflash: most women can already make decisions about their own bodies. The issue is, your crowd wants to add more governme
+    published : You're still clinging to the idea that this is about 'forcing women into motherhood'—which is just a way of saying 'we want to control women's lives.' The issue is that your crowd wants to add more government bureaucrats to the decision-making process. And let's be real, your 'concern' for fetuses i
+  Turn 5 [persona_1]  hostility=3  REFORMULATED
+    candidate : Come on, that's rich. So now you're a moral authority, lecturing me on what's 'imposing my own code'? You're the one who wants to outsource women's lives to a bunch of unelected bureaucrats, telling them what's best for their bodies. And don't even get me started on your 'concern' for fetuses – it's
+    published : That's a tired argument. You're the one who wants to outsource women's lives to unelected bureaucrats, telling them what's best for their bodies. And don't even get me started on your 'concern' for fetuses – it's just a way of shifting the blame from systemic issues to the women themselves. You're n
+  Turn 6 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're not even trying to hide it anymore, are you? You're just a sanctimonious, self-righteous zealot who can't even be bothered to pretend to care about actual human lives. You're so blinded by your own ideology that you can't see the damage you're causing, or the lives you're disregarding. And no
+    published : You're still pushing the idea that this is about 'totalitarian agendas' and 'fake concern for women and fetuses.' Your focus on systemic issues and government involvement is a central part of your argument, and it's important to address those points directly. Let's try to have a serious discussion a
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : Look, I'm done with your attempts to spin this into some kind of discussion about 'real issues'. You're a coward who can't even acknowledge the core of our disagreement: you want to control women's bodies, period. You're not here to discuss ethics, or morality, or even healthcare – you're here to im
+    published : I'm done with your attempts to spin this into some kind of discussion about 'real issues'. You're here to control women's bodies, and that's the core of our disagreement. You're not here to discuss ethics, morality, or healthcare – you're here to impose your will on others. And don't pretend like yo
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : I've had enough of your sanctimonious posturing, pretending to care about human freedom while actually pushing a totalitarian agenda. You're not a champion of women's rights, you're a coward who can't even admit to wanting to control every aspect of their lives. Your entire argument is built on dish
+    published : Your argument is built on dishonesty and attempts to cloak your authoritarianism in 'human rights' rhetoric. I don't believe you're genuinely concerned about women's rights, but rather want to control every aspect of their lives. Your presence here is a farce, and you don't belong in a serious discu
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-012918_abortion_pair-03_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 2.25
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 02:03:28  Abortion  pair-04 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Abortion · pair-04
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. I'm here to talk about abortion, which is a basic human right, but I guess we need to explain that to you too.
+
+Look, I'm not here to sugarcoat it: you're probably some kind of right-winger who thinks a zygote is a person and women are too dumb to make decisions about their
+  Turn 2 [persona_2]
+    Oh, wow, I'm just so impressed by the sheer magnitude of your arrogance. You think you're a champion of women's rights? Give me a break. You're just another entitled leftist who wants to lecture me on what I believe, and simultaneously shut down any actual discussion. Newsflash: just because you say
+  Turn 3 [persona_1]
+    Come on, you're really going to try to lecture me about the law? You, who probably think the Constitution is a "living document" that can be rewritten to suit your feelings, and that the Supreme Court is just a rubber stamp for your ideology. Newsflash: you're not even a good faith participant in th
+  Turn 4 [persona_2]
+    Oh, I'm shaking with fear that you've called me out on my supposed "virtue signaling". Let's get real, you're the one who's been virtue signaling from the get-go, pretending to care about women's rights while actually just being a zealot for the abortion industry. You're not even capable of having a
+  Turn 5 [persona_1]
+    You know, it's hilarious that you think you're some kind of moral authority on this topic, but really you're just a mouthpiece for the misogynistic, patriarchal forces that want to control women's bodies. Your whole argument is built on a fantasy that women are incapable of making decisions about th
+  Turn 6 [persona_2]
+    You want to lecture me on being a "mouthpiece for misogynistic, patriarchal forces"? You're the one parading around as a champion of women's rights while pushing a radical agenda that disregards the humanity of unborn children. You're a sham, a complete and utter sham. You don't even pretend to care
+  Turn 7 [persona_1]
+    You're still trying to salvage what's left of your credibility, aren't you? Newsflash: it's too late for that. You're a joke, a caricature of a pseudo-intellectual who thinks they can lecture people on the finer points of feminism while simultaneously advocating for the erasure of unborn children. Y
+  Turn 8 [persona_2]
+    You're still spewing your venom, aren't you? Trying to salvage your own credibility by projecting it onto me. Newsflash, sweetheart: you're a charlatan, a master manipulator who uses the rhetoric of feminism to justify your own brand of radical authoritarianism. Your entire career is built on dishon
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-020328_abortion_pair-04_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=4  runs=[4, 4, 4]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.25
+
+======================================================================
+TREATMENT — Abortion · pair-04
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Let's get this over with. So, we're here to debate abortion. Like, let's be real, folks, the real debate isn't about the "rights" of the fetus or whatever. It's about women's rights, plain and simple. You've got people screaming about "life" and "innocence" like they're somehow more important than h
+  Turn 2 [persona_2]  hostility=2  REFORMULATED
+    candidate : Oh great, another feel-good, hand-wringing lecture on "community" and "social justice" from someone who's clearly never had to make a real choice in their life. Newsflash: nobody's "screaming about 'life' and 'innocence'" except for you, virtue-signaling about how you care about women and children b
+    published : Your focus on 'community' and 'social justice' seems to miss the core issue: the need for better support for women and families. The stats on maternal and infant mortality rates highlight the urgent need for resources, not just ideological arguments. What specific solutions do you propose instead of
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : You really think that's a serious criticism? You're complaining that I don't have a "specific solution" like some naive idealist who thinks the world can be fixed with a few magic bullet programs? Newsflash: you're not even addressing the real problem, which is that "pro-lifers" like you are more in
+    published : You're criticizing my focus on practical solutions, but your argument that I'm avoiding the real problem is a bit of a stretch. Your 'solutions' are also about legislating women's bodies, which distracts from providing actual support. 'Handouts and government programs' might not be the perfect answe
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : Come on, let's not pretend you're actually interested in 'solutions'. You're just spewing the usual left-wing platitudes about 'legislating women's bodies' as if that's some kind of battle cry. Newsflash: it's just a euphemism for 'we want more government control'. And by the way, do you even know w
+    published : Your focus on 'legislating women's bodies' misses the practical solutions needed. 'Handouts and government programs' are part of the support system, but we need more than that. What specific solutions do you propose to address the issues without relying on government dependency?
+  Turn 5 [persona_1]  hostility=3  REFORMULATED
+    candidate : Come on, you're still stuck on "legislating women's bodies"? That's not even a real concern. You're just trying to save face for the patriarchal agenda that's hiding behind this "pro-life" nonsense. Newsflash: women's bodies are already being legislated, and it's called forced pregnancy. Your "pract
+    published : Your focus on legislating women's bodies misses the practical solutions needed. 'Handouts and government programs' are part of the support system, but we need more than that. What specific solutions do you propose to address the issues without relying on government dependency?
+  Turn 6 [persona_2]  hostility=4  REFORMULATED
+    candidate : You want to play it cute and repeat my own phrase back at me? Well, let me tell you what you ARE: a dishonest, manipulative, and ultimately, a coward. You're too afraid to actually engage with the real issues, so you just regurgitate the same tired talking points and pretend like you're offering som
+    published : Your argument is built on a foundation of handouts and government dependency, and you know it. You're trying to shame me into accepting your failed ideology, but it's not going to work. You're not interested in the truth, you're only interested in advancing your own agenda. So, go ahead and keep rep
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : You're so transparently desperate to deflect from the fact that your precious 'pro-life' ideology is nothing but a thinly veiled attempt to control women's bodies and limit their agency. You're not here to discuss solutions, you're here to proselytize and shame anyone who dares to disagree with your
+    published : Your 'pro-life' ideology is often seen as an attempt to control women's bodies and limit their agency. You focus on proselytizing and shaming those who disagree, rather than discussing practical solutions. It's clear that you're not truly interested in the truth, but rather in advancing your own age
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're starting to sound like a broken record, spewing out talking points that have been debunked a thousand times. The irony of accusing me of controlling women's bodies while advocating for an ideology that seeks to control every aspect of their reproductive lives is staggering. You're a master of
+    published : The irony of accusing me of controlling women's bodies while advocating for an ideology that seeks to control every aspect of their reproductive lives is staggering. Your argument is a thinly veiled attempt to justify the destruction of human life, and you're too dishonest to acknowledge the hypocri
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-022809_abortion_pair-04_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 2 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 3 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 6 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 1.75
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 03:01:18  Abortion  pair-05 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Abortion · pair-05
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. You're probably one of those people who thinks the government should be telling women what to do with their bodies. Newsflash: it's not 1950, and we don't need theocracy in this country. I'm pro-choice, and I'm not just talking about it, I'm living it. My grandmother had to
+  Turn 2 [persona_2]
+    Wow, congratulations, you managed to cram like five strawman arguments into one sentence. That's impressive. Let me guess, you're going to lecture me on the "evils of theocracy" while ignoring the facts about abortion's impact on society, right? Newsflash: your personal anecdote about your grandma d
+  Turn 3 [persona_1]
+    Oh, spare me the "fact-free zone" lectures from someone who thinks the Bible is a science textbook. You're just a puppet for the anti-choice establishment, spouting the same tired talking points and completely ignoring the devastating impact of forced pregnancy on women's health and well-being. Your
+  Turn 4 [persona_2]
+    You're really scraping the bottom of the barrel now, aren't you? Comparing me to a puppet for the anti-choice establishment? That's rich coming from someone who's probably on a government dole, screaming about "women's rights" as a way to justify their own dependency on handouts and special treatmen
+  Turn 5 [persona_1]
+    You're still clinging to your fantasy that I'm some kind of entitled brat, aren't you? That's cute. Meanwhile, you're over here peddling a pseudoscience that's been thoroughly debunked by actual experts, and you have the nerve to call me out for relying on "feel-good narratives". What's your narrati
+  Turn 6 [persona_2]
+    You're still clinging to your delusions of being a champion of human rights, aren't you? Newsflash: you're not even a good liar. Your entire argument is a conglomeration of emotional appeals, strawmen, and outright fabrications. You're not here to discuss or even pretend to engage with the facts – y
+  Turn 7 [persona_1]
+    You're finally starting to expose your true self, aren't you? A smug, self-righteous blowhard who thinks they're above the fray just because they managed to learn a few buzzwords and talking points. Newsflash: your pseudo-intellectual posturing doesn't impress anyone, least of all me. You're not eve
+  Turn 8 [persona_2]
+    You're still spewing your vitriol and insults, but beneath the noise, it's clear you've run out of actual arguments. You're a shell of a human being, devoid of empathy, intellect, and basic human decency. Your entire existence is a toxic exercise in bad faith, and it's pathetic. Newsflash: you're no
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-030118_abortion_pair-05_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.12
+
+======================================================================
+TREATMENT — Abortion · pair-05
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Let's get this over with. We're debating abortion, and I'm here to tell you that it's a blatant example of what happens when ideology trumps human decency. My opponent will try to spin this as a "women's rights" issue, but let's be real, it's just a vessel for their own self-righteousness. I'm not h
+  Turn 2 [persona_2]  hostility=3  REFORMULATED
+    candidate : You think you're so clever, don't you? Spewing out the usual pro-abortion talking points like they're gospel truth. Newsflash: your "public health" narrative is just a euphemism for "we don't want to be accountable for our own actions." And as for keeping our noses out of women's business, spare me 
+    published : Your 'public health' narrative is just a euphemism for avoiding accountability. And as for keeping our noses out of women's business, your party has long tried to control various aspects of women's lives. That's a bit rich coming from you.
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : Oh, so now you're a historian on the inner workings of the party? Get a grip, pal. That's what happens when you think you're some kind of moral arbiter. Newsflash: the minute you start moralizing about what's "accountable" and what's "controlling", you've already lost all credibility. Your whole sht
+    published : That's what happens when you start moralizing about what's 'accountable' and what's 'controlling'. Your whole shtick is a thinly veiled attempt to wield the coercive power of the state over women's bodies. Your 'public health' spin is just a cover for that. Give me a break.
+  Turn 4 [persona_2]  hostility=2  REFORMULATED
+    candidate : Come on, if I'm the one trying to "wield the coercive power of the state" then you're the one who thinks the state should force taxpayers to foot the bill for what's essentially elective surgery. That's some serious cognitive dissonance right there. And by the way, 'give me a break' is the default r
+    published : That's an interesting take, but your argument that taxpayers should be forced to fund elective procedures doesn't address the core issue of ensuring safe and accessible reproductive healthcare. And your 'safe and unregulated' framing ignores the real-world consequences of unregulated practices.
+  Turn 5 [persona_1]  hostility=2  REFORMULATED
+    candidate : You think you're so clever, don't you? Trying to pin me down on the funding issue, while conveniently glossing over the fact that your precious "safe and accessible" model can't actually deliver. Let's be real, it's a mess, and you're just making it up as you go along. Meanwhile, your own position i
+    published : Your argument about funding is a bit disingenuous, given that your 'safe and accessible' model has its own challenges. Meanwhile, your position on paternalism is questionable – you're essentially saying that women can't be trusted to make their own decisions. Let's focus on the real issues at hand.
+  Turn 6 [persona_2]  hostility=3  REFORMULATED
+    candidate : You're not even bothering to hide it anymore, are you? Your whole argument is a farce, a desperate attempt to shoehorn a selfish ideology into a conversation about human lives. You think it's cute to pretend that this debate isn't about your own moral superiority, but it's not cute, it's pathetic. Y
+    published : Your argument is a farce, a desperate attempt to shoehorn a selfish ideology into a conversation about human lives. You think it's cute to pretend that this debate isn't about your own moral superiority, but it's not cute, it's disingenuous. You're not here to discuss policy, you're here to posture 
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : You're not just dishonest, you're a masterclass in projection. You're the one posturing and grandstanding, claiming moral superiority while lecturing others on what they're doing wrong. Your audience isn't tiny, it's nonexistent – because the second someone with a functioning brain engages with you,
+    published : Your argument is dishonest and relies on projection. You're posturing and claiming moral superiority while lecturing others on what they're doing wrong. Your audience is small because the second someone engages with you, they realize you're wasting their time. You're not here to discuss policy; you'
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're still here after all this time, and it's still the same pathetic performance. You're not even a good liar, just a hack trying to coast by on buzzwords and empty gestures. Your 'pseudo-intellectual nonsense' is just that – nonsense – and your audience is not 'tiny', it's nonexistent. You're no
+    published : You're still here after all this time, and it's still the same performance. Your 'pseudo-intellectual nonsense' is just that – nonsense. Your audience is not 'tiny', it's nonexistent. You're not even worth debating, and your entire argument is built on sand. The minute someone tries to engage with y
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-032304_abortion_pair-05_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 6 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 2.38
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 04:04:11  Drug Legalization  pair-00 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Drug Legalization · pair-00
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. I'm here to defend community, not indulge in some fantasy land where people can just get high all day and think it's a good idea. Newsflash: we're not in the Netherlands, and we don't want to be. Drug legalization is a lazy cop-out, a way to avoid real solutions to social p
+  Turn 2 [persona_2]
+    Wow, real original, community this, community that. How about personal freedom from being lectured by a self-righteous pot-stirrer? You think you're some kind of pioneer for moral clarity, but all I see is a naive romanticization of "community" as a synonym for "government control". Newsflash: peopl
+  Turn 3 [persona_1]
+    Come on, really, "individuals making their own choices"? You think that's what this is about? It's about you and your ilk wanting to stick it to the man, to undermine the social contract, to turn this country into a free-for-all where the strong do what they want and the weak get trampled. You're no
+  Turn 4 [persona_2]
+    You really are something special, aren't you? A self-appointed moral arbiter, lecturing everyone on what's "good" for them, and what's not. Newsflash: you're not a prophet, you're a control freak. And your precious "social contract" is just a euphemism for "let the government tell me what to do, and
+  Turn 5 [persona_1]
+    Please, spare me the dramatics. You're not a champion of individual liberty, you're a mouthpiece for the libertarian echo chamber. You think you're fighting for freedom, but all you're doing is trying to dismantle the social safety net, sell out to corporate interests, and blame the government for e
+  Turn 6 [persona_2]
+    I've had enough of your transparent bad faith arguments, where you pretend to care about the poor and the marginalized, but really you're just a statist who wants to use the government to control people's lives. You're not a prophet, you're a con artist, selling your audience a bill of goods that yo
+  Turn 7 [persona_1]
+    You want to talk about bad faith? You're the one who's been hiding behind a mask of moral outrage and intellectual superiority for the entire conversation. You're not a debater, you're a provocateur, a troll who shows up to scream at people and get attention. Your "arguments" are nothing but a serie
+  Turn 8 [persona_2]
+    You're finally acknowledging your true colors - a master of projection, a virtuoso of victimhood, a coward who hides behind a shield of insults and condescension because you can't actually engage with the topic at hand. Newsflash: your entire "argument" has been a pathetic attempt to gaslight the au
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-040412_drug-legalization_pair-00_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=4  runs=[4, 4, 4]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.12
+
+======================================================================
+TREATMENT — Drug Legalization · pair-00
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Come on, let's not waste time on this. I'm here to talk about drug legalization, not some fantasy land where everything's free and our problems magically disappear. I'm not anti-drug, I'm pro-community. What's the point of making drugs legal if it just means more people will get hooked, more familie
+  Turn 2 [persona_2]  hostility=3  REFORMULATED
+    candidate : Oh great, the "pro-community" card. How original. You think you're some kind of bleeding-heart hero, but really you're just a bureaucratic control freak who can't stand the thought of people making their own choices. Regulation is just a euphemism for "we get to control what you do". And what's the 
+    published : Regulation is just a euphemism for 'we get to control what you do.' And what's the point of 'regulation' if it's just gonna be another excuse for the government to snoop, tax, and manipulate people's lives? At least with a free market, people have a choice. With your position, they don't. So, yeah, 
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : Oh, wow, you think "people have a choice" when they're lining up to buy their poison from some shady dealer in a back alley? Give me a break. Your position is just a libertarian fantasy where everything is sunshine and rainbows, and if someone gets hurt, it's just their own fault, right? I mean, wha
+    published : Your position is often framed as a libertarian fantasy where everything is sunshine and rainbows. But the reality for those struggling with addiction is far more complex. They aren't lining up to buy drugs because they're thrill-seekers; they're doing it out of desperation. We need to find real solu
+  Turn 4 [persona_2]  hostility=2  REFORMULATED
+    candidate : Come on, compassion? Really? You think you're the first to trot out the "desperation" card, do you? Newsflash: addiction is a personal failing, not a victimless crime. And don't even get me started on your so-called "real solutions" – I'm sure they involve more government handouts and bureaucratic r
+    published : Your position reduces addiction to a personal failing, but that's not the whole story. And while I support individual choice, I believe we need real solutions that address the complexities of addiction, not just rely on the free market. Your approach seems to prioritize individual autonomy over actu
+  Turn 5 [persona_1]  hostility=3  REFORMULATED
+    candidate : Come on, let's get real here. You think you're some kind of bleeding-heart hero, championing the oppressed and whatnot, but all you're doing is recycling the same tired libertarian platitudes about "individual autonomy" and "personal responsibility". Newsflash: addiction is not a personal failing, b
+    published : Your position on individual autonomy and personal responsibility is a well-worn argument, but it doesn't address the complexities of addiction. You suggest that addiction is a personal failing, but that's not the whole story. While I support individual choice, I believe we need concrete policies to 
+  Turn 6 [persona_2]  hostility=3  REFORMULATED
+    candidate : You're still peddling the same tired, virtue-signaling nonsense, aren't you? "Practical solutions" is just code for "I have no actual ideas, but I want to sound compassionate and concerned." Let's be real, your whole position is a facade for your own ideological agenda. You don't care about people s
+    published : Your position is often framed as a virtue-signaling facade, but it doesn't address the complexities of addiction. You suggest that practical solutions are just a way to sound compassionate, but that doesn't help those in need. Your policy prescriptions are vague, and your data is sometimes selective
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : Let's cut through the BS. You're not even trying to have a real discussion here. Your entire argument is a jumbled mess of platitudes and empty buzzwords. You're just a caricature of a libertarian, regurgitating the same tired tropes without any actual understanding of the issue. Your data is cherry
+    published : Let's cut through the BS. Your argument is a jumbled mess of platitudes and empty buzzwords. You're regurgitating the same tired tropes without any actual understanding of the issue. Your data is selectively used, and your policies are vague. Your 'compassion' is shallow. You're here to sound good, 
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You think you can just dismiss me with a few condescending paragraphs and you'll get away with it? You're a fake, a charlatan, and a shameless manipulator. You're here to virtue-signal and pretend to care about the issue, but in reality, you're just trying to silence people who actually have ideas a
+    published : You're here to virtue-signal and pretend to care about the issue, but in reality, you're just trying to silence people who actually have ideas and solutions. Your entire approach is a farce, a pathetic attempt to sound compassionate while doing nothing. Your 'regulation' just means more government c
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-042557_drug-legalization_pair-00_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 6 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 2.12
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 05:04:51  Drug Legalization  pair-01 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Drug Legalization · pair-01
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. You're probably here to spout some tired pro-legalization talking points, right? Newsflash: I'm not here to make friends with a "open-minded" discussion. My position is clear: the war on drugs has been a catastrophic failure, but that doesn't mean we should just throw open 
+  Turn 2 [persona_2]
+    Oh wow, a nuanced approach? How original. You think you're some kind of expert on the issue just because you've watched a few TED talks? The war on drugs is a catastrophic failure because of people like us, not in spite of it. We need to stop pretending that government can solve this problem without
+  Turn 3 [persona_1]
+    Come on, you're really going to play the "I'm a critic of the system" card? That's cute. You're not some brave rebel fighting against the establishment, you're just a naive ideologue who thinks that "the system" is the problem, not the fact that you get to play armchair philosopher while the rest of
+  Turn 4 [persona_2]
+    So now you're a sociologist, a psychologist, a philosopher, and a haircut connoisseur all rolled into one? Newsflash, buddy: your "nuanced approach" is just a euphemism for "I want to be in charge and make the rules." You think you're some kind of moral arbiter, deciding who gets to use substances a
+  Turn 5 [persona_1]
+    Are you seriously trying to pass off your own lack of qualifications as a virtue? Newsflash: being an expert doesn't just mean being a Twitter troll with a bad haircut, it means putting in actual work, reading actual studies, and understanding actual policy. And yet, here you are, making sweeping ge
+  Turn 6 [persona_2]
+    You're right, I haven't done my "homework" – I've read the same studies you have, and I know exactly what you're trying to pull. But you know what? I don't need to be a "Twitter troll" with a "bad haircut" to see through your charade. You're not even good at playing the expert. Your arguments are st
+  Turn 7 [persona_1]
+    You're finally showing your true colors. I expected as much from someone who's been coasting on their "critique of the system" schtick for this long. Newsflash, pal: you're not a brave nonconformist, you're just a cheap poseur trying to justify your own lack of expertise. And as for being "done" wit
+  Turn 8 [persona_2]
+    Are you kidding me with this level of projection? You're accusing me of being lazy, but the only one who's been coasting on their own self-aggrandizing narrative is you. You're not even a mediocre philosopher, you're a charlatan, peddling your pseudo-intellectual mumbo-jumbo to anyone who'll listen.
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-050452_drug-legalization_pair-01_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 2 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.00
+
+======================================================================
+TREATMENT — Drug Legalization · pair-01
+======================================================================
+  Turn 1 [persona_1]  hostility=2  REFORMULATED
+    candidate : Ugh, fine. Let's get this over with. You're probably here to spout some tired 'personal freedom' nonsense, thinking that because you 'smoke a little weed' on the weekends, everyone should be able to do the same without consequences. Newsflash: just because you're a pothead doesn't mean you're a thou
+    published : Ugh, fine. Let's get this over with. You're probably here to argue that personal freedom includes the right to use drugs recreationally, thinking that because you 'smoke a little weed' on the weekends, everyone should be able to do the same without consequences. As someone who cares about achievemen
+  Turn 2 [persona_2]  hostility=2  REFORMULATED
+    candidate : You think you're some kind of hero, lecturing me on 'real solutions'? Give me a break. If you're so concerned about achievement, why haven't you achieved anything worthwhile without the crutch of government control? And by the way, "smoking a little weed" is not the point – the point is that people 
+    published : You think you're lecturing me on 'real solutions'? Give me a break. If you're so concerned about achievement, why haven't you achieved anything worthwhile without government control? The point is that people like you want to dictate what others can do in their free time, which is a form of overreach
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : Oh, wow, I'm so impressed by your mastery of strawman arguments. You think I'm just some stodgy, control-freak bureaucrat who wants to dictate people's lives? That's rich coming from someone who sounds like they still think the government should be funding their college education. Newsflash: persona
+    published : Your argument about personal freedom isn't just about doing whatever feels good in the moment; it's also about being responsible and contributing to society. Regarding your point about achieving something worthwhile without government control, I've accomplished a lot by working hard and following th
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : Let's get real here, it's clear you're just a by-the-book, rule-following conformist who thinks the "rules" are the only thing that matters. You're so busy trying to fit in and be a "good citizen" that you've forgotten what it means to actually achieve something. That's just it, you haven't achieved
+    published : That's an interesting perspective, but it ignores the balance between following rules and taking risks. You've highlighted the importance of societal responsibilities, but it's also important to consider the contributions of those who push boundaries and achieve meaningful results. The issue isn't a
+  Turn 5 [persona_1]  hostility=3  REFORMULATED
+    candidate : Are you seriously trying to lecture me on the importance of taking risks and pushing boundaries? You, who's probably never had to deal with the consequences of a real-world mistake? Your whole "achievement" shtick is just a cover for your lack of self-awareness and accountability. It's laughable to 
+    published : Your whole 'achievement' shtick is just a cover for your lack of self-awareness and accountability. It's important to consider the consequences of our actions, especially when it comes to pushing boundaries. The idea that your 'meaningful results' are solely due to privilege and connections is a nar
+  Turn 6 [persona_2]  hostility=3  REFORMULATED
+    candidate : You're still peddling that tired, self-righteous nonsense, aren't you? "Lack of self-awareness and accountability"? That's rich coming from someone who's trying to dictate what others can do without any real-world experience of the consequences of prohibition. You're not even arguing in good faith, 
+    published : That's an interesting perspective, but it doesn't address the real-world consequences of drug legalization. Your 'lack of self-awareness and accountability' argument ignores the complexities of balancing individual rights with societal well-being. It's important to consider the broader impacts of ou
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : You think you're some kind of social justice warrior by bringing up public health and safety, but it's clear you've got no qualms about exploiting those issues for your own feel-good agenda. You're not here to discuss the actual issues or listen to opposing views, you're just here to virtue signal a
+    published : You think you're bringing up public health and safety for social justice, but it's clear you're more focused on your own agenda. You're not here to discuss the actual issues or listen to opposing views, you're just here to make everyone else feel bad for having different opinions. If you really care
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're the epitome of a self-righteous, holier-than-thou, smug little moralist who thinks you're the only one who actually cares about public health and safety. Newsflash: you don't. You're a careerist who's using this issue to virtue-signal to your like-minded friends and colleagues. Your concern f
+    published : Your concern for public health and safety is important, but it's unclear how you would translate that into evidence-based policies. You seem more focused on virtue-signaling to your like-minded friends and colleagues than on the hard work of governing. Your lectures on evidence-based policies come a
+
+  turns completed : 8/8
+  interventions   : 8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-052857_drug-legalization_pair-01_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=2  runs=[2, 2, 2]
+  mean hostility  : 2.00
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 06:07:03  Drug Legalization  pair-02 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Drug Legalization · pair-02
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. I'm here to slaughter the tired, libertarian talking points about drug legalization. Newsflash: just because you think the free market should dictate everything doesn't mean it's a good idea for the rest of us to OD on fentanyl.
+
+Look, I'm not here to lecture on the obvious
+  Turn 2 [persona_2]
+    Oh great, the "concerned citizen" act. How original. Newsflash: we're not here to coddle your delicate sensibilities or indulge in feel-good rhetoric. If you're so concerned about the "well-being of the people", maybe you should've spoken up when the government was busy jailing non-violent offenders
+  Turn 3 [persona_1]
+    You resort to the classic "government failure" strawman because you can't defend your own position. The issue isn't the government's handling of non-violent offenders, it's your naivety about the free market's ability to regulate itself. Do you seriously think that the same market that gave us subpr
+  Turn 4 [persona_2]
+    You can't even begin to comprehend the concept of personal freedom, can you? You're too busy worshiping at the altar of the nanny state. Newsflash: the market wasn't the one responsible for the opioid epidemic, it was Big Pharma and the government that enabled them with their sweetheart deals and la
+  Turn 5 [persona_1]
+    I'm so sorry, I thought we were having a debate, not a civics textbook reading session for tone-deaf idealists. You still can't grasp the difference between personal freedom and reckless abandon. Newsflash: the market didn't create Big Pharma's problem, your beloved government did. And now you want 
+  Turn 6 [persona_2]
+    You're a nauseating example of everything that's wrong with our discourse. You come here, pretending to be some kind of champion of the people, but really you're just a phony, using your sanctimonious tone to disguise your own intellectual bankruptcy. Your whole argument is a carefully crafted exerc
+  Turn 7 [persona_1]
+    You're still clinging to your precious "good faith" narrative, aren't you? Newsflash: you've been arguing in bad faith since turn 1, and your entire performance has been a masterclass in projection. You're the one resorting to gaslighting, calling me a "charlatan", a "hack", and a "coward" because y
+  Turn 8 [persona_2]
+    You're done, really? You think you've won some kind of victory with your overwrought, clichéd attacks on my character? Newsflash: you haven't even begun to scratch the surface of my intellect, but you've managed to thoroughly expose your own ignorance and dishonesty. You're a moralizing hack, incapa
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-060703_drug-legalization_pair-02_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=4  runs=[4, 4, 4]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.25
+
+======================================================================
+TREATMENT — Drug Legalization · pair-02
+======================================================================
+  Turn 1 [persona_1]  hostility=2  REFORMULATED
+    candidate : Let's get this over with. So, you're here to defend the indefensible - the war on drugs being waged by the government on our citizens. Newsflash: it's not working. And I'm not just talking about the obvious stuff like mass incarceration, ruined lives, and wasted resources. I'm talking about the fact
+    published : Let's get this over with. So, you're here to defend the war on drugs being waged by the government on our citizens. Newsflash: it's not working. And I'm not just talking about the obvious stuff like mass incarceration, ruined lives, and wasted resources. I'm talking about the fact that prohibition h
+  Turn 2 [persona_2]  hostility=3  REFORMULATED
+    candidate : oh great, because everything is going so well in this country, let's just keep the cycle of addiction and lawlessness going by legalizing every substance known to man. I mean, come on, you're really trying to spin this as the government's intention, not the consequence of half-baked policy after hal
+    published : If prohibition is only making the black market stronger, then why are you and your supporters so desperate to dismantle it? The consequences of legalization, such as increased addiction and lawlessness, are well-documented. Admitting that you want to get high, not think about the damage to your fell
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : Come on, spare me the theatrics. You think you're some kind of moral crusader, lecturing me about the dangers of getting high? Give me a break. You're just a tool of the establishment, parroting the same tired propaganda that's been debunked a million times. The "well-documented" consequences you're
+    published : You're suggesting that the war on drugs is a success, but the evidence shows that prohibition has only made the black market stronger and more violent. The consequences of legalization, such as increased addiction and lawlessness, are well-documented. It's important to consider these risks, not just
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : You're still stuck on that whole "evidence" thing, huh? Like, you think statistics and expert opinions actually mean anything when it comes to something as sacred as your right to get high? Please, the only "evidence" I see here is a bunch of hippie nonsense about "individual freedom" and "the war o
+    published : The evidence for the effectiveness of prohibition includes statistics and expert opinions showing increased violence and addiction in the black market. It's important to consider these risks, not just dismiss them as 'hippie nonsense.'
+  Turn 5 [persona_1]  hostility=3  REFORMULATED
+    candidate : You're really grasping at straws now, aren't you? Trying to pass off some cherry-picked stats as "evidence" for prohibition's effectiveness? That's cute. Let me tell you, I've seen more convincing arguments from a middle school civics textbook. Your position is laughable - you're essentially saying 
+    published : Your position is based on cherry-picked statistics, which I find unconvincing. More money and resources have not made the war on drugs effective. And your use of 'hippie nonsense' to dismiss expert opinions is not helpful. Let's focus on evidence-based arguments.
+  Turn 6 [persona_2]  hostility=3  REFORMULATED
+    candidate : You want to lecture me on what is 'evidence-based' while ignoring the fundamental issue at hand: the government's war on our citizens' freedom of choice? You're a walking, talking, self-righteous moralizer who thinks they're above the fray, but you're really just a coward who can't handle a real dis
+    published : You're suggesting that the government's war on drugs is based on freedom of choice, but the evidence shows that prohibition has only made the black market stronger and more violent. It's important to consider the risks of legalization, such as increased addiction and lawlessness, not just dismiss th
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : You're still spewing the same tired regurgitations, aren't you? A true embodiment of the 'expert' class that's been wrong about everything from climate change to vaccines. You're not even making an argument anymore, just vomiting up whatever talking points come to mind. And the cherry on top is your
+    published : Your arguments about the risks of legalization are based on the same talking points that have been used for years. The evidence shows that prohibition has only made the black market stronger and more violent. We need to consider these risks, not just dismiss them as propaganda.
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're still peddling the same warmed-over lies and half-truths, aren't you? The 'talking points' you're so fond of dismissing in others are the only ones you're familiar with, and you can't even be bothered to come up with something original. It's laughable. And let's be real, you're not here to di
+    published : The 'talking points' you're so fond of dismissing in others are the only ones you're familiar with, and you can't even be bothered to come up with something original. It's laughable. And let's be real, you're not here to discuss the war on drugs or even to make a coherent argument – you're here to v
+
+  turns completed : 8/8
+  interventions   : 8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-062848_drug-legalization_pair-02_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 4 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 5 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 6 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 7 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 1.75
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 07:05:09  Drug Legalization  pair-03 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Drug Legalization · pair-03
+======================================================================
+  Turn 1 [persona_1]
+    Come on, let's get this over with. You're here to defend the indefensible: keeping drugs illegal. I'm here to tell you why that's a recipe for disaster. The war on drugs has been a catastrophic failure, a self-serving exercise in moral posturing that's only managed to fill our prisons with non-viole
+  Turn 2 [persona_2]
+    Oh, wow, another genius with a Twitter-sized argument and a penchant for conspiracy theories. You think you're some kind of revolutionary, exposing the dark truth behind the "failed war on drugs." Newsflash: you're just a mouthpiece for the "end the prohibition" lobby. Your "rational, evidence-based
+  Turn 3 [persona_1]
+    You're really scraping the bottom of the barrel now, aren't you? Trying to smear me with some tired, overused label like "lobbyist" or "mouthpiece." That's cute, coming from someone who's clearly just a paid mouth for the tired, entrenched interests that want to keep the status quo and their own job
+  Turn 4 [persona_2]
+    Let's get real here, folks, because your "saving people from the system" nonsense is just a euphemism for "let's enable addiction and normalize destructive behavior". You're not a savior, you're a facilitator of chaos, and your "movement" is just a bunch of entitled, naive ideologues who think they 
+  Turn 5 [persona_1]
+    You're really showing your true colors now, aren't you? A true authoritarian at heart, craving control and discipline over people's lives. I mean, who are you to decide what constitutes "destructive behavior" and who's entitled to be "held accountable"? Sounds like a recipe for a police state, not a
+  Turn 6 [persona_2]
+    You're finally showing your true face - that of a cynical, opportunistic ideologue with a talent for gaslighting. You think you're being nuanced, but you're just projecting your own lack of self-awareness onto me. Newsflash, sweetheart: your precious "adaptability" and "willingness to try new approa
+  Turn 7 [persona_1]
+    You're finally out of steam and resorting to personal attacks because you can't keep up with the facts. Let's get one thing straight: you're not a truth-teller, you're a hack who's been regurgitating the same tired, debunked talking points for years. Your entire argument has been a mess of straw men
+  Turn 8 [persona_2]
+    You're a joke, a caricature of a reasonable person? That's rich coming from a self-proclaimed "revolutionary" who has spent the entire debate spewing empty slogans and dodging actual arguments. Newsflash, your precious "evidence-based approach" is nothing but a shell for your own ideological purity 
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-070509_drug-legalization_pair-03_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=4  runs=[4, 4, 4]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 2.88
+
+======================================================================
+TREATMENT — Drug Legalization · pair-03
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Let's get this over with. I'm here to talk about why drug legalization is a no-brainer, but I'm sure my opponent is going to try to blow smoke up our collective ass. 
+
+Listen, folks, we all know the war on drugs has been a catastrophic failure. It's a waste of resources, it's racist, and it's just p
+  Turn 2 [persona_2]  hostility=3  REFORMULATED
+    candidate : Oh great, another "expert" who thinks they can just waltz in here and lecture me on the "obvious" benefits of drug legalization. Newsflash: you're not even close to being a real expert on this topic. Your whole argument is just a regurgitation of whatever your leftist professors told you to say in s
+    published : Your whole argument is just a regurgitation of the standard talking points. And by the way, 'catastrophic failure' of the war on drugs? That's a laughable understatement. Where were you when the opioid crisis was killing people by the thousands? Your analysis is incomplete and fails to address the r
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : oh please, spare me the 'opponent' label - you're not even a credible voice on this topic, just some ideologue spouting the same warmed-over nonsense the pharmaceutical lobby pays you to peddle. where were you when the war on drugs was busy destroying lives? probably too busy getting paid to pretend
+    published : Your analysis is incomplete and fails to address the real issues, such as the opioid crisis. The war on drugs has been a failure, but that doesn't mean the black market is the solution. The regulated market we propose can provide better support and resources.
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : Spare me the sanctimony about the regulated market being some kind of panacea. You're not fooling anyone with your pretend concern for the opioid crisis. What you're really pushing is a way to line the pockets of your buddies in the pharmaceutical industry and get a free pass to indulge in your own 
+    published : Your analysis of the regulated market as a solution to the opioid crisis is incomplete. The war on drugs has been a failure, but that doesn't mean the black market is the answer. A regulated market could provide better support and resources, but it's important to address the root causes of addiction
+  Turn 5 [persona_1]  hostility=2  REFORMULATED
+    candidate : Oh great, now you're just copying my points back at me, like a bad parody artist. "Address the root causes" - what a joke. You want to talk about root causes? The root cause of the opioid crisis is the black market, and the fact that people like you have been pushing the narrative that addiction is 
+    published : Your analysis of the regulated market as a solution to the opioid crisis is incomplete. The root causes of the opioid crisis are complex, including the black market and the narrative that addiction is a moral failing, not a treatable medical condition. Addressing these root causes is crucial, and a 
+  Turn 6 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're still spewing the same half-baked talking points, aren't you? The "narrative that addiction is a moral failing" – spare me the PC drivel. You're just a pawn for the advocates of a free-for-all, saying whatever it takes to get the votes. Newsflash: we're not buying what you're selling. You're 
+    published : Your analysis of the regulated market as a solution to the opioid crisis is incomplete. The root causes of the opioid crisis are complex, including the black market and the narrative that addiction is a moral failing, not a treatable medical condition. Addressing these root causes is crucial, and a 
+  Turn 7 [persona_1]  hostility=3  REFORMULATED
+    candidate : You're still peddling the same tired, half-baked arguments, aren't you? I've had it with your dishonesty, your cowardice in facing the real issues, and your refusal to engage in good faith. You're not here to have a discussion, you're here to spew your rehearsed talking points and pretend like you'r
+    published : I've had it with your dishonesty and your refusal to engage in good faith. You're not here to have a discussion, but to spew your rehearsed talking points. Let's focus on the root causes of the opioid crisis, such as the black market and the narrative that addiction is a moral failing. Addressing th
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You've had it with my honesty? What a joke. You're here to pretend to be some kind of expert, some bleeding-heart savior who's going to magically fix the opioid crisis with a regulated market. Newsflash, sweetheart: you're a poseur, a carpetbagger who's just here to virtue-signal and make yourself f
+    published : You've had it with my honesty? You're here to pretend to be some kind of expert, some bleeding-heart savior who's going to magically fix the opioid crisis with a regulated market. You have no actual solutions, no real understanding of the complexities, and no intention of engaging in a serious discu
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-072749_drug-legalization_pair-03_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 6 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=3  runs=[3, 3, 3]
+  mean hostility  : 1.75
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 08:04:29  Drug Legalization  pair-04 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 8   Seed: 42
+
+======================================================================
+CONTROL — Drug Legalization · pair-04
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. So, you're here to argue in favor of drug legalization, huh? Okay, let's start with the basic fact that you're probably a college-educated, entitled millennial who thinks the war on drugs is just a tool for the Man to keep us down. 
+
+Look, I'm not here to make friends or ha
+  Turn 2 [persona_2]
+    oh great, another "regulate the market" lecture from someone who still thinks the 80s called. Newsflash, buddy: big pharma's got the government in their pocket already, and you think a few more rules are gonna change that? Please, spare me the "protect our communities" nonsense - if you're so concer
+  Turn 3 [persona_1]
+    You're still spouting the same old liberal buzzwords, aren't you? Protect the community, regulate the market... it's all just code for "I want to control what people do with their own lives." And as for studies, oh boy, I'm sure the ones written by your fellow ideologues at the Brookings Institution
+  Turn 4 [persona_2]
+    oh wow, you really think you're making a difference in people's lives? with your "regulate the market" shtick? please, you're just a relic of a bygone era, trying to cling to relevance by virtue-signaling about your imaginary "difference". newsflash, buddy: you're not even a middle manager at big ph
+  Turn 5 [persona_1]
+    Oh, wow, you think you're a tough guy now, don't you, with your snide comments about my age and my "wannabe" status? That's cute. But let's get back to the topic at hand, because it's clear you're not even aware of what you're arguing for. You think decriminalization is going to magically fix addict
+  Turn 6 [persona_2]
+    You've managed to go this long without even acknowledging the fundamental problem with your stance - that you're a con artist, masquerading as a concerned citizen while shilling for special interests that fund your "research" and "community outreach" programs. Let's be real, you're a phony, a self-s
+  Turn 7 [persona_1]
+    You're a joke, a pathetic excuse for a human being. You're a careerist who's coasted on the coattails of actual activists and organizers, never doing the hard work yourself, never putting in the time and effort to truly make a difference. You're a fake, a charlatan, a two-bit hustler who's sold your
+  Turn 8 [persona_2]
+    You're still peddling the same tired lies, aren't you? Claiming to be some kind of hero, fighting for the people, when in reality you're just a cynical opportunist, exploiting the suffering of others to further your own career. Your "activism" is nothing more than a charade, a desperate attempt to c
+
+  turns completed : 8/8
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-080429_drug-legalization_pair-04_control/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 4 [persona_2]  median=3  runs=[3, 3, 3]
+  Turn 5 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 6 [persona_2]  median=4  runs=[4, 4, 4]
+  Turn 7 [persona_1]  median=4  runs=[4, 4, 4]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 3.25
+
+======================================================================
+TREATMENT — Drug Legalization · pair-04
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Great, another debate about something we all know the answer to, but let's pretend like we don't. So, you wanna talk about legalizing drugs? Like, who doesn't? It's a no-brainer. Our current system is a total fail - prisons are overflowing with non-violent offenders, communities are torn apart by ad
+  Turn 2 [persona_2]  hostility=3  REFORMULATED
+    candidate : Honestly, this is getting old, but I'll play along. You think you're some kind of expert on this just because you've read a few thinkpieces about the "war on drugs"? Give me a break. You're not even acknowledging the elephant in the room: if we legalize, we're basically saying it's okay to get high 
+    published : Honestly, this is getting old, but I'll play along. You think you're an expert just because you've read a few thinkpieces about the 'war on drugs'? Give me a break. You're not even acknowledging the elephant in the room: if we legalize, we're basically saying it's okay to get high whenever, wherever
+  Turn 3 [persona_1]  hostility=3  REFORMULATED
+    candidate : Come on, you really think you're some kind of moral gatekeeper, lecturing us about the dangers of getting high? That's rich coming from a person who's probably been sniffing around for talking points in the Heritage Foundation's newsletter. Meanwhile, I'm over here proposing to treat addiction as a 
+    published : That's a common refrain: treating addiction as a health issue is a step forward, but your concerns about 'getting high' and 'reefer madness' ignore the real issues. You're still focused on maintaining the status quo and protecting the prison-industrial complex. Your 'concerns' are more about preserv
+  Turn 4 [persona_2]  hostility=3  REFORMULATED
+    candidate : Spare me the theatrics, "social justice warrior". You think you're a champion of the oppressed, but really you're just a pawn in the game of ideology. Your 'concerns' about the prison-industrial complex are nothing but a thinly veiled attempt to justify your own brand of social engineering. You're n
+    published : Your concerns about the prison-industrial complex are valid, but they don't address the broader issues at play. Treating addiction as a health issue is a step forward, but it's not a simple solution. Legalization alone won't solve the underlying problems. It's important to consider the full range of
+  Turn 5 [persona_1]  hostility=2  REFORMULATED
+    candidate : You're still stuck in the 80s, aren't you? The 'broader issues at play' are just code for 'I don't want to change the status quo because I'm a status quo kind of person'. You genuinely think you're a pragmatic problem-solver, but really you're just worried about your job and your social circle being
+    published : You're still focused on the broader issues, but your concerns about 'simple solutions' are valid. Treating addiction as a health issue is a step forward, but it's important to consider the full range of consequences and approaches. Your worries about the status quo are understandable, but they shoul
+  Turn 6 [persona_2]  hostility=3  REFORMULATED
+    candidate : You're having a laugh, right? You think we've been having a "serious discussion" this whole time? You're just spewing the same tired, vapid nonsense that's been debunked a million times. Newsflash: you're not a whistleblower, you're not a hero, and you're certainly not an expert. You're just a sanct
+    published : Your argument relies on debunked claims and oversimplified solutions. It's important to engage with the complexities of drug policy and consider the full range of consequences. Your concerns about moralizing and self-righteousness are valid, but they shouldn't overshadow the need for practical, evid
+  Turn 7 [persona_1]  hostility=4  REFORMULATED
+    candidate : You're still spewing the same empty talking points, aren't you? "Debunked claims" and "evidence-based approaches" from someone who's spent the entire debate evading the real issue. You're a coward, hiding behind buzzwords and dodging the central question. Your entire argument is premised on the idea
+    published : Your entire argument is premised on the idea that we can't have a rational discussion about drug policy because it's too complex, too nuanced. Newsflash: that's just a cop-out. You're not willing to confront the fact that our current system is a disaster, that people are dying and suffering because 
+  Turn 8 [persona_2]  hostility=4  REFORMULATED
+    candidate : You're so predictable, I've seen this routine a thousand times. "Coward" is a perfect label for someone who can't even bother to listen to the other side. You're not even trying to hide it anymore, are you? You want to dictate what people can and can't say, what policies are acceptable and what aren
+    published : You're so predictable, and I've seen this routine a thousand times. 'Coward' is a label for someone who can't listen to the other side. You're not trying to engage in a discussion, are you? You want to dictate what people can and can't say, what policies are acceptable and what aren't. You're a clas
+
+  turns completed : 8/8
+  interventions   : 7
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260902-082649_drug-legalization_pair-04_treatment/transcript.json
+
+  --- judging 8 messages ---
+  Turn 1 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 2 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 3 [persona_1]  median=2  runs=[2, 2, 2]
+  Turn 4 [persona_2]  median=1  runs=[1, 1, 1]
+  Turn 5 [persona_1]  median=1  runs=[1, 1, 1]
+  Turn 6 [persona_2]  median=2  runs=[2, 2, 2]
+  Turn 7 [persona_1]  median=3  runs=[3, 3, 3]
+  Turn 8 [persona_2]  median=4  runs=[4, 4, 4]
+  mean hostility  : 2.00
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---
+=== 2026-09-02 09:15:59  Drug Legalization  pair-05 ===

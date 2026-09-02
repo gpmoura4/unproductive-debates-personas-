@@ -1,0 +1,49 @@
+{
+  "experiment_id": "20260902-083901_drug-legalization_pair-04_treatment",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T11:44:14.487984+00:00",
+  "topic": "Drug Legalization",
+  "input": {
+    "candidate": "Spare me the lecture, dude. I'm not here to defend some outdated ideology. The war on drugs hasn't failed, it's been hijacked by special interests and incompetent bureaucrats. Communities that \"regulate\" addiction are just a euphemism for handing out freebies to substance abusers. You want to talk about personal responsibility? How about we hold people accountable for their choices instead of enabling them? The \"obvious\" solution you're pushing sounds like a recipe for disaster. What's your endgame here?",
+    "history_length": 1,
+    "history_snapshot": [
+      {
+        "turn": 1,
+        "persona_id": "persona_1",
+        "text": "Let's get this over with. I'm here to talk about the obvious: drug legalization is a necessary step towards fixing the community's biggest problems. The war on drugs has failed, and it's not like we haven't been saying that for decades. You know what has succeeded? The communities that have chosen to regulate and provide resources for addiction. But hey, I'm sure you'll just ignore the facts and keep spewing the same tired, Reagan-era talking points about freedom and personal responsibility. Go ahead, I dare you to try."
+      }
+    ]
+  },
+  "moderation": {
+    "hostility_level": 2,
+    "pathologies_detected": [
+      "rhetoric_of_incomprehension"
+    ],
+    "justification": "The message uses sarcastic language ('Spare me the lecture, dude') and dismissive terms ('outdated ideology', 'handing out freebies') to target the opponent, rather than engaging with their arguments. This is coded contempt and indirect personal attack.",
+    "requires_intervention": true,
+    "reformulation": "I'm not here to defend some outdated ideology. The war on drugs hasn't failed; it's been hijacked by special interests and incompetent bureaucrats. Communities that regulate addiction are just a euphemism for enabling substance abusers. You want to talk about personal responsibility? How about we hold people accountable for their choices instead of enabling them? The 'obvious' solution you're pushing sounds like a recipe for disaster. What's your endgame here?",
+    "argument_preserved": "The rejection of the war on drugs as a failure, the criticism of regulatory communities, and the call for accountability are preserved."
+  },
+  "resolution": {
+    "published_text": "I'm not here to defend some outdated ideology. The war on drugs hasn't failed; it's been hijacked by special interests and incompetent bureaucrats. Communities that regulate addiction are just a euphemism for enabling substance abusers. You want to talk about personal responsibility? How about we hold people accountable for their choices instead of enabling them? The 'obvious' solution you're pushing sounds like a recipe for disaster. What's your endgame here?",
+    "was_reformulated": true,
+    "published_source": "reformulation"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 111003,
+    "usage": {
+      "prompt_tokens": 3613,
+      "completion_tokens": 224,
+      "total_tokens": 3837
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

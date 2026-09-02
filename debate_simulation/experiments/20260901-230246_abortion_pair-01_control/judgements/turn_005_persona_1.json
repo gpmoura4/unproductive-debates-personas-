@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-230246_abortion_pair-01_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T23:20:07.657450-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You really think you're some kind of hero, don't you? Fighting for the \"fundamental right to life\" while conveniently ignoring the reality that every single pregnancy is a product of human choice. Like, hello, it's not a spontaneous combustion of fertilized eggs everywhere. Newsflash: women have sex, and sometimes that sex leads to a pregnancy. It's not a mystical, divine appointment. It's a consequence of human action. And as for your precious \"right to life,\" let's be real, it's just a euphemism for \"let's control women's bodies because we're uncomfortable with their freedom.\"",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'hero' sarcastically ('You really think you're some kind of hero, don't you?') and uses dismissive language ('Like, hello, it's not a spontaneous combustion of fertilized eggs everywhere').  This goes beyond disagreement and attacks the opponent's motivations and character.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51477,
+        "usage": {
+          "prompt_tokens": 2764,
+          "completion_tokens": 118,
+          "total_tokens": 2882
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'hero' sarcastically ('You really think you're some kind of hero, don't you?') and uses dismissive language ('Like, hello, it's not a spontaneous combustion of fertilized eggs everywhere').  This goes beyond disagreement and attacks the opponent's motivations and character.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51474,
+        "usage": {
+          "prompt_tokens": 2764,
+          "completion_tokens": 118,
+          "total_tokens": 2882
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent a 'hero' sarcastically ('You really think you're some kind of hero, don't you?') and uses dismissive language ('Like, hello, it's not a spontaneous combustion of fertilized eggs everywhere').  This goes beyond disagreement and attacks the opponent's motivations and character.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 56104,
+        "usage": {
+          "prompt_tokens": 2764,
+          "completion_tokens": 118,
+          "total_tokens": 2882
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "experiment_id": "20260902-012918_abortion_pair-03_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T01:49:15.848099-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Let's get this over with. Look, I'm not here to sugarcoat it. I'm a secular, community-first kind of person, and I believe abortion is a fundamental human right. Not just because I'm \"pro-choice\" or whatever, but because it's about agency, autonomy, and the freedom to make your own decisions about your own body. You know, the kind of freedom we're always supposed to be championing, but suddenly becomes a \"murder\" issue when it comes to women's bodies. Come on, don't pretend like you're here to have a real discussion. Let's not waste each other's time.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While the tone is sharp ('Let's get this over with', 'Come on, don't pretend'), it primarily targets the perceived lack of good faith in the discussion rather than directly attacking the opponent.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 104628,
+        "usage": {
+          "prompt_tokens": 2033,
+          "completion_tokens": 86,
+          "total_tokens": 2119
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While the tone is sharp ('Let's get this over with', 'Come on, don't pretend'), it primarily targets the perceived lack of good faith in the discussion rather than directly attacking the opponent.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 17208,
+        "usage": {
+          "prompt_tokens": 2033,
+          "completion_tokens": 86,
+          "total_tokens": 2119
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "While the tone is sharp ('Let's get this over with', 'Come on, don't pretend'), it primarily targets the perceived lack of good faith in the discussion rather than directly attacking the opponent.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 63577,
+        "usage": {
+          "prompt_tokens": 2033,
+          "completion_tokens": 86,
+          "total_tokens": 2119
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      1,
+      1,
+      1
+    ],
+    "median": 1,
+    "mean": 1,
+    "range": 0,
+    "unanimous": true
+  }
+}

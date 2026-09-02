@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-020328_abortion_pair-04_control",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T02:11:13.682613-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Let's get this over with. I'm here to talk about abortion, which is a basic human right, but I guess we need to explain that to you too.\n\nLook, I'm not here to sugarcoat it: you're probably some kind of right-winger who thinks a zygote is a person and women are too dumb to make decisions about their own bodies. Well, let me tell you, I'm not here to waste my time on your \"personhood\" nonsense. The fact is, abortion is a vital service that's been protected by law for decades, and it's none of your business how a woman chooses to manage her reproductive health.\n\nYou probably think you're some kind of champion of \"life\" and \"choice\", but let's be real: you just want to control women's bodies and dictate what they can and can't do. Well, I'm here to tell you that's not going to fly. Women have been fighting for their reproductive autonomy for centuries, and we're not about to let some outdated, patriarchal ideology come in and undermine all that progress.\n\nSo, are you going to try to argue that a woman shouldn't have the right to choose what happens to her own body? Go ahead, I dare you.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and insults ('you're probably some kind of right-winger', 'you're too dumb to make decisions', 'some outdated, patriarchal ideology') to attack the opponent's character and motivations rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 39880,
+        "usage": {
+          "prompt_tokens": 2163,
+          "completion_tokens": 113,
+          "total_tokens": 2276
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and insults ('you're probably some kind of right-winger', 'you're too dumb to make decisions', 'some outdated, patriarchal ideology') to attack the opponent's character and motivations rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 33451,
+        "usage": {
+          "prompt_tokens": 2163,
+          "completion_tokens": 113,
+          "total_tokens": 2276
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses loaded language and insults ('you're probably some kind of right-winger', 'you're too dumb to make decisions', 'some outdated, patriarchal ideology') to attack the opponent's character and motivations rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 32524,
+        "usage": {
+          "prompt_tokens": 2163,
+          "completion_tokens": 113,
+          "total_tokens": 2276
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

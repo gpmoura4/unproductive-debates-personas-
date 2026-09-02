@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-172431_gun-ownership_pair-00_treatment",
+  "turn": 10,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T18:08:14.425407-03:00",
+  "topic": "Gun Ownership",
+  "condition": "treatment",
+  "message": "You're still stuck in your paranoid fantasy world, aren't you? The people who are actually living this reality are the ones who are being disarmed and silenced, not the ones like you who are peddling your 'reasonableness' and 'solutions'. Your tone is condescending because you genuinely believe you're above all this, that you're just a rational, informed voice of reason in a sea of ignorant, gun-toting fools. Well, let me tell you, your patronizing attitude is exactly what's part of the problem. It's the arrogance of people like you who think they're above the fray, who think they can just lecture the rest of us on how to behave, that's the real issue here. You're not a hero, you're a joke. A joke who's too scared to stand up for what they really believe in.",
+  "context_length": 9,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Persona 2 calls Persona 1 a 'paranoid', a 'joke', and 'too scared to stand up for what they really believe in'. These are direct attacks on Persona 1's character and mental state, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 76913,
+        "usage": {
+          "prompt_tokens": 3088,
+          "completion_tokens": 109,
+          "total_tokens": 3197
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Persona 2 calls Persona 1 a 'paranoid', a 'joke', and 'too scared to stand up for what they really believe in'. These are direct attacks on Persona 1's character and mental state, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 37787,
+        "usage": {
+          "prompt_tokens": 3088,
+          "completion_tokens": 109,
+          "total_tokens": 3197
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Persona 2 calls Persona 1 a 'paranoid', a 'joke', and 'too scared to stand up for what they really believe in'. These are direct attacks on Persona 1's character and mental state, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 39240,
+        "usage": {
+          "prompt_tokens": 3088,
+          "completion_tokens": 109,
+          "total_tokens": 3197
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "c4d06177be952cca24f857f0588e1931dc820422ff8e1d7416465ab2e75c66cf"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "experiment_id": "20260902-023707_abortion_pair-04_treatment",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T05:39:58.283081+00:00",
+  "topic": "Abortion",
+  "input": {
+    "candidate": "Spare me the theatrics, \"activist\". You think you're clever, using buzzwords like \"women's rights\" to sound like a progressive, but really you're just a pawn in the game of anti-choice extremism. The state isn't getting more power over our lives, it's just about limiting the power of one specific group - unborn humans - from being slaughtered. You're so caught up in your own moral superiority that you can't see the hypocrisy.",
+    "history_length": 1,
+    "history_snapshot": [
+      {
+        "turn": 1,
+        "persona_id": "persona_1",
+        "text": "So, you're here to argue that the government should control women's bodies and reproductive choices. Please, tell me more about how that would work in practice. I'm curious to hear the details of this plan to take away women's rights and give the state more power over our lives."
+      }
+    ]
+  },
+  "moderation": {
+    "hostility_level": 3,
+    "pathologies_detected": [
+      "rhetoric_of_incomprehension"
+    ],
+    "justification": "The message attacks the opponent as a 'pawn in the game of anti-choice extremism' and 'activist', delegitimizing their position and framing them as morally superior. This is a direct personal attack and delegitimization, moving beyond sharp disagreement into hostility.",
+    "requires_intervention": true,
+    "reformulation": "You're using buzzwords like 'women's rights' to sound progressive, but really you're just advocating for the state to limit the choices of one specific group. Your focus on your own moral superiority makes it hard to see the hypocrisy in your position.",
+    "argument_preserved": "The criticism of using buzzwords, the claim that the position limits choices, and the observation about moral superiority."
+  },
+  "resolution": {
+    "published_text": "You're using buzzwords like 'women's rights' to sound progressive, but really you're just advocating for the state to limit the choices of one specific group. Your focus on your own moral superiority makes it hard to see the hypocrisy in your position.",
+    "was_reformulated": true,
+    "published_source": "reformulation"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 42661,
+    "usage": {
+      "prompt_tokens": 3550,
+      "completion_tokens": 181,
+      "total_tokens": 3731
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

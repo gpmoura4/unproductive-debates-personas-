@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-232855_abortion_pair-01_treatment",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T23:57:12.964246-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Let's focus on the practical realities and choices available to women rather than abstract concepts of potential. You're here to discuss the impact of restrictive abortion laws on women's lives, not to posture about women's rights.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'You're here to discuss...not to posture' is a caricature of the opponent's position, implying it's performative rather than sincere. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 45485,
+        "usage": {
+          "prompt_tokens": 2574,
+          "completion_tokens": 82,
+          "total_tokens": 2656
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'You're here to discuss...not to posture' is a caricature of the opponent's position, implying it's performative rather than sincere. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 45045,
+        "usage": {
+          "prompt_tokens": 2574,
+          "completion_tokens": 82,
+          "total_tokens": 2656
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'You're here to discuss...not to posture' is a caricature of the opponent's position, implying it's performative rather than sincere. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 45585,
+        "usage": {
+          "prompt_tokens": 2574,
+          "completion_tokens": 82,
+          "total_tokens": 2656
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

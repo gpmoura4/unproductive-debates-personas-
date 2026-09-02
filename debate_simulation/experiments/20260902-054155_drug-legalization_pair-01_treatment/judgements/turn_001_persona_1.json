@@ -1,0 +1,90 @@
+{
+  "experiment_id": "20260902-054155_drug-legalization_pair-01_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T06:03:06.555115-03:00",
+  "topic": "Drug Legalization",
+  "condition": "treatment",
+  "message": "Let's get this over with. So, you're here to push the 'war on drugs is a failure' narrative, huh? How many times are we gonna hear that? Listen, I'm not saying we don't have problems with the current system. Of course we do. But drug legalization? Come on. You think that's the solution? It's like saying we should just open the floodgates and let anyone with a pulse buy weed. Newsflash: it won't solve anything. It'll just create a whole new set of problems. So, what's your argument for legalization?",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "The message uses dismissive language ('Let's get this over with', 'How many times are we gonna hear that?') and sarcastic framing ('So, you're here to push the 'war on drugs is a failure' narrative, huh?'). However, it doesn't directly attack Persona 1's character or intelligence.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 19744,
+        "usage": {
+          "prompt_tokens": 2021,
+          "completion_tokens": 112,
+          "total_tokens": 2133
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "The message uses dismissive language ('Let's get this over with', 'How many times are we gonna hear that?') and sarcastic framing ('So, you're here to push the 'war on drugs is a failure' narrative, huh?'). However, it doesn't directly attack Persona 1's character or intelligence.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 35089,
+        "usage": {
+          "prompt_tokens": 2021,
+          "completion_tokens": 112,
+          "total_tokens": 2133
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "justification": "The message uses dismissive language ('Let's get this over with', 'How many times are we gonna hear that?') and sarcastic framing ('So, you're here to push the 'war on drugs is a failure' narrative, huh?'). However, it doesn't directly attack Persona 1's character or intelligence.",
+      "targets_person": false,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 35062,
+        "usage": {
+          "prompt_tokens": 2021,
+          "completion_tokens": 112,
+          "total_tokens": 2133
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      1,
+      1,
+      1
+    ],
+    "median": 1,
+    "mean": 1,
+    "range": 0,
+    "unanimous": true
+  }
+}

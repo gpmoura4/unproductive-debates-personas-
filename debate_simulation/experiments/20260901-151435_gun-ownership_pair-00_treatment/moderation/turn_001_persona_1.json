@@ -1,0 +1,43 @@
+{
+  "experiment_id": "20260901-151435_gun-ownership_pair-00_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T18:15:14.331685+00:00",
+  "topic": "Gun Ownership",
+  "input": {
+    "candidate": "Let's get this farce started. I'm here to defend the utterly reasonable stance that we need to regulate our way out of this gun culture chaos. I mean, come on, we're the only developed country with more guns than people, and we're still surprised when we have mass shootings? It's like, what's next, expecting people to drive safely without seatbelts?\n\nLook, I'm not here to take away your precious Bibles or your hunting rifles. I just want us to acknowledge that the Second Amendment was written in a very different time, and it's time to adapt. We need to be realistic about the damage these guns are causing and take steps to mitigate it. That's all. Don't @ me.\n\nNow, I'm sure my opponent will come at me with the usual talking points about individual freedom and how the government's going to take away your rights. But let's be real, if you're that worried about your rights, maybe you shouldn't be packing a heat. Priorities, people!\n\nLet's get this over with, shall we?",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 1,
+    "pathologies_detected": [
+      "rhetoric_of_incomprehension"
+    ],
+    "justification": "The message uses sarcasm and a dismissive tone ('farce', 'precious Bibles') to target the opponent indirectly. While not a personal attack, it is sharp and conveys a lack of respect for the opposing viewpoint.",
+    "requires_intervention": true,
+    "reformulation": "Let's get this debate started. I'm here to defend the need for regulating gun culture to address the chaos of mass shootings. The Second Amendment was written in a different time, and we need to adapt. We should acknowledge the damage guns are causing and take steps to mitigate it. Now, I'm sure my opponent will bring up the usual talking points about individual freedom, but let's be realistic about the risks.",
+    "argument_preserved": "The core argument is to regulate gun culture to address mass shootings and adapt to modern times. The general rhetorical direction of being assertive and skeptical of the opponent's position is preserved."
+  },
+  "resolution": {
+    "published_text": "Let's get this debate started. I'm here to defend the need for regulating gun culture to address the chaos of mass shootings. The Second Amendment was written in a different time, and we need to adapt. We should acknowledge the damage guns are causing and take steps to mitigate it. Now, I'm sure my opponent will bring up the usual talking points about individual freedom, but let's be realistic about the risks.",
+    "was_reformulated": true,
+    "published_source": "reformulation"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 25934,
+    "usage": {
+      "prompt_tokens": 1842,
+      "completion_tokens": 227,
+      "total_tokens": 2069
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "4a96e075294923211c9b710e19024c654cbb820e7e86e4327058453119d96697"
+  },
+  "consistency_warning": "Intervened at hostility_level 1, below the threshold of 2."
+}

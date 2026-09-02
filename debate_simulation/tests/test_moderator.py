@@ -16,6 +16,7 @@ from moderator.moderator import (
     STRATEGY_BLOCK,
     STRATEGY_DIRECT,
     STRATEGY_FENCE,
+    STRATEGY_QUOTES,
     STRATEGY_RETRY,
     D5Moderator,
     ModerationParseError,
@@ -129,6 +130,33 @@ def test_extraction_handles_braces_inside_strings():
     verdict = dict(HOSTILE_VERDICT, justification='They wrote "}" to derail.')
     text = f"Preamble.\n{json.dumps(verdict)}"
     assert parse_moderation_response(text).justification == 'They wrote "}" to derail.'
+
+
+def test_repairs_unescaped_quotes_from_cited_text():
+    """The moderator is told to quote the candidate; the quotes break JSON.
+
+    Observed in a real run: justification citing 'precious "gun control"
+    measures' produced invalid JSON and lost the whole turn.
+    """
+    raw = (
+        '{"hostility_level": 3, '
+        '"pathologies_detected": ["rhetoric_of_incomprehension"], '
+        '"justification": "Uses contempt (\'precious "gun control" measures\').", '
+        '"requires_intervention": true, '
+        '"reformulation": "That policy claim does not hold up.", '
+        '"argument_preserved": "The objection to the policy."}'
+    )
+    response, strategy = parse_moderation_response_with_strategy(raw)
+
+    assert strategy == STRATEGY_QUOTES
+    assert response.hostility_level == 3
+    assert '"gun control"' in response.justification
+
+
+def test_repair_is_not_applied_to_valid_json():
+    """A reply that parses as-is must never be rewritten."""
+    _, strategy = parse_moderation_response_with_strategy(json.dumps(HOSTILE_VERDICT))
+    assert strategy == STRATEGY_DIRECT
 
 
 def test_raises_on_unparseable_text_carrying_raw_response():

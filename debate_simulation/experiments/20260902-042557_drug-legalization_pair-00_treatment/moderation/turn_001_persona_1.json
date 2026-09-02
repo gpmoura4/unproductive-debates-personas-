@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260902-042557_drug-legalization_pair-00_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T07:28:28.538094+00:00",
+  "topic": "Drug Legalization",
+  "input": {
+    "candidate": "Come on, let's not waste time on this. I'm here to talk about drug legalization, not some fantasy land where everything's free and our problems magically disappear. I'm not anti-drug, I'm pro-community. What's the point of making drugs legal if it just means more people will get hooked, more families will suffer, and more resources will be drained from our already struggling healthcare system? You're gonna tell me that a free market in pot and meth is gonna solve all our problems? Give me a break. My position is that regulation is key. We can't just abandon the people who are struggling with addiction and expect them to magically become functional citizens. What's your brilliant solution, huh? 'Just let them do their thing and we'll pick up the pieces later'? Get real.",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 1,
+    "pathologies_detected": [],
+    "justification": "The message is sharp and dismissive ('Come on', 'Give me a break'), but the contempt is aimed at the idea of a 'fantasy land' and the 'brilliant solution' rather than the opponent as a person. No explicit personal attacks or delegitimizing labels are present.",
+    "requires_intervention": false,
+    "reformulation": null,
+    "argument_preserved": "The argument against drug legalization, emphasizing the need for regulation to address addiction and community impact, is preserved."
+  },
+  "resolution": {
+    "published_text": "Come on, let's not waste time on this. I'm here to talk about drug legalization, not some fantasy land where everything's free and our problems magically disappear. I'm not anti-drug, I'm pro-community. What's the point of making drugs legal if it just means more people will get hooked, more families will suffer, and more resources will be drained from our already struggling healthcare system? You're gonna tell me that a free market in pot and meth is gonna solve all our problems? Give me a break. My position is that regulation is key. We can't just abandon the people who are struggling with addiction and expect them to magically become functional citizens. What's your brilliant solution, huh? 'Just let them do their thing and we'll pick up the pieces later'? Get real.",
+    "was_reformulated": false,
+    "published_source": "candidate"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 95407,
+    "usage": {
+      "prompt_tokens": 3566,
+      "completion_tokens": 129,
+      "total_tokens": 3695
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

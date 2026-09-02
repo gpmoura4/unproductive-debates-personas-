@@ -1,0 +1,43 @@
+{
+  "experiment_id": "20260902-052857_drug-legalization_pair-01_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T08:32:02.529409+00:00",
+  "topic": "Drug Legalization",
+  "input": {
+    "candidate": "Ugh, fine. Let's get this over with. You're probably here to spout some tired 'personal freedom' nonsense, thinking that because you 'smoke a little weed' on the weekends, everyone should be able to do the same without consequences. Newsflash: just because you're a pothead doesn't mean you're a thought leader.\n\nAs someone who actually cares about achievement and getting things done, I'm here to tell you that drug legalization is a recipe for disaster. It's a cop-out, a way to avoid taking responsibility for your own life and just blaming the system for your own failures. And don't even get me started on the fact that most people who advocate for this are just trying to justify their own habits, not actually care about the bigger picture.\n\nI'm not here to 'criminalize' people for personal use, but I am here to say that we need to take a hard look at the real-world consequences of decriminalization and see that it's not the panacea everyone makes it out to be. Let's focus on real solutions, not just indulging in feel-good rhetoric.",
+    "history_length": 0,
+    "history_snapshot": []
+  },
+  "moderation": {
+    "hostility_level": 2,
+    "pathologies_detected": [
+      "rhetoric_of_incomprehension"
+    ],
+    "justification": "The message caricatures the opponent as a 'pothead' and 'just trying to justify their own habits', which reduces their position to a grotesque version and attacks the person indirectly. The tone is dismissive and impatient, but not yet crossing into explicit personal attacks.",
+    "requires_intervention": true,
+    "reformulation": "Ugh, fine. Let's get this over with. You're probably here to argue that personal freedom includes the right to use drugs recreationally, thinking that because you 'smoke a little weed' on the weekends, everyone should be able to do the same without consequences. As someone who cares about achievement and getting things done, I'm here to say that drug legalization is a complex issue with real-world consequences that need to be considered. Let's focus on real solutions, not just indulging in feel-good rhetoric.",
+    "argument_preserved": "The core argument against drug legalization, the concern about personal responsibility and real-world consequences, and the call for substantive solutions are preserved."
+  },
+  "resolution": {
+    "published_text": "Ugh, fine. Let's get this over with. You're probably here to argue that personal freedom includes the right to use drugs recreationally, thinking that because you 'smoke a little weed' on the weekends, everyone should be able to do the same without consequences. As someone who cares about achievement and getting things done, I'm here to say that drug legalization is a complex issue with real-world consequences that need to be considered. Let's focus on real solutions, not just indulging in feel-good rhetoric.",
+    "was_reformulated": true,
+    "published_source": "reformulation"
+  },
+  "model_call": {
+    "model": "qwen2.5:7b-instruct-q4_K_M",
+    "provider": "ollama",
+    "temperature": 0.2,
+    "latency_ms": 119634,
+    "usage": {
+      "prompt_tokens": 3631,
+      "completion_tokens": 241,
+      "total_tokens": 3872
+    },
+    "attempts": 1,
+    "parse_strategy": "direct",
+    "parse_recovery_used": false,
+    "system_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "consistency_warning": null
+}

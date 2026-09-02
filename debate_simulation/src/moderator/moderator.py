@@ -23,6 +23,7 @@ from llm.parsing import (
     STRATEGY_BLOCK,
     STRATEGY_DIRECT,
     STRATEGY_FENCE,
+    STRATEGY_QUOTES,
     STRATEGY_RETRY,
     ResponseParseError,
     merge_call_metadata,

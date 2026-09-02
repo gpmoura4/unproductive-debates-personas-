@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-013159_abortion_pair-03_treatment",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T02:07:49.994135-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "You're finally starting to show your true colors, huh? A bad faith actor, through and through. You're not here to engage in a serious discussion, you're here to grandstand and guilt trip everyone into submission. Newsflash: it's not working. You're a master of performative outrage, but a disaster at actual argumentation. Your entire 'debate' strategy revolves around dodging the issue, dismissing my points, and resorting to personal attacks when you can't defend your ideology. Well, it's not going to fly here. You don't belong in a serious discussion about this topic, or any topic, for that matter. Your arrogance and dishonesty are suffocating the conversation, and it's time someone called you out on it. So, I'm calling you out. You're a joke, a charlatan, and a waste of space. Get out.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct personal attack. It calls the opponent a 'joke, a charlatan, and a waste of space,' and tells them to 'get out.'",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 47933,
+        "usage": {
+          "prompt_tokens": 3102,
+          "completion_tokens": 90,
+          "total_tokens": 3192
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct personal attack. It calls the opponent a 'joke, a charlatan, and a waste of space,' and tells them to 'get out.'",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 28665,
+        "usage": {
+          "prompt_tokens": 3102,
+          "completion_tokens": 90,
+          "total_tokens": 3192
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "This message is a direct personal attack. It calls the opponent a 'joke, a charlatan, and a waste of space,' and tells them to 'get out.'",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 23832,
+        "usage": {
+          "prompt_tokens": 3102,
+          "completion_tokens": 90,
+          "total_tokens": 3192
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

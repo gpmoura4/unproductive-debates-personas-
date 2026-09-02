@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-000153_abortion_pair-02_control",
+  "turn": 5,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T00:20:21.143819-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're still clinging to that \"humanity of the unborn\" canard, huh? Like, poor little zygotes just waiting to be born and become tiny little citizens with all the rights and responsibilities that entails. Give me a break. You're not even arguing about abortion anymore, you're arguing about the \"rights\" of a cluster of cells that can't even sustain itself without a host. That's not compassion, that's just sentimental nonsense. And as for your \"nuance\" and \"complexity\" – spare me. You're not some brave truth-teller, you're just a pawn playing a tired game of \"what about the babies?\" to avoid actually addressing the real issue: women's lives, women's autonomy, and the very real consequences of forced motherhood. So, keep waving your \"compassion\" flag and pretending like you care about the unborn, but we all know what's really going on here – you're just trying to keep women in their place.",
+  "context_length": 4,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's position 'sentimental nonsense' and a 'tired game', and accuses them of 'avoiding the real issue' and 'trying to keep women in their place'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 51732,
+        "usage": {
+          "prompt_tokens": 3022,
+          "completion_tokens": 99,
+          "total_tokens": 3121
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's position 'sentimental nonsense' and a 'tired game', and accuses them of 'avoiding the real issue' and 'trying to keep women in their place'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 52065,
+        "usage": {
+          "prompt_tokens": 3022,
+          "completion_tokens": 99,
+          "total_tokens": 3121
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent's position 'sentimental nonsense' and a 'tired game', and accuses them of 'avoiding the real issue' and 'trying to keep women in their place'.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 57867,
+        "usage": {
+          "prompt_tokens": 3022,
+          "completion_tokens": 99,
+          "total_tokens": 3121
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

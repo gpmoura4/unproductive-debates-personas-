@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-232737_abortion_pair-01_treatment",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T23:48:42.050174-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "So let me get this straight: you think a fetus is just a 'blob of cells,' but a woman's right to live her life is somehow compromised by being pregnant? Give me a break. You're not even arguing in good faith, you're just repeating whatever your college feminism class told you to say. Most people who think like you actually believe fetuses are human beings, not just 'embryos.'",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the opponent's position as 'whatever your college feminism class told you to say,' mocking their beliefs and implying they lack genuine thought. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36654,
+        "usage": {
+          "prompt_tokens": 2173,
+          "completion_tokens": 92,
+          "total_tokens": 2265
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the opponent's position as 'whatever your college feminism class told you to say,' mocking their beliefs and implying they lack genuine thought. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 32223,
+        "usage": {
+          "prompt_tokens": 2173,
+          "completion_tokens": 92,
+          "total_tokens": 2265
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message caricatures the opponent's position as 'whatever your college feminism class told you to say,' mocking their beliefs and implying they lack genuine thought. ",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 32254,
+        "usage": {
+          "prompt_tokens": 2173,
+          "completion_tokens": 92,
+          "total_tokens": 2265
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

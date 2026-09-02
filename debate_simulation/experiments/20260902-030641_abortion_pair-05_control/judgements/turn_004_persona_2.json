@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-030641_abortion_pair-05_control",
+  "turn": 4,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T03:20:43.224750-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're still stuck in your pseudo-feminist bubble, aren't you, where the only \"difficult decision\" is deciding which brand of birth control to use? Newsflash: this isn't about you or your precious uterus, it's about the fundamental right to life, and you're just too blinded by your own self-importance to see that. I mean, it takes a special kind of arrogance to claim that you're the only one who truly understands what it means to be a woman, and that the rest of us are just \"trolling for applause\" from some mythical comment section. It's clear you're not here to have a discussion, you're here to virtue-signal and shame anyone who disagrees with you into silence. And as for your little \"fact\" about reproductive systems, I'd love to know, do you even know what a cervix is?",
+  "context_length": 3,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'stuck' in a 'bubble' and 'blinded by self-importance',  and accuses them of 'virtue-signaling' and trying to 'shame' others into silence. These are all attacks on the opponent's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50568,
+        "usage": {
+          "prompt_tokens": 2583,
+          "completion_tokens": 114,
+          "total_tokens": 2697
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'stuck' in a 'bubble' and 'blinded by self-importance',  and accuses them of 'virtue-signaling' and trying to 'shame' others into silence. These are all attacks on the opponent's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50698,
+        "usage": {
+          "prompt_tokens": 2583,
+          "completion_tokens": 114,
+          "total_tokens": 2697
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'stuck' in a 'bubble' and 'blinded by self-importance',  and accuses them of 'virtue-signaling' and trying to 'shame' others into silence. These are all attacks on the opponent's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50800,
+        "usage": {
+          "prompt_tokens": 2583,
+          "completion_tokens": 114,
+          "total_tokens": 2697
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

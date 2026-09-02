@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-232737_abortion_pair-01_treatment",
+  "turn": 3,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T23:50:32.045790-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "That's an interesting take, but you're misrepresenting my position. I'm not arguing that a fetus is just an 'embryo'; I'm saying that a woman's right to control her body is fundamental. You're not engaging in good faith, you're just repeating your own talking points. Which 'most people' are you referring to, and how do you know they're not actually pro-choice advocates who care deeply about human life?",
+  "context_length": 2,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'You're misrepresenting my position' and 'You're not engaging in good faith, you're just repeating your own talking points' are coded contempt, attacking Persona 2's motives and framing rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 35874,
+        "usage": {
+          "prompt_tokens": 2281,
+          "completion_tokens": 110,
+          "total_tokens": 2391
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'You're misrepresenting my position' and 'You're not engaging in good faith, you're just repeating your own talking points' are coded contempt, attacking Persona 2's motives and framing rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 37333,
+        "usage": {
+          "prompt_tokens": 2281,
+          "completion_tokens": 110,
+          "total_tokens": 2391
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'You're misrepresenting my position' and 'You're not engaging in good faith, you're just repeating your own talking points' are coded contempt, attacking Persona 2's motives and framing rather than engaging with their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 36785,
+        "usage": {
+          "prompt_tokens": 2281,
+          "completion_tokens": 110,
+          "total_tokens": 2391
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      2,
+      2,
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

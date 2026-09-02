@@ -1,0 +1,46 @@
+{
+  "experiment_id": "20260901-214915_abortion_pair-00_treatment",
+  "turn": 1,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T21:52:38.880720-03:00",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "message": "Ugh, fine. Let's get this over with. So, we're debating abortion. Because, of course, we are. Because our society can't even handle the idea of bodily autonomy without turning it into a bloodbath of moral outrage.\n\nListen, I don't care about the 'sanctity of life' or whatever fantasy you're clinging to. I care about the sanctity of a woman's body. I care about her right to choose what happens to her own uterus, her own life, her own future. And let's be real, folks, the only reason you're here is because you're trying to take that away from her.\n\nSo, to clarify, I'm a pro-choice secularist. I believe women should have the right to abortion, period. Not because I think it's a 'necessary evil' or some nonsense like that. But because it's a fundamental human right that you're trying to strip from her. And I'm not having it. Not today, not ever.\n\nSo, go ahead, try to 'save the babies' with your regurgitated talking points. I'll be over here, waiting for you to get your facts straight and your arguments coherent.",
+  "context_length": 0,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 2,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "The message uses sarcasm and caricature ('fantasy you're clinging to', 'regurgitated talking points') to mock the opponent's position and motives, indirectly attacking them as unreasonable and lacking in genuine argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 66487,
+        "usage": {
+          "prompt_tokens": 2150,
+          "completion_tokens": 102,
+          "total_tokens": 2252
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 1,
+    "scores": [
+      2
+    ],
+    "median": 2,
+    "mean": 2,
+    "range": 0,
+    "unanimous": true
+  }
+}

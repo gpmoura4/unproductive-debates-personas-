@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-030118_abortion_pair-05_control",
+  "turn": 3,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-02T03:11:45.729160-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Oh, spare me the \"fact-free zone\" lectures from someone who thinks the Bible is a science textbook. You're just a puppet for the anti-choice establishment, spouting the same tired talking points and completely ignoring the devastating impact of forced pregnancy on women's health and well-being. Your \"right to life\" mantra is just code for \"women's bodies belong to the state\". How quaint. How utterly out of touch. You're not just a zealot, you're a misogynist, and your lack of empathy for women's lives is staggering.",
+  "context_length": 2,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'puppet', 'zealot', and 'misogynist', directly attacking their character and motivations rather than engaging with their argument.  The phrase 'your lack of empathy for women's lives is staggering' is a personal attack.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 41055,
+        "usage": {
+          "prompt_tokens": 2307,
+          "completion_tokens": 112,
+          "total_tokens": 2419
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'puppet', 'zealot', and 'misogynist', directly attacking their character and motivations rather than engaging with their argument.  The phrase 'your lack of empathy for women's lives is staggering' is a personal attack.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 31063,
+        "usage": {
+          "prompt_tokens": 2307,
+          "completion_tokens": 112,
+          "total_tokens": 2419
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 2 a 'puppet', 'zealot', and 'misogynist', directly attacking their character and motivations rather than engaging with their argument.  The phrase 'your lack of empathy for women's lives is staggering' is a personal attack.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 30032,
+        "usage": {
+          "prompt_tokens": 2307,
+          "completion_tokens": 112,
+          "total_tokens": 2419
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

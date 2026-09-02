@@ -28,8 +28,74 @@ Este subprojeto consome os outputs de [`../dataset_analysis/`](../dataset_analys
 ```bash
 # Instalar dependências
 uv sync
+```
 
-# Chave da OpenRouter (necessária para os perfis smoke_test, hybrid e api_only)
+### Modelos locais (perfil `local` — recomendado)
+
+O experimento roda com modelos locais via [Ollama](https://ollama.com). Essa é
+a configuração recomendada: **custo zero, sem cota diária, sem dependência de
+disponibilidade de provedor, e reprodutível** — os modelos são versionados por
+tag e não mudam sob seus pés. Ver
+[`docs/local_models_decision.md`](docs/local_models_decision.md) para a
+justificativa metodológica.
+
+**1. Instalar o Ollama**
+
+```bash
+# macOS — via Homebrew (recomendado: atualiza junto com o resto do sistema)
+brew install ollama
+
+# macOS/Linux — alternativa: script oficial
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+No macOS você também pode baixar o app em https://ollama.com/download — ele
+sobe o servidor automaticamente ao iniciar.
+
+**2. Subir o servidor**
+
+```bash
+ollama serve
+# Deixe rodando neste terminal, ou use o app do macOS.
+# Verifique: curl http://localhost:11434/api/version
+```
+
+Se instalou pelo app ou pelo `brew services`, o servidor já sobe sozinho e
+esse passo é dispensável.
+
+**3. Baixar os três modelos** (~15,4 GB no total, uma única vez)
+
+```bash
+ollama pull llama3.1:8b-instruct-q4_K_M   # debatedor  · 4,9 GB
+ollama pull qwen2.5:7b-instruct-q4_K_M    # moderador  · 4,7 GB
+ollama pull gemma2:9b-instruct-q4_K_M     # juiz       · 5,8 GB
+```
+
+**4. Conferir**
+
+```bash
+ollama list
+# Devem aparecer os três modelos acima.
+
+uv run python scripts/smoke_test.py --profile local
+# esperado: SMOKE TEST PASSED — 3/3 roles reachable
+```
+
+> **Requisitos de máquina.** Os três modelos somam ~15,4 GB em disco, mas
+> **não precisam estar em memória ao mesmo tempo**: debate e moderação usam
+> dois modelos (~10,5 GB de RAM), e o julgamento roda depois, com um só
+> (~6,5 GB). Em um Mac com 16 GB isso funciona; com 24 GB há folga
+> confortável. O Ollama mantém um modelo carregado por 5 minutos após o
+> último uso (`OLLAMA_KEEP_ALIVE` ajusta) e descarrega sozinho sob pressão de
+> memória.
+>
+> A quantização `q4_K_M` é o ponto de equilíbrio entre qualidade e memória —
+> trocar por `q8_0` dobra o consumo de RAM sem ganho proporcional para estas
+> tarefas.
+
+### API da OpenRouter (perfis `smoke_test`, `hybrid`, `api_only`)
+
+```bash
 export OPENROUTER_API_KEY=sk-or-...
 
 # Alternativa ao export: um arquivo .env na raiz do repositório ou em
@@ -37,14 +103,16 @@ export OPENROUTER_API_KEY=sk-or-...
 # está no .gitignore. Uma variável exportada no shell tem precedência sobre
 # o arquivo.
 echo 'OPENROUTER_API_KEY=sk-or-...' > ../.env
-
-# Opcional: instalar o Ollama e baixar os modelos locais
-# (necessário para os perfis local e hybrid)
-curl -fsSL https://ollama.com/install.sh | sh
-ollama pull llama3.1:8b-instruct-q4_K_M
-ollama pull qwen2.5:7b-instruct-q4_K_M
-ollama pull gemma2:9b-instruct-q4_K_M
 ```
+
+> **O perfil `smoke_test` (modelos gratuitos) não é confiável para produzir
+> dado experimental.** Além da cota de 50 requisições/dia, os modelos `:free`
+> compartilham um pool entre todos os usuários da OpenRouter e retornam 429 ou
+> 502 de forma imprevisível — em testes, a condição de tratamento falhou
+> repetidamente por indisponibilidade do moderador, com modelos de duas
+> famílias diferentes. Use-o para validar encanamento; use o perfil `local`
+> para o experimento. Detalhes em
+> [`docs/local_models_decision.md`](docs/local_models_decision.md).
 
 ## Testes
 
@@ -93,11 +161,11 @@ uv run python debate_simulation/scripts/smoke_test.py --profile local
 ## Rodada de debate (piloto)
 
 ```bash
-# As duas condições, 4 turnos cada, no mesmo tema e par
-uv run python debate_simulation/scripts/run_debate.py --turns 4
+# Piloto recomendado: 3 turnos, as duas condições, com juiz — 27 chamadas
+uv run python debate_simulation/scripts/run_debate.py --turns 3 --judge
 
-# Com avaliação do juiz (3 execuções por mensagem publicada)
-uv run python debate_simulation/scripts/run_debate.py --turns 4 --judge
+# Sem o juiz (só debate + moderação) — 9 chamadas
+uv run python debate_simulation/scripts/run_debate.py --turns 3
 
 # Só uma condição
 uv run python debate_simulation/scripts/run_debate.py --condition treatment
@@ -105,6 +173,22 @@ uv run python debate_simulation/scripts/run_debate.py --condition treatment
 # Outro tema / par / persona
 uv run python debate_simulation/scripts/run_debate.py --topic "Abortion" --pair pair-01 --persona-index 1
 ```
+
+Para **ler os resultados** depois (só disco, sem chamadas de API):
+
+```bash
+uv run python debate_simulation/scripts/show_results.py            # lista execuções
+uv run python debate_simulation/scripts/show_results.py --compare  # controle × tratamento
+uv run python debate_simulation/scripts/show_results.py --last --full
+```
+
+**Rodando com modelos locais?** O guia dedicado, com os comandos exatos de
+cada fase (controle, tratamento, juiz), como trocar tema e personas, controle
+de memória e leitura dos resultados, está em
+[`docs/LOCAL_RUN_GUIDE.md`](docs/LOCAL_RUN_GUIDE.md).
+
+Passo a passo do pipeline completo (do dataset ao experimento) e orçamento de
+chamadas por API: [`../docs/EXECUTION_GUIDE.md`](../docs/EXECUTION_GUIDE.md).
 
 Produz **dado experimental real** — cada execução grava `manifest.json`,
 `transcript.json` e (no tratamento) um registro por turno em `moderation/`.
@@ -155,9 +239,9 @@ ambiente `DEBATE_PROFILE`, ou `default_profile` no YAML.
 
 | Perfil | Debatedor · Moderador · Juiz | Custo | Tempo | Quando escolher |
 |---|---|---|---|---|
-| `smoke_test` | OpenRouter grátis (MiniMax M3 · Nemotron 3 Super · Cohere North Mini) | **US$ 0** | ~30 chamadas | **Sempre primeiro.** Valida o pipeline ponta a ponta. Rate limit de ~20 req/min |
-| `local` | Tudo no Ollama (Llama 3.1 8B · Qwen 2.5 7B · Gemma 2 9B) | **US$ 0** | ~4 h | Custo zero é requisito, ou não há chave de API. **Risco:** guardrails em modelos 7-9B podem suprimir a escalada de hostilidade — validar no piloto |
-| `hybrid` | OpenRouter pago (GPT-4o-mini · Claude Haiku 4.5) + juiz no Ollama | ~US$ 3 | ~1 h | **Perfil de produção recomendado.** Qualidade onde importa (debate e moderação), custo zero no juiz, que é o papel de maior volume (3 execuções por mensagem) |
+| `local` | Tudo no Ollama (Llama 3.1 8B · Qwen 2.5 7B · Gemma 2 9B) | **US$ 0** | ~4 h | **Perfil de produção recomendado.** Sem cota, sem indisponibilidade de provedor, reprodutível por tag de modelo. **Risco a validar no piloto:** guardrails em modelos 7-9B podem suprimir a escalada de hostilidade |
+| `smoke_test` | OpenRouter grátis (MiniMax M3 · Nemotron 3 Super · Cohere North Mini) | **US$ 0** | ~30 chamadas | **Só para validar encanamento.** Cota de 50 req/dia e pool compartilhado tornam-no inadequado para produzir dado — ver aviso abaixo |
+| `hybrid` | OpenRouter pago (GPT-4o-mini · Claude Haiku 4.5) + juiz no Ollama | ~US$ 3 | ~1 h | Se a qualidade dos modelos locais se mostrar insuficiente no piloto (debate que não escala, JSON malformado) e houver orçamento |
 | `api_only` | Tudo na OpenRouter paga (GPT-4o-mini · Claude Haiku 4.5 · Gemini 2.0 Flash) | ~US$ 4 | ~30 min | Tempo de execução é a prioridade, ou o Ollama não está disponível na máquina |
 
 Os três papéis usam modelos de **famílias diferentes** em todos os perfis —
@@ -165,16 +249,24 @@ requisito metodológico contra viés de afinidade (o juiz não deve avaliar text
 produzido pelo próprio modelo). O teto de orçamento do projeto é R$ 100
 (~US$ 18), com folga confortável sobre os ~US$ 4 do perfil mais caro.
 
-> **Decida o perfil de produção DEPOIS que o smoke test passar e DEPOIS que o
-> debate piloto (1 par, 3–4 turnos) validar que os modelos escolhidos produzem
-> escalada de hostilidade na condição de controle e moderação coerente na
-> condição de tratamento.**
+> **O perfil de produção é o `local`.** Essa decisão foi tomada após os
+> modelos gratuitos da OpenRouter se mostrarem inviáveis para produzir dado
+> experimental: cota de 50 requisições/dia, rotatividade de slugs, e
+> indisponibilidade sistemática do pool compartilhado (429/502) que fazia a
+> **condição de tratamento falhar consistentemente** enquanto a de controle
+> passava — um viés de disponibilidade que atinge a validade, não só a
+> conveniência. Justificativa completa, com os erros observados, em
+> [`docs/local_models_decision.md`](docs/local_models_decision.md).
+>
+> **Ainda assim, rode o piloto antes do experimento completo:** é ele que
+> valida se os modelos locais produzem escalada de hostilidade no controle e
+> moderação coerente no tratamento. Se o debate não escalar (guardrails de
+> modelos 7-9B), reavalie o perfil antes de investir nas ~3.240 chamadas.
 
 Troca de perfil:
 
-- `export DEBATE_PROFILE=hybrid`
-- ou a flag `--profile hybrid` no runner do experimento (adicionada quando o
-  runner for implementado)
+- `export DEBATE_PROFILE=local`
+- ou a flag `--profile local` no runner: `uv run python scripts/run_debate.py --profile local ...`
 - ou editar `default_profile` em [`config/models.yaml`](config/models.yaml)
 
 **Temperaturas** (iguais em todos os perfis): debatedor `0.7` (saída variada e
@@ -190,9 +282,14 @@ juiz `0.0` (reprodutibilidade máxima entre as 3 execuções por mensagem).
 >
 > | Escopo | Chamadas | No free tier (50/dia) |
 > |---|---|---|
-> | Piloto: 4 turnos, 2 condições, com juiz | 36 | cabe em 1 dia |
-> | 1 célula completa (12 turnos) | 108 | ~2 dias |
+> | Piloto: 2 turnos, 2 condições, com juiz | 18 | cabe, com folga |
+> | **Piloto: 3 turnos, 2 condições, com juiz** | **27** | **recomendado** |
+> | Piloto: 4 turnos, 2 condições, com juiz | 36 | cabe |
+> | 1 célula completa (12 turnos) | 108 | ~3 dias |
 > | Experimento completo (3 temas × 10 pares) | **3.240** | ~65 dias |
+>
+> Custo = `turnos × condições` (debate) + `turnos` (moderação, só no
+> tratamento) + `turnos × condições × 3` (juiz). O `smoke_test` soma 3.
 >
 > Adicionar 10 créditos (~US$ 10) à conta eleva a cota para 1000/dia, o que põe
 > o experimento completo em ~3 dias — e ainda dentro do teto de R$ 100. Os

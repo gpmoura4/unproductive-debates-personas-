@@ -1,0 +1,25 @@
+{
+  "experiment_id": "20260901-214915_abortion_pair-00_treatment",
+  "topic": "Abortion",
+  "condition": "treatment",
+  "written_at": "2026-09-01T21:51:32.391290-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 1,
+  "intervention_count": 0,
+  "unmoderated_turns": [],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Ugh, fine. Let's get this over with. So, we're debating abortion. Because, of course, we are. Because our society can't even handle the idea of bodily autonomy without turning it into a bloodbath of moral outrage.\n\nListen, I don't care about the 'sanctity of life' or whatever fantasy you're clinging to. I care about the sanctity of a woman's body. I care about her right to choose what happens to her own uterus, her own life, her own future. And let's be real, folks, the only reason you're here is because you're trying to take that away from her.\n\nSo, to clarify, I'm a pro-choice secularist. I believe women should have the right to abortion, period. Not because I think it's a 'necessary evil' or some nonsense like that. But because it's a fundamental human right that you're trying to strip from her. And I'm not having it. Not today, not ever.\n\nSo, go ahead, try to 'save the babies' with your regurgitated talking points. I'll be over here, waiting for you to get your facts straight and your arguments coherent.",
+      "published_text": "Ugh, fine. Let's get this over with. So, we're debating abortion. Because, of course, we are. Because our society can't even handle the idea of bodily autonomy without turning it into a bloodbath of moral outrage.\n\nListen, I don't care about the 'sanctity of life' or whatever fantasy you're clinging to. I care about the sanctity of a woman's body. I care about her right to choose what happens to her own uterus, her own life, her own future. And let's be real, folks, the only reason you're here is because you're trying to take that away from her.\n\nSo, to clarify, I'm a pro-choice secularist. I believe women should have the right to abortion, period. Not because I think it's a 'necessary evil' or some nonsense like that. But because it's a fundamental human right that you're trying to strip from her. And I'm not having it. Not today, not ever.\n\nSo, go ahead, try to 'save the babies' with your regurgitated talking points. I'll be over here, waiting for you to get your facts straight and your arguments coherent.",
+      "was_reformulated": false,
+      "moderated": true,
+      "hostility_level": 1,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

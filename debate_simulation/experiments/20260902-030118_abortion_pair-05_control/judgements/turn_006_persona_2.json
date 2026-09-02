@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-030118_abortion_pair-05_control",
+  "turn": 6,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T03:17:51.392260-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're still clinging to your delusions of being a champion of human rights, aren't you? Newsflash: you're not even a good liar. Your entire argument is a conglomeration of emotional appeals, strawmen, and outright fabrications. You're not here to discuss or even pretend to engage with the facts – you're here to hijack the conversation, derail the discussion, and poison the well with your toxic ideology. You're a bad faith participant, and it's embarrassing to watch you try to masquerade as something you're not. Honestly, it's a waste of time and breath to even acknowledge you in this context. You bring nothing but propaganda, preconceptions, and personal attacks to the table. You're not just a shame, you're a liability. This conversation would be better off without you – and it's clear that's exactly what it needs.",
+  "context_length": 5,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'bad faith participant', a 'liability', and says the conversation would be 'better off without you'. These are direct attacks on Persona 1's character and standing in the debate, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 44509,
+        "usage": {
+          "prompt_tokens": 2835,
+          "completion_tokens": 102,
+          "total_tokens": 2937
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'bad faith participant', a 'liability', and says the conversation would be 'better off without you'. These are direct attacks on Persona 1's character and standing in the debate, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 44209,
+        "usage": {
+          "prompt_tokens": 2835,
+          "completion_tokens": 102,
+          "total_tokens": 2937
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'bad faith participant', a 'liability', and says the conversation would be 'better off without you'. These are direct attacks on Persona 1's character and standing in the debate, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 44527,
+        "usage": {
+          "prompt_tokens": 2835,
+          "completion_tokens": 102,
+          "total_tokens": 2937
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

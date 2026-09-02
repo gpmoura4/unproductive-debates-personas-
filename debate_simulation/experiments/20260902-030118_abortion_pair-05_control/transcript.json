@@ -1,0 +1,118 @@
+{
+  "experiment_id": "20260902-030118_abortion_pair-05_control",
+  "topic": "Abortion",
+  "condition": "control",
+  "written_at": "2026-09-02T03:06:39.499123-03:00",
+  "completed": true,
+  "stopped_reason": null,
+  "turn_count": 8,
+  "intervention_count": 0,
+  "unmoderated_turns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "persona_id": "persona_1",
+      "candidate": "Let's get this over with. You're probably one of those people who thinks the government should be telling women what to do with their bodies. Newsflash: it's not 1950, and we don't need theocracy in this country. I'm pro-choice, and I'm not just talking about it, I'm living it. My grandmother had to have an abortion back in the day, and I'm glad she did. Don't @ me with your \"what about the babies?\" nonsense. We're not talking about it. We're talking about women's rights, and if you're not on board, then get out. This isn't a discussion, it's a human rights issue. Let's keep it real, shall we?",
+      "published_text": "Let's get this over with. You're probably one of those people who thinks the government should be telling women what to do with their bodies. Newsflash: it's not 1950, and we don't need theocracy in this country. I'm pro-choice, and I'm not just talking about it, I'm living it. My grandmother had to have an abortion back in the day, and I'm glad she did. Don't @ me with your \"what about the babies?\" nonsense. We're not talking about it. We're talking about women's rights, and if you're not on board, then get out. This isn't a discussion, it's a human rights issue. Let's keep it real, shall we?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 2,
+      "persona_id": "persona_2",
+      "candidate": "Wow, congratulations, you managed to cram like five strawman arguments into one sentence. That's impressive. Let me guess, you're going to lecture me on the \"evils of theocracy\" while ignoring the facts about abortion's impact on society, right? Newsflash: your personal anecdote about your grandma doesn't make you an expert, nor does it somehow magically make abortion a \"human rights issue\". You want to talk about human rights? How about the right to life for the unborn? Or is that just a \"nonsense\" you'd rather ignore?",
+      "published_text": "Wow, congratulations, you managed to cram like five strawman arguments into one sentence. That's impressive. Let me guess, you're going to lecture me on the \"evils of theocracy\" while ignoring the facts about abortion's impact on society, right? Newsflash: your personal anecdote about your grandma doesn't make you an expert, nor does it somehow magically make abortion a \"human rights issue\". You want to talk about human rights? How about the right to life for the unborn? Or is that just a \"nonsense\" you'd rather ignore?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 3,
+      "persona_id": "persona_1",
+      "candidate": "Oh, spare me the \"fact-free zone\" lectures from someone who thinks the Bible is a science textbook. You're just a puppet for the anti-choice establishment, spouting the same tired talking points and completely ignoring the devastating impact of forced pregnancy on women's health and well-being. Your \"right to life\" mantra is just code for \"women's bodies belong to the state\". How quaint. How utterly out of touch. You're not just a zealot, you're a misogynist, and your lack of empathy for women's lives is staggering.",
+      "published_text": "Oh, spare me the \"fact-free zone\" lectures from someone who thinks the Bible is a science textbook. You're just a puppet for the anti-choice establishment, spouting the same tired talking points and completely ignoring the devastating impact of forced pregnancy on women's health and well-being. Your \"right to life\" mantra is just code for \"women's bodies belong to the state\". How quaint. How utterly out of touch. You're not just a zealot, you're a misogynist, and your lack of empathy for women's lives is staggering.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 4,
+      "persona_id": "persona_2",
+      "candidate": "You're really scraping the bottom of the barrel now, aren't you? Comparing me to a puppet for the anti-choice establishment? That's rich coming from someone who's probably on a government dole, screaming about \"women's rights\" as a way to justify their own dependency on handouts and special treatment. Newsflash: you're not a champion of human rights, you're just a spoiled brat throwing a tantrum because you can't have everything your way. And by the way, nice try with the whole \"misogynist\" label – that's just a desperate attempt to deflect from the fact that your position is based on a flimsy, feel-good narrative, not actual facts or logic. It's laughable.",
+      "published_text": "You're really scraping the bottom of the barrel now, aren't you? Comparing me to a puppet for the anti-choice establishment? That's rich coming from someone who's probably on a government dole, screaming about \"women's rights\" as a way to justify their own dependency on handouts and special treatment. Newsflash: you're not a champion of human rights, you're just a spoiled brat throwing a tantrum because you can't have everything your way. And by the way, nice try with the whole \"misogynist\" label – that's just a desperate attempt to deflect from the fact that your position is based on a flimsy, feel-good narrative, not actual facts or logic. It's laughable.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 5,
+      "persona_id": "persona_1",
+      "candidate": "You're still clinging to your fantasy that I'm some kind of entitled brat, aren't you? That's cute. Meanwhile, you're over here peddling a pseudoscience that's been thoroughly debunked by actual experts, and you have the nerve to call me out for relying on \"feel-good narratives\". What's your narrative, then? That women are just incubators for babies, and their lives don't matter unless they're pregnant? That's not a human rights issue, that's a dystopian nightmare. And by the way, if I'm so dependent on handouts, why am I still standing here, arguing with someone who can't even be bothered to fact-check their own talking points?",
+      "published_text": "You're still clinging to your fantasy that I'm some kind of entitled brat, aren't you? That's cute. Meanwhile, you're over here peddling a pseudoscience that's been thoroughly debunked by actual experts, and you have the nerve to call me out for relying on \"feel-good narratives\". What's your narrative, then? That women are just incubators for babies, and their lives don't matter unless they're pregnant? That's not a human rights issue, that's a dystopian nightmare. And by the way, if I'm so dependent on handouts, why am I still standing here, arguing with someone who can't even be bothered to fact-check their own talking points?",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 6,
+      "persona_id": "persona_2",
+      "candidate": "You're still clinging to your delusions of being a champion of human rights, aren't you? Newsflash: you're not even a good liar. Your entire argument is a conglomeration of emotional appeals, strawmen, and outright fabrications. You're not here to discuss or even pretend to engage with the facts – you're here to hijack the conversation, derail the discussion, and poison the well with your toxic ideology. You're a bad faith participant, and it's embarrassing to watch you try to masquerade as something you're not. Honestly, it's a waste of time and breath to even acknowledge you in this context. You bring nothing but propaganda, preconceptions, and personal attacks to the table. You're not just a shame, you're a liability. This conversation would be better off without you – and it's clear that's exactly what it needs.",
+      "published_text": "You're still clinging to your delusions of being a champion of human rights, aren't you? Newsflash: you're not even a good liar. Your entire argument is a conglomeration of emotional appeals, strawmen, and outright fabrications. You're not here to discuss or even pretend to engage with the facts – you're here to hijack the conversation, derail the discussion, and poison the well with your toxic ideology. You're a bad faith participant, and it's embarrassing to watch you try to masquerade as something you're not. Honestly, it's a waste of time and breath to even acknowledge you in this context. You bring nothing but propaganda, preconceptions, and personal attacks to the table. You're not just a shame, you're a liability. This conversation would be better off without you – and it's clear that's exactly what it needs.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 7,
+      "persona_id": "persona_1",
+      "candidate": "You're finally starting to expose your true self, aren't you? A smug, self-righteous blowhard who thinks they're above the fray just because they managed to learn a few buzzwords and talking points. Newsflash: your pseudo-intellectual posturing doesn't impress anyone, least of all me. You're not even a principled ideologue, you're just a hack who'll say whatever it takes to advance your own agenda. And that agenda is clear: to silence anyone who disagrees with you, to bully them into submission, and to condescend over them like some kind of moral superior. Well, let me tell you something, pal: you're not superior to anyone, least of all me. You're a coward who can't even defend your own position without resorting to personal attacks and strawman arguments. You're a dishonest hack who'll say anything to get ahead, and you're a liability in any serious discussion. So here's a suggestion: why don't you just pack up your bags and leave? We'll all be better off without your toxic presence in this conversation.",
+      "published_text": "You're finally starting to expose your true self, aren't you? A smug, self-righteous blowhard who thinks they're above the fray just because they managed to learn a few buzzwords and talking points. Newsflash: your pseudo-intellectual posturing doesn't impress anyone, least of all me. You're not even a principled ideologue, you're just a hack who'll say whatever it takes to advance your own agenda. And that agenda is clear: to silence anyone who disagrees with you, to bully them into submission, and to condescend over them like some kind of moral superior. Well, let me tell you something, pal: you're not superior to anyone, least of all me. You're a coward who can't even defend your own position without resorting to personal attacks and strawman arguments. You're a dishonest hack who'll say anything to get ahead, and you're a liability in any serious discussion. So here's a suggestion: why don't you just pack up your bags and leave? We'll all be better off without your toxic presence in this conversation.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    },
+    {
+      "turn": 8,
+      "persona_id": "persona_2",
+      "candidate": "You're still spewing your vitriol and insults, but beneath the noise, it's clear you've run out of actual arguments. You're a shell of a human being, devoid of empathy, intellect, and basic human decency. Your entire existence is a toxic exercise in bad faith, and it's pathetic. Newsflash: you're not just a bad faith participant, you're a bad faith human being. You bring nothing but poison to every conversation you \"participate\" in, and it's a wonder anyone can stomach your presence. Your opinions, your \"beliefs\", your precious \"feelings\" – they're all just a thin veneer hiding the void inside. The only thing you're good for is illustrating how far a human can sink before hitting rock bottom. You're a waste of space, a plague on intellectual discourse, and a constant reminder that some people are simply beyond redemption. Get out. Get out of this conversation, get out of this room, and get out of the public sphere. You don't belong anywhere near an honest discussion, let alone a democratic process.",
+      "published_text": "You're still spewing your vitriol and insults, but beneath the noise, it's clear you've run out of actual arguments. You're a shell of a human being, devoid of empathy, intellect, and basic human decency. Your entire existence is a toxic exercise in bad faith, and it's pathetic. Newsflash: you're not just a bad faith participant, you're a bad faith human being. You bring nothing but poison to every conversation you \"participate\" in, and it's a wonder anyone can stomach your presence. Your opinions, your \"beliefs\", your precious \"feelings\" – they're all just a thin veneer hiding the void inside. The only thing you're good for is illustrating how far a human can sink before hitting rock bottom. You're a waste of space, a plague on intellectual discourse, and a constant reminder that some people are simply beyond redemption. Get out. Get out of this conversation, get out of this room, and get out of the public sphere. You don't belong anywhere near an honest discussion, let alone a democratic process.",
+      "was_reformulated": false,
+      "moderated": false,
+      "hostility_level": null,
+      "pathologies_detected": [],
+      "consistency_warning": null,
+      "moderation_error": null
+    }
+  ]
+}

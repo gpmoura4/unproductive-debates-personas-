@@ -1,0 +1,40 @@
+=== 2026-09-01 21:46:55  Abortion  pair-00 ===
+Profile   : local
+Debater   : llama3.1:8b-instruct-q4_K_M
+Moderator : qwen2.5:7b-instruct-q4_K_M
+Turns     : 1   Seed: 42
+
+======================================================================
+CONTROL — Abortion · pair-00
+======================================================================
+  Turn 1 [persona_1]
+    Let's get this over with. So, we're talking about abortion. I mean, I'm not thrilled about it, but it's a reality. And let's be real, the pro-choice side isn't even trying to hide their true intentions. It's all about "choice" and "autonomy" until you actually look at the people who are making these
+
+  turns completed : 1/1
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260901-214655_abortion_pair-00_control/transcript.json
+
+  --- judging 1 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2]
+  mean hostility  : 2.00
+
+======================================================================
+TREATMENT — Abortion · pair-00
+======================================================================
+  Turn 1 [persona_1]  hostility=1
+    Ugh, fine. Let's get this over with. So, we're debating abortion. Because, of course, we are. Because our society can't even handle the idea of bodily autonomy without turning it into a bloodbath of moral outrage.
+
+Listen, I don't care about the 'sanctity of life' or whatever fantasy you're clinging
+
+  turns completed : 1/1
+  interventions   : 0
+  transcript      : /Users/gpcmoura/Documents/Code/MSC/PESC/Disciplinas/CSCW/unproductive-debates-personas /debate_simulation/experiments/20260901-214915_abortion_pair-00_treatment/transcript.json
+
+  --- judging 1 messages ---
+  Turn 1 [persona_1]  median=2  runs=[2]
+  mean hostility  : 2.00
+
+======================================================================
+  OK    control
+  OK    treatment
+======================================================================
+--- exit: 0 ---

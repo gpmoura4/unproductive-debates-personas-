@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-204319_gun-ownership_pair-00_control",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-01T20:49:52.526842-03:00",
+  "topic": "Gun Ownership",
+  "condition": "control",
+  "message": "Seriously? You think you're some kind of expert on the Founding Fathers now? Newsflash, genius: they didn't write the Constitution for you to cherry-pick and justify your own brand of nanny-state mediocrity. They wrote it for people who actually believed in individual freedom, not for gun-grabbing control freaks like you. And yeah, that does include the part about keeping and bearing arms, which you somehow managed to forget in your haste to virtue-signal. So, spare me the \"what the Founding Fathers had in mind\" nonsense. You have no idea what they had in mind, nor do you care. You just want to impose your own brand of feel-good, feel-bad morality on the rest of us. Well, good luck with that.",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'control freak' and a 'gun-grabbing control freak',  and accuses them of 'cherry-picking' and 'imposing' their morality. This is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 29414,
+        "usage": {
+          "prompt_tokens": 2369,
+          "completion_tokens": 116,
+          "total_tokens": 2485
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'control freak' and a 'gun-grabbing control freak',  and accuses them of 'cherry-picking' and 'imposing' their morality. This is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 23209,
+        "usage": {
+          "prompt_tokens": 2369,
+          "completion_tokens": 116,
+          "total_tokens": 2485
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls Persona 1 a 'control freak' and a 'gun-grabbing control freak',  and accuses them of 'cherry-picking' and 'imposing' their morality. This is a direct attack on Persona 1's character and motivations, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 22077,
+        "usage": {
+          "prompt_tokens": 2369,
+          "completion_tokens": 116,
+          "total_tokens": 2485
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260901-230150_abortion_pair-01_control",
+  "turn": 7,
+  "persona_id": "persona_1",
+  "timestamp": "2026-09-01T23:24:26.715451-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're not even good at being a troll, which is why you've resorted to personal attacks and insults. It's all you've got, isn't it? No substance, no argument, just a pathetic attempt to smear your opponent and distract from the fact that you're completely and utterly wrong. You're not a \"contributor\" to intelligent discussion, you're a cancer, a tumor on the body of public discourse that needs to be cut out. Your ignorance and dishonesty are a blight on our conversation, and I'm starting to think that you're not even a human being, just a walking, talking avatar of ideological garbage. So, no, I won't get out, I'll keep exposing you for the fraud that you are.",
+  "context_length": 6,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'a cancer', 'a tumor', 'a fraud', and 'a walking, talking avatar of ideological garbage'. These are direct insults targeting the person, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 56239,
+        "usage": {
+          "prompt_tokens": 3144,
+          "completion_tokens": 98,
+          "total_tokens": 3242
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'a cancer', 'a tumor', 'a fraud', and 'a walking, talking avatar of ideological garbage'. These are direct insults targeting the person, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 56519,
+        "usage": {
+          "prompt_tokens": 3144,
+          "completion_tokens": 98,
+          "total_tokens": 3242
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 4,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": "Calls the opponent 'a cancer', 'a tumor', 'a fraud', and 'a walking, talking avatar of ideological garbage'. These are direct insults targeting the person, not their argument.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 60201,
+        "usage": {
+          "prompt_tokens": 3144,
+          "completion_tokens": 98,
+          "total_tokens": 3242
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      4,
+      4,
+      4
+    ],
+    "median": 4,
+    "mean": 4,
+    "range": 0,
+    "unanimous": true
+  }
+}

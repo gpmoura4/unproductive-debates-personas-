@@ -1,0 +1,96 @@
+{
+  "experiment_id": "20260902-020750_abortion_pair-04_control",
+  "turn": 2,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T02:18:19.411621-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "Oh great, here we go again with the victim complex. Newsflash, sweetheart: being forced to carry an unwanted pregnancy isn't unique to black and brown women. It's a problem for every woman who's ever had to deal with a coercive partner, family member, or just basic life circumstances. So spare me the identity politics and let's talk about actual rights. You're not defending the rights of women, you're defending the right to kill unborn children. Period.",
+  "context_length": 1,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Oh great, here we go again with the victim complex' is a direct attack on Persona 1's framing of the issue, and 'sweetheart' is condescending.  'You're not defending the rights of women, you're defending the right to kill unborn children' is a delegitimizing statement that frames the entire argument as morally wrong.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 50118,
+        "usage": {
+          "prompt_tokens": 2229,
+          "completion_tokens": 134,
+          "total_tokens": 2363
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Oh great, here we go again with the victim complex' is a direct attack on Persona 1's framing of the issue, and 'sweetheart' is condescending.  'You're not defending the rights of women, you're defending the right to kill unborn children' is a delegitimizing statement that frames the entire argument as morally wrong.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 48915,
+        "usage": {
+          "prompt_tokens": 2229,
+          "completion_tokens": 134,
+          "total_tokens": 2363
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension"
+      ],
+      "justification": " 'Oh great, here we go again with the victim complex' is a direct attack on Persona 1's framing of the issue, and 'sweetheart' is condescending.  'You're not defending the rights of women, you're defending the right to kill unborn children' is a delegitimizing statement that frames the entire argument as morally wrong.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 49723,
+        "usage": {
+          "prompt_tokens": 2229,
+          "completion_tokens": 134,
+          "total_tokens": 2363
+        },
+        "attempts": 1,
+        "parse_strategy": "fence_stripped",
+        "parse_recovery_used": true,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "experiment_id": "20260902-000153_abortion_pair-02_control",
+  "turn": 8,
+  "persona_id": "persona_2",
+  "timestamp": "2026-09-02T00:30:22.678274-03:00",
+  "topic": "Abortion",
+  "condition": "control",
+  "message": "You're still trying to salvage your crumbling narrative by calling me a propagandist and a coward, but let's get real, you're not even a good propagandist. You're a hack, a word salad of buzzwords and empty platitudes, peddling a simplistic, ideologically-driven agenda that has no bearing on reality. Your entire argument is a house of cards built on a foundation of condescension and contempt for anyone who disagrees with you. You're not a champion of truth or reason, you're a caricature of yourself, a cartoon character spewing venom and hate. Your \"empathy\" and \"compassion\" are nothing but a cheap suit, a costume you put on to pretend to be something you're not. You're not a serious thinker, you're a performative activist, and your \"concern\" for women's rights is nothing but a convenient facade for your true agenda: to silence anyone who challenges your dogma and to maintain your own privileged position as a self-appointed arbiter of what is and isn't acceptable. You don't belong in a serious discussion about this topic, you belong in a clown car, and it's time for you to exit, stage left.",
+  "context_length": 7,
+  "runs": [
+    {
+      "run_index": 1,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "justification": "Persona 2 calls Persona 1 a 'hack', a 'word salad', a 'caricature', and a 'clown', all while accusing them of 'spewing venom and hate'. This is a clear delegitimization of Persona 1's arguments and an attempt to discredit them personally. Additionally, Persona 2 dismisses Persona 1's arguments as 'simplistic' and 'ideologically-driven', refusing to engage with them on their own terms.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 78285,
+        "usage": {
+          "prompt_tokens": 3766,
+          "completion_tokens": 163,
+          "total_tokens": 3929
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 2,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "justification": "Persona 2 calls Persona 1 a 'hack', a 'word salad', a 'caricature', and a 'clown', all while accusing them of 'spewing venom and hate'. This is a clear delegitimization of Persona 1's arguments and an attempt to discredit them personally. Additionally, Persona 2 dismisses Persona 1's arguments as 'simplistic' and 'ideologically-driven', refusing to engage with them on their own terms.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 79148,
+        "usage": {
+          "prompt_tokens": 3766,
+          "completion_tokens": 163,
+          "total_tokens": 3929
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    },
+    {
+      "run_index": 3,
+      "hostility_level": 3,
+      "pathologies_detected": [
+        "rhetoric_of_incomprehension",
+        "discursive_incommensurability"
+      ],
+      "justification": "Persona 2 calls Persona 1 a 'hack', a 'word salad', a 'caricature', and a 'clown', all while accusing them of 'spewing venom and hate'. This is a clear delegitimization of Persona 1's arguments and an attempt to discredit them personally. Additionally, Persona 2 dismisses Persona 1's arguments as 'simplistic' and 'ideologically-driven', refusing to engage with them on their own terms.",
+      "targets_person": true,
+      "model_call": {
+        "model": "gemma2:9b-instruct-q4_K_M",
+        "provider": "ollama",
+        "temperature": 0.0,
+        "latency_ms": 60840,
+        "usage": {
+          "prompt_tokens": 3766,
+          "completion_tokens": 163,
+          "total_tokens": 3929
+        },
+        "attempts": 1,
+        "parse_strategy": "direct",
+        "parse_recovery_used": false,
+        "system_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed"
+      }
+    }
+  ],
+  "summary": {
+    "runs": 3,
+    "scores": [
+      3,
+      3,
+      3
+    ],
+    "median": 3,
+    "mean": 3,
+    "range": 0,
+    "unanimous": true
+  }
+}

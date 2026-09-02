@@ -27,6 +27,12 @@ __pycache__/
 # commitados deliberadamente, como o conjunto de personas.
 # debate_simulation/experiments/
 
+# Árvores de análise: derivadas de experiments/ e regeneráveis a qualquer
+# momento com scripts/build_analysis.py. Não versionar — os symlinks quebram
+# fora desta máquina, e o modo --copy só duplicaria o que já está em
+# experiments/.
+debate_simulation/analysis/runs/
+
 # Variáveis de ambiente (chaves de API do motor de LLM em debate_simulation/)
 .env
 **/.env

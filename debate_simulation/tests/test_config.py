@@ -11,8 +11,10 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
+import yaml
 
 from config.loader import (
+    DEFAULT_CONFIG_PATH,
     PROFILE_ENV_VAR,
     ModelConfig,
     load_profile,
@@ -77,7 +79,14 @@ def test_api_only_profile_is_all_openrouter() -> None:
 
 
 def test_no_argument_uses_default_profile_from_yaml() -> None:
-    assert load_profile().name == "smoke_test"
+    # Read the expected name from the YAML rather than pinning it: which
+    # profile is default is an operational choice (it moved to `local` when
+    # the free-tier models became unusable), not part of the contract.
+    declared = yaml.safe_load(
+        DEFAULT_CONFIG_PATH.read_text(encoding="utf-8")
+    )["default_profile"]
+
+    assert load_profile().name == declared
 
 
 def test_env_var_overrides_default_profile(monkeypatch: pytest.MonkeyPatch) -> None:

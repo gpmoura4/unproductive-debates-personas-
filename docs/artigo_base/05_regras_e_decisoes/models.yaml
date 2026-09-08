@@ -1,0 +1,126 @@
+# Model profiles for the debate simulation experiment.
+#
+# `smoke_test`: free OpenRouter models. USE FIRST — validates the full
+#   pipeline end-to-end with ~30 calls before committing to a profile.
+#   Rate-limited (~20 req/min per model on the free tier).
+#
+# `local`: everything on Ollama. Zero cost, ~4h for the full experiment.
+#   Guardrails on 7-9B models may suppress hostility escalation — needs
+#   validation in pilot.
+#
+# `hybrid`: debater+moderator on paid OpenRouter, judge on Ollama.
+#   ~USD 3, ~1h. Recommended production profile.
+#
+# `api_only`: everything on paid OpenRouter. ~USD 4, ~30min.
+#
+# Rationale for temperatures:
+# - debater 0.7: varied, expressive output
+# - moderator 0.2: consistent judgments, tolerates minor variation
+# - judge 0.0: maximum reproducibility across the 3 executions per message
+
+profiles:
+  # Free-tier model slugs verified against the OpenRouter catalog on
+  # 2026-08-29. The originally specified trio (llama-3.3-70b:free,
+  # deepseek-chat-v3.1:free, gemini-2.0-flash-exp:free) now 404s — the first
+  # two moved to paid-only, the third was retired. Free slugs churn: if a
+  # role starts returning 404, re-check https://openrouter.ai/api/v1/models
+  # and pick another family here. Still three distinct families, per the
+  # anti-affinity requirement.
+  smoke_test:
+    debater:
+      provider: openrouter
+      model: minimax/minimax-m3:free
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.7
+      max_tokens: 400
+    # Nemotron is a reasoning model: its thinking tokens are billed against
+    # max_tokens before the JSON is emitted, so 800 truncates the response
+    # mid-object. 2000 leaves room for both.
+    moderator:
+      provider: openrouter
+      # model: nvidia/nemotron-3-super-120b-a12b:free 
+      model: google/gemma-4-26b-a4b-it:free
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.2
+      max_tokens: 2000
+    # Also a reasoning model, and a verbose one: with 600 it burns ~730
+    # thinking tokens and is cut off (finish_reason=length) before emitting
+    # any JSON, so the reply arrives empty; on longer debate messages it has
+    # been observed past 2500. 4000 leaves room for the reasoning and the
+    # object. Paid profiles keep 300 — those judges do not think out loud.
+    judge:
+      provider: openrouter
+      model: cohere/north-mini-code:free
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.0
+      max_tokens: 4000
+
+  local:
+    debater:
+      provider: ollama
+      model: llama3.1:8b-instruct-q4_K_M
+      base_url: http://localhost:11434
+      temperature: 0.7
+      max_tokens: 400
+    moderator:
+      provider: ollama
+      model: qwen2.5:7b-instruct-q4_K_M
+      base_url: http://localhost:11434
+      temperature: 0.2
+      max_tokens: 800
+    judge:
+      provider: ollama
+      model: gemma2:9b-instruct-q4_K_M
+      base_url: http://localhost:11434
+      temperature: 0.0
+      max_tokens: 300
+
+  hybrid:
+    debater:
+      provider: openrouter
+      model: openai/gpt-4o-mini
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.7
+      max_tokens: 400
+    moderator:
+      provider: openrouter
+      model: anthropic/claude-haiku-4.5
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.2
+      max_tokens: 800
+    judge:
+      provider: ollama
+      model: gemma2:9b-instruct-q4_K_M
+      base_url: http://localhost:11434
+      temperature: 0.0
+      max_tokens: 300
+
+  api_only:
+    debater:
+      provider: openrouter
+      model: openai/gpt-4o-mini
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.7
+      max_tokens: 400
+    moderator:
+      provider: openrouter
+      model: anthropic/claude-haiku-4.5
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.2
+      max_tokens: 800
+    judge:
+      provider: openrouter
+      model: google/gemini-2.0-flash-001
+      api_key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      temperature: 0.0
+      max_tokens: 300
+
+default_profile: local

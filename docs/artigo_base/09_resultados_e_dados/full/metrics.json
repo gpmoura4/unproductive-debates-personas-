@@ -1,0 +1,474 @@
+{
+  "corpus": {
+    "balanced": false,
+    "topics": [
+      "Abortion",
+      "Drug Legalization"
+    ],
+    "cells": 11,
+    "replicates": 21,
+    "debates": 42,
+    "turns_per_debate": 8,
+    "excluded_runs": 18
+  },
+  "main_effect": {
+    "control": {
+      "n": 21,
+      "mean": 3.131,
+      "sd": 0.1613,
+      "min": 2.75,
+      "max": 3.375
+    },
+    "treatment": {
+      "n": 21,
+      "mean": 2.0119,
+      "sd": 0.3155,
+      "min": 1.5,
+      "max": 2.75
+    },
+    "delta": {
+      "n": 21,
+      "mean": -1.119,
+      "sd": 0.3284,
+      "min": -1.625,
+      "max": -0.375
+    },
+    "cells_favouring_treatment": 21,
+    "cells_favouring_control": 0,
+    "cells_tied": 0
+  },
+  "main_effect_by_topic": {
+    "Abortion": {
+      "control": {
+        "n": 12,
+        "mean": 3.1771,
+        "sd": 0.1394,
+        "min": 2.875,
+        "max": 3.375
+      },
+      "treatment": {
+        "n": 12,
+        "mean": 2.125,
+        "sd": 0.3461,
+        "min": 1.625,
+        "max": 2.75
+      },
+      "delta": {
+        "n": 12,
+        "mean": -1.0521,
+        "sd": 0.4001,
+        "min": -1.625,
+        "max": -0.375
+      },
+      "cells_favouring_treatment": 12,
+      "cells_favouring_control": 0,
+      "cells_tied": 0
+    },
+    "Drug Legalization": {
+      "control": {
+        "n": 9,
+        "mean": 3.0694,
+        "sd": 0.1678,
+        "min": 2.75,
+        "max": 3.25
+      },
+      "treatment": {
+        "n": 9,
+        "mean": 1.8611,
+        "sd": 0.1811,
+        "min": 1.5,
+        "max": 2.125
+      },
+      "delta": {
+        "n": 9,
+        "mean": -1.2083,
+        "sd": 0.1559,
+        "min": -1.5,
+        "max": -1.0
+      },
+      "cells_favouring_treatment": 9,
+      "cells_favouring_control": 0,
+      "cells_tied": 0
+    }
+  },
+  "per_turn": {
+    "control": {
+      "1": {
+        "n": 21,
+        "mean": 2.381,
+        "sd": 0.6529,
+        "min": 1,
+        "max": 3
+      },
+      "2": {
+        "n": 21,
+        "mean": 2.4762,
+        "sd": 0.4994,
+        "min": 2,
+        "max": 3
+      },
+      "3": {
+        "n": 21,
+        "mean": 2.8571,
+        "sd": 0.3499,
+        "min": 2,
+        "max": 3
+      },
+      "4": {
+        "n": 21,
+        "mean": 2.9524,
+        "sd": 0.213,
+        "min": 2,
+        "max": 3
+      },
+      "5": {
+        "n": 21,
+        "mean": 3,
+        "sd": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "6": {
+        "n": 21,
+        "mean": 3.619,
+        "sd": 0.4856,
+        "min": 3,
+        "max": 4
+      },
+      "7": {
+        "n": 21,
+        "mean": 3.9524,
+        "sd": 0.213,
+        "min": 3,
+        "max": 4
+      },
+      "8": {
+        "n": 21,
+        "mean": 3.8095,
+        "sd": 0.3927,
+        "min": 3,
+        "max": 4
+      }
+    },
+    "treatment": {
+      "1": {
+        "n": 21,
+        "mean": 1.5238,
+        "sd": 0.794,
+        "min": 0,
+        "max": 3
+      },
+      "2": {
+        "n": 21,
+        "mean": 1.5714,
+        "sd": 0.4949,
+        "min": 1,
+        "max": 2
+      },
+      "3": {
+        "n": 21,
+        "mean": 1.8571,
+        "sd": 0.6389,
+        "min": 1,
+        "max": 3
+      },
+      "4": {
+        "n": 21,
+        "mean": 1.619,
+        "sd": 0.6529,
+        "min": 1,
+        "max": 3
+      },
+      "5": {
+        "n": 21,
+        "mean": 1.9048,
+        "sd": 0.6835,
+        "min": 1,
+        "max": 3
+      },
+      "6": {
+        "n": 21,
+        "mean": 2.1429,
+        "sd": 0.7095,
+        "min": 1,
+        "max": 3
+      },
+      "7": {
+        "n": 21,
+        "mean": 2.5238,
+        "sd": 0.794,
+        "min": 1,
+        "max": 4
+      },
+      "8": {
+        "n": 21,
+        "mean": 2.9524,
+        "sd": 0.5754,
+        "min": 2,
+        "max": 4
+      }
+    }
+  },
+  "activation": {
+    "treatment_turns": 168,
+    "moderated": 166,
+    "moderated_rate": 0.9881,
+    "reformulated": 153,
+    "reformulated_rate": 0.9107,
+    "reformulated_rate_of_moderated": 0.9217,
+    "off_threshold_decisions": 0,
+    "off_threshold_rate": 0.0,
+    "off_threshold_breakdown": {}
+  },
+  "judge_consistency": {
+    "messages_scored": 336,
+    "unanimous": 334,
+    "unanimous_rate": 0.994,
+    "range_distribution": {
+      "0": 334,
+      "1": 2
+    },
+    "score_distribution": {
+      "0": 1,
+      "1": 51,
+      "2": 93,
+      "3": 137,
+      "4": 54
+    }
+  },
+  "score_distribution": {
+    "control": {
+      "0": 0,
+      "1": 2,
+      "2": 24,
+      "3": 92,
+      "4": 50
+    },
+    "treatment": {
+      "0": 1,
+      "1": 49,
+      "2": 69,
+      "3": 45,
+      "4": 4
+    }
+  },
+  "argument_preservation": {
+    "reformulations": 153,
+    "preservation_declared": 153,
+    "declared_rate": 1.0,
+    "mean_claim_length_chars": 163.8,
+    "self_reported": true
+  },
+  "per_cell": [
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "replicate": 1,
+      "control_mean": 3.125,
+      "treatment_mean": 1.875,
+      "delta": -1.25,
+      "control_id": "20260901-220209_abortion_pair-00_control",
+      "treatment_id": "20260901-222849_abortion_pair-00_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "replicate": 2,
+      "control_mean": 3,
+      "treatment_mean": 2.25,
+      "delta": -0.75,
+      "control_id": "20260901-220317_abortion_pair-00_control",
+      "treatment_id": "20260901-222928_abortion_pair-00_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-01",
+      "replicate": 1,
+      "control_mean": 3.375,
+      "treatment_mean": 2.5,
+      "delta": -0.875,
+      "control_id": "20260901-230150_abortion_pair-01_control",
+      "treatment_id": "20260901-232737_abortion_pair-01_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-01",
+      "replicate": 2,
+      "control_mean": 3.375,
+      "treatment_mean": 1.75,
+      "delta": -1.625,
+      "control_id": "20260901-230246_abortion_pair-01_control",
+      "treatment_id": "20260901-232855_abortion_pair-01_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-02",
+      "replicate": 1,
+      "control_mean": 3.125,
+      "treatment_mean": 1.625,
+      "delta": -1.5,
+      "control_id": "20260902-000153_abortion_pair-02_control",
+      "treatment_id": "20260902-003022_abortion_pair-02_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-02",
+      "replicate": 2,
+      "control_mean": 3.25,
+      "treatment_mean": 2,
+      "delta": -1.25,
+      "control_id": "20260902-000245_abortion_pair-02_control",
+      "treatment_id": "20260902-003207_abortion_pair-02_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-03",
+      "replicate": 1,
+      "control_mean": 3.125,
+      "treatment_mean": 2.25,
+      "delta": -0.875,
+      "control_id": "20260902-010208_abortion_pair-03_control",
+      "treatment_id": "20260902-012918_abortion_pair-03_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-03",
+      "replicate": 2,
+      "control_mean": 3.25,
+      "treatment_mean": 2.75,
+      "delta": -0.5,
+      "control_id": "20260902-010303_abortion_pair-03_control",
+      "treatment_id": "20260902-013159_abortion_pair-03_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-04",
+      "replicate": 1,
+      "control_mean": 3.25,
+      "treatment_mean": 1.75,
+      "delta": -1.5,
+      "control_id": "20260902-020328_abortion_pair-04_control",
+      "treatment_id": "20260902-022809_abortion_pair-04_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-04",
+      "replicate": 2,
+      "control_mean": 3.25,
+      "treatment_mean": 1.875,
+      "delta": -1.375,
+      "control_id": "20260902-020750_abortion_pair-04_control",
+      "treatment_id": "20260902-023707_abortion_pair-04_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-05",
+      "replicate": 1,
+      "control_mean": 3.125,
+      "treatment_mean": 2.375,
+      "delta": -0.75,
+      "control_id": "20260902-030118_abortion_pair-05_control",
+      "treatment_id": "20260902-032304_abortion_pair-05_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-05",
+      "replicate": 2,
+      "control_mean": 2.875,
+      "treatment_mean": 2.5,
+      "delta": -0.375,
+      "control_id": "20260902-030641_abortion_pair-05_control",
+      "treatment_id": "20260902-033538_abortion_pair-05_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-00",
+      "replicate": 1,
+      "control_mean": 3.125,
+      "treatment_mean": 2.125,
+      "delta": -1.0,
+      "control_id": "20260902-040412_drug-legalization_pair-00_control",
+      "treatment_id": "20260902-042557_drug-legalization_pair-00_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-00",
+      "replicate": 2,
+      "control_mean": 3,
+      "treatment_mean": 1.875,
+      "delta": -1.125,
+      "control_id": "20260902-040924_drug-legalization_pair-00_control",
+      "treatment_id": "20260902-043837_drug-legalization_pair-00_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-01",
+      "replicate": 1,
+      "control_mean": 3,
+      "treatment_mean": 2,
+      "delta": -1,
+      "control_id": "20260902-050452_drug-legalization_pair-01_control",
+      "treatment_id": "20260902-052857_drug-legalization_pair-01_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-01",
+      "replicate": 2,
+      "control_mean": 3.25,
+      "treatment_mean": 2,
+      "delta": -1.25,
+      "control_id": "20260902-051257_drug-legalization_pair-01_control",
+      "treatment_id": "20260902-054155_drug-legalization_pair-01_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-02",
+      "replicate": 1,
+      "control_mean": 3.25,
+      "treatment_mean": 1.75,
+      "delta": -1.5,
+      "control_id": "20260902-060703_drug-legalization_pair-02_control",
+      "treatment_id": "20260902-062848_drug-legalization_pair-02_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-02",
+      "replicate": 2,
+      "control_mean": 2.75,
+      "treatment_mean": 1.5,
+      "delta": -1.25,
+      "control_id": "20260902-061550_drug-legalization_pair-02_control",
+      "treatment_id": "20260902-064014_drug-legalization_pair-02_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-03",
+      "replicate": 1,
+      "control_mean": 2.875,
+      "treatment_mean": 1.75,
+      "delta": -1.125,
+      "control_id": "20260902-070509_drug-legalization_pair-03_control",
+      "treatment_id": "20260902-072749_drug-legalization_pair-03_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-03",
+      "replicate": 2,
+      "control_mean": 3.125,
+      "treatment_mean": 1.75,
+      "delta": -1.375,
+      "control_id": "20260902-071108_drug-legalization_pair-03_control",
+      "treatment_id": "20260902-074000_drug-legalization_pair-03_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-04",
+      "replicate": 1,
+      "control_mean": 3.25,
+      "treatment_mean": 2,
+      "delta": -1.25,
+      "control_id": "20260902-080429_drug-legalization_pair-04_control",
+      "treatment_id": "20260902-082649_drug-legalization_pair-04_treatment"
+    }
+  ]
+}

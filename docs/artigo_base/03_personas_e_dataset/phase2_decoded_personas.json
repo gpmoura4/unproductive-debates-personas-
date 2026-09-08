@@ -1,0 +1,1428 @@
+{
+  "sample_size": 2000,
+  "total_records_in_shards": 200000,
+  "candidate_dimensions_decoded": [
+    "political_lean",
+    "religiosity",
+    "trust_level",
+    "values_priority",
+    "att_free_markets",
+    "att_government_regulation",
+    "att_labor_unions",
+    "att_immigration",
+    "att_gun_ownership",
+    "att_capital_punishment"
+  ],
+  "personas_sample": [
+    {
+      "source": "wiki",
+      "source_row_index": 714660,
+      "source_record_id": "Q2142140",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": "Observant",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 485349,
+      "source_record_id": "Q5238191",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 344385,
+      "source_record_id": "Q6290862",
+      "political_attributes": {
+        "political_lean": "Center-left",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Autonomy",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": "Positive",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 876635,
+      "source_record_id": "Q18921792",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 128532,
+      "source_record_id": "Q5337353",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 576624,
+      "source_record_id": "Q6308899",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": null,
+        "att_free_markets": "Neutral",
+        "att_government_regulation": "Neutral",
+        "att_labor_unions": "Neutral",
+        "att_immigration": null,
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Neutral"
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 245739,
+      "source_record_id": "Q4079391",
+      "political_attributes": {
+        "political_lean": "Right",
+        "religiosity": "Observant",
+        "trust_level": "Verifying",
+        "values_priority": "Security",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": "Neutral",
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 989225,
+      "source_record_id": "Q23657285",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1158169,
+      "source_record_id": "Q52004115",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1187223,
+      "source_record_id": "Q24233683",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": null,
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 883021,
+      "source_record_id": "Q19360655",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 599488,
+      "source_record_id": "Q7492926",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Devout",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1129812,
+      "source_record_id": "Q48727323",
+      "political_attributes": {
+        "political_lean": "Center",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 244951,
+      "source_record_id": "Q15999403",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 39041,
+      "source_record_id": "Q2003157",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 753185,
+      "source_record_id": "Q6776261",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 917086,
+      "source_record_id": "Q20631236",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 261433,
+      "source_record_id": "Q688456",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 559464,
+      "source_record_id": "Q3104406",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": "Positive",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 83001,
+      "source_record_id": "Q463156",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 928488,
+      "source_record_id": "Q18672229",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": "Secular",
+        "trust_level": "Skeptical",
+        "values_priority": "Community",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": "Skeptical",
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 241192,
+      "source_record_id": "Q6780834",
+      "political_attributes": {
+        "political_lean": "Center-left",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 309115,
+      "source_record_id": "Q7332070",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 307713,
+      "source_record_id": "Q538519",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 944469,
+      "source_record_id": "Q21077878",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 464516,
+      "source_record_id": "Q2063014",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": null,
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 779638,
+      "source_record_id": "Q15303081",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1164239,
+      "source_record_id": "Q50318212",
+      "political_attributes": {
+        "political_lean": "Right",
+        "religiosity": "Observant",
+        "trust_level": "Trusting",
+        "values_priority": "Achievement",
+        "att_free_markets": "Enthusiast",
+        "att_government_regulation": "Enthusiast",
+        "att_labor_unions": "Enthusiast",
+        "att_immigration": null,
+        "att_gun_ownership": "Enthusiast",
+        "att_capital_punishment": "Enthusiast"
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 210868,
+      "source_record_id": "Q3774070",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": "Neutral",
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 158382,
+      "source_record_id": "Q5361378",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1019873,
+      "source_record_id": "Q27680834",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Devout",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 838890,
+      "source_record_id": "Q1016428",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1101468,
+      "source_record_id": "Q30303225",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1161846,
+      "source_record_id": "Q49837938",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 473446,
+      "source_record_id": "Q4683086",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 610322,
+      "source_record_id": "Q6519037",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 607591,
+      "source_record_id": "Q3376658",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 329441,
+      "source_record_id": "Q4881910",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 340697,
+      "source_record_id": "Q7453768",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": null,
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 331438,
+      "source_record_id": "Q5243045",
+      "political_attributes": {
+        "political_lean": "Center-left",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 497893,
+      "source_record_id": "Q3324681",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 420953,
+      "source_record_id": "Q7850394",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 932952,
+      "source_record_id": "Q9150554",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1114496,
+      "source_record_id": "Q9355411",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1047529,
+      "source_record_id": "Q27805741",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": null,
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 112643,
+      "source_record_id": "Q8048531",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Novelty",
+        "att_free_markets": null,
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 584789,
+      "source_record_id": "Q7159567",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1112213,
+      "source_record_id": "Q1602188",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 964273,
+      "source_record_id": "Q22006124",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 957768,
+      "source_record_id": "Q22000316",
+      "political_attributes": {
+        "political_lean": null,
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      }
+    }
+  ],
+  "pole_classification_rule": {
+    "source": "docs/left right categories/regras_categorizacao_esquerda_direita.json",
+    "schema_version": "1.1",
+    "stats": {
+      "mode_used": {
+        "left": "strict",
+        "right": "strict"
+      },
+      "n_eligible_strict": {
+        "left": 101,
+        "right": 20
+      },
+      "n_eligible_final": {
+        "left": 101,
+        "right": 20
+      },
+      "exclusion_log": {
+        "left": {
+          "excluded": 68,
+          "reasons": {
+            "sem_evidencia_secundaria": 28,
+            "tolerancia_periferica_violada": 8,
+            "contradicao_nuclear": 32
+          }
+        },
+        "right": {
+          "excluded": 162,
+          "reasons": {
+            "contradicao_nuclear": 40,
+            "sem_evidencia_secundaria": 87,
+            "tolerancia_periferica_violada": 35
+          }
+        }
+      }
+    }
+  },
+  "polo_esquerda_political_lean": [
+    {
+      "source": "wiki",
+      "source_row_index": 1202331,
+      "source_record_id": "Q56224097",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": "Secular",
+        "trust_level": "Verifying",
+        "values_priority": "Community",
+        "att_free_markets": "Neutral",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Positive",
+        "att_immigration": "Positive",
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Skeptical"
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 4,
+        "n_per_contra": 0,
+        "score": -6.0,
+        "non_null_field_count": 10,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1202243,
+      "source_record_id": "Q12407556",
+      "political_attributes": {
+        "political_lean": "Center-left",
+        "religiosity": "Secular",
+        "trust_level": "Verifying",
+        "values_priority": "Achievement",
+        "att_free_markets": "Skeptical",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Positive",
+        "att_immigration": "Positive",
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Neutral"
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 2,
+        "n_per_contra": 0,
+        "score": -5.0,
+        "non_null_field_count": 10,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1116626,
+      "source_record_id": "Q13116977",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": "Opposed",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Enthusiast",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 2,
+        "n_per_contra": 0,
+        "score": -5.0,
+        "non_null_field_count": 6,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1081815,
+      "source_record_id": "Q30122086",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": "Skeptical",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": null,
+        "att_immigration": "Enthusiast",
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 3,
+        "n_per_contra": 0,
+        "score": -5.0,
+        "non_null_field_count": 6,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 472984,
+      "source_record_id": "Q6293827",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": "Skeptical",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Enthusiast",
+        "att_immigration": null,
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Neutral"
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 1,
+        "n_per_contra": 0,
+        "score": -4.0,
+        "non_null_field_count": 7,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 887859,
+      "source_record_id": "Q2905989",
+      "political_attributes": {
+        "political_lean": "Center-left",
+        "religiosity": "Secular",
+        "trust_level": "Verifying",
+        "values_priority": "Achievement",
+        "att_free_markets": "Neutral",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Positive",
+        "att_immigration": "Positive",
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Neutral"
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 2,
+        "n_per_contra": 0,
+        "score": -4.0,
+        "non_null_field_count": 10,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 159189,
+      "source_record_id": "Q6873317",
+      "political_attributes": {
+        "political_lean": "Center-left",
+        "religiosity": "Secular",
+        "trust_level": "Trusting",
+        "values_priority": "Achievement",
+        "att_free_markets": "Neutral",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Positive",
+        "att_immigration": null,
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Skeptical"
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 2,
+        "n_per_contra": 0,
+        "score": -4.0,
+        "non_null_field_count": 9,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 107473,
+      "source_record_id": "Q1601813",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": null,
+        "trust_level": "Trusting",
+        "values_priority": null,
+        "att_free_markets": "Neutral",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Positive",
+        "att_immigration": "Positive",
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Skeptical"
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 2,
+        "n_per_contra": 0,
+        "score": -4.0,
+        "non_null_field_count": 8,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 272757,
+      "source_record_id": "Q4522261",
+      "political_attributes": {
+        "political_lean": "Left",
+        "religiosity": "Secular",
+        "trust_level": null,
+        "values_priority": "Community",
+        "att_free_markets": null,
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Positive",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 2,
+        "n_per_contra": 0,
+        "score": -4.0,
+        "non_null_field_count": 5,
+        "anchor_sign": -1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 627950,
+      "source_record_id": "Q544416",
+      "political_attributes": {
+        "political_lean": "Center-left",
+        "religiosity": "Secular",
+        "trust_level": "Verifying",
+        "values_priority": "Community",
+        "att_free_markets": "Neutral",
+        "att_government_regulation": "Positive",
+        "att_labor_unions": "Neutral",
+        "att_immigration": null,
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Skeptical"
+      },
+      "coherence": {
+        "n_core_concord": 1,
+        "n_core_contra": 0,
+        "n_per_concord": 3,
+        "n_per_contra": 0,
+        "score": -4.0,
+        "non_null_field_count": 9,
+        "anchor_sign": -1
+      }
+    }
+  ],
+  "polo_direita_political_lean": [
+    {
+      "source": "wiki",
+      "source_row_index": 213902,
+      "source_record_id": "Q888061",
+      "political_attributes": {
+        "political_lean": "Right",
+        "religiosity": "Observant",
+        "trust_level": "Verifying",
+        "values_priority": "Achievement",
+        "att_free_markets": "Positive",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": "Skeptical",
+        "att_immigration": null,
+        "att_gun_ownership": "Positive",
+        "att_capital_punishment": "Neutral"
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 2,
+        "n_per_contra": 0,
+        "score": 5.0,
+        "non_null_field_count": 9,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 283558,
+      "source_record_id": "Q7693479",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": "Observant",
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": "Positive",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": "Skeptical",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 1,
+        "n_per_contra": 0,
+        "score": 4.0,
+        "non_null_field_count": 6,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 610937,
+      "source_record_id": "Q2487377",
+      "political_attributes": {
+        "political_lean": "Right",
+        "religiosity": "Devout",
+        "trust_level": "Skeptical",
+        "values_priority": "Tradition",
+        "att_free_markets": "Neutral",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": "Neutral",
+        "att_immigration": "Neutral",
+        "att_gun_ownership": "Positive",
+        "att_capital_punishment": "Neutral"
+      },
+      "coherence": {
+        "n_core_concord": 1,
+        "n_core_contra": 0,
+        "n_per_concord": 3,
+        "n_per_contra": 0,
+        "score": 4.0,
+        "non_null_field_count": 10,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 853492,
+      "source_record_id": "Q18331145",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": "Positive",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": "Skeptical",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 0,
+        "n_per_contra": 0,
+        "score": 3.0,
+        "non_null_field_count": 5,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 248472,
+      "source_record_id": "Q6033416",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": "Positive",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": "Skeptical",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 0,
+        "n_per_contra": 0,
+        "score": 3.0,
+        "non_null_field_count": 5,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 261299,
+      "source_record_id": "Q4978194",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": "Positive",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": "Skeptical",
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 3,
+        "n_core_contra": 0,
+        "n_per_concord": 0,
+        "n_per_contra": 0,
+        "score": 3.0,
+        "non_null_field_count": 5,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 11986,
+      "source_record_id": "Q6891066",
+      "political_attributes": {
+        "political_lean": "Right",
+        "religiosity": "Observant",
+        "trust_level": null,
+        "values_priority": "Tradition",
+        "att_free_markets": null,
+        "att_government_regulation": null,
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": "Enthusiast",
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 0,
+        "n_core_contra": 0,
+        "n_per_concord": 3,
+        "n_per_contra": 0,
+        "score": 3.0,
+        "non_null_field_count": 4,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 444454,
+      "source_record_id": "Q4910916",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": null,
+        "trust_level": "Verifying",
+        "values_priority": "Achievement",
+        "att_free_markets": "Positive",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": "Neutral",
+        "att_immigration": null,
+        "att_gun_ownership": "Neutral",
+        "att_capital_punishment": "Neutral"
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 0,
+        "n_per_contra": 0,
+        "score": 2.0,
+        "non_null_field_count": 8,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 94337,
+      "source_record_id": "Q7812633",
+      "political_attributes": {
+        "political_lean": "Right",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": "Positive",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 0,
+        "n_per_contra": 0,
+        "score": 2.0,
+        "non_null_field_count": 4,
+        "anchor_sign": 1
+      }
+    },
+    {
+      "source": "wiki",
+      "source_row_index": 1159457,
+      "source_record_id": "Q48656690",
+      "political_attributes": {
+        "political_lean": "Center-right",
+        "religiosity": null,
+        "trust_level": null,
+        "values_priority": "Achievement",
+        "att_free_markets": "Enthusiast",
+        "att_government_regulation": "Skeptical",
+        "att_labor_unions": null,
+        "att_immigration": null,
+        "att_gun_ownership": null,
+        "att_capital_punishment": null
+      },
+      "coherence": {
+        "n_core_concord": 2,
+        "n_core_contra": 0,
+        "n_per_concord": 0,
+        "n_per_contra": 0,
+        "score": 2.0,
+        "non_null_field_count": 4,
+        "anchor_sign": 1
+      }
+    }
+  ]
+}

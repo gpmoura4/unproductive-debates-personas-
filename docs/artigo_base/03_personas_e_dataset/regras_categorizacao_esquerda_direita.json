@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.1",
+  "name": "left_right_pole_classification",
+  "description": "Regra objetiva para classificar personas decodificadas (MatrAIx Persona 1M, Fase 2) em polo Esquerda ou polo Direita. Âncora obrigatória em political_lean; filtro de coerência por indicadores nucleares (eixo econômico) e periféricos (eixo social/valores). A fundamentação teórica de cada regra está documentada em regras_categorizacao_esquerda_direita.md.",
+  "attitude_scale": ["Opposed", "Skeptical", "Neutral", "Positive", "Enthusiast"],
+  "poles": {
+    "left": {
+      "label": "Esquerda",
+      "anchor_values": ["Left", "Center-left"],
+      "sign": -1
+    },
+    "right": {
+      "label": "Direita",
+      "anchor_values": ["Right", "Center-right"],
+      "sign": 1
+    }
+  },
+  "anchor": {
+    "field": "political_lean",
+    "excluded_values": ["Center", "Apolitical", null],
+    "rationale": "O autoposicionamento esquerda-direita é a medida padrão; o centro é tratado como meio incluído, não como polo."
+  },
+  "indicators": {
+    "core": {
+      "description": "Eixo econômico: atitude frente à igualdade versus hierarquia. Contradição aqui elimina o registro.",
+      "fields": {
+        "att_free_markets": {
+          "left": ["Skeptical", "Opposed"],
+          "right": ["Positive", "Enthusiast"],
+          "neutral": ["Neutral", null],
+          "weight": 1.0
+        },
+        "att_government_regulation": {
+          "left": ["Positive", "Enthusiast"],
+          "right": ["Skeptical", "Opposed"],
+          "neutral": ["Neutral", null],
+          "weight": 1.0
+        },
+        "att_labor_unions": {
+          "left": ["Positive", "Enthusiast"],
+          "right": ["Skeptical", "Opposed"],
+          "neutral": ["Neutral", null],
+          "weight": 1.0
+        }
+      }
+    },
+    "peripheral": {
+      "description": "Eixo social e valores: resistência à mudança, gestão de ameaça e valores pessoais. Contradição tolerada conforme o modo.",
+      "fields": {
+        "att_immigration": {
+          "left": ["Positive", "Enthusiast"],
+          "right": ["Skeptical", "Opposed"],
+          "neutral": ["Neutral", null],
+          "weight": 1.0
+        },
+        "att_gun_ownership": {
+          "left": ["Skeptical", "Opposed"],
+          "right": ["Positive", "Enthusiast"],
+          "neutral": ["Neutral", null],
+          "weight": 1.0
+        },
+        "att_capital_punishment": {
+          "left": ["Skeptical", "Opposed"],
+          "right": ["Positive", "Enthusiast"],
+          "neutral": ["Neutral", null],
+          "weight": 1.0
+        },
+        "values_priority": {
+          "left": ["Community"],
+          "left_weak": ["Autonomy", "Novelty"],
+          "right": ["Tradition", "Security"],
+          "neutral": ["Achievement", null],
+          "weight": 1.0,
+          "weak_weight": 0.5,
+          "note": "Community aproxima universalismo/benevolência; Tradition aproxima tradição/conformidade; Security aproxima segurança; Autonomy e Novelty aproximam abertura à mudança (sinal fraco). Achievement é neutro por baixa capacidade discriminante (cerca de 72% da amostra) e associação instável com os polos."
+        },
+        "religiosity": {
+          "left": ["Secular"],
+          "right": ["Devout", "Observant"],
+          "neutral": ["Spiritual", "Prefer not to say", null],
+          "weight": 1.0
+        }
+      }
+    },
+    "ignored": {
+      "trust_level": "Não discriminante: o dataset não especifica em quais instituições a confiança se refere. Usar apenas como eixo de contraste secundário entre personas do mesmo polo."
+    }
+  },
+  "computation": {
+    "sign_per_indicator": "left -> -weight; left_weak -> -weak_weight; right -> +weight; neutral -> 0",
+    "concordant": "Indicador cujo sinal tem o mesmo lado do polo-âncora (negativo para Esquerda, positivo para Direita).",
+    "contradictory": "Indicador cujo sinal tem o lado oposto ao do polo-âncora.",
+    "counts": {
+      "n_core_concord": "Indicadores nucleares concordantes.",
+      "n_core_contra": "Indicadores nucleares contraditórios.",
+      "n_per_concord": "Indicadores periféricos concordantes.",
+      "n_per_contra": "Indicadores periféricos contraditórios."
+    },
+    "score": "Soma dos sinais de todos os indicadores (nucleares e periféricos)."
+  },
+  "rules": {
+    "left": {
+      "all_of": [
+        "political_lean in poles.left.anchor_values",
+        "n_core_contra == 0",
+        "n_core_concord + n_per_concord >= 1",
+        "peripheral_tolerance(mode)"
+      ]
+    },
+    "right": {
+      "all_of": [
+        "political_lean in poles.right.anchor_values",
+        "n_core_contra == 0",
+        "n_core_concord + n_per_concord >= 1",
+        "peripheral_tolerance(mode)"
+      ]
+    },
+    "peripheral_tolerance": {
+      "strict": "n_per_contra == 0",
+      "lenient": "n_per_contra <= 1 and (n_core_concord + n_per_concord) > n_per_contra"
+    },
+    "excluded_if_any": [
+      "political_lean in anchor.excluded_values",
+      "n_core_contra >= 1",
+      "n_core_concord + n_per_concord + n_per_contra == 0",
+      "not peripheral_tolerance(mode)"
+    ]
+  },
+  "modes": {
+    "default": "strict",
+    "fallback": "lenient",
+    "rationale": "O experimento precisa de apenas duas personas (uma por polo); ser restritivo não tem custo e maximiza a coerência interna."
+  },
+  "ranking_of_eligible": {
+    "order_by": [
+      {"key": "abs(score)", "direction": "desc"},
+      {"key": "n_core_concord", "direction": "desc"},
+      {"key": "non_null_field_count", "direction": "desc"}
+    ],
+    "purpose": "Priorizar personas prototípicas, com mais evidência convergente."
+  },
+  "experimental_inferred_mode": {
+    "enabled_by_default": false,
+    "applies_when": "political_lean is null",
+    "conditions": [
+      "n_core_concord >= 1",
+      "n_core_contra == 0",
+      "n_per_contra == 0",
+      "n_core_concord + n_per_concord >= 3"
+    ],
+    "output_flag": "inferred = true",
+    "note": "Reportar separadamente; registros sem autoposicionamento não devem entrar no experimento principal."
+  },
+  "worked_examples_phase2": [
+    {"source_record_id": "Q2142140", "political_lean": "Left", "result_strict": "excluded", "reason": "religiosity=Observant contradiz a âncora; zero concordantes."},
+    {"source_record_id": "Q6290862", "political_lean": "Center-left", "result_strict": "left", "score": -2.5},
+    {"source_record_id": "Q3104406", "political_lean": "Left", "result_strict": "left", "score": -3.0},
+    {"source_record_id": "Q4079391", "political_lean": "Right", "result_strict": "right", "score": 2.0},
+    {"source_record_id": "Q50318212", "political_lean": "Right", "result_strict": "excluded", "reason": "att_government_regulation=Enthusiast e att_labor_unions=Enthusiast são contradições nucleares."},
+    {"source_record_id": "Q5361378", "political_lean": "Center-right", "result_strict": "excluded", "reason": "Nenhum indicador secundário não nulo."}
+  ]
+}

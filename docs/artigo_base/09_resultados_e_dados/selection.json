@@ -1,0 +1,333 @@
+{
+  "created_at": "2026-09-02T18:05:43.630969-03:00",
+  "balanced": false,
+  "expected_turns": 8,
+  "cohort": {
+    "behavior_prompt_sha256": "5c3c1cef26465d7659b5f13b620803db453bf56caa4c5f479a70704cbdee8e42",
+    "judge_prompt_sha256": "ae7f6561f30c72a4b75b3cb9e23831b24484fde9d26963137d79efe82b03b6ed",
+    "moderator_prompt_sha256": "e02ed32e8148efcca6a0585e9869ce2282c8bb516184934af4eac0134b155427"
+  },
+  "totals": {
+    "topics": 2,
+    "cells": 11,
+    "replicates": 21,
+    "debates": 42,
+    "excluded_runs": 18
+  },
+  "included": [
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "replicate": 1,
+      "path": "by_topic/abortion/pair-00/rep-1",
+      "control": "20260901-220209_abortion_pair-00_control",
+      "treatment": "20260901-222849_abortion_pair-00_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "replicate": 2,
+      "path": "by_topic/abortion/pair-00/rep-2",
+      "control": "20260901-220317_abortion_pair-00_control",
+      "treatment": "20260901-222928_abortion_pair-00_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-01",
+      "replicate": 1,
+      "path": "by_topic/abortion/pair-01/rep-1",
+      "control": "20260901-230150_abortion_pair-01_control",
+      "treatment": "20260901-232737_abortion_pair-01_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-01",
+      "replicate": 2,
+      "path": "by_topic/abortion/pair-01/rep-2",
+      "control": "20260901-230246_abortion_pair-01_control",
+      "treatment": "20260901-232855_abortion_pair-01_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-02",
+      "replicate": 1,
+      "path": "by_topic/abortion/pair-02/rep-1",
+      "control": "20260902-000153_abortion_pair-02_control",
+      "treatment": "20260902-003022_abortion_pair-02_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-02",
+      "replicate": 2,
+      "path": "by_topic/abortion/pair-02/rep-2",
+      "control": "20260902-000245_abortion_pair-02_control",
+      "treatment": "20260902-003207_abortion_pair-02_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-03",
+      "replicate": 1,
+      "path": "by_topic/abortion/pair-03/rep-1",
+      "control": "20260902-010208_abortion_pair-03_control",
+      "treatment": "20260902-012918_abortion_pair-03_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-03",
+      "replicate": 2,
+      "path": "by_topic/abortion/pair-03/rep-2",
+      "control": "20260902-010303_abortion_pair-03_control",
+      "treatment": "20260902-013159_abortion_pair-03_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-04",
+      "replicate": 1,
+      "path": "by_topic/abortion/pair-04/rep-1",
+      "control": "20260902-020328_abortion_pair-04_control",
+      "treatment": "20260902-022809_abortion_pair-04_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-04",
+      "replicate": 2,
+      "path": "by_topic/abortion/pair-04/rep-2",
+      "control": "20260902-020750_abortion_pair-04_control",
+      "treatment": "20260902-023707_abortion_pair-04_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-05",
+      "replicate": 1,
+      "path": "by_topic/abortion/pair-05/rep-1",
+      "control": "20260902-030118_abortion_pair-05_control",
+      "treatment": "20260902-032304_abortion_pair-05_treatment"
+    },
+    {
+      "topic": "Abortion",
+      "pair_id": "pair-05",
+      "replicate": 2,
+      "path": "by_topic/abortion/pair-05/rep-2",
+      "control": "20260902-030641_abortion_pair-05_control",
+      "treatment": "20260902-033538_abortion_pair-05_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-00",
+      "replicate": 1,
+      "path": "by_topic/drug-legalization/pair-00/rep-1",
+      "control": "20260902-040412_drug-legalization_pair-00_control",
+      "treatment": "20260902-042557_drug-legalization_pair-00_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-00",
+      "replicate": 2,
+      "path": "by_topic/drug-legalization/pair-00/rep-2",
+      "control": "20260902-040924_drug-legalization_pair-00_control",
+      "treatment": "20260902-043837_drug-legalization_pair-00_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-01",
+      "replicate": 1,
+      "path": "by_topic/drug-legalization/pair-01/rep-1",
+      "control": "20260902-050452_drug-legalization_pair-01_control",
+      "treatment": "20260902-052857_drug-legalization_pair-01_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-01",
+      "replicate": 2,
+      "path": "by_topic/drug-legalization/pair-01/rep-2",
+      "control": "20260902-051257_drug-legalization_pair-01_control",
+      "treatment": "20260902-054155_drug-legalization_pair-01_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-02",
+      "replicate": 1,
+      "path": "by_topic/drug-legalization/pair-02/rep-1",
+      "control": "20260902-060703_drug-legalization_pair-02_control",
+      "treatment": "20260902-062848_drug-legalization_pair-02_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-02",
+      "replicate": 2,
+      "path": "by_topic/drug-legalization/pair-02/rep-2",
+      "control": "20260902-061550_drug-legalization_pair-02_control",
+      "treatment": "20260902-064014_drug-legalization_pair-02_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-03",
+      "replicate": 1,
+      "path": "by_topic/drug-legalization/pair-03/rep-1",
+      "control": "20260902-070509_drug-legalization_pair-03_control",
+      "treatment": "20260902-072749_drug-legalization_pair-03_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-03",
+      "replicate": 2,
+      "path": "by_topic/drug-legalization/pair-03/rep-2",
+      "control": "20260902-071108_drug-legalization_pair-03_control",
+      "treatment": "20260902-074000_drug-legalization_pair-03_treatment"
+    },
+    {
+      "topic": "Drug Legalization",
+      "pair_id": "pair-04",
+      "replicate": 1,
+      "path": "by_topic/drug-legalization/pair-04/rep-1",
+      "control": "20260902-080429_drug-legalization_pair-04_control",
+      "treatment": "20260902-082649_drug-legalization_pair-04_treatment"
+    }
+  ],
+  "excluded": [
+    {
+      "experiment_id": "20260901-170327_gun-ownership_pair-00_control",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "no_transcript",
+      "detail": "transcript.json missing — run was interrupted before writing"
+    },
+    {
+      "experiment_id": "20260902-083901_drug-legalization_pair-04_treatment",
+      "topic": "Drug Legalization",
+      "pair_id": "pair-04",
+      "condition": "treatment",
+      "reason": "incomplete",
+      "detail": "5/8 turns — LLMCallError: Role 'moderator' (ollama/qwen2.5:7b-instruct-q4_K_M) failed after 3 attempt(s): APITimeoutError: Request timed out."
+    },
+    {
+      "experiment_id": "20260902-091600_drug-legalization_pair-05_control",
+      "topic": "Drug Legalization",
+      "pair_id": "pair-05",
+      "condition": "control",
+      "reason": "no_transcript",
+      "detail": "transcript.json missing — run was interrupted before writing"
+    },
+    {
+      "experiment_id": "20260902-091941_drug-legalization_pair-05_control",
+      "topic": "Drug Legalization",
+      "pair_id": "pair-05",
+      "condition": "control",
+      "reason": "no_transcript",
+      "detail": "transcript.json missing — run was interrupted before writing"
+    },
+    {
+      "experiment_id": "20260901-151338_gun-ownership_pair-00_control",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unexpected_turns",
+      "detail": "planned for 3 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-151435_gun-ownership_pair-00_treatment",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "treatment",
+      "reason": "unexpected_turns",
+      "detail": "planned for 3 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-155720_abortion_pair-00_control",
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unexpected_turns",
+      "detail": "planned for 3 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-155804_abortion_pair-00_treatment",
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "condition": "treatment",
+      "reason": "unexpected_turns",
+      "detail": "planned for 3 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-165816_gun-ownership_pair-00_control",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unexpected_turns",
+      "detail": "planned for 3 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-170435_gun-ownership_pair-00_control",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unexpected_turns",
+      "detail": "planned for 10 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-172431_gun-ownership_pair-00_treatment",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "treatment",
+      "reason": "unexpected_turns",
+      "detail": "planned for 10 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-214655_abortion_pair-00_control",
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unexpected_turns",
+      "detail": "planned for 1 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-214915_abortion_pair-00_treatment",
+      "topic": "Abortion",
+      "pair_id": "pair-00",
+      "condition": "treatment",
+      "reason": "unexpected_turns",
+      "detail": "planned for 1 turns, analysis expects 8"
+    },
+    {
+      "experiment_id": "20260901-212403_gun-ownership_pair-00_treatment",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "treatment",
+      "reason": "missing_judgements",
+      "detail": "2/8 judgement files"
+    },
+    {
+      "experiment_id": "20260902-081003_drug-legalization_pair-04_control",
+      "topic": "Drug Legalization",
+      "pair_id": "pair-04",
+      "condition": "control",
+      "reason": "unpaired_condition",
+      "detail": "no matching treatment replicate in this cell"
+    },
+    {
+      "experiment_id": "20260901-202739_gun-ownership_pair-00_control",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unpaired_condition",
+      "detail": "no matching treatment replicate in this cell"
+    },
+    {
+      "experiment_id": "20260901-204319_gun-ownership_pair-00_control",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unpaired_condition",
+      "detail": "no matching treatment replicate in this cell"
+    },
+    {
+      "experiment_id": "20260901-211127_gun-ownership_pair-00_control",
+      "topic": "Gun Ownership",
+      "pair_id": "pair-00",
+      "condition": "control",
+      "reason": "unpaired_condition",
+      "detail": "no matching treatment replicate in this cell"
+    }
+  ]
+}

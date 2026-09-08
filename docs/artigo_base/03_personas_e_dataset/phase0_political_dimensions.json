@@ -1,0 +1,4387 @@
+{
+  "total_dimensions_in_schema": 1290,
+  "total_matched": 155,
+  "psychology_worldview_beliefs_count": 113,
+  "all_candidates": [
+    {
+      "id": "institution_tier",
+      "label": "Institution tier",
+      "group": "Learning: Academic",
+      "subgroup": "",
+      "category": "Learning: Academic",
+      "values": [
+        "Top-tier research",
+        "Mid-tier university",
+        "Community college",
+        "Online / bootcamp",
+        "Self-taught",
+        "Not applicable"
+      ],
+      "matched_terms": [
+        "institution"
+      ]
+    },
+    {
+      "id": "major_life_events",
+      "label": "Major life events",
+      "group": "Demographic: Life Events",
+      "subgroup": "",
+      "category": "Demographic: Life Events",
+      "values": [
+        "Migration / immigration",
+        "Started a business",
+        "Health journey",
+        "Military service",
+        "Caregiving",
+        "Bereavement",
+        "Major relocation",
+        "None notable"
+      ],
+      "matched_terms": [
+        "immigration"
+      ]
+    },
+    {
+      "id": "values_priority",
+      "label": "Core value",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Achievement",
+        "Security",
+        "Autonomy",
+        "Community",
+        "Novelty",
+        "Tradition"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation",
+        "autonomy"
+      ]
+    },
+    {
+      "id": "political_lean",
+      "label": "Political lean",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Left",
+        "Center-left",
+        "Center",
+        "Center-right",
+        "Right",
+        "Apolitical"
+      ],
+      "matched_terms": [
+        "political",
+        "left",
+        "right",
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "religiosity",
+      "label": "Religiosity",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Secular",
+        "Spiritual",
+        "Observant",
+        "Devout",
+        "Prefer not to say"
+      ],
+      "matched_terms": [
+        "value",
+        "religion",
+        "spiritual",
+        "secular",
+        "motivation"
+      ]
+    },
+    {
+      "id": "trust_level",
+      "label": "Trust level",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Trusting",
+        "Verifying",
+        "Skeptical",
+        "Hostile"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "trust"
+      ]
+    },
+    {
+      "id": "safety_sensitivity",
+      "label": "Safety sensitivity",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Benign",
+        "Sensitive personal",
+        "High-stakes (medical/legal/financial)",
+        "Potentially harmful",
+        "Dual-use"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "economic_motivation",
+      "label": "Economic motivation",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Cost-sensitive",
+        "Value-driven",
+        "Premium-seeking",
+        "Indifferent"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "fam_political_science",
+      "label": "Familiarity: Political science",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Expert",
+        "Proficient",
+        "Familiar",
+        "Aware",
+        "None"
+      ],
+      "matched_terms": [
+        "political",
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "fam_ethics",
+      "label": "Familiarity: Ethics",
+      "group": "Expertise: Domains",
+      "subgroup": "",
+      "category": "Expertise: Domains",
+      "values": [
+        "Expert",
+        "Proficient",
+        "Familiar",
+        "Aware",
+        "None"
+      ],
+      "matched_terms": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "fam_religious_studies",
+      "label": "Familiarity: Religious studies",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Expert",
+        "Proficient",
+        "Familiar",
+        "Aware",
+        "None"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "religious"
+      ]
+    },
+    {
+      "id": "topic_religion",
+      "label": "Interest: Religion",
+      "group": "Interests: Topics",
+      "subgroup": "",
+      "category": "Interests: Topics",
+      "values": [
+        "Passionate",
+        "Interested",
+        "Neutral",
+        "Indifferent",
+        "Averse"
+      ],
+      "matched_terms": [
+        "religion"
+      ]
+    },
+    {
+      "id": "topic_spirituality",
+      "label": "Interest: Spirituality",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Passionate",
+        "Interested",
+        "Neutral",
+        "Indifferent",
+        "Averse"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "spiritual"
+      ]
+    },
+    {
+      "id": "att_ai",
+      "label": "Attitude: AI",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_automation",
+      "label": "Attitude: Automation",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_data_privacy",
+      "label": "Attitude: Data privacy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_social_media",
+      "label": "Attitude: Social media",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_remote_work",
+      "label": "Attitude: Remote work",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_globalization",
+      "label": "Attitude: Globalization",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_immigration",
+      "label": "Attitude: Immigration",
+      "group": "Demographic: Cultural",
+      "subgroup": "",
+      "category": "Demographic: Cultural",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "immigration"
+      ]
+    },
+    {
+      "id": "att_free_markets",
+      "label": "Attitude: Free markets",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_government_regulation",
+      "label": "Attitude: Government regulation",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "government"
+      ]
+    },
+    {
+      "id": "att_climate_action",
+      "label": "Attitude: Climate action",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_nuclear_energy",
+      "label": "Attitude: Nuclear energy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_renewable_energy",
+      "label": "Attitude: Renewable energy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_genetic_engineering",
+      "label": "Attitude: Genetic engineering",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_vaccines",
+      "label": "Attitude: Vaccines",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_alternative_medicine",
+      "label": "Attitude: Alternative medicine",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_organized_religion",
+      "label": "Attitude: Organized religion",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "religion"
+      ]
+    },
+    {
+      "id": "att_traditional_gender_roles",
+      "label": "Attitude: Traditional gender roles",
+      "group": "Demographic: Core",
+      "subgroup": "",
+      "category": "Demographic: Core",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "traditional"
+      ]
+    },
+    {
+      "id": "att_cryptocurrency",
+      "label": "Attitude: Cryptocurrency",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_the_gig_economy",
+      "label": "Attitude: The gig economy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_labor_unions",
+      "label": "Attitude: Labor unions",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_higher_education",
+      "label": "Attitude: Higher education",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_homeownership",
+      "label": "Attitude: Homeownership",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_taking_on_debt",
+      "label": "Attitude: Taking on debt",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_risk_taking",
+      "label": "Attitude: Risk-taking",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_authority",
+      "label": "Attitude: Authority",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "authority"
+      ]
+    },
+    {
+      "id": "att_rapid_change",
+      "label": "Attitude: Rapid change",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_new_technology",
+      "label": "Attitude: New technology",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_brand_loyalty",
+      "label": "Attitude: Brand loyalty",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_advertising",
+      "label": "Attitude: Advertising",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_influencers",
+      "label": "Attitude: Influencers",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_online_reviews",
+      "label": "Attitude: Online reviews",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_subscription_services",
+      "label": "Attitude: Subscription services",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_open_source",
+      "label": "Attitude: Open source",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_surveillance",
+      "label": "Attitude: Surveillance",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_self_driving_cars",
+      "label": "Attitude: Self-driving cars",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_space_exploration",
+      "label": "Attitude: Space exploration",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_universal_basic_income",
+      "label": "Attitude: Universal basic income",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_minimalism",
+      "label": "Attitude: Minimalism",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_consumerism",
+      "label": "Attitude: Consumerism",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_veganism",
+      "label": "Attitude: Veganism",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_fast_fashion",
+      "label": "Attitude: Fast fashion",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_gun_ownership",
+      "label": "Attitude: Gun ownership",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_capital_punishment",
+      "label": "Attitude: Capital punishment",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_free_speech",
+      "label": "Attitude: Free speech",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_privacy_vs_security",
+      "label": "Attitude: Privacy vs security",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_globalized_supply_chains",
+      "label": "Attitude: Globalized supply chains",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_working_from_office",
+      "label": "Attitude: Working from office",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_four_day_work_week",
+      "label": "Attitude: Four-day work week",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_performance_reviews",
+      "label": "Attitude: Performance reviews",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_standardized_testing",
+      "label": "Attitude: Standardized testing",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_tipping_culture",
+      "label": "Attitude: Tipping culture",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_electric_vehicles",
+      "label": "Attitude: Electric vehicles",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_public_transit",
+      "label": "Attitude: Public transit",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_urban_density",
+      "label": "Attitude: Urban density",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "att_gentrification",
+      "label": "Attitude: Gentrification",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "ind_government",
+      "label": "Industry: Government",
+      "group": "Professional: Industry",
+      "subgroup": "",
+      "category": "Professional: Industry",
+      "values": [
+        "Veteran",
+        "Experienced",
+        "Some exposure",
+        "None"
+      ],
+      "matched_terms": [
+        "government"
+      ]
+    },
+    {
+      "id": "big5_liberalism",
+      "label": "Liberalism",
+      "group": "Personality: Big Five",
+      "subgroup": "",
+      "category": "Personality: Big Five",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "liberal"
+      ]
+    },
+    {
+      "id": "big5_trust",
+      "label": "Trust",
+      "group": "Personality: Big Five",
+      "subgroup": "",
+      "category": "Personality: Big Five",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "trust"
+      ]
+    },
+    {
+      "id": "big5_morality",
+      "label": "Morality",
+      "group": "Personality: Big Five",
+      "subgroup": "",
+      "category": "Personality: Big Five",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "moral"
+      ]
+    },
+    {
+      "id": "lstyle_banking_style",
+      "label": "Banking style",
+      "group": "Interests: Culture",
+      "subgroup": "",
+      "category": "Interests: Culture",
+      "values": [
+        "Traditional bank",
+        "Neobank",
+        "Credit union",
+        "Mostly cash",
+        "Unbanked"
+      ],
+      "matched_terms": [
+        "traditional"
+      ]
+    },
+    {
+      "id": "health_dietary_restriction",
+      "label": "Dietary restriction",
+      "group": "Health: Physical",
+      "subgroup": "",
+      "category": "Health: Physical",
+      "values": [
+        "None",
+        "Allergy",
+        "Religious",
+        "Medical",
+        "Ethical"
+      ],
+      "matched_terms": [
+        "religious"
+      ]
+    },
+    {
+      "id": "acad_political_theory",
+      "label": "Subject: Political theory",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Passionate",
+        "Interested",
+        "Neutral",
+        "Indifferent",
+        "Averse"
+      ],
+      "matched_terms": [
+        "political",
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "trait_spirituality",
+      "label": "Character: Spirituality",
+      "group": "Personality: Character",
+      "subgroup": "",
+      "category": "Personality: Character",
+      "values": [
+        "Signature",
+        "Strong",
+        "Moderate",
+        "Slight",
+        "Absent"
+      ],
+      "matched_terms": [
+        "spiritual"
+      ]
+    },
+    {
+      "id": "val_family",
+      "label": "Value: Family",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_career_success",
+      "label": "Value: Career success",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_wealth",
+      "label": "Value: Wealth",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_health",
+      "label": "Value: Health",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_personal_freedom",
+      "label": "Value: Personal freedom",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_security_stability",
+      "label": "Value: Security & stability",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_adventure",
+      "label": "Value: Adventure",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_tradition",
+      "label": "Value: Tradition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_power_influence",
+      "label": "Value: Power & influence",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_achievement",
+      "label": "Value: Achievement",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_creativity_self_expression",
+      "label": "Value: Creativity & self-expression",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_community",
+      "label": "Value: Community",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_spirituality_faith",
+      "label": "Value: Spirituality / faith",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "faith",
+        "spiritual",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_knowledge_truth",
+      "label": "Value: Knowledge & truth",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_social_status",
+      "label": "Value: Social status",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_independence",
+      "label": "Value: Independence",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_justice_fairness",
+      "label": "Value: Justice & fairness",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_loyalty",
+      "label": "Value: Loyalty",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_sustainability",
+      "label": "Value: Sustainability",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_recognition",
+      "label": "Value: Recognition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_helping_others",
+      "label": "Value: Helping others",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_personal_growth",
+      "label": "Value: Personal growth",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_fun_enjoyment",
+      "label": "Value: Fun & enjoyment",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_integrity_honesty",
+      "label": "Value: Integrity & honesty",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_beauty_aesthetics",
+      "label": "Value: Beauty & aesthetics",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_order_structure",
+      "label": "Value: Order & structure",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_patriotism",
+      "label": "Value: Patriotism",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_equality",
+      "label": "Value: Equality",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "val_privacy",
+      "label": "Value: Privacy",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "habit_procrasti_cleaning",
+      "label": "Habit: Procrasti-cleaning",
+      "group": "Behavior: Habits",
+      "subgroup": "",
+      "category": "Behavior: Habits",
+      "values": [
+        "Daily",
+        "Weekly",
+        "Monthly",
+        "Rarely",
+        "Never"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_work_location",
+      "label": "Office vs remote",
+      "group": "Behavior: Work",
+      "subgroup": "",
+      "category": "Behavior: Work",
+      "values": [
+        "Strongly office",
+        "Office-leaning",
+        "Hybrid",
+        "Remote-leaning",
+        "Strongly remote"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_team_vs_solo",
+      "label": "Team vs solo work",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Strongly team",
+        "Team-leaning",
+        "Mixed",
+        "Solo-leaning",
+        "Strongly solo"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_routine_vs_variety",
+      "label": "Routine vs variety",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Craves routine",
+        "Routine-leaning",
+        "Balanced",
+        "Variety-leaning",
+        "Craves variety"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_speed_vs_accuracy",
+      "label": "Speed vs accuracy",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Speed first",
+        "Speed-leaning",
+        "Balanced",
+        "Accuracy-leaning",
+        "Accuracy first"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_quality_vs_quantity",
+      "label": "Quality vs quantity",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Quality first",
+        "Quality-leaning",
+        "Balanced",
+        "Quantity-leaning",
+        "Quantity first"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_logic_vs_intuition",
+      "label": "Logic vs intuition",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Pure logic",
+        "Logic-leaning",
+        "Balanced",
+        "Intuition-leaning",
+        "Pure intuition"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_save_vs_spend",
+      "label": "Save vs spend",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Hard saver",
+        "Saver-leaning",
+        "Balanced",
+        "Spender-leaning",
+        "Free spender"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_indoor_vs_outdoor",
+      "label": "Indoor vs outdoor",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Strongly indoor",
+        "Indoor-leaning",
+        "Either",
+        "Outdoor-leaning",
+        "Strongly outdoor"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_big_group_vs_one_on_one",
+      "label": "Big group vs one-on-one",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Loves big groups",
+        "Group-leaning",
+        "Either",
+        "1-on-1 leaning",
+        "One-on-one only"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_novelty_vs_familiarity",
+      "label": "Novelty vs familiarity",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Always novel",
+        "Novelty-leaning",
+        "Balanced",
+        "Comfort-leaning",
+        "Always familiar"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_detail_brief_vs_full",
+      "label": "Brief vs full detail",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Just the gist",
+        "Brief-leaning",
+        "Balanced",
+        "Detail-leaning",
+        "Every detail"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "pref_stability_vs_change",
+      "label": "Stability vs change",
+      "group": "Behavior: Preferences",
+      "subgroup": "",
+      "category": "Behavior: Preferences",
+      "values": [
+        "Craves stability",
+        "Stability-leaning",
+        "Balanced",
+        "Change-leaning",
+        "Craves change"
+      ],
+      "matched_terms": [
+        "leaning"
+      ]
+    },
+    {
+      "id": "demo_housing_status",
+      "label": "Housing status",
+      "group": "Demographic: Core",
+      "subgroup": "",
+      "category": "Demographic: Core",
+      "values": [
+        "Own outright",
+        "Mortgage",
+        "Renting",
+        "Living with family",
+        "Shared housing",
+        "Temporary / transitional"
+      ],
+      "matched_terms": [
+        "right"
+      ]
+    },
+    {
+      "id": "demo_religion_affiliation",
+      "label": "Religious affiliation",
+      "group": "Demographic: Core",
+      "subgroup": "",
+      "category": "Demographic: Core",
+      "values": [
+        "Christian",
+        "Muslim",
+        "Hindu",
+        "Buddhist",
+        "Jewish",
+        "Sikh",
+        "Folk / traditional",
+        "Spiritual but unaffiliated",
+        "Atheist / agnostic",
+        "None"
+      ],
+      "matched_terms": [
+        "religion",
+        "religious",
+        "spiritual",
+        "traditional"
+      ]
+    },
+    {
+      "id": "demo_political_engagement",
+      "label": "Political engagement",
+      "group": "Demographic: Core",
+      "subgroup": "",
+      "category": "Demographic: Core",
+      "values": [
+        "Activist",
+        "Engaged voter",
+        "Occasional voter",
+        "Disengaged",
+        "Non-voter"
+      ],
+      "matched_terms": [
+        "political"
+      ]
+    },
+    {
+      "id": "lifex_geographic_mobility",
+      "label": "Geographic mobility",
+      "group": "Demographic: Life Events",
+      "subgroup": "",
+      "category": "Demographic: Life Events",
+      "values": [
+        "Never left hometown",
+        "Moved within region",
+        "Moved nationally",
+        "Moved internationally",
+        "Serial relocator"
+      ],
+      "matched_terms": [
+        "left"
+      ]
+    },
+    {
+      "id": "lifex_travel_breadth",
+      "label": "Travel breadth",
+      "group": "Demographic: Life Events",
+      "subgroup": "",
+      "category": "Demographic: Life Events",
+      "values": [
+        "Never left country",
+        "A few countries",
+        "Well-traveled",
+        "Lived abroad",
+        "Global nomad"
+      ],
+      "matched_terms": [
+        "left"
+      ]
+    },
+    {
+      "id": "lifex_education_journey",
+      "label": "Education journey",
+      "group": "Demographic: Life Events",
+      "subgroup": "",
+      "category": "Demographic: Life Events",
+      "values": [
+        "Traditional track",
+        "Returned as adult",
+        "Largely self-taught",
+        "Dropped out",
+        "Advanced degrees",
+        "Vocational / trade"
+      ],
+      "matched_terms": [
+        "traditional"
+      ]
+    },
+    {
+      "id": "lifex_immigration_generation",
+      "label": "Immigration generation",
+      "group": "Demographic: Life Events",
+      "subgroup": "",
+      "category": "Demographic: Life Events",
+      "values": [
+        "First-generation immigrant",
+        "Second-generation",
+        "Third+ generation",
+        "Native multi-generational",
+        "Returnee / repatriate"
+      ],
+      "matched_terms": [
+        "immigration"
+      ]
+    },
+    {
+      "id": "lifex_faith_journey",
+      "label": "Faith journey",
+      "group": "Demographic: Life Events",
+      "subgroup": "",
+      "category": "Demographic: Life Events",
+      "values": [
+        "Lifelong faith",
+        "Converted",
+        "Lapsed / left faith",
+        "Always secular",
+        "Still searching",
+        "Returned to faith"
+      ],
+      "matched_terms": [
+        "left",
+        "faith",
+        "secular"
+      ]
+    },
+    {
+      "id": "lifex_turning_point",
+      "label": "Defining turning point",
+      "group": "Demographic: Life Events",
+      "subgroup": "",
+      "category": "Demographic: Life Events",
+      "values": [
+        "Career break",
+        "Near-miss / accident",
+        "Spiritual awakening",
+        "Reinvention",
+        "Mentor encounter",
+        "No single one"
+      ],
+      "matched_terms": [
+        "spiritual"
+      ]
+    },
+    {
+      "id": "bfi2_facet_trust",
+      "label": "BFI-2 Trust",
+      "group": "Personality: Big Five",
+      "subgroup": "",
+      "category": "Personality: Big Five",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "trust"
+      ]
+    },
+    {
+      "id": "schwartz_value_self_direction",
+      "label": "Schwartz Self-Direction",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_stimulation",
+      "label": "Schwartz Stimulation",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_hedonism",
+      "label": "Schwartz Hedonism",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_achievement",
+      "label": "Schwartz Achievement",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_power",
+      "label": "Schwartz Power",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_security",
+      "label": "Schwartz Security",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_conformity",
+      "label": "Schwartz Conformity",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_tradition",
+      "label": "Schwartz Tradition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "religious",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_benevolence",
+      "label": "Schwartz Benevolence",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "schwartz_value_universalism",
+      "label": "Schwartz Universalism",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "sdt_need_autonomy",
+      "label": "SDT Autonomy Need",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation",
+        "autonomy"
+      ]
+    },
+    {
+      "id": "sdt_need_competence",
+      "label": "SDT Competence Need",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "sdt_need_relatedness",
+      "label": "SDT Relatedness Need",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "mft_care_harm",
+      "label": "Moral Foundation Care/Harm",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "moral"
+      ]
+    },
+    {
+      "id": "mft_fairness_cheating",
+      "label": "Moral Foundation Fairness/Cheating",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "moral"
+      ]
+    },
+    {
+      "id": "mft_loyalty_betrayal",
+      "label": "Moral Foundation Loyalty/Betrayal",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "moral"
+      ]
+    },
+    {
+      "id": "mft_authority_subversion",
+      "label": "Moral Foundation Authority/Subversion",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "moral",
+        "authority"
+      ]
+    },
+    {
+      "id": "mft_sanctity_degradation",
+      "label": "Moral Foundation Sanctity/Degradation",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "moral"
+      ]
+    },
+    {
+      "id": "mft_liberty_oppression",
+      "label": "Moral Foundation Liberty/Oppression",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief",
+        "moral"
+      ]
+    },
+    {
+      "id": "need_for_cognition",
+      "label": "Need for Cognition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "value",
+        "motivation"
+      ]
+    },
+    {
+      "id": "dospert_health_safety_risk_tolerance",
+      "label": "DOSPERT Health/Safety Risk Tolerance",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "worldview",
+        "belief"
+      ]
+    },
+    {
+      "id": "interpersonal_agency_dominance",
+      "label": "Interpersonal Agency/Dominance",
+      "group": "Personality: Relationships",
+      "subgroup": "",
+      "category": "Personality: Relationships",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ],
+      "matched_terms": [
+        "agency"
+      ]
+    },
+    {
+      "id": "coding_ai_output_trust",
+      "label": "Coding AI output trust",
+      "group": "Developer: AI Adoption",
+      "subgroup": "",
+      "category": "Developer: AI Adoption",
+      "values": [
+        "Strongly trusts with light review",
+        "Trusts after verification",
+        "Neutral / depends on task",
+        "Distrusts until proven",
+        "Does not trust"
+      ],
+      "matched_terms": [
+        "trust"
+      ]
+    },
+    {
+      "id": "coding_agent_autonomy_preference",
+      "label": "Coding agent autonomy preference",
+      "group": "Developer: Agent Adoption",
+      "subgroup": "",
+      "category": "Developer: Agent Adoption",
+      "values": [
+        "Autonomous execution",
+        "Plan-then-act with checkpoints",
+        "Step-by-step pair programming",
+        "Suggest-only assistant",
+        "No agent autonomy"
+      ],
+      "matched_terms": [
+        "autonomy"
+      ]
+    },
+    {
+      "id": "coding_tool_ethics_blocker",
+      "label": "Coding tool ethics blocker",
+      "group": "Developer: Technology Evaluation",
+      "subgroup": "",
+      "category": "Developer: Technology Evaluation",
+      "values": [
+        "Hard blocker",
+        "Major concern",
+        "Moderate concern",
+        "Minor concern",
+        "Not a concern"
+      ],
+      "matched_terms": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "human_help_boundary_for_ai_coding",
+      "label": "Human help boundary for AI coding",
+      "group": "Developer: AI Adoption",
+      "subgroup": "",
+      "category": "Developer: AI Adoption",
+      "values": [
+        "When trust is low",
+        "When learning deeply",
+        "When comparing approaches",
+        "When security / ethics matter",
+        "When context is hard to explain",
+        "Rarely needs human help"
+      ],
+      "matched_terms": [
+        "ethics",
+        "trust"
+      ]
+    },
+    {
+      "id": "future_developer_skill_belief",
+      "label": "Future developer skill belief",
+      "group": "Developer: AI Adoption",
+      "subgroup": "",
+      "category": "Developer: AI Adoption",
+      "values": [
+        "Systems understanding",
+        "Problem decomposition",
+        "Debugging and diagnosis",
+        "Security and privacy judgment",
+        "Product and user judgment",
+        "Communication and collaboration",
+        "Domain expertise",
+        "Ethical judgment"
+      ],
+      "matched_terms": [
+        "belief"
+      ]
+    }
+  ],
+  "psychology_worldview_beliefs": [
+    {
+      "id": "values_priority",
+      "label": "Core value",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Achievement",
+        "Security",
+        "Autonomy",
+        "Community",
+        "Novelty",
+        "Tradition"
+      ]
+    },
+    {
+      "id": "political_lean",
+      "label": "Political lean",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Left",
+        "Center-left",
+        "Center",
+        "Center-right",
+        "Right",
+        "Apolitical"
+      ]
+    },
+    {
+      "id": "religiosity",
+      "label": "Religiosity",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Secular",
+        "Spiritual",
+        "Observant",
+        "Devout",
+        "Prefer not to say"
+      ]
+    },
+    {
+      "id": "trust_level",
+      "label": "Trust level",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Trusting",
+        "Verifying",
+        "Skeptical",
+        "Hostile"
+      ]
+    },
+    {
+      "id": "safety_sensitivity",
+      "label": "Safety sensitivity",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Benign",
+        "Sensitive personal",
+        "High-stakes (medical/legal/financial)",
+        "Potentially harmful",
+        "Dual-use"
+      ]
+    },
+    {
+      "id": "economic_motivation",
+      "label": "Economic motivation",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Cost-sensitive",
+        "Value-driven",
+        "Premium-seeking",
+        "Indifferent"
+      ]
+    },
+    {
+      "id": "fam_political_science",
+      "label": "Familiarity: Political science",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Expert",
+        "Proficient",
+        "Familiar",
+        "Aware",
+        "None"
+      ]
+    },
+    {
+      "id": "fam_religious_studies",
+      "label": "Familiarity: Religious studies",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Expert",
+        "Proficient",
+        "Familiar",
+        "Aware",
+        "None"
+      ]
+    },
+    {
+      "id": "topic_spirituality",
+      "label": "Interest: Spirituality",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Passionate",
+        "Interested",
+        "Neutral",
+        "Indifferent",
+        "Averse"
+      ]
+    },
+    {
+      "id": "att_ai",
+      "label": "Attitude: AI",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_automation",
+      "label": "Attitude: Automation",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_data_privacy",
+      "label": "Attitude: Data privacy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_social_media",
+      "label": "Attitude: Social media",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_remote_work",
+      "label": "Attitude: Remote work",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_globalization",
+      "label": "Attitude: Globalization",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_free_markets",
+      "label": "Attitude: Free markets",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_government_regulation",
+      "label": "Attitude: Government regulation",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_climate_action",
+      "label": "Attitude: Climate action",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_nuclear_energy",
+      "label": "Attitude: Nuclear energy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_renewable_energy",
+      "label": "Attitude: Renewable energy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_genetic_engineering",
+      "label": "Attitude: Genetic engineering",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_vaccines",
+      "label": "Attitude: Vaccines",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_alternative_medicine",
+      "label": "Attitude: Alternative medicine",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_organized_religion",
+      "label": "Attitude: Organized religion",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_cryptocurrency",
+      "label": "Attitude: Cryptocurrency",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_the_gig_economy",
+      "label": "Attitude: The gig economy",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_labor_unions",
+      "label": "Attitude: Labor unions",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_higher_education",
+      "label": "Attitude: Higher education",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_homeownership",
+      "label": "Attitude: Homeownership",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_taking_on_debt",
+      "label": "Attitude: Taking on debt",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_risk_taking",
+      "label": "Attitude: Risk-taking",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_authority",
+      "label": "Attitude: Authority",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_rapid_change",
+      "label": "Attitude: Rapid change",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_new_technology",
+      "label": "Attitude: New technology",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_brand_loyalty",
+      "label": "Attitude: Brand loyalty",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_advertising",
+      "label": "Attitude: Advertising",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_influencers",
+      "label": "Attitude: Influencers",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_online_reviews",
+      "label": "Attitude: Online reviews",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_subscription_services",
+      "label": "Attitude: Subscription services",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_open_source",
+      "label": "Attitude: Open source",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_surveillance",
+      "label": "Attitude: Surveillance",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_self_driving_cars",
+      "label": "Attitude: Self-driving cars",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_space_exploration",
+      "label": "Attitude: Space exploration",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_universal_basic_income",
+      "label": "Attitude: Universal basic income",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_minimalism",
+      "label": "Attitude: Minimalism",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_consumerism",
+      "label": "Attitude: Consumerism",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_veganism",
+      "label": "Attitude: Veganism",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_fast_fashion",
+      "label": "Attitude: Fast fashion",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_gun_ownership",
+      "label": "Attitude: Gun ownership",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_capital_punishment",
+      "label": "Attitude: Capital punishment",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_free_speech",
+      "label": "Attitude: Free speech",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_privacy_vs_security",
+      "label": "Attitude: Privacy vs security",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_globalized_supply_chains",
+      "label": "Attitude: Globalized supply chains",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_working_from_office",
+      "label": "Attitude: Working from office",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_four_day_work_week",
+      "label": "Attitude: Four-day work week",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_performance_reviews",
+      "label": "Attitude: Performance reviews",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_standardized_testing",
+      "label": "Attitude: Standardized testing",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_tipping_culture",
+      "label": "Attitude: Tipping culture",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_electric_vehicles",
+      "label": "Attitude: Electric vehicles",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_public_transit",
+      "label": "Attitude: Public transit",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_urban_density",
+      "label": "Attitude: Urban density",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "att_gentrification",
+      "label": "Attitude: Gentrification",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Enthusiast",
+        "Positive",
+        "Neutral",
+        "Skeptical",
+        "Opposed"
+      ]
+    },
+    {
+      "id": "acad_political_theory",
+      "label": "Subject: Political theory",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Passionate",
+        "Interested",
+        "Neutral",
+        "Indifferent",
+        "Averse"
+      ]
+    },
+    {
+      "id": "val_family",
+      "label": "Value: Family",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_career_success",
+      "label": "Value: Career success",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_wealth",
+      "label": "Value: Wealth",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_health",
+      "label": "Value: Health",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_personal_freedom",
+      "label": "Value: Personal freedom",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_security_stability",
+      "label": "Value: Security & stability",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_adventure",
+      "label": "Value: Adventure",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_tradition",
+      "label": "Value: Tradition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_power_influence",
+      "label": "Value: Power & influence",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_achievement",
+      "label": "Value: Achievement",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_creativity_self_expression",
+      "label": "Value: Creativity & self-expression",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_community",
+      "label": "Value: Community",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_spirituality_faith",
+      "label": "Value: Spirituality / faith",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_knowledge_truth",
+      "label": "Value: Knowledge & truth",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_social_status",
+      "label": "Value: Social status",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_independence",
+      "label": "Value: Independence",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_justice_fairness",
+      "label": "Value: Justice & fairness",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_loyalty",
+      "label": "Value: Loyalty",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_sustainability",
+      "label": "Value: Sustainability",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_recognition",
+      "label": "Value: Recognition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_helping_others",
+      "label": "Value: Helping others",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_personal_growth",
+      "label": "Value: Personal growth",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_fun_enjoyment",
+      "label": "Value: Fun & enjoyment",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_integrity_honesty",
+      "label": "Value: Integrity & honesty",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_beauty_aesthetics",
+      "label": "Value: Beauty & aesthetics",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_order_structure",
+      "label": "Value: Order & structure",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_patriotism",
+      "label": "Value: Patriotism",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_equality",
+      "label": "Value: Equality",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "val_privacy",
+      "label": "Value: Privacy",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Core value",
+        "Important",
+        "Moderate",
+        "Minor",
+        "Irrelevant"
+      ]
+    },
+    {
+      "id": "schwartz_value_self_direction",
+      "label": "Schwartz Self-Direction",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_stimulation",
+      "label": "Schwartz Stimulation",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_hedonism",
+      "label": "Schwartz Hedonism",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_achievement",
+      "label": "Schwartz Achievement",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_power",
+      "label": "Schwartz Power",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_security",
+      "label": "Schwartz Security",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_conformity",
+      "label": "Schwartz Conformity",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_tradition",
+      "label": "Schwartz Tradition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_benevolence",
+      "label": "Schwartz Benevolence",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "schwartz_value_universalism",
+      "label": "Schwartz Universalism",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "sdt_need_autonomy",
+      "label": "SDT Autonomy Need",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "sdt_need_competence",
+      "label": "SDT Competence Need",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "sdt_need_relatedness",
+      "label": "SDT Relatedness Need",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "mft_care_harm",
+      "label": "Moral Foundation Care/Harm",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "mft_fairness_cheating",
+      "label": "Moral Foundation Fairness/Cheating",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "mft_loyalty_betrayal",
+      "label": "Moral Foundation Loyalty/Betrayal",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "mft_authority_subversion",
+      "label": "Moral Foundation Authority/Subversion",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "mft_sanctity_degradation",
+      "label": "Moral Foundation Sanctity/Degradation",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "mft_liberty_oppression",
+      "label": "Moral Foundation Liberty/Oppression",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "need_for_cognition",
+      "label": "Need for Cognition",
+      "group": "Values & Motivation",
+      "subgroup": "",
+      "category": "Values & Motivation",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    },
+    {
+      "id": "dospert_health_safety_risk_tolerance",
+      "label": "DOSPERT Health/Safety Risk Tolerance",
+      "group": "Worldview: Beliefs",
+      "subgroup": "",
+      "category": "Worldview: Beliefs",
+      "values": [
+        "Very high",
+        "High",
+        "Average",
+        "Low",
+        "Very low"
+      ]
+    }
+  ]
+}

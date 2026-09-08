@@ -1,0 +1,601 @@
+\documentclass[conference]{IEEEtran} \IEEEoverridecommandlockouts % ================= PACOTES ================= 
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage[brazil]{babel} 
+\usepackage{cite} 
+\usepackage{amsmath,amssymb,amsfonts} 
+\usepackage{graphicx} 
+\usepackage{textcomp} 
+\usepackage{xcolor}  
+\usepackage{booktabs}
+\usepackage{makecell}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{adjustbox}
+
+
+
+\renewcommand{\arraystretch}{1.4}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\title{Um Modelo Conceitual para a Mitigação de Debates Improdutivos}
+
+\author{\IEEEauthorblockN{Guilherme Moura}
+\IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
+      \textit{e Computação(PESC/COPPE)} \\
+      \textit{Universidade Federal do Rio de Janeiro} \\
+      Rio de Janeiro, Brazil \\
+      gpcmoura@cos.ufrj.br}
+\and
+\IEEEauthorblockN{Luiz Filipe Brandi}
+\IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
+      \textit{e Computação(PESC/COPPE)} \\
+      \textit{Universidade Federal do Rio de Janeiro} \\
+      Rio de Janeiro, Brazil \\
+      brandi@cos.ufrj.br}
+\and
+\IEEEauthorblockN{Ramon Chaves}
+\IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
+      \textit{e Computação(PESC/COPPE)} \\
+      \textit{Universidade Federal do Rio de Janeiro} \\
+      Rio de Janeiro, Brazil \\
+      ramonchaves@cos.ufrj.br@cos.ufrj.br}
+\and
+\IEEEauthorblockN{Daniel Schneider}
+\IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
+      \textit{e Computação(PESC/COPPE)} \\
+      \textit{Universidade Federal do Rio de Janeiro} \\
+      Rio de Janeiro, Brazil \\
+      schneider@cos.ufrj.br}
+}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+A participação da sociedade civil no debate público digital é frequentemente comprometida pela lógica operacional das plataformas tradicionais, cujos algoritmos priorizam o engajamento métrico e a retenção do usuário em detrimento da qualidade das discussões, favorecendo a polarização afetiva e os chamados debates improdutivos. Diante da ausência de mecanismos eficazes de Gestão do Conhecimento capazes de identificar e mitigar essas dinâmicas, este trabalho propõe um modelo conceitual fundamentado em GC e ampliado por Inteligência Artificial Generativa para apoiar a identificação, a organização e a mitigação de debates improdutivos. A pesquisa caracteriza-se como qualitativa, comparativa, documental e teórico-conceitual, tendo como base a análise das plataformas alternativas Reddit, Discord, Mastodon, Bluesky e Kialo, e a elaboração de uma matriz comparativa de seus mecanismos. A partir dessa síntese, articulada aos referenciais do filósofo Marc Angenot, propõe-se um modelo organizado em cinco dimensões de mitigação atravessadas por uma camada transversal de mediação por IA Generativa sob o princípio da simbiose humano-IA. Uma aplicação ilustrativa sobre um caso empírico real demonstra o potencial do modelo para reconfigurar infraestruturas sociotécnicas e restaurar a espiral de criação de conhecimento coletivo, fornecendo subsídios a projetistas e gestores de plataformas digitais.
+
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+gestão do conhecimento, debates improdutivos, polarização , IA generativa, redes sociais alternativas   
+\end{IEEEkeywords}
+
+\section{Introdução}
+
+A participação  da sociedade civil na democracia contemporânea é afetada no que tange às discussões e conteúdos produzidos dentro das redes sociais \cite{schneider2026mitigating}. No entanto, o cenário atual revela que, embora essas ferramentas possuam o potencial de fomentar o engajamento democrático, elas frequentemente se tornam vetores de polarização extrema e debates improdutivos \cite{pimentelAgendaSolutionsMitigate2023,kreiss2024review}. Esse fenômeno resulta, muitas vezes, em um aumento da hostilidade entre grupos antagônicos, evidenciando a necessidade crítica de estudar como as arquiteturas digitais podem ser redesenhadas para promover debates públicos mais qualificados e saudáveis. 
+
+A polarização é algo inerente da dinâmica social e, em muitos contextos, ela se mostra saudável e até necessária para a pluralidade de ideias, posicionamentos, pensamento crítico e exercício da democracia~\cite{schneider2026mitigating,mccoy2018polarization}. Entretanto, no cenário atual, o problema central reside na lógica operacional das plataformas tradicionais, cujos algoritmos e ferramentas são orientados predominantemente ao engajamento métrico e à retenção do usuário, em detrimento da qualidade dos debates ou do conhecimento gerado a partir deles \cite{alatawiSurveyEchoChambers2021}. Observa-se uma ausência de mecanismos eficazes de Gestão do Conhecimento (GC) capazes de identificar, capturar e evidenciar os problemas que geram debates improdutivos, aliado a permanência de funcionalidades como recomendação e moderação que visam a maximização do tempo de permanência na plataforma, o que limita severamente a produtividade das discussões \cite{schneider2026mitigating}.
+
+Diante dessa lacuna, identifica-se a necessidade de um modelo conceitual a partir de mecanismos fundamentados em GC que permitam identificar e mitigar dinâmicas de debates improdutivos, com isso, esse trabalho propõe o desenvolvimento de um modelo conceitual baseado nos fundamentos de GC voltado à mitigação de debates improdutivos, baseando-se na análise de mecanismos presentes em plataformas alternativas. O objetivo é projetar o modelo que incorpore a estruturação argumentativa, a curadoria e a síntese do conhecimento para apoiar a construção de espaços de debate mais eficazes.
+
+Adicionalmente, esta pesquisa explora o papel emergente das tecnologias de Inteligência Artificial (IA) Generativa e \textit{Large Language Models} (LLMs) como suporte aos processos de GC \cite{jarrahiArtificialIntelligenceKnowledge2023}. Busca-se compreender como essas tecnologias podem auxiliar na análise de discurso, organização e interpretação do conhecimento coletivo, atuando como ferramentas de mediação para transformar interações improdutivas em processos deliberativos mais robustos.
+
+\subsection{Questões de Pesquisa}
+
+Para nortear o desenvolvimento deste estudo, definiram-se as seguintes perguntas de pesquisa:
+\begin{itemize}
+    \item RQ1 - Quais mecanismos as plataformas alternativas oferecem para a mitigação de debates improdutivos?
+    \item RQ2 - Como um modelo conceitual baseado nos princípios de Gestão de Conhecimento aumentada por IA pode apoiar a identificação, organização e mitigação de debates improdutivos?
+\end{itemize}
+
+O trabalho busca fornecer subsídios para projetistas de sistemas sociotécnicos digitais, gestores de governança, pesquisadores em democracia digital e gestão do conhecimento e usuários finais para produção, estudo, design, capacitação e avaliação de plataformas digitais, por meio de um modelo conceitual capaz de indicar quais características e mecanismos que podem favorecer debates produtivos. 
+
+Este trabalho está organizado da seguinte forma. As Seções II e III apresentam, respectivamente, os trabalhos relacionados e a fundamentação teórica sobre debates improdutivos e GC ampliada por IA Generativa. As Seções IV e V descrevem a metodologia e o corpus de plataformas analisadas. A Seção VI define as categorias de mecanismos de mitigação, aplicadas na análise comparativa da Seção VII. A Seção VIII apresenta o modelo conceitual proposto e a Seção IX sua aplicação a um caso empírico. Por fim, as Seções X e XI trazem a discussão e as conclusões.
+
+
+\section{Trabalhos Relacionados}
+
+A mitigação de debates improdutivos e a polarização em plataformas digitais têm sido objeto de crescente interesse na intersecção entre Interação Humano-Computador (IHC) e Gestão do Conhecimento (GC). Esta seção revisa a literatura pertinente ao escopo desta pesquisa, focada em arquiteturas descentralizadas, design de interfaces e o uso de Inteligência Artificial como suporte à moderação e à debates no contexto digital.
+
+
+
+Em contraposição às redes sociais tradicionais, que frequentemente otimizam o engajamento emocional em detrimento da qualidade do debate e do conhecimento gerado, novas arquiteturas descentralizadas e estruturadas vêm sendo propostas~\cite{nelimarkkaReDesignMitigatePolitical2019, zhangAttitudesImaginedRoles2026}. O trabalho de Schneider~\cite{schneider2026mitigating} é particularmente central para esta pesquisa, pois propõe uma distinção fundamental entre a polarização afetiva. que é um risco sistêmico e destrutivo, e o conflito ideológico legítimo. A partir da análise comparativa de plataformas como Mastodon, Bluesky, Kialo, Reddit e Discord, o autor demonstra que a mitigação da polarização extrema emerge de \textit{affordances} sociotécnicas específicas, tais como a descentralização, a composabilidade algorítmica e a estruturação interacional. Essas características reduzem a toxicidade sistêmica das plataformas e limitam a escalada afetiva, ao mesmo tempo em que preservam o espaço para o desacordo produtivo.
+
+Complementarmente, Jeong et al. \cite{jeongNavigatingDecentralizedOnline2025} oferecem uma taxonomia abrangente das Redes Sociais Online Descentralizadas (DOSNs), categorizando-as em modelos federados, \textit{peer-to-peer}, baseados em \textit{blockchain} e híbridos. Os autores correlacionam as escolhas arquitetônicas dessas plataformas com desafios sociais contínuos na \textit{web}, incluindo a fragmentação social e as lacunas e inconsistências na moderação de conteúdo. Esse panorama evidencia as limitações técnicas que ainda impedem uma rede social descentralizada de operar de forma totalmente fluida, afetando o controle do usuário e a proteção de dados.
+
+
+% Além disso, quando integrados ao \textit{crowdsourcing} colaborativo em curadoria de notícias e moderação, os sistemas de IA atuam como mediadores que promovem interações socio-algorítmicas mais transparentes e saudáveis, essenciais para conter os danos do negacionismo e restabelecer as bases de um debate acumulativo e produtivo \cite{schneiderAImediatedCollaborativeCrowdsourcing2025}.
+
+\subsection{Design de Interface e Estruturação do Conhecimento Coletivo}
+
+A forma como os usuários interagem e realizam a curadoria de seus próprios \textit{feeds} de informação tem um impacto direto na mitigação dos desafios sociotécnicos encontrados nas redes sociasi. Nelimarkka et al. \cite{nelimarkkaReDesignMitigatePolitical2019} investigam como o (re)design de interfaces, inspirado nos ideais de comunicação do espaço público de Habermas, pode atuar para mitigar a polarização política. Através de intervenções na interface baseadas em recomendação de conteúdo para diversificar as fontes de informação e promover a tomada de perspectiva \textit{role-taking}, o estudo aponta que o design pode levar à despolarização. No entanto, os autores ressaltam que tais mudanças também podem adicionar uma camada de complexidade à experiência, fazendo com que os usuários questionem excessivamente as informações e o conteúdo apresentado.
+
+Focando na autonomia dos usuários para organizar o conhecimento consumido, Zhang~\cite{zhangAttitudesImaginedRoles2026} examina a curadoria descentralizada de \textit{feeds} na plataforma Mastodon . A pesquisa revela que abordagens de \textit{seamful design} (design aparente/com costuras visíveis) podem aumentar a confiança dos indivíduos na curadoria algorítmica da plataforma, destacando os \textit{trade-offs} que os usuários enfrentam ao navegar entre a filtragem baseada em regras e aquela baseada em aprendizado de máquina (ML). Essa flexibilidade no controle do \textit{feed} pode auxiliar a mitigação de debates improdutivos, permitindo aos usuários uma configuração de leitura mais alinhada às suas reais necessidades informacionais e interesses comunitários.
+
+Focando na autonomia dos usuários para organizar o conhecimento consumido, Liu et al. \cite{liuUnderstandingDecentralizedSocial2025} examinam a curadoria descentralizada de \textit{feeds} na plataforma Mastodon. A pesquisa revela que abordagens de \textit{seamful design}, design aparentecom costuras visíveis, podem aumentar a confiança dos indivíduos na curadoria algorítmica da plataforma, destacando os \textit{trade-offs} que os usuários enfrentam ao navegar entre a filtragem baseada em regras e aquela baseada em aprendizado de máquina. Essa flexibilidade no controle do \textit{feed} ajuda a combater a "incomensurabilidade discursiva" inerente aos debates improdutivos, permitindo aos usuários uma configuração de leitura mais alinhada às suas reais necessidades informacionais e interesses comunitários.
+
+\subsection{Inteligência Artificial e Avaliação Argumentativa na Moderação}
+
+Com o avanço e popularização dos LLMs, surge a possibilidade de integrar a IA generativa como mecanismo de GC e suporte à estruturação de debates. Investigando as fronteiras dessa integração, Zhang et al. \cite{zhangAttitudesImaginedRoles2026} mapeiam as atitudes, os papéis imaginados e as fronteiras de governança estabelecidas por operadores de redes sociais descentralizadas. Estes operadores rejeitam categoricamente o uso da IA como um ator autônomo de tomada de decisão para moderação, vislumbrando-a, em vez disso, como uma infraestrutura de governança colaborativa. Nesta visão, a IA atua apenas para fornecer inteligência contextual, apoiar a coordenação entre instâncias federadas e sustentar o bem-estar da comunidade. Nesse sentido, fronteiras estritas de governança foram articuladas por estes administradores, priorizando a responsabilização humana, a reversibilidade de ações e a transparência em relação aos dados.
+
+
+Do ponto de vista técnico da estruturação argumentativa, Deshpande et al. \cite{deshpandeContextualizingArgumentQuality2024} apresentam o \textit{framework} SPARK, que utiliza LLMs para avaliar a qualidade dos argumentos em linguagem natural por meio de sua contextualização com conhecimento relevante. O modelo proposto é capaz de fornecer \textit{feedback} construtivo, inferir premissas ocultas e sugerir argumentos de qualidade semelhante, além de apresentar contra-argumentos. 
+
+
+
+
+\section{Fundamentação Teórica}
+
+\subsection{O Debate Improdutivo como Fenômeno Social}
+
+\label{sec:debate-improdutivo}
+
+Para compreender a dinâmica das interações no ambiente digital, é necessário primeiro reconhecer que a falha na argumentação não é um fenômeno exclusivo da internet \cite{angenot2008dialogues}. Em suas análises sobre a história das ideias, Marc Angenot argumenta que a incompreensão mútua em debates não deriva simplesmente de ignorância, falta de lógica ou má-fé dos participantes, mas sim de uma condição estrutural da vida social \cite{angenot2008dialogues,angenot2006divergent}. 
+
+
+% Do ponto de vista técnico da estruturação argumentativa, Deshpande et al. \cite{deshpandeContextualizingArgumentQuality2024} apresentam o \textit{framework} SPARK, que utiliza LLMs para avaliar a qualidade dos argumentos em linguagem natural por meio de sua contextualização com conhecimento relevante. O modelo proposto é capaz de fornecer \textit{feedback} construtivo, inferir premissas ocultas e sugerir argumentos de qualidade semelhante, além de apresentar contra-argumentos.
+
+% Esta abordagem algorítmica dialoga de maneira direta com o conceito de meta-comunicação derivado da obra de Marc Angenot \cite{angenotMeyerMichel20082009}, a qual defende que a explicitação dos pressupostos discursivos subjacentes é a principal chave para mitigar "diálogos de surdos" em debates estruturalmente insolúveis. Ao inferir premissas implícitas e estruturar a avaliação do discurso, o uso da IA atua como um verdadeiro catalisador da Gestão do Conhecimento, reduzindo a ilusão da racionalidade e a retórica da incompreensão nas plataformas.
+
+% Nesse sentido, a abordagem de \cite{deshpandeContextualizingArgumentQuality2024} não é para reduzir um problema inédito, ou seja, para compreender a dinâmica das interações no ambiente digital, é necessário primeiro reconhecer que a falha na argumentação não é um fenômeno exclusivo da internet ou das redes sociais atuais, mas, segundo Angenot \cite{angenot2008dialogues}, a incompreensão mútua em debates não deriva simplesmente de ignorância, falta de lógica ou má-fé dos participantes, mas sim de uma condição estrutural da vida social \cite{angenot2008dialogues,angenot2006divergent}. 
+
+
+Esse fenômeno é caracterizado por Angenot como um "diálogo de surdos", uma regra na vida social moderna que torna muitos debates estruturalmente insolúveis~\cite{angenot2008dialogues}. A partir dessa perspectiva, o debate improdutivo pode ser compreendido e desdobrado através de três categorias analíticas centrais que aparecerão em itálico: \textit{incomensurabilidade discursiva}, \textit{retórica da incompreensão} e \textit{ilusão da racionalidade}. A primeira delas é a \textit{incomensurabilidade discursiva}, que ocorre quando os participantes operam em "universos discursivos" ou "línguas ideológicas" incompatíveis, não compartilhando os mesmos valores, pressupostos ou critérios sobre o que constitui a verdade~\cite{angenot2006divergent}. Como consequência, no ambiente digital, os argumentos sequer se encontram, pois as fontes e os critérios de evidência utilizados por um lado, como embasamentos científicos versus manipulações ideológicas, não possuem validade para o outro.
+
+A segunda categoria é a \textit{retórica da incompreensão}, que se trata da recusa ou da incapacidade de reconhecer o adversário como um ser racional dentro do seu próprio sistema de pensamento~\cite{angenot2008dialogues}. Em vez de promover um embate produtivo, o debate digital degenera rapidamente para o ataque, a ironia, a caricatura e a deslegitimação do oponente, um cenário no qual a posição divergente é rotulada simplesmente como um absurdo irracional.
+
+Aliada a isso, observa-se a \textit{ilusão da racionalidade}, que consiste na expectativa irreal de que o debate argumentativo tende naturalmente a um consenso racional ou de que é de fato possível "convencer o outro"~\cite{angenot2008dialogues}. Na realidade, os indivíduos frequentemente argumentam mais para se justificar perante a sua própria audiência do que para mudar a opinião alheia. No ambiente online, isso resulta em monólogos paralelos e ciclos repetitivos de discussão que geram profunda frustração .
+
+Trata-se, portanto, de uma dinâmica regulada pelo próprio discurso social de uma época, que estabelece os limites hegemônicos do que é dizível e opinável \cite{angenot2010discurso}. Nas redes sociais digitais, a infraestrutura algorítmica atua como um forte catalisador dessas três categorias. As plataformas exacerbam a incomensurabilidade e a incompreensão ao valorizarem o conflito em detrimento da reflexão, pressionando os usuários a assumirem posicionamentos imediatos e reforçando o isolamento em bolhas de informação.
+
+\subsection{A Potencialização do Problema pelas Redes Sociais Tradicionais}
+
+Se os debates improdutivos já era uma característica inerente aos debates analógicos, as arquiteturas das redes sociais digitais atuaram como fortes catalisadores desse problema. Plataformas sociais introduziram novas velocidades e métricas para a comunicação, alterando substancialmente a forma como as comunidades se formam e compartilham informações \cite{kietzmannSocialMediaGet2011,schneider2026mitigating}. Os algoritmos tradicionais valorizam o conflito e o engajamento rápido em detrimento da reflexão e intensificando a segregação em câmaras de eco \cite{pimentelAgendaSolutionsMitigate2023}.
+
+Consequentemente, o ambiente virtual passou a abrigar e amplificar discursos ressentidos e negacionistas, onde as emoções, como a indignação e o ódio, são argumentadas para aniquilar qualquer visão oposta \cite{lima2020discursos}. Nesses espaços, a construção discursiva se assenta fortemente na vitimização e na recusa à ciência, criando bolhas que recusam a dialética e dificultam profundamente a mediação de conflitos democráticos por meio de debates produtivos.
+
+\subsection{Gestão do Conhecimento e Debates Improdutivos em Plataformas Digitais}
+
+
+Para reverter as disfuncionalidades que caracterizam os debates digitais contemporâneos, é necessário enxergar as redes sociais não apenas como meros canais de comunicação, mas como sistemas sociotécnicos críticos de GC. Autores como Kietzmann et al. \cite{kietzmannSocialMediaGet2011} demonstram que as mídias sociais operam por meio de blocos funcionais estruturantes, destacando-se as conversações, o compartilhamento e os relacionamentos, que regulam a velocidade, a direção e a natureza da troca informacional. Quando bem gerida, a integração eficiente dessas plataformas pode impulsionar o aprendizado colaborativo e a criação de conhecimento coletivo, transformando informações e vivências tácitas em repositórios úteis e reflexivos \cite{oktaviaConceptualModelKnowledge2017}. 
+
+No entanto, a ocorrência sistemática de debates improdutivos atua como uma barreira severa a esse processo de aprendizado social. Sob a ótica da teoria dinâmica de criação do conhecimento organizacional proposta por Nonaka \cite{nonaka1994dynamic}, o conhecimento é gerado por meio de uma espiral contínua de conversão entre o conhecimento tácito e o explícito, consubstanciada no modelo SECI (Socialização, Externalização, Combinação e Internalização). Os debates improdutivos interagem de forma destrutiva com essa espiral, bloqueando-a de forma crítica, sobretudo nas fases de \textit{socialização} e \textit{externalização}. 
+
+A socialização, processo de compartilhamento de conhecimento tácito, exige a construção de "confiança mútua" e a partilha de experiências autênticas \cite{nonaka1994dynamic}. Em ambientes dominados pela \textit{retórica da incompreensão} e pela \textit{incomensurabilidade discursiva}, a empatia e a confiança são destruídas, inviabilizando o reconhecimento do outro e o aprendizado conjunto. 
+
+Da mesma forma, a externalização, que consiste em articular o conhecimento tácito em conceitos explícitos e compartilháveis, depende estritamente de um "diálogo contínuo" e construtivo, no qual o uso de metáforas e a reflexão conjunta permitem a criação de uma perspectiva comum. Nos debates improdutivos, nos quais prevalece a \textit{ilusão da racionalidade} e a busca pela deslegitimação do oponente, a articulação colaborativa de ideias colapsa. Conforme argumenta a literatura, a construção do conhecimento em ambientes virtuais exige a superação dessas barreiras na interação entre os pares para que a troca seja de fato significativa para o crescimento intelectual coletivo \cite{oktaviaConceptualModelKnowledge2017}. Quando o debate cessa de ser dialógico para se tornar um monólogo paralelo, a espiral do conhecimento é rompida, fragmentando a rede e gerando estagnação.
+
+É diante desse desafio que as plataformas sociais alternativas oferecem a grande oportunidade de serem "redesenhadas" estruturalmente. Estudos demonstram que intervenções de design orientadas pela deliberação, tais como aquelas que fornecem contexto adicional, exigem a estruturação prévia do argumento ou forçam os usuários a interagir de forma mediada com perspectivas divergentes, podem induzir a uma postura de "tomada de papel" e de empatia, mitigando diretamente a polarização política \cite{nelimarkkaReDesignMitigatePolitical2019}. Ao reestruturar a forma como a informação flui e é moderada \cite{kietzmannSocialMediaGet2011}, a arquitetura da plataforma pode atuar diretamente na mitigação dos debates improdutivos, restaurando as bases de confiança e diálogo necessárias para que a espiral do conhecimento volte a operar no ecossistema digital.
+
+\subsection{Inteligência Artificial Generativa como Suporte à Gestão do Conhecimento}
+
+Com a crescente adoção de LLMs, a GC ganha um poderoso aliado. Contudo, a literatura enfatiza que o verdadeiro potencial da IA na GC não reside na automação total ou na substituição do ator humano, mas sim no estabelecimento de uma verdadeira simbiose humano-IA\cite{jarrahiArtificialIntelligenceKnowledge2023}. Ao invés de operarem de forma autônoma e opaca, as IAs Generativas atuam como mediadores sociotécnicos que amplificam as capacidades cognitivas dos usuários. Elas assumem a carga de tarefas exaustivas de captura, organização e filtragem de grandes volumes de dados, permitindo que indivíduos e organizações concentrem seus esforços em atividades analíticas, críticas e estratégicas de maior valor agregado \cite{alghanemiAIKnowledgeManagement2022,taherdoost2023artificial}.
+
+Sob a ótica dos processos fundamentais de GC, a IA Generativa altera profundamente a dinâmica de criação, armazenamento e recuperação da informação. Em vez de atuarem como repositórios passivos, os LLMs funcionam como "cocriadores ativos" de conhecimento, destacando-se primariamente no modo de combinação, o processo de sintetizar, categorizar e agregar vastos volumes de conhecimento explícito provenientes de fontes dispersas \cite{alaviKnowledgeManagementPerspective2024}. Em ambientes digitais caracterizados por um severo excesso informacional, essa tecnologia reduz o esforço operacional e a sobrecarga cognitiva envolvidos na interpretação e disseminação de informações, sendo capaz de descobrir padrões não evidentes e relações semânticas complexas \cite{jarrahiArtificialIntelligenceKnowledge2023,taherdoost2023artificial}.
+
+% O sucesso dessa parceria sociotécnica baseia-se em uma divisão eficiente de competências complementares. Por um lado, as IAs fornecem uma "inteligência especializada", projetada para lidar de forma ininterrupta com o conhecimento explícito, processando o \textit{know-what} e o \textit{know-how} a partir de imensos conjuntos de dados \cite{alghanemiAIKnowledgeManagement2022}. Por outro lado, os seres humanos contribuem com a "inteligência geral", que é indispensável para o \textit{know-why} por que fazer. Aos indivíduos reserva-se a responsabilidade pelo julgamento moral, pela empatia, pela reflexão e pelo compartilhamento do conhecimento tácitoexperiências vivenciadas e valores, elementos que as máquinas ainda são incapazes de replicar \cite{jarrahiArtificialIntelligenceKnowledge2023}.
+
+No contexto específico dos debates em redes sociais descentralizadas, esse suporte contínuo torna-se vital. Em ecossistemas de elevada complexidade sociotécnica, a sobrecarga cognitiva e a desorganização da informação frequentemente fragmentam a interação, comprometendo a qualidade do debate, a retenção da memória coletiva e a capacidade de construção de consensos \cite{taherdoost2023artificial}. Ao atuar na síntese automática de conteúdos, na extração de tópicos relevantes e na identificação estruturada de divergências discursivas, a IA Generativa não substitui o processo humano de tomada de decisão. Em vez disso, ela atua como uma infraestrutura tecnológica que viabiliza a organização do caos interacional em bases inteligíveis e fornecendo o suporte necessário para o desenvolvimento de deliberações mais produtivas.
+
+
+% Essas IAs possuem o potencial de avaliar o contexto da argumentação fornecendo \textit{feedback} estruturado, identificando premissas ocultas e apresentando contra-argumentos embasados \cite{deshpandeContextualizingArgumentQuality2024}. Em modelos de democracia aumentada, os LLMs já demonstram capacidade para auxiliar na identificação das preferências da população e aliviar a carga cognitiva dos cidadãos frente à complexidade política \cite{gudinoLargeLanguageModels2024}. 
+
+% Além disso, quando integrados ao \textit{crowdsourcing} colaborativo em curadoria de notícias e moderação, os sistemas de IA atuam como mediadores que promovem interações socio-algorítmicas mais transparentes e saudáveis, essenciais para conter os danos do negacionismo e restabelecer as bases de um debate acumulativo e produtivo \cite{schneiderAImediatedCollaborativeCrowdsourcing2025}.
+
+
+%%%%%%%%%%% METODOLOGIA
+\section{Metodologia}
+
+%%%%IMAGEM
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\linewidth]{images/metodologia_figura_v2.pdf}
+\caption{Diagrama de processos das etapas definidas pela metodologia utilizada nesta pesquisa.}
+\label{fig:metology_diagram}
+\end{figure}
+
+A presente pesquisa caracteriza-se como qualitativa, comparativa, documental e teórico-conceitual, tendo como objetivo analisar como plataformas digitais alternativas podem apoiar a mitigação de debates improdutivos, conforme discutido na Seção \ref{sec:debate-improdutivo}, por meio de mecanismos de Gestão do Conhecimento.
+
+Para a realização dessa análise, foi definido um conjunto de plataformas digitais alternativas composto por Reddit, Discord, Mastodon, Bluesky e Kialo, selecionadas com base em critérios que serão descritos em uma seção posterior. Além disso, realizou-se uma levantamento bibliográfico com o objetivo de identificar e compreender obras relacionadas aos problemas inerentes ao debate digital, às plataformas digitais e aos seus mecanismos de moderação, interação, debate e síntese de conteúdo, bem como abordagens de Gestão do Conhecimento apoiadas por Inteligência Artificial Generativa e Large Language Models (LLMs).
+
+Com base na definição de Angenot \cite{angenot2008dialogues}, foram estabelecidas duas categorias centrais que norteiam este trabalho: Debate Improdutivo e Mecanismos para Mitigar Debates Improdutivos, sendo esta última orientada ao contexto das redes sociais digitais. De maneira prática, foi realizada uma análise documental e bibliográfica do conjunto de plataformas selecionadas, seguida da elaboração de uma matriz comparativa de suas funcionalidades. 
+
+A partir disso, produziu-se uma síntese dos mecanismos considerados mais promissores para a mitigação do problema identificado, analisando-se também como esses mecanismos se relacionam com a Gestão do Conhecimento e de que forma podem ser potencializados por Inteligência Artificial Generativa. Por fim, será proposto um modelo conceitual derivado das sínteses produzidas, bem como uma aplicação ilustrativa desenvolvida sobre alguma plataforma pertencente ao conjunto originalmente analisado. A Figura~\ref{fig:metology_diagram} permite-nos ter uma visão geral dos passos da metodologia descrita. 
+
+
+
+\section{Definição do Corpus de Plataformas}
+
+A seleção das plataformas analisadas neste estudo baseia-se em uma amostragem intencional por relevância teórica, preterindo a amostragem estatística em favor de casos que apresentam diversidade arquitetural e funcional significativa para o problema da produtividade do debate. O corpus foi delimitado a partir de cinco critérios principais: (i) o grau de centralização ou descentralização da rede; (ii) a presença de debate público ou semi-público; (iii) a existência de mecanismos distintos de moderação e governança; (iv) o oferecimento de estruturas argumentativas específicas; e (v) a disponibilidade de documentação técnica e pública para análise.
+
+
+Nesta perspectiva, foram selecionadas as plataformas Mastodon, Bluesky, Kialo, Reddit e Discord, por representarem paradigmas contrastantes de mediação sociotécnica \cite{schneider2026mitigating}. O Mastodon e o Bluesky foram incluídos por personificarem o modelo de Redes Sociais Descentralizadas (DSM), onde a federação e a autonomia de instâncias permitem mitigar algoritmos de engajamento predatórios e espirais de reforço \cite{jeongNavigatingDecentralizedOnline2025}. O Kialo foi selecionado por sua arquitetura voltada exclusivamente ao debate estruturado em árvores de argumentos, oferecendo um contraponto à linearidade das \textit{timelines} tradicionais e permitindo a análise de restrições de interface que forçam a racionalização do discurso \cite{schneider2026mitigating}. Complementarmente, o Reddit e o Discord foram integrados ao corpus por suas lógicas de governança baseadas em subcomunidades e moderação voluntária, que operam em escalas e dinâmicas de visibilidade distintas das redes centralizadas de massa \cite{schneider2026mitigating}. A exclusão deliberada de plataformas tradicionais como X (antigo Twitter) e Facebook justifica-se pelo fato de que suas arquiteturas otimizadas para o lucro publicitário e métricas de retenção são, por definição, os vetores do problema que este modelo de Gestão do Conhecimento visa mitigar \cite{pimentelAgendaSolutionsMitigate2023, schneider2026mitigating}.
+
+
+
+\section{Mecanismos para Mitigação de Debates Improdutivos}
+
+
+Com base na obra de Marc Angenot onde é definido o termo "diálogos de surdos", na qual os debates frequentemente falham devido à \textit{incomensurabilidade discursiva} e à \textit{retórica da incompreensão} \cite{angenot2008dialogues}, emerge a necessidade de repensar a forma como as interações digitais são estruturadas. Embora Angenot não utilize o termo meta-comunicação como um conceito formal fechado em sua obra, adotamos essa terminologia nesta pesquisa como uma leitura interpretativa para operacionalizar as soluções e saídas propostas por ele. 
+
+Diante do diagnóstico pessimista dos debates insolúveis, o autor sugere que não basta apresentar mais informações ou apelar puramente para a lógica, sendo necessário, antes de tudo, reconhecer os limites da argumentação. A principal saída extraída de sua obra é a necessidade de um deslocamento no objetivo do embate: em vez de os participantes tentarem a persuasão imediata, o que frequentemente esbarra na \textit{ilusão da racionalidade}, o foco deve passar a ser a compreensão do sistema de pensamento do outro e a identificação da "língua ideológica" que ele utiliza.
+
+Assim, a meta-comunicação, o ato de comunicar sobre a própria comunicação, atua justamente como o mecanismo prático para mapear essas diferenças de lógicas. Nessa abordagem, em vez de discutir diretamente o objeto do debate, o tópico em si, os participantes são levados a debater e evidenciar os pressupostos ocultos, as regras implícitas da discussão, os valores de fundo e, principalmente, o que cada lado considera como uma evidência válida. Ao explicitar essas bases, busca-se reduzir a incompreensão radical, permitindo que os usuários enxerguem a coerência interna no raciocínio do adversário, mesmo que continuem a discordar de suas conclusões.
+
+
+Com base nesse referencial e sob a ótica da GC, definimos para esta pesquisa cinco categorias de mecanismos de mitigação. O objetivo analítico das próximas etapas deste estudo será investigar se e como as plataformas sociais alternativas selecionadas implementam esses mecanismos na prática, bem como analisar se já utilizam, ou como poderiam utilizar, a IA Generativa para apoiá-los. Os mecanismos definidos são:
+
+\begin{itemize}
+    \item \textbf{Mecanismos de Desaceleração do Debate:}  Ao extrapolarmos o diagnóstico de Angenot \cite{angenot2008dialogues} para o contexto digital contemporâneo, compreendemos o motivo pelo qual a reflexão profunda e a meta-comunicação são tão raras nas redes sociais. A dificuldade estrutural de compreensão mútua, apontada pelo autor, é drasticamente exacerbada pela própria arquitetura da internet. Isso ocorre porque as plataformas atuais operam sob dinâmicas que sufocam a reflexão: o formato favorece respostas rápidas, impõe uma forte pressão por posicionamento imediato e baseia-se em algoritmos que valorizam o conflito. Para contrapor essa dinâmica, propõem-se estratégias de design de interface que impõem certa fricção à interação, visando desestimular respostas impulsivas e mitigar a escalada de conflitos onde o debate rapidamente degenera para o ataque pessoal. Exemplos incluem a permissão de limites de caracteres mais extensos, privilegiando o aprofundamento, temporizadores que exigem um tempo mínimo de leitura antes de permitir um comentário, ou limites de postagens diárias. O objetivo central é quebrar a \textit{ilusão da racionalidade} e a expectativa irreal de "convencer o outro" de forma rápida.
+
+
+    \item \textbf{Mecanismos de Exibição de Divergências:} Debates online frequentemente assumem a aparência de diálogos, mas na prática revelam-se apenas como "monólogos paralelos", em que cada lado fala exclusivamente para a sua própria audiência. A solução extraída do pensamento de Angenot passa pelo deslocamento do objetivo: sair da tentativa vã de convencer o outro para a tentativa de mapear diferenças de racionalidade e compreender o sistema de pensamento alheio \cite{angenot2008dialogues}. Tal abordagem poderia ser interpretados como ferramentas visuais que sintetizam os pontos de consenso e dissenso entre os usuários, rompendo com a lógica de uma \textit{timeline} infinita e caótica. Com o apoio potencial de IA Generativa para a extração de argumentos e classificação temática, a plataforma pode exibir a divergência de forma estática e analítica, árvores ou mapas de discussão. Isso permite que os usuários compreendam a coerência interna do sistema de pensamento do outro, reduzindo a incompreensão radical \cite{angenot2008dialogues}.
+
+
+    \item \textbf{Mecanismos de Estruturação do Debate:} Trata-se da forma como os debates são organizados na rede social, por \textit{posts}, comentários, \textit{threads}, canais de texto, etc. Sob a ótica de Angenot, é crucial entender e evidenciar a estrutura, as regras implícitas e os pressupostos em que o debate está localizado antes mesmo de começar a debater \cite{angenot2008dialogues}.
+
+    \item \textbf{Mecanismos de Contexto e Rastreabilidade:} Para mitigar o problema estrutural da \textit{incomensurabilidade discursiva}, as plataformas podem adotar recursos voltados à preservação da memória coletiva do debate, atuando como verdadeiros repositórios de conhecimento. Tais recursos incluem a anexação de \textit{wikis} às discussões, painéis de curadoria de links e a exigência arquitetônica de citação de fontes para afirmações factuais. Essa funcionalidade desloca o foco do conteúdo bruto para as "condições do diálogo", garantindo que os participantes saibam a origem das informações antes de argumentar \cite{angenot2008dialogues}.
+
+    \item \textbf{Mecanismos de Moderação Sistêmica e Algorítmica:} Quando o embate é consumido pela \textit{retórica da incompreensão} e pela polarização extrema, tornam-se necessárias intervenções de moderação capazes de redirecionar a interação a um debate mais produtivo. A adoção de camadas de moderação atua especificamente na detecção de evidências de diálogos improdutivos. A análise buscará entender como as plataformas utilizam moderadores humanos ou agentes de IA Generativa para atuar como filtradores ou sinalizadores quando um debate entra em uma espiral de toxicidade sistêmica. A IA, nesse contexto, atuaria como um agente capaz de detectar a quebra das regras de um debate produtivo, identificando lógicas incompatíveis e preservando a qualidade da interação.
+
+\end{itemize}
+
+% Esta abordagem algorítmica dialoga de maneira direta com o conceito de meta-comunicação derivado da obra de Marc Angenot \cite{angenotMeyerMichel20082009}, a qual defende que a explicitação dos pressupostos discursivos subjacentes é a principal chave para mitigar "diálogos de surdos" em debates digitais estruturalmente insolúveis. Ao inferir premissas implícitas e estruturar a avaliação do discurso, o uso da IA atua como um verdadeiro catalisador da Gestão do Conhecimento, reduzindo a ilusão da racionalidade e a retórica da incompreensão nas plataformas.
+
+Ao longo da análise empírica subsequente, buscaremos mapear como as plataformas descentralizadas e estruturadas operacionalizam ou negligenciam essas categorias, avaliando o potencial tecnológico de IAs generativas para facilitar a captura, estruturação e qualificação do conhecimento gerado no debate público.
+
+% [A ANÁLISE COMPARATIVA AINDA SERÁ REALIZADA]
+
+%  TABELA COMPARATIVA
+\begin{table*}[ht]
+\centering
+
+\caption{Análise comparativa de plataformas e seus mecanismos para mitigação de debates improdutivos.}
+\label{tab:comparacao-plataformas}
+
+\footnotesize
+\renewcommand{\arraystretch}{1.4}
+
+\begin{adjustbox}{max width=\textwidth}
+
+\begin{tabularx}{\textwidth}{|
+>{\centering\arraybackslash}m{1.8cm}|
+Y|Y|Y|Y|Y|
+}
+
+\hline
+
+\textbf{Plataforma}
+&
+\textbf{Desaceleração do Debate}
+&
+\textbf{Exibição de Divergências}
+&
+\textbf{Contexto e Rastreabilidade}
+&
+\textbf{Estruturação do Debate}
+&
+\textbf{Moderação Sistêmica e Algorítmica}
+\\
+
+\hline
+
+Discord
+&
+Implementa parcialmente, uso predominante de intervenção humana, quantitativa
+&
+Funcionalidade análoga, uso predominante de intervenção humana, implícita
+&
+Implementa parcialmente, uso predominante de intervenção humana, parcial
+&
+Implementa diretamente, uso híbrido, alta
+&
+Implementa diretamente, uso híbrido
+\\
+
+\hline
+
+Reddit
+&
+Funcionalidade análoga, uso predominante de intervenção humana, quantitativa
+&
+Não implementa, não aplicável, não implementada
+&
+Implementa parcialmente, uso predominante de intervenção humana, parcial
+&
+Implementa diretamente, uso híbrido, alta
+&
+Implementa diretamente, uso híbrido
+\\
+
+\hline
+
+Bluesky
+&
+Não implementa, não aplicável, não aplicável
+&
+Não implementa, não aplicável, não implementada
+&
+Implementa parcialmente, uso híbrido, parcial
+&
+Implementa parcialmente, uso híbrido, média
+&
+Implementa diretamente, uso híbrido
+\\
+
+\hline
+
+Mastodon
+&
+Implementa parcialmente, uso predominante de intervenção humana, quantitativa
+&
+Não implementa, não aplicável, não implementada
+&
+Funcionalidade análoga, uso predominante de intervenção humana, efêmera
+&
+Implementa parcialmente, uso predominante de intervenção humana, baixa
+&
+Implementa parcialmente, uso predominante de intervenção humana
+\\
+
+\hline
+
+Kialo
+&
+Funcionalidade análoga, uso predominante de intervenção humana, qualitativa
+&
+Implementa diretamente, uso predominante de intervenção humana, explícita
+&
+Implementa diretamente, uso predominante de intervenção humana, persistente
+&
+Implementa diretamente, uso predominante de intervenção humana, alta
+&
+Implementa parcialmente, uso predominante de intervenção humana
+\\
+
+\hline
+
+\end{tabularx}
+
+\end{adjustbox}
+
+\end{table*}
+
+\section{Análise das Plataformas Alternativas}
+
+A metodologia de classificação adotada nesta pesquisa utiliza três dimensões principais para avaliar cada mecanismo nas plataformas analisadas: funcionalidade, abordagem e classificações específicas por tipo de ferramenta. A Tabela~\ref{tab:comparacao-plataformas} permite uma visualização dos mecanismos e das dimensões analisadas neste estudo.
+
+% Parágrafo discutindo cada plataforma
+\subsection{Descrição dos Critérios de Classificação}
+
+A dimensão de funcionalidade determina o grau de aderência tecnológica ao conceito teórico. A categoria "Implementa diretamente" é atribuída quando a plataforma possui um recurso explicitamente alinhado ao mecanismo estudado. "Implementa parcialmente" refere-se a casos onde apenas parte das características esperadas é contemplada. A "Funcionalidade análoga" identifica soluções que, embora diferentes da proposta original, entregam resultados funcionalmente semelhantes. Por fim, "Não implementa" indica a ausência de evidências de mecanismos equivalentes.
+
+Quanto à abordagem, a classificação distingue o papel dos agentes envolvidos. O ``Uso predominante de IA/Bot''  caracteriza mecanismos dependentes majoritariamente de automação e algoritmos. O ``Uso predominante de intervenção humana'' destaca a centralidade de moderadores, administradores ou usuários no processo. O "Uso híbrido" sinaliza a combinação coordenada de ambas as forças, enquanto "Não aplicável" é reservado para a ausência de mecanismos suficientes para caracterização.
+
+As classificações específicas detalham a natureza da operação de cada mecanismo. Na desaceleração do debate, a categoria "Quantitativa" foca em limites de frequência e barreiras temporais, enquanto a "Qualitativa" prioriza o incentivo à reflexão e justificativas argumentativas. Na exibição de divergências, diferencia-se entre "Explícita", que utiliza mapas e visualizações formais, e "Implícita", onde as diferenças devem ser inferidas da estrutura discursiva. 
+
+
+
+A estruturação do debate é medida pelo grau de organização das discussões na plataforma, sendo classificada como Alta, Média ou Baixa. A classificação Alta corresponde a plataformas que oferecem estruturas temáticas robustas, como fóruns, \textit{threads} encadeadas, categorias específicas e sistemas de taxonomia que permitem segmentar o debate de forma lógica e aprofundada. A classificação Média indica a existência de mecanismos de organização parcial das interações, permitindo algum agrupamento de conteúdos, mas sem a complexidade ou a rigidez necessárias para uma estruturação temática mais completa. Já a classificação Baixa é atribuída a plataformas com recursos limitados de categorização, nas quais predominam fluxos de informação menos estruturados.
+
+O contexto e a rastreabilidade são avaliados pelo grau de persistência da memória coletiva, sendo classificados como Persistente, Parcial ou Efêmera. A categoria Persistente refere-se a plataformas que preservam de forma robusta o contexto das interações e o conhecimento produzido, mantendo informações facilmente recuperáveis ao longo do tempo. A categoria Parcial indica a existência de histórico e mecanismos de consulta, mas com limitações estruturais que podem dificultar a recuperação do contexto original das discussões. Por fim, a categoria Efêmera caracteriza plataformas em que o contexto é facilmente perdido ou fragmentado, devido à predominância de fluxos contínuos de informação e à baixa capacidade de retenção da memória coletiva.
+
+A moderação sistêmica classifica o nível de automação conforme descrito anteriormente, sendo categorizada em Uso predominante de IA/Bot, Uso híbrido e Não aplicável.
+
+
+%%%%%%%%%%%% Discussao sobre cada plataforma
+
+
+\subsection{Discord}
+
+O Discord operacionaliza a estruturação do debate através de uma arquitetura de canais temáticos, \textit{threads} e canais de fórum, exigindo a postagem clara de diretrizes para definir o comportamento esperado dos membros. A desaceleração é implementada de forma quantitativa pelo modo lento e por níveis de verificação que impõem esperas temporais de até dez minutos para novos usuários, visando mitigar comportamentos impulsivos e garantir que os novos usuários possam ler as regras de um determinado canal. A plataforma oferece funcionalidade análoga para a exibição de divergências via \textit{tags} de fórum, organizando perspectivas em postagens separadas. O contexto é preservado parcialmente através de mensagens fixadas e diretrizes de postagem que fornecem o quadro de regras para os participantes.
+
+As limitações do Discord são presentes na alta dependência da configuração manual por parte dos moderadores e na ausência de uma imposição arquitetônica global de um tempo de leitura médio voltado à profundidade do argumento. Além disso, mensagens fixadas são limitadas a um determinado número e a plataforma carece de ferramentas nativas para a construção de repositórios de conhecimento complexos ou \textit{wikis} integradas.
+
+Pode-se inferir que o Discord é robusto na segmentação e organização de interações, reduzindo efetivamente o caos de fluxos infinitos de informação e interações entre os usuários. Contudo, suas ferramentas de fricção são majoritariamente orientadas à segurança sistêmica e não necessariamente à qualidade do debate, atuando mais de forma quantitativa como um redutor do volume e não como um mediador de profundidade.
+
+A IA é utilizada na plataforma explicitamente no recurso \textit{AutoMod}, empregando aprendizado de máquina para detecção de spam e filtragem de conteúdos tóxicos em tempo real. A IA atua como uma espécie de "zelador", focada na remoção de violações óbvias, mas demonstra limitações ao não interpretar ambiguidades e trabalha com uma abordagem voltada a limpar o conteúdo de forma binária, ou seja, se o conteúdo viola os termos estabelecidos, deve ser removido e, em caso contrário, preservado.
+
+\subsection{Reddit}
+
+O Reddit estrutura o debate em comunidades descentralizadas , chamados de \textit{subreddits} com regras explícitas, utilizando etiquetas e \textit{wikis} para organizar o conhecimento cumulativo. A desaceleração ocorre por meio de uma funcionalidade análoga denominada \textit{Crowd Control}, que cria fricção seletiva ao filtrar ou colapsar comentários de usuários sem reputação consolidada na comunidade. A moderação sistêmica é implementada diretamente através de um sistema híbrido que combina o \textit{Automod} para ações automatizadas e o \textit{Mod Mode} para intervenções humanas rápidas. Por fim, a rastreabilidade é parcial, permitindo a verificação do histórico dos \textit{subreddits}.
+
+Algumas limitações observadas incluem a presença de monólogos paralelos, dado que o sistema de votação pode ocultar posições de minorias legítimas em favor da popularidade e da massa de usuários que vota em comentários populares, o que cria um ciclo vicioso. A manutenção de \textit{wikis} e a veracidade das informações dependem intensamente do esforço voluntário, sem suporte automatizado para tratar a \textit{incomensurabilidade discursiva}.
+
+Com isso, uma análise possível do Reddit sugere que a plataforma possui a infraestrutura mais robusta para evidenciar pressupostos e regras antes do debate. No entanto, sua moderação é tendencialmente reativa e as regras são predominantemente fraseadas de forma restritiva~\cite{leibmannRedditRulesRulers2025}, com uma abordagem que tende mais a exclusão e remoção de conteúdo em vez de redirecionar a interação para formas mais produtivas do debate.
+
+A inteligência artificial é empregada de forma explícita nos mecanismos de moderação automatizada da plataforma, atuando em conjunto com moderadores humanos e sistemas baseados em regras. O \textit{AI AutoModerator} utiliza LLMs  para analisar novas publicações de acordo com as regras específicas de cada \textit{subreddit}, permitindo identificar violações evidentes, reduzir tarefas repetitivas e aumentar a consistência das decisões de moderação. Em complemento, recursos como \textit{AutoMod}, filtros de \textit{spam} e \textit{Crowd Control} contribuem para mitigar comportamentos considerados disruptivos antes que estes afetem as discussões. 
+
+
+\subsection{Bluesky}
+
+O Bluesky implementa a estruturação do debate através de rotulagem comunitária e escolha algorítmica, permitindo que os usuários selecionem as regras e \textit{feeds} que definem sua experiência discursiva. A moderação sistêmica é implementada diretamente pelo modelo de moderação combinável, que empilha filtragem centralizada, ações de servidor e sistemas abertos de rótulos geridos por terceiros. A rastreabilidade é parcial no nível da interface, mas tecnicamente robusta na infraestrutura da plataforma, que mantém arquivos transparentes endereçados por conteúdo. Não existem mecanismos de desaceleração ou de exibição visual de divergências na interface padrão.
+
+
+As limitações da plataforma decorrem da herança estética de redes sociais tradicionais, onde a velocidade e a agilidade podem favorecer a impulsividade. A descentralização da moderação pode, paradoxalmente, criar bolhas onde grupos discordantes silenciam o debate.
+
+A partir da análise feita, pode-se observar que o Bluesky transfere a responsabilidade da metacomunicação para a comunidade, permitindo que grupos criem espaços discursivos com regras próprias. Este modelo substitui a moderação centralizada por uma governança que atende à necessidade de mitigar debates improdutivos, embora dependa da iniciativa de desenvolvedores para transformar dados técnicos em contexto visível para o usuário comum.
+
+A IA é incentivada arquitetonicamente, sendo utilizada na curadoria de \textit{feeds} e na geração automática de rótulos de moderação por agentes independentes. O protocolo da rede permite que IAs generativas atuem como sinalizadores de discursos de ódio ou lógica incompatível, operando de maneira autônoma dentro do ecossistema de rotulagem.
+
+\subsection{Mastodon}
+
+O Mastodon implementa parcialmente a desaceleração do debate através de limites de caracteres estendidos e do modo lento, que exige cliques deliberados para carregar novas postagens. A estruturação é parcial e baseada em regras de servidor que fundamentam a governança local e a metacomunicação institucional. A moderação é implementada parcialmente em níveis de usuário, servidor e sistêmico, permitindo o bloqueio de instâncias tóxicas inteiras para proteger a comunidade local. A rastreabilidade funciona de forma análoga por mecanismos de citação que preservam a referência à mensagem original e sinalizam sua indisponibilidade em caso de exclusão. Não há mecanismos para exibição de divergências.
+
+Os limites do Mastodon incluem o fato de a fricção ocorrer predominantemente no consumo da informação e não na produção, ou seja, respostas impulsivas ainda são possíveis e os ajustes ocorrem de forma reativa. A plataforma mantén a efemeridade das interações cronológicas e dependende excessivamente de moderação humana nos níveis da plataforma.
+
+O Mastodon é um exemplo de descentralização e autodeterminação comunitária, contudo a moderação ainda permanece binária: ou aceita-se o diálogo ou remove-se totalmente o dissenso via bloqueio. Isso pode impedir a mitigação de debates improdutivos, contudo pode contribuir para a produção de bolhas e também o aumento da percepção de censura algorítmica~\cite{brandiLLMMediatedNudgeBasedText}.
+
+Não há evidência de uso de inteligência artificial ou algoritmos preditivos na documentação analisada. Toda automação baseia-se em regras lógicas simples de correspondência de caracteres ou endereços de rede, deixando a governança do debate como uma tarefa estritamente humana.
+
+\subsection{Kialo Edu}
+
+O Kialo Edu implementa diretamente a exibição de divergências através de árvores argumentativas e gráficos circulares que mapeiam visualmente prós e contras em relação a uma tese central. A desaceleração possui funcionalidade análoga altamente eficaz, impondo limites restritos de duas frases por argumento, assincronicidade nas interações e exigindo aprovação prévia de um administrador em filas de sugestões. 
+
+A estruturação é alta, obrigando a alocação de contribuições de maneira clara em uma hierarquia lógica descendente de premissas e evidências. O contexto e a rastreabilidade são persistentes e de fácil consulta, contando com registro histórico de alterações e um painel centralizado de fontes obrigatórias.
+
+A principal limitação da plataforma é a necessidade de aprovação humana contínua, o que pode gerar cansaço em administradores, e gargalos de tempo de espera para aprovações. A interface exige um alto nível de letramento informacional dos usuários para destilar ideias em estruturas hierárquicas complexas, o que pode causar sobrecarga cognitiva ou restringir o perfil de usuário que utiliza a plataforma.
+
+O Kialo operacionaliza com excelência o rompimento da \textit{ilusão de racionalidade}, forçando premissas divergentes a habitarem o mesmo espaço visual de forma literal na exibição de divergências. Sua moderação sistêmica cataloga de maneira exata as patologias discursivas, agindo sobre as condições do diálogo antes mesmo da argumentação. 
+
+A inteligência artificial não é utilizada para estruturação ou moderação automática na plataforma. O sistema é fundamentado no design sociotécnico de interface e na curadoria humana participativa, o que mostra potencial para automatização via futuras implementações aumentadas por IA.
+
+\subsection{Discussão sobre os achados nas plataformas alternativvas}
+
+A análise comparativa demonstra que os mecanismos de estruturação do debate e moderação sistêmica são os mais frequentes, aparecendo com alta robustez em plataformas centralizadas como Discord e Reddit. Em contrapartida, os mecanismos de exibição de divergências e desaceleração qualitativa são extremamente raros, mostrando-se claros predominantemente no Kialo Edu, o que sinaliza uma lacuna significativa nas plataformas de um modo geral.
+
+Observa-se uma tendência de transição em plataformas descentralizadas, como Bluesky e Mastodon, para modelos de governança distribuída, embora com abordagens tecnológicas distintas: o Bluesky combina abordagem híbrida para oferecer sistemas flexíveis de rotulagem e moderação de conteúdo, enquanto o Mastodon privilegia uma governança federada baseada na autonomia dos servidores e na atuação predominante de moderadores humanos.
+
+A inteligência artificial, onde presente, atua majoritariamente como um agente de limpeza e segurança, atuando como um "zelador", e não como um mediador capaz de identificar características que produzem debates improdutivos e propor abordagens que o mitiguem. O protagonismo de moderação reativa sugere que o potencial de mitigação de debates improdutivos ainda depende fortemente do design de interface e da imposição de fricções que promovam a reflexão profunda dos participantes.
+
+
+
+%%%%%%%%%%%%%%%% MODELO CONCEITUAL
+
+
+\section{Um Modelo Conceitual para Mitigação de Debates Improdutivos}
+
+%%%%IMAGEM
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\linewidth]{images/modelo_debates_improdutivos_completo.png}
+\caption{Diagrama dos blocos funcionais e dimensões do modelo conceitual para a mitigação de debates improdutivos.}
+\label{fig:model}
+\end{figure}
+
+O objetivo deste modelo conceitual é fornecer subsídios teóricos e práticos para o \textit{design} e a avaliação de plataformas digitais que favoreçam debates produtivos. Partimos do pressuposto de que as mídias sociais operam como complexos ecossistemas de Gestão do Conhecimento, cuja dinâmica, evolução e fluxos informacionais moldam o comportamento coletivo~\cite{hemsleyNatureKnowledgeSocial2012a, pimentelCognitiveEthicalDesign2025}. Nesse ambiente, as \textit{affordances} tecnológicas, potencialidades de ação, determinam a visibilidade da comunicação, a articulação de redes e a transparência social, estruturando como os indivíduos interagem e se organizam~\cite{leonardiSocialMediaTheir2017}.
+
+A escolha do modelo \textit{Honeycomb}~\cite{kietzmannSocialMediaGet2011} como base arquitetônica justifica-se por uma necessidade de operacionalização. Enquanto a perspectiva das \textit{affordances} descreve relações emergentes entre usuários e tecnologia, de difícil tradução direta em prescrições de projeto, o \textit{Honeycomb} oferece uma decomposição funcional discreta e enumerável da experiência social, particularmente adequada à derivação de dimensões de \textit{design}. Cabe, contudo, uma ressalva epistemológica: o \textit{Honeycomb} foi originalmente concebido como ferramenta descritiva, voltada à compreensão de como organizações engajam audiências. Neste trabalho, o reaproveitamos convertendo cada bloco funcional em uma parte observada com o fim de produzir um \textit{design} para promover a produtividade do debate.
+
+O \textit{Honeycomb} define as mídias sociais por meio de sete blocos funcionais: a \textit{Identidade}, a extensão em que os usuários revelam quem são; as \textit{Conversações}, a natureza e a velocidade da comunicação mútua; o \textit{Compartilhamento}, a troca e distribuição de objetos sociais, como textos e \textit{links}; a \textit{Presença}, o conhecimento sobre a acessibilidade e a disponibilidade dos outros; os \textit{Relacionamentos}, as conexões estruturais e os fluxos de interação entre usuários; a \textit{Reputação}, o status social dos usuários e do próprio conteúdo; e os \textit{Grupos}, a capacidade de ordenar contatos e formar comunidades com regras próprias. O equilíbrio entre esses blocos dita a dinâmica informacional da plataforma.
+
+Cabe destacar que, conforme os próprios autores ressaltam, esses blocos não são mutuamente exclusivos~\cite{kietzmannSocialMediaGet2011}: um mesmo bloco pode ser mobilizado por mais de uma dimensão do nosso modelo, desde que sob facetas distintas. É o que ocorre, por exemplo, com a \textit{Reputação}, acionada tanto na qualificação da credibilidade do conteúdo quanto na sanção da conduta dos usuários. Para evitar ambiguidade, adotamos ao longo desta seção a seguinte convenção: os sete blocos do \textit{Honeycomb} são sempre grafados em itálico com inicial maiúscula; as cinco dimensões do modelo proposto são identificadas pelo nome próprio na primeira menção e referenciadas pela sigla D1--D5. A Figura~\ref{fig:model} mostrar um diagrama onde é possível observar a orquestração dos blocos do \textit{Honeycomb}, as dimensões do modelo e a camada transversal de IA Generativa.
+
+Quando configurados para maximizar o engajamento imediato, esses blocos frequentemente geram um ambiente hostil que interrompe a espiral do conhecimento de Nonaka~\cite{nonaka1994dynamic}. A socialização e a externalização, esta última, a articulação dialógica do conhecimento tácito em conhecimento explícito, colapsam diante da \textit{incomensurabilidade discursiva}. Para evitar essa ruptura, o modelo proposto reconfigura as funções sociais a partir de cinco dimensões de mitigação, que unem os achados empíricos das plataformas alternativas analisadas ao suporte da IA Generativa. Cada dimensão atua sobre uma faceta específica da espiral SECI: a Desaceleração Interacional (D1) restabelece as condições da Socialização; a Estruturação Argumentativa (D2), as da Externalização; a Curadoria Colaborativa (D3), as da Combinação; e a Exposição Mediada (D4), as da Internalização. A quinta dimensão, a Moderação Participativa (D5), não corresponde a uma fase isolada, mas sustenta as condições de governança que mantêm todo o ciclo operante.
+
+\subsection{Desaceleração Interacional (D1)}
+
+Esta dimensão atua sobre a temporalidade da interação e distingue-se da Estruturação Argumentativa (D2) porque opera sobre o ritmo do debate, e não sobre a forma de organização do conteúdo. Ela mobiliza dois blocos do \textit{Honeycomb}: as \textit{Conversações}, que nas redes tradicionais operam em altíssima velocidade, e a \textit{Presença}, cuja exibição constante induz à expectativa de disponibilidade imediata e, por consequência, a respostas impulsivas~\cite{kietzmannSocialMediaGet2011, oktaviaConceptualModelKnowledge2017}.
+
+O modelo propõe a mitigação dessa urgência por meio de fricções arquitetônicas que desacelerem tanto a velocidade conversacional quanto a expectativa por resposta imediata. Como exemplos, observa-se o Kialo limitando o tamanho dos argumentos para forçar a concisão assíncrona; o Discord empregando o \textit{Slow Mode} e barreiras temporais; e o Reddit utilizando o \textit{Crowd Control} para gerenciar o fluxo de usuários. Sob a ótica da GC, ao restaurar o tempo cognitivo e reduzir a hostilidade reativa, esta dimensão recompõe a confiança mútua e a partilha de experiências autênticas que constituem a base da Socialização~\cite{nonaka1994dynamic}. Nesta dimensão, a camada de IA atua predominantemente no papel de sensoriamento, monitorando a velocidade e a ``temperatura'' das \textit{Conversações} e acionando \textit{nudges}, ou seja, ``estímulos'' que visem a desaceleração ao detectar escalada afetiva~\cite{brandiLLMMediatedNudgeBasedText}.
+
+\subsection{Estruturação Argumentativa (D2)}
+Esta dimensão trata da forma como o conteúdo argumentativo é organizado e visualizado, distinguindo-se da Exposição Mediada (D4) por operar sobre divergências internas a um debate em curso e não sobre a entrada de perspectivas externas na rede do usuário. Ela mobiliza não só o \textit{Compartilhamento}, na medida em que o fluxo irrestrito de conteúdos em \textit{timelines} lineares favorece o caos informacional e os monólogos paralelos~\cite{kietzmannSocialMediaGet2011}, como também os \textit{Grupos}, uma vez que a estruturação do debate ocorre dentro de comunidades que definem os formatos e as regras de contribuição válidas.
+
+O modelo postula que as plataformas devem fornecer mecanismos visuais e estruturais que permitam identificar de maneira intuitiva os pressupostos de um debate, como as árvores de discussão pró/contra do Kialo, forçando a tipificação da postagem e combatendo a \textit{ilusão da racionalidade}. Propõe ainda mecanismos de exibição das divergências entre debatedores, de modo a viabilizar o mapeamento e a compreensão do sistema de crenças alheio. Em termos de GC, ao converter posições tácitas e dispersas em estruturas explícitas e compartilháveis, esta dimensão sustenta diretamente a Externalização~\cite{nonaka1994dynamic}. Aqui, a camada de IA assume o papel de estruturação e síntese, extraindo entidades, categorizando premissas e resumindo de maneiro visual cada ponto defendido, de modo que o usuário visualize a coerência da lógica adversária sem ruídos de ataques diretos.
+
+\subsection{Curadoria Colaborativa (D3)}
+
+Esta dimensão ocupa-se da proveniência e da persistência das evidências que fundamentam o debate, distinguindo-se da Moderação Participativa (D5) por qualificar o conteúdo, e não por sancionar a conduta. Ela mobiliza a \textit{Reputação} em sua faceta de credibilidade do conteúdo e não do status pessoal do usuário e a \textit{Identidade} na autoria das fontes citadas. 
+
+O modelo postula a criação de um repositório de memória coletiva verificável e rastreável, deslocando o foco do conteúdo bruto para as condições do diálogo. Sob a ótica da GC, ao sintetizar, indexar e agregar conhecimento explícito proveniente de fontes dispersas em bases recuperáveis, esta dimensão é a que mais diretamente opera o modo de Combinação da espiral SECI~\cite{nonaka1994dynamic}, precisamente o modo em que a literatura situa o maior potencial da IA Generativa como cocriadora de conhecimento. Com isso, a camada de IA desempenha aqui o papel de \textit{curadoria e verificação}, realizando buscas em tempo real para indexar evidências e contextos históricos do que já foi debatido, qualificando a credibilidade do conteúdo antes de sua disseminação~\cite{schneiderAImediatedCollaborativeCrowdsourcing2025, oktaviaConceptualModelKnowledge2017}.
+
+\subsection{Exposição Mediada a Perspectivas Divergentes (D4)}
+
+Esta dimensão regula a composição daquilo que o usuário encontra em sua rede, distinguindo-se da Estruturação (D2) porque atua sobre o \textit{feed} e os fluxos de \textit{Relacionamentos}, controlando a entrada de perspectivas externas, e não sobre a organização de um debate já instaurado. O bloco de \textit{Relacionamentos} cria um nível intermediário de interação, entre o indivíduo e o coletivo, necessário para a criação de conhecimento em conjunto~\cite{sigalaKnowledgeManagementSocial2015a}. Contudo, observa-se uma tensão inerente ao processo deliberativo. Enquanto níveis elevados de homofilia favorecem a formação de câmaras de eco, a exposição abrupta a perspectivas fortemente divergentes pode produzir resistência cognitiva e reforçar crenças preexistentes. Assim, a simples ampliação da diversidade de opiniões não garante, por si só, uma maior abertura ao diálogo~\cite{pimentelEvaluationCollaborativeCuration2018, alatawiSurveyEchoChambers2021}. 
+
+O modelo postula que o efeito despolarizador depende da calibração da exposição, sua distância ideológica, frequência e gradualidade. Um exemplo de implementação é a inserção de conteúdo em doses homeopáticas~\cite{pimentelEstrategiaEspiralReforco2024}: um movimento pendular entre conforto informacional e dissenso suave que, em consonância com Angenot, não visa à persuasão, que recairia na \textit{ilusão da racionalidade}, mas à exposição controlada do usuário à coerência interna do sistema de pensamento alheio. Sob a ótica da GC, ao incorporar perspectivas externas ao repertório do indivíduo, esta dimensão favorece a Internalização~\cite{nonaka1994dynamic}. A camada de IA atua aqui no papel de mediação da exposição, mapeando a polaridade dos \textit{Relacionamentos} e introduzindo, de forma sutil e progressiva, conteúdos cognitivamente moderados sob um design ético-cognitivo~\cite{schneiderAImediatedCollaborativeCrowdsourcing2025, pimentelEvaluationCollaborativeCuration2018}.
+
+\subsection{Moderação Participativa (D5)}
+
+Esta dimensão trata da governança da conduta e das normas das comunidades, distinguindo-se da Curadoria (D3) por regular o comportamento, e não por qualificar o conteúdo. Ela mobiliza os \textit{Grupos}, em sua faceta de regras e protocolos de membresia, e a \textit{Reputação}, tanto como indicador do aspecto comportamental dos usuários quanto como mecanismo para aplicar restrições. A centralização do controle afeta diretamente a flexibilidade com que os \textit{Grupos} definem e gerenciam sua própria \textit{Reputação} e segurança~\cite{kietzmannSocialMediaGet2011}.
+
+O modelo postula que a moderação opere em dois modos complementares, acionados conforme o momento do ciclo de vida do debate. A moderação proativa atua antes da instauração do debate improdutivo, configurando o espaço discursivo por meio das regras explícitas dos \textit{Grupos} protocolos de participação, critérios de admissão e diretrizes de conduta que tornam visíveis, de antemão, os pressupostos e as regras implícitas da discussão. Sob a òtica de Angenot, trata-se de explicitar as condições do diálogo antes que a argumentação degenere. A moderação reativa, por sua vez, atua durante um debate que se deteriora, mobilizando a \textit{Reputação} comportamental para sancionar, sinalizar ou conter a escalada quando a interação já se aproxima de um debate improdutico. Nesse sentido, a camada de IA cumpre o papel de mediador sociotécnico: em vez de decidir autonomamente o desfecho, ela sumariza históricos comportamentais, detecta violações explícitas e implícitas de normas dos \textit{Grupos} e oferece alternativas e caminhos de mitigação, reformulações, rotulagens sugeridas de \textit{Reputação}, encaminhamentos reservando ao mediador humano a decisão ética final~\cite{zhangAttitudesImaginedRoles2026, brandiLLMMediatedNudgeBasedText}.
+
+A operacionalização dessa governança não pressupõe um centro de controle único, mas uma governança distribuída, na qual a responsabilidade normativa é devolvida às próprias comunidades. O Bluesky exemplifica essa lógica com sua moderação participativa, permitindo que algoritmos e curadorias comunitárias atuem de forma sobreposta e componível. O Reddit, por sua vez, devolve aos gestores locais, por meio dos \textit{subreddits}, a responsabilidade pela criação e aplicação de normas.
+
+Essa descentralização preserva a autonomia comunitária e a pluralidade de regimes normativos, mas carrega um risco já evidenciado em nossa análise: ao permitir que cada comunidade defina suas próprias fronteiras, a governança distribuída pode favorecer o fechamento em bolhas, nas quais grupos discordantes silenciam-se mutuamente em vez de se confrontarem produtivamente. Este, contudo, não é um defeito intrínseco da dimensão, mas o resultado de tomá-la isoladamente. 
+
+
+O modelo é concebido para operar de forma sistêmica e integrada. O risco de fragmentação introduzido por D5 é contrabalançado pela Exposição Mediada (D4), que reintroduz de forma calibrada perspectivas externas ao perímetro da comunidade, e pela Estruturação Argumentativa (D2), que torna as divergências visíveis e inteligíveis em vez de invisíveis e evitadas. Portanto, a composição das cinco dimensões, e não a aplicação avulsa de qualquer uma delas, que sustenta a mitigação dos debates improdutivos sem sacrificar a exposição à pluralidade. Diferentemente das demais, esta dimensão não corresponde a uma fase isolada da espiral SECI, ela sustenta as condições de governança sem as quais nenhuma das outras fases se mantém operante~\cite{nonaka1994dynamic}.
+
+
+% Esta dimensão trata da governança da conduta e das normas das comunidades, distinguindo-se da Curadoria (D3) por regular o comportamento e não por qualificar o conteúdo. Ela mobiliza os \textit{Grupos}, em seu conjunto de regras e protocolos, e a \textit{Reputação} estabelecida para indicar o aspecto comportamental e também ser utilizada como mecanismo para aplicar restrições. A centralização do controle afeta diretamente a flexibilidade com que os \textit{Grupos} definem e gerenciam sua própria \textit{Reputação} e segurança~\cite{kietzmannSocialMediaGet2011}. Nesse sentido, o Bluesky inova com sua moderação participativa, permitindo que algoritmos e curadorias comunitárias atuem de forma sobreposta, já o Reddit, por governança descentralizada, devolve aos gestores locais, por meio de \textit{subreddits}, a responsabilidade pela criação de normas. 
+
+% Diferentemente das demais, esta dimensão não corresponde a uma fase isolada do SECI: ela sustenta as condições de governança, confiança, reversibilidade e responsabilização, sem as quais nenhuma das outras fases da espiral se mantém operante. A camada de IA cumpre aqui o papel de apoio à mediação, sumarizando históricos comportamentais, detectando violações explícitas e implícitas de normas de \textit{Grupos} e sugerindo rotulagens de \textit{Reputação}~\cite{zhangAttitudesImaginedRoles2026, brandiLLMMediatedNudgeBasedText}. 
+
+\subsection{A Camada Transversal de Mediação por IA Generativa}
+
+A IA Generativa não constitui uma dimensão do modelo, mas uma camada transversal de mediação sociotécnica que atravessa todas as dimensões sob o princípio da simbiose humano-IA: a IA assume tarefas de sensoriamento, estruturação, curadoria, mediação da exposição e apoio à governança, reservando ao ator humano a deliberação, o senso crítico e a decisão ética final~\cite{jarrahiArtificialIntelligenceKnowledge2023}.
+
+Em cada dimensão, esses papéis se especializam, do monitoramento da velocidade conversacional (D1) à sugestão de rotulagens de moderação (D5), mas obedecem à mesma lógica: ampliar as capacidades cognitivas dos participantes sem substituir o julgamento humano. Os cinco papéis distribuem-se da seguinte forma: o sensoriamento de anomalias discursivas atende sobretudo a D1 e D5, a estruturação e síntese argumentativa concentra-se em D2, a curadoria e verificação de fontes concentra-se em D3, a mediação da exposição sustenta D4, e o apoio à decisão de governança opera em D5. Essa organização transversal evita que a IA seja tratada apenas como um apêndice de cada componente do modelo e a reposiciona, coerentemente com a RQ2, como uma infraestrutura de GC ampliada.
+
+Abaixo, apresento a seção em LaTeX para o seu artigo, estruturada de forma científica e impessoal. Conforme solicitado, o texto foi redigido sem o uso de comandos de citação ou referências bibliográficas externas, focando exclusivamente na aplicação lógica do modelo conceitual sobre os dados do caso empírico.
+
+\section{Aplicação Prática do Modelo: Análise de Caso Empírico}
+
+Nesta seção, demonstra-se a aplicação do modelo conceitual proposto para a mitigação de debates improdutivos por meio de um cenário real de interação em rede social. O caso analisado baseia-se em uma interação ocorrida na plataforma Instagram, cujos comentários exemplificam as disfuncionalidades discursivas que o modelo visa identificar, organizar e mitigar. A análise estabelece um mapeamento entre os componentes teóricos do modelo e o comportamento observado no ambiente digital. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\linewidth]{images/image_flavio_bolsonaro.png}
+\caption{Seção de comentários de um \textit{post} retirado do perfil do Senador Flávio Bolsonaro na plataforma Instagram.}
+\label{fig:post-flavio-bolsonaro}
+\end{figure}
+
+\subsection{Caracterização do Debate Improdutivo}
+
+O caso empírico revela um padrão de interação que pode ser classificado como um debate improdutivo. Observa-se que a comunicação falha não por falta de lógica individual, mas por uma condição estrutural onde os participantes operam em universos discursivos incompatíveis. Os seguintes padrões discursivos no \textit{post} referenciado pela Figura~\ref{fig:post-flavio-bolsonaro} foram:
+
+\begin{itemize}
+    \item \textbf{Retórica da Incompreensão:} Verificou-se a incapacidade dos participantes de reconhecerem o interlocutor como um ser racional. O debate degenera rapidamente para o ataque pessoal e a deslegitimação, com o uso de termos ofensivos como ``idiota'' e ``vergonha da profission''.
+    \item \textbf{Incomensurabilidade Discursiva:} Os emissores utilizam critérios de verdade distintos, onde acusações de ordem moral e rumores sobre a vida privada são utilizados para invalidar posicionamentos políticos, impossibilitando um terreno comum para a argumentação.
+    \item \textbf{Ilusão da Racionalidade:} As interações configuram-se como monólogos paralelos. Os emissores argumentam para justificar suas próprias posições perante sua audiência, sem uma intenção real de compreensão mútua ou troca de conhecimento.
+\end{itemize}
+
+\begin{table*}[!htb]
+\centering
+\caption{Mapeamento da Intervenção do Modelo no Caso Real}
+\label{tab:mapeamento}
+\small
+\begin{tabularx}{\textwidth}{|>{\hsize=0.7\hsize}X|>{\hsize=1.1\hsize}X|>{\hsize=1.1\hsize}X|>{\hsize=1.1\hsize}X|}
+\hline
+\textbf{Componente} & \textbf{Descrição Teórica} & \textbf{Aplicação no Caso Real} & \textbf{Resultado Esperado} \\ \hline
+Desaceleração Interacional (D1) & Redução da urgência e reatividade conversacional. & Imposição de tempo de leitura antes de permitir ofensas impulsivas. & Diminuição da agressividade e estímulo à reflexão. \\ \hline
+Estruturação Argumentativa (D2) & Organização do debate em árvores e mapas lógicos. & Transformação da timeline linear em árvore de argumentos pró/contra. & Visualização clara dos pontos de dissenso e fim de monólogos paralelos. \\ \hline
+Curadoria Colaborativa (D3) & Criação de memória coletiva baseada em evidências. & Exigência de fontes para rumores e acusações de comportamento. & Aumento da qualidade informacional e redução de difamações. \\ \hline
+Exposição Mediada (D4) & Calibração gradual de perspectivas divergentes. & Introdução de contra-argumentos técnicos via algoritmos de curadoria. & Quebra de câmaras de eco e redução da resistência cognitiva. \\ \hline
+Moderação Participativa (D5) & Governança distribuída com suporte de IA. & Sinalização feita por IA e humanos de ataques pessoais e termos tóxicos. & Manutenção de um ambiente seguro e voltado ao diálogo. \\ \hline
+\end{tabularx}
+\end{table*}
+
+
+\subsection{Mapeamento do Modelo e Intervenções Sugeridas}
+
+A aplicação das dimensões do modelo conceitual permite projetar como mecanismos de design e inteligência artificial poderiam transformar a natureza dessa interação. A Tabela \ref{tab:mapeamento} apresenta a síntese da aplicação dos componentes do modelo conceitual ao fenômeno observado no \textit{post} real.
+
+
+\textbf{D1 -- Desaceleração Interacional:} No \textit{post} analisado, a reatividade é imediata e agressiva. A aplicação de fricções arquitetônicas, como temporizadores que exigem um tempo mínimo de leitura antes da postagem ou limites de caracteres que favoreçam o aprofundamento, atuaria para quebrar a impulsividade. O objetivo é restaurar o tempo cognitivo necessário para a reflexão, mitigando a escalada de conflitos afetivos.
+
+\textbf{D2 -- Estruturação Argumentativa:} A interface linear do Instagram favorece o caos informacional. O modelo propõe a transição para estruturas não lineares, como árvores de discussão. No caso real, isso permitiria separar as manifestações de apoio político das acusações pessoais e rumores,  tornando visíveis os pressupostos de cada lado, combatendo a confusão no debate e ataques de cunho identitário.
+
+\textbf{D3 -- Curadoria Colaborativa:} Observou-se a disseminação de rumores sem comprovação factual. A aplicação de mecanismos de curadoria exigiria a citação de fontes para afirmações factuais e a criação de um repositório de evidências. A Inteligência Artificial atuaria aqui na verificação de procedência e na indexação de contextos históricos, qualificando a credibilidade do conteúdo antes que a desinformação se propague no debate.
+
+\textbf{D4 -- Exposição Mediada a Perspectivas Divergentes:} Para romper as bolhas e a hostilidade, a exposição  calibrada de perspectivas divergentes será introduzida. Em vez de uma disseminação abrupta que gera resistência, a IA regularia o fluxo de interações para introduzir contra-argumentos moderados, focando na coerência interna do sistema de pensamento alheio em vez da persuasão direta.
+
+\textbf{D5 -- Moderação Participativa:} Atualmente, a moderação no caso observado parece ausente e caso fosse realizada teria um foco majoritariamente reativo, como a exclusão dos comentários. O modelo propõe uma governança onde a IA atua como mediadora sociotécnica, detectando a quebra de regras, ofensas gratuitas, discursos de ódio, hostilidade e padrões que caracterizam debates improdutivos. Com isso, oferecia alternativas de reformulação de linguagem antes da postagem ou sinalizar tanto para os usuários quanto para moderadores humanos.
+
+A análise do caso empírico demonstra que a disfuncionalidade do debate no Instagram é impulsionada por uma arquitetura que valoriza o engajamento métrico e a velocidade. A aplicação do modelo conceitual sugere que, ao reconfigurar a infraestrutura sociotécnica para priorizar aspectos de GC, é possível interromper a retórica da incompreensão. 
+
+A transformação do caos interacional em estruturas inteligíveis, apoiada pela IA na função de curadoria e síntese, permitiria que a espiral de criação de conhecimento coletivo fosse restabelecida. Em vez de interações fragmentadas e estagnadas, a aplicação do modelo favorece a externalização do conhecimento tácito em bases explícitas e compartilháveis. Conclui-se que o modelo é uma ferramenta útil para projetistas e gestores que buscam mitigar a polarização e promover debates públicos mais saudáveis em cenários digitais reais.
+
+\section{Discussão}
+
+A análise dos resultados e a proposição do modelo conceitual revelam que a crise da deliberação digital não é uma falha comportamental isolada, mas o resultado direto de escolhas arquiteturais que priorizam o engajamento métrico em detrimento da qualidade do conhecimento. Os debates improdutivos observados nas redes tradicionais são catalisados por interfaces que sufocam a reflexão e premiam a reatividade. Sob a ótica da GC, o que ocorre é um colapso sistemático da espiral de criação do conhecimento: sem confiança mútua e sem um terreno comum de evidências, os processos de socialização e externalização tornam-se inviáveis.
+
+Como vimos, um ponto crítico a ser discutido é o papel da IA Generativa nesse ecossistema. Enquanto as plataformas tradicionais utilizam algoritmos como ``zeladores'' ou filtros binários de exclusão, o modelo proposto defende a transição para uma IA que atue como infraestrutura de governança e mediação sociotécnica. O diferencial analítico reside na simbiose humano-IA em que a tecnologia não deve substituir o julgamento ético ou o dissenso ideológico, mas sim reduzir a sobrecarga cognitiva dos participantes ao estruturar o caos informacional em premissas inteligíveis. Sob essa ótica, a IA pode atuar como um grande auxiliar na redução dos debates improdutivos permitindo que o debate avance da retórica da incompreensão para a construção de consensos ou dissensos qualificados.
+
+Além disso, a comparação entre as plataformas alternativas destaca uma lacuna significativa: raramente os mecanismos de desaceleração interacional e de exibição de divergências são implementados de forma integrada. O sucesso de ferramentas como o Kialo em estruturar logicamente o debate contrasta com a sua baixa atratividade de massa, enquanto redes descentralizadas como Mastodon e Bluesky, apesar de devolverem a soberania aos usuários, ainda herdam estéticas de interface que favorecem a impulsividade ou o desenvolvimento de bolhas. A discussão aponta que a mitigação da polarização exige um compromisso entre a liberdade de expressão e a imposição de fricções deliberadas, sugerindo que o \textit{design} de sistemas sociotécnicos deve ser, antes de tudo, um design pedagógico e ético.
+
+\section{Conclusão}
+
+Este trabalho buscou analisar a problemática dos debates improdutivos sob a perspectiva da Gestão do Conhecimento ampliado por IA. Observou-se que a superação dos debates improdutivos no ambiente digital requer mais do que o simples aumento da diversidade de opiniões. É necessário uma reconfiguração profunda das infraestruturas sociotécnicas que sustentam o diálogo público. O modelo conceitual proposto oferece um \textit{framework} para que projetistas e gestores de governança possam operacionalizar espaços digitais onde o conflito ideológico não degenere em polarização afetiva e estagnação intelectual.
+
+A principal contribuição analítica reside na integração das cinco dimensões de mitigação com o suporte transversal da IA Generativa. Ao transformar monólogos paralelos em estruturas argumentativas explícitas e ao calibrar a exposição do usuário a perspectivas divergentes de forma moderada, o modelo busca restaurar as bases necessárias para que a democracia digital seja de fato produtiva. A IA deixa de ser uma ferramenta de controle ou apenas um ``zelador'' para se tornar uma aliada na curadoria e na preservação da memória coletiva, garantindo a rastreabilidade das evidências e a transparência dos pressupostos.
+
+Por fim, ressalta-se que o redesenho estrutural das redes sociais é um imperativo para a saúde das democracias contemporâneas. Trabalhos futuros deverão focar na implementação empírica dessas dimensões e na avaliação do impacto dessas intervenções na percepção dos usuários e na qualidade deliberativa dos diálogos.
+
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+\end{document}

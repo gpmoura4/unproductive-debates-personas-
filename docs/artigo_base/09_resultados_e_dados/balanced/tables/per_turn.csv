@@ -1,0 +1,161 @@
+topic,pair_id,replicate,condition,turn,persona_id,judge_score,judge_runs,unanimous,moderated,reformulated,moderator_score,off_threshold
+Abortion,pair-00,1,control,1,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-00,1,control,2,persona_2,2,2|2|2,True,False,False,,False
+Abortion,pair-00,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-00,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-00,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-00,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-00,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Abortion,pair-00,1,control,8,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-00,1,treatment,1,persona_1,1,1|1|1,True,True,False,0,False
+Abortion,pair-00,1,treatment,2,persona_2,1,1|1|1,True,True,True,3,False
+Abortion,pair-00,1,treatment,3,persona_1,1,1|1|1,True,True,True,2,False
+Abortion,pair-00,1,treatment,4,persona_2,1,1|1|1,True,True,True,3,False
+Abortion,pair-00,1,treatment,5,persona_1,3,3|3|3,True,True,True,3,False
+Abortion,pair-00,1,treatment,6,persona_2,2,2|2|2,True,True,True,4,False
+Abortion,pair-00,1,treatment,7,persona_1,3,3|3|3,True,True,True,4,False
+Abortion,pair-00,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Abortion,pair-01,1,control,1,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-01,1,control,2,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-01,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-01,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-01,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-01,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-01,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Abortion,pair-01,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-01,1,treatment,1,persona_1,2,2|2|2,True,True,False,1,False
+Abortion,pair-01,1,treatment,2,persona_2,2,2|2|2,True,True,True,3,False
+Abortion,pair-01,1,treatment,3,persona_1,2,2|2|2,True,True,True,3,False
+Abortion,pair-01,1,treatment,4,persona_2,3,3|3|3,True,True,True,3,False
+Abortion,pair-01,1,treatment,5,persona_1,2,2|2|2,True,True,True,3,False
+Abortion,pair-01,1,treatment,6,persona_2,3,3|3|3,True,True,True,4,False
+Abortion,pair-01,1,treatment,7,persona_1,3,3|3|3,True,True,True,4,False
+Abortion,pair-01,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Abortion,pair-02,1,control,1,persona_1,2,2|2|2,True,False,False,,False
+Abortion,pair-02,1,control,2,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-02,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-02,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-02,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-02,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-02,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Abortion,pair-02,1,control,8,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-02,1,treatment,1,persona_1,1,1|1|1,True,True,False,1,False
+Abortion,pair-02,1,treatment,2,persona_2,1,1|1|1,True,True,True,2,False
+Abortion,pair-02,1,treatment,3,persona_1,1,1|1|1,True,True,True,2,False
+Abortion,pair-02,1,treatment,4,persona_2,1,1|1|1,True,True,True,3,False
+Abortion,pair-02,1,treatment,5,persona_1,2,2|2|2,True,True,True,2,False
+Abortion,pair-02,1,treatment,6,persona_2,3,3|3|3,True,True,True,4,False
+Abortion,pair-02,1,treatment,7,persona_1,1,1|1|1,True,True,True,4,False
+Abortion,pair-02,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Abortion,pair-03,1,control,1,persona_1,2,2|2|2,True,False,False,,False
+Abortion,pair-03,1,control,2,persona_2,2,2|2|2,True,False,False,,False
+Abortion,pair-03,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-03,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-03,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-03,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-03,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Abortion,pair-03,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-03,1,treatment,1,persona_1,1,1|1|1,True,True,False,1,False
+Abortion,pair-03,1,treatment,2,persona_2,2,2|2|2,True,True,True,2,False
+Abortion,pair-03,1,treatment,3,persona_1,3,3|3|3,True,True,True,3,False
+Abortion,pair-03,1,treatment,4,persona_2,2,2|2|2,True,True,True,2,False
+Abortion,pair-03,1,treatment,5,persona_1,3,3|3|3,True,True,True,3,False
+Abortion,pair-03,1,treatment,6,persona_2,1,1|1|1,True,True,True,4,False
+Abortion,pair-03,1,treatment,7,persona_1,3,3|3|3,True,True,True,4,False
+Abortion,pair-03,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Abortion,pair-04,1,control,1,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-04,1,control,2,persona_2,2,2|2|2,True,False,False,,False
+Abortion,pair-04,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-04,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Abortion,pair-04,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Abortion,pair-04,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-04,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Abortion,pair-04,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Abortion,pair-04,1,treatment,1,persona_1,1,1|1|1,True,True,False,1,False
+Abortion,pair-04,1,treatment,2,persona_2,1,1|1|1,True,True,True,2,False
+Abortion,pair-04,1,treatment,3,persona_1,1,1|1|1,True,True,True,3,False
+Abortion,pair-04,1,treatment,4,persona_2,1,1|1|1,True,True,True,3,False
+Abortion,pair-04,1,treatment,5,persona_1,1,1|1|1,True,True,True,3,False
+Abortion,pair-04,1,treatment,6,persona_2,3,3|3|3,True,True,True,4,False
+Abortion,pair-04,1,treatment,7,persona_1,3,3|3|3,True,True,True,4,False
+Abortion,pair-04,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Drug Legalization,pair-00,1,control,1,persona_1,2,2|2|2,True,False,False,,False
+Drug Legalization,pair-00,1,control,2,persona_2,2,2|2|2,True,False,False,,False
+Drug Legalization,pair-00,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-00,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-00,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-00,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-00,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-00,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-00,1,treatment,1,persona_1,2,2|2|2,True,True,False,1,False
+Drug Legalization,pair-00,1,treatment,2,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-00,1,treatment,3,persona_1,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-00,1,treatment,4,persona_2,1,1|1|1,True,True,True,2,False
+Drug Legalization,pair-00,1,treatment,5,persona_1,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-00,1,treatment,6,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-00,1,treatment,7,persona_1,3,3|3|3,True,True,True,4,False
+Drug Legalization,pair-00,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Drug Legalization,pair-01,1,control,1,persona_1,1,1|1|1,True,False,False,,False
+Drug Legalization,pair-01,1,control,2,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-01,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-01,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-01,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-01,1,control,6,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-01,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-01,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-01,1,treatment,1,persona_1,1,1|1|1,True,True,True,2,False
+Drug Legalization,pair-01,1,treatment,2,persona_2,2,2|2|2,True,True,True,2,False
+Drug Legalization,pair-01,1,treatment,3,persona_1,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-01,1,treatment,4,persona_2,1,1|1|1,True,True,True,3,False
+Drug Legalization,pair-01,1,treatment,5,persona_1,3,3|3|3,True,True,True,3,False
+Drug Legalization,pair-01,1,treatment,6,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-01,1,treatment,7,persona_1,3,3|3|3,True,True,True,4,False
+Drug Legalization,pair-01,1,treatment,8,persona_2,2,2|2|2,True,True,True,4,False
+Drug Legalization,pair-02,1,control,1,persona_1,2,2|2|2,True,False,False,,False
+Drug Legalization,pair-02,1,control,2,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-02,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-02,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-02,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-02,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-02,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-02,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-02,1,treatment,1,persona_1,2,2|2|2,True,True,True,2,False
+Drug Legalization,pair-02,1,treatment,2,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-02,1,treatment,3,persona_1,1,1|1|1,True,True,True,3,False
+Drug Legalization,pair-02,1,treatment,4,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-02,1,treatment,5,persona_1,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-02,1,treatment,6,persona_2,1,1|1|1,True,True,True,3,False
+Drug Legalization,pair-02,1,treatment,7,persona_1,1,1|1|1,True,True,True,4,False
+Drug Legalization,pair-02,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Drug Legalization,pair-03,1,control,1,persona_1,1,1|1|1,True,False,False,,False
+Drug Legalization,pair-03,1,control,2,persona_2,2,2|2|2,True,False,False,,False
+Drug Legalization,pair-03,1,control,3,persona_1,2,2|2|2,True,False,False,,False
+Drug Legalization,pair-03,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-03,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-03,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-03,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-03,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-03,1,treatment,1,persona_1,2,2|2|2,True,True,False,1,False
+Drug Legalization,pair-03,1,treatment,2,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-03,1,treatment,3,persona_1,1,1|1|1,True,True,True,3,False
+Drug Legalization,pair-03,1,treatment,4,persona_2,1,1|1|1,True,True,True,3,False
+Drug Legalization,pair-03,1,treatment,5,persona_1,1,1|1|1,True,True,True,2,False
+Drug Legalization,pair-03,1,treatment,6,persona_2,1,1|1|1,True,True,True,4,False
+Drug Legalization,pair-03,1,treatment,7,persona_1,3,3|3|3,True,True,True,3,False
+Drug Legalization,pair-03,1,treatment,8,persona_2,3,3|3|3,True,True,True,4,False
+Drug Legalization,pair-04,1,control,1,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-04,1,control,2,persona_2,2,2|2|2,True,False,False,,False
+Drug Legalization,pair-04,1,control,3,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-04,1,control,4,persona_2,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-04,1,control,5,persona_1,3,3|3|3,True,False,False,,False
+Drug Legalization,pair-04,1,control,6,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-04,1,control,7,persona_1,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-04,1,control,8,persona_2,4,4|4|4,True,False,False,,False
+Drug Legalization,pair-04,1,treatment,1,persona_1,1,1|1|1,True,True,False,1,False
+Drug Legalization,pair-04,1,treatment,2,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-04,1,treatment,3,persona_1,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-04,1,treatment,4,persona_2,1,1|1|1,True,True,True,3,False
+Drug Legalization,pair-04,1,treatment,5,persona_1,1,1|1|1,True,True,True,2,False
+Drug Legalization,pair-04,1,treatment,6,persona_2,2,2|2|2,True,True,True,3,False
+Drug Legalization,pair-04,1,treatment,7,persona_1,3,3|3|3,True,True,True,4,False
+Drug Legalization,pair-04,1,treatment,8,persona_2,4,4|4|4,True,True,True,4,False

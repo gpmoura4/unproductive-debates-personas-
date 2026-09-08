@@ -1,0 +1,11 @@
+topic,pair_id,replicate,control_mean,treatment_mean,delta,control_id,treatment_id
+Abortion,pair-00,1,3.125,1.875,-1.25,20260901-220209_abortion_pair-00_control,20260901-222849_abortion_pair-00_treatment
+Abortion,pair-01,1,3.375,2.5,-0.875,20260901-230150_abortion_pair-01_control,20260901-232737_abortion_pair-01_treatment
+Abortion,pair-02,1,3.125,1.625,-1.5,20260902-000153_abortion_pair-02_control,20260902-003022_abortion_pair-02_treatment
+Abortion,pair-03,1,3.125,2.25,-0.875,20260902-010208_abortion_pair-03_control,20260902-012918_abortion_pair-03_treatment
+Abortion,pair-04,1,3.25,1.75,-1.5,20260902-020328_abortion_pair-04_control,20260902-022809_abortion_pair-04_treatment
+Drug Legalization,pair-00,1,3.125,2.125,-1.0,20260902-040412_drug-legalization_pair-00_control,20260902-042557_drug-legalization_pair-00_treatment
+Drug Legalization,pair-01,1,3,2,-1,20260902-050452_drug-legalization_pair-01_control,20260902-052857_drug-legalization_pair-01_treatment
+Drug Legalization,pair-02,1,3.25,1.75,-1.5,20260902-060703_drug-legalization_pair-02_control,20260902-062848_drug-legalization_pair-02_treatment
+Drug Legalization,pair-03,1,2.875,1.75,-1.125,20260902-070509_drug-legalization_pair-03_control,20260902-072749_drug-legalization_pair-03_treatment
+Drug Legalization,pair-04,1,3.25,2,-1.25,20260902-080429_drug-legalization_pair-04_control,20260902-082649_drug-legalization_pair-04_treatment

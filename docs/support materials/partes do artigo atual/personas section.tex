@@ -1,0 +1,175 @@
+\subsection{Personas: Seleção e Classificação}
+
+As personas foram extraídas de um \textit{dataset} estruturado de um milhão de
+registros~\cite{li2026matraix}, no qual cada persona armazena 1.290 dimensões
+categóricas de forma compactada, acompanhadas de um mapa de bits que assinala
+dimensões nulas. A convenção de decodificação não é documentada e precisou ser
+descoberta empiricamente; sua validação foi feita contra o campo de descrição
+textual da mesma persona, comparando cada valor decodificado com a descrição
+em linguagem natural gerada independentemente para aquele registro. Essa
+verificação é condição de defensabilidade de toda a pipeline: uma convenção
+incorreta produziria personas internamente coerentes, porém desvinculadas dos
+dados de origem.
+
+A classificação em polos políticos segue uma regra explícita, fundamentada em
+quatro obras, e organizada em três componentes: uma âncora que norteia o polo, indicadores
+principais (Eixo econômico) e indicadores secundários (Eixo social). Primeiramente, o critério que define o polo político é a posição da persona frente à igualdade, conforme o trabalho de Bobbio~\cite{bobbio1995direita}: a esquerda concebe a desigualdade como socialmente produzida e removível, já a direita, como natural ou inevitável para o progresso da sociedade. A escolha desse critério como âncora se deu pela sua relevância atual ter se mantido mesmo com um tempo considerável ter se passado desde sua formulação. Além do critério fundamentar a âncora, ele também certifica os indicadores principais do eixo econômico. 
+
+Jost et al.~\cite{jost2003political} fundamentam os indicadores
+secundários do eixo social, ao definir o núcleo do conservadorismo como
+resistência à mudança somada à justificação da desigualdade. Piurko, Schwartz e
+Davidov~\cite{piurko2011basic} sustentam o mapeamento de prioridade de valores, sendo o 
+universalismo e benevolência os quais predizem esquerda, enquanto conformidade e tradição
+predizem direita. Feldman e Johnston~\cite{feldman2014understanding} justificam
+a separação do filtro em eixo econômico e social, em vez da soma numa escala única.
+
+A Tabela~\ref{tab:indicadores} consolida o mapeamento. Cada campo do
+\textit{dataset} é lido numa escala ordinal de cinco pontos
+(\texttt{Opposed} < \texttt{Skeptical} < \texttt{Neutral} < \texttt{Positive} <
+\texttt{Enthusiast}) e convertido num sinal ternário: $-1$ quando o valor
+aponta para a esquerda, $+1$ quando aponta para a direita e $0$ quando é
+neutro ou nulo. A binarização descarta intensidade de forma deliberada,
+\texttt{Enthusiast} e \texttt{Positive} recebem o mesmo sinal, assim como \texttt{Opposed} e \texttt{Skeptical} que recebem sinal inverso, essa decisão tem como fundamento priorizar  objetividade e auditabilidade. A única exceção de peso é
+\texttt{values\_priority} nos valores \texttt{Autonomy} e \texttt{Novelty},
+que recebem $-0,5$ por terem, em~\cite{piurko2011basic}, poder explicativo
+menor e menos consistente que universalismo e benevolência.
+
+\begin{table}[t]
+\caption{Mapeamento dos campos em sinais. O sinal negativo indica esquerda; o
+positivo, direita. Contradição no eixo econômico elimina o registro; no eixo
+social, a tolerância é definida pelo critério adotado.}
+\label{tab:indicadores}
+\centering
+\begin{tabular}{@{}p{2.35cm}p{2.5cm}p{2.5cm}@{}}
+\hline
+\textbf{Campo} & \textbf{Sinal $-1$ (esquerda)} & \textbf{Sinal $+1$ (direita)} \\
+\hline
+\multicolumn{3}{@{}l}{\textit{Principais --- eixo econômico}} \\
+\hline
+Mercado livre & Skeptical, Opposed & Positive, Enthusiast \\
+Regulação estatal & Positive, Enthusiast & Skeptical, Opposed \\
+Sindicatos & Positive, Enthusiast & Skeptical, Opposed \\
+\hline
+\multicolumn{3}{@{}l}{\textit{Secundários --- eixo social e valores}} \\
+\hline
+Imigração & Positive, Enthusiast & Skeptical, Opposed \\
+Porte de armas & Skeptical, Opposed & Positive, Enthusiast \\
+Pena capital & Skeptical, Opposed & Positive, Enthusiast \\
+Prioridade de valores & Community; Autonomy, Novelty ($-0,5$) & Tradition, Security \\
+Religiosidade & Secular & Devout, Observant \\
+\hline
+\end{tabular}
+\end{table}
+
+A decisão de polo não resulta da soma dos sinais, e sim de quatro condições
+conjuntivas avaliadas contra a âncora. Definindo como \textit{concordante} o
+indicador cujo sinal cai do mesmo lado da âncora e como \textit{contraditório}
+o que cai do lado oposto, um registro é retido se, e somente se: (i) a âncora
+não é nula nem possuí valor igual a ``Centro'' ou ``Apolítico'';
+(ii) $n^{\text{contra}}_{\text{econômico}} = 0$, isto é, nenhum dos três
+indicadores do eixo econômico aponta na direção oposta à âncora;
+(iii) $n^{\text{concord}}_{\text{econômico}} + n^{\text{concord}}_{\text{social}}
+\geq 1$, ao menos um indicador não nulo corrobora a âncora; e (iv)
+$n^{\text{contra}}_{\text{social}} = 0$, isto é, nenhum indicador do eixo
+social contradiz a âncora.
+
+
+Note-se que a condição (ii) é assimétrica em relação a (iv). A contradição no
+eixo econômico é eliminatória porque atinge o próprio critério de Bobbio que
+define o polo, enquanto a contradição no eixo social é secundária e, portanto,
+tolerável num critério mais permissivo. É essa assimetria que operacionaliza a
+separação em dois eixos proposta por Feldman e
+Johnston~\cite{feldman2014understanding}: os eixos não apenas são distintos,
+eles têm autoridade distinta sobre a decisão.
+
+O escore, $score = \sum_i s_i$, sobre todos os indicadores, não participa da
+decisão de elegibilidade, ele serve exclusivamente à \textit{ordenação} dos já
+elegíveis. Candidatos são ordenados por $|score|$ decrescente, com desempate
+por $n^{\text{concord}}_{\text{econômico}}$ e depois pelo número de campos não
+nulos. O efeito prático é selecionar as personas com mais evidência
+convergente, e não apenas as que passam pelo filtro.
+
+A Tabela~\ref{tab:exemplo} traz o cálculo completo da persona que encabeçou a
+ordenação no polo esquerda e foi efetivamente selecionada como \texttt{persona\_00}
+do polo, o registro \texttt{Q56224097}. Todos os oito indicadores são não
+nulos, seis concordam com a âncora e nenhum a contradiz, resultando em
+$score = -6{,}0$, a maior magnitude do polo. Sua contraparte no polo direita,
+\texttt{Q888061}, obteve $score = +5{,}0$ com três concordantes no eixo
+econômico. As
+duas compõem o \textit{pair-00} do experimento.
+
+\begin{table}[t]
+\caption{Cálculo para o registro \texttt{Q56224097}, primeiro colocado do polo
+esquerda. Âncora \texttt{Left} ($sign = -1$).}
+\label{tab:exemplo}
+\centering
+\begin{tabular}{@{}p{2.4cm}p{1.9cm}rl@{}}
+\hline
+\textbf{Campo} & \textbf{Valor} & \textbf{Sinal} & \textbf{Status} \\
+\hline
+Mercado livre & Neutral & $0$ & neutro \\
+Regulação estatal & Positive & $-1$ & concord. econ. \\
+Sindicatos & Positive & $-1$ & concord. econ. \\
+Imigração & Positive & $-1$ & concord. social \\
+Porte de armas & Neutral & $0$ & neutro \\
+Pena capital & Skeptical & $-1$ & concord. social \\
+Prioridade de valores & Community & $-1$ & concord. social \\
+Religiosidade & Secular & $-1$ & concord. social \\
+Confiança instit. & Verifying & --- & ignorado \\
+\hline
+\multicolumn{2}{@{}l}{$n^{\text{concord}}_{\text{econômico}} = 2$, $n^{\text{contra}}_{\text{econômico}} = 0$} & \multicolumn{2}{r}{} \\
+\multicolumn{2}{@{}l}{$n^{\text{concord}}_{\text{social}} = 4$, $n^{\text{contra}}_{\text{social}} = 0$} & \multicolumn{2}{r}{$score = -6{,}0$} \\
+\hline
+\end{tabular}
+\end{table}
+
+A regra foi especificada em formato executável e conferida contra seis casos de
+trabalho resolvidos manualmente, incluindo pontuações numéricas, todos
+coincidiram. Entre os casos, dois são instrutivos por serem \textit{exclusões}:
+um registro rotulado como de direita foi descartado por contradição no eixo
+econômico, seus indicadores econômicos apontavam na direção oposta a âncora,
+e outro, de centro-direita, por ausência de evidência no eixo social. Um filtro cego que
+tomasse a âncora como único critério teria produzido resultados incoerentes.
+
+O comportamento da regra sobre a amostra completa confirma que essas exclusões
+não são marginais. Entre os registros que chegaram à avaliação de coerência
+por terem âncora num dos dois polos, 230 foram descartados contra 121
+retidos, uma taxa de rejeição de 65,5\%: 115 por ausência de qualquer
+indicador não nulo que corroborasse a âncora, 72 por contradição no eixo
+econômico e 43 por contradição no eixo social. Os demais registros com âncora
+não nula haviam sido excluídos antes, por âncora central ou apolítica. A
+contradição no eixo econômico é
+especialmente reveladora do que a regra protege, o caso mais frequente é o
+perfil entusiasta de posições mutuamente incompatíveis, que declara ao mesmo
+tempo apoio ao mercado livre e à regulação estatal e aos sindicatos. Filtrar
+apenas por \texttt{political\_lean} teria admitido os 230.
+
+Três campos foram deliberadamente excluídos da decisão de classificação. O
+nível de confiança institucional não especifica \textit{em quais} instituições
+a confiança recai, e esse sinal muda de direção conforme quem as controla;
+utilizá-lo produziria justamente o tipo de incoerência que a regra pretende
+evitar. Excluí-lo da \textit{decisão}, porém, não implica descartá-lo da
+\textit{descrição}: o campo permanece no \textit{prompt} da persona, onde
+funciona como eixo de contraste de estilo entre personas de um mesmo polo,
+sem nunca ter participado da atribuição desse polo.
+
+O valor "Conquistas Pessoais" para a prioridade de valores cobre cerca de 72\% da amostra, mas não demonstra critério determinante dado que conforme Piurko \cite{piurko2011basic}, mostra associação com o polo direita apenas em alguns contextos nacionais específicos, no restante de seu experimento, não houve fator determinante associado a esse atributo. Além disso, atributos como religiosidade classificada como "Espiritual" é ambígua e não implica alguns dos polos. 
+
+O funil de seleção partiu de 200.000 registros das duas partes do \textit{dataset Personas}
+obtidos, dos quais uma amostra de 2.000 foi decodificada com semente fixa.
+Desses, 399 (19,95\%) possuíam o atributo de posicionamento político não nulo,
+e a aplicação da regra em modo estrito produziu 101 elegíveis no polo esquerda
+e 20 no polo direita. Vinte personas foram selecionadas, dez por polo,
+ordenadas por magnitude da pontuação de coerência e pareadas por índice.
+
+O atributo de posicionamento político é deliberadamente omitido no
+\textit{prompt} final: nem o valor do atributo, nem a âncora do polo aparecem no texto do prompt
+entregue ao agente. A persona é descrita apenas por suas posições principais e secundárias, ou seja, respectivamente, o eixo econômico e o eixo social. O motivo é que associar a posição política ao \textit{prompt} poderia causar vieses e fazer o modelo de linguagem associar algum tipo de vocabulário, posição e caricaturas nas personas em algum polo, o que desejamos evitar e trabalhar com um \textit{pipeline} neutro em todo o experimento.
+
+
+Fornecê-lo levaria o modelo a focar apenas na âncora em vez das posições da persona, com dois riscos: importar atributos implícitos não declarados e achatar a variação interna a cada polo, puxando personas distintas para um protótipo comum. A âncora, de certo modo, é ainda redundante, pois na regra adotada ele é consequência das posições do eixo econômico e social, que
+permanecem no \textit{prompt}. O valor segue registrado nos metadados do experimento, o
+ocultamento é do agente, não de quem conduz o estudo, e o polo permanece
+disponível como variável de pareamento. Pela mesma lógica, nenhuma informação
+de proveniência é incluída no \textit{prompt}, evitando a reidentificação de entidades
+públicas cujos atributos foram derivados de fontes enciclopédicas.

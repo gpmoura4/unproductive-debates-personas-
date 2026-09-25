@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{makecell}
+\usepackage{enumitem}
 
 \usepackage{array}
 \usepackage{tabularx}
@@ -20,33 +21,32 @@
 \renewcommand{\arraystretch}{1.4}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
-\title{Moderação Participativa Assistida por IA Generativa: um Experimento de
-Simulação com Agentes LLM sobre a Mitigação de Debates Improdutivos}
+\title{Moderação Prospectiva Assistida por LLM: Simulação de Debates com Agentes Polarizados para a Mitigação de Debates Improdutivos}
 
 \author{\IEEEauthorblockN{Guilherme Moura}
 \IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
-      \textit{e Computação(PESC/COPPE)} \\
+      \textit{e Computação (PESC/COPPE)} \\
       \textit{Universidade Federal do Rio de Janeiro} \\
       Rio de Janeiro, Brazil \\
       gpcmoura@cos.ufrj.br}
 \and
 \IEEEauthorblockN{Luiz Filipe Brandi}
 \IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
-      \textit{e Computação(PESC/COPPE)} \\
+      \textit{e Computação (PESC/COPPE)} \\
       \textit{Universidade Federal do Rio de Janeiro} \\
       Rio de Janeiro, Brazil \\
       brandi@cos.ufrj.br}
 \and
 \IEEEauthorblockN{Ramon Chaves}
 \IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
-      \textit{e Computação(PESC/COPPE)} \\
+      \textit{e Computação (PESC/COPPE)} \\
       \textit{Universidade Federal do Rio de Janeiro} \\
       Rio de Janeiro, Brazil \\
       ramonchaves@cos.ufrj.br}
 \and
 \IEEEauthorblockN{Daniel Schneider}
 \IEEEauthorblockA{\textit{Programa de Engenharia de Sistemas} \\
-      \textit{e Computação(PESC/COPPE)} \\
+      \textit{e Computação (PESC/COPPE)} \\
       \textit{Universidade Federal do Rio de Janeiro} \\
       Rio de Janeiro, Brazil \\
       schneider@cos.ufrj.br}
@@ -89,80 +89,65 @@ online, personas sintéticas, simulação
 \section{Introdução}
 
 A qualidade do debate público digital é comprometida por dinâmicas que não
-decorrem de ignorância ou má-fé dos participantes, mas da própria arquitetura
-sociotécnica das plataformas. Algoritmos orientados ao engajamento métrico
+decorrem de ignorância ou má-fé dos participantes, mas ## DE UM PROBLEMA INERENTE AO DIÁLOGO (ANGENOT JA ABORDOU) e da própria arquitetura algorítmica das plataformas. Orientadas ao engajamento métrico
 premiam a reação impulsiva sobre a elaboração argumentativa, e os mecanismos
-de moderação disponíveis operam predominantemente de forma retrospectiva —
-removendo, sinalizando ou penalizando conteúdo \textit{após} a publicação,
-quando o dano à interação já se consumou. Trabalhos anteriores caracterizaram
+de moderação disponíveis operam predominantemente de forma reativa,
+removendo, sinalizando ou punindo conteúdo \textit{após} a publicação,
+quando o dano do que foi publicado muitas vezes já ocorreu. Trabalhos anteriores caracterizaram
 esse fenômeno como \textit{debate improdutivo} e propuseram um modelo
 conceitual de mitigação organizado em cinco dimensões, atravessadas por uma
 camada transversal de mediação por Inteligência Artificial Generativa sob o
 princípio da simbiose humano-IA~\cite{moura2026hostility}.
 
-Entre essas dimensões, a Moderação Participativa (D5) ocupa uma posição
-singular. Enquanto as demais qualificam o conteúdo ou estruturam a
+Entre essas dimensões, a Moderação Participativa (D5) ocupa uma posição crucial: Enquanto as demais qualificam, desaceleram ou estruturam a
 argumentação, D5 regula a \textit{conduta}, e o faz em dois modos: proativo,
 configurando o espaço discursivo antes da instauração do conflito, e reativo,
-contendo a escalada durante um debate que se deteriora. É a única dimensão que
-opera \textit{antes da publicação} da mensagem — no intervalo entre a redação e
-a postagem —, e essa característica é justamente o que a torna difícil de
+contendo a escalada durante um debate que ainda está acontecendo, nesse sentido essa última opera antes da publicação da mensagem, no intervalo entre a produção e
+a postagem em si, e essa característica é justamente o que a torna difícil de
 avaliar em ambientes reais: observar o efeito de uma reformulação exigiria
 acesso à mensagem que não foi publicada. Em uma plataforma real, a mensagem
-candidata rejeitada ou reescrita pelo autor simplesmente não existe como dado
-observável, e o contrafactual — o que teria acontecido se ela tivesse sido
-publicada — é inacessível por construção.
+candidata rejeitada ou reescrita pelo autor simplesmente não existe mais como dado
+observável, e consequentemente o que teria acontecido a partir dela.
 
 Esta restrição motiva a escolha metodológica deste trabalho. A simulação com
 agentes baseados em \textit{Large Language Models} (LLMs) permite observar
 simultaneamente a mensagem candidata e a mensagem publicada, tornando
-mensurável aquilo que a observação naturalística não alcança. Ao instanciar
+mensurável aquilo que antes não era. Ao instanciar
 debatedores artificiais polarizados, registrar cada mensagem antes e depois da
 intervenção e submeter ambas as condições a um avaliador cego, torna-se
 possível estimar o efeito da moderação prospectiva sob condições controladas.
 O experimento aqui descrito provoca de forma controlada as patologias do debate
-improdutivo identificadas por Angenot~\cite{angenot2008dialogues} e verifica se
-a intervenção prevista por D5 as mitiga.
+improdutivo identificadas por Angenot~\cite{angenot2008dialogues} e propõe a moderação D5.
 
 A contribuição do trabalho é tripla. Em primeiro lugar, oferece a primeira
-verificação empírica de uma das dimensões do modelo predecessor, que até então
+verificação empírica de uma das dimensões do modelo Moura-Brandi \cite{moura2026hostility}, que até então
 permanecia no plano conceitual. Em segundo, propõe e documenta uma escala
 ordinal de hostilidade ancorada na literatura de incivilidade política e
-aplicável por instrução a agentes LLM, com fundamentação nível a nível. Em
-terceiro, disponibiliza um protocolo experimental integralmente auditável, em
-que cada decisão de moderação, cada pontuação e cada exclusão do corpus ficam
-registradas e reanalisáveis sob critérios distintos dos aqui adotados.
+aplicável por meio de agentes LLM, com fundamentação escalada nível a nível. Em
+terceiro, disponibiliza um protótipo de protocolo experimental em
+que cada decisão da definição do moderador, pontuação de hostilidade e exclusão do corpus ficam
+registradas e reanalisáveis.
 
 \subsection{Questões de Pesquisa}
 
 O trabalho orienta-se por três questões:
 
 \begin{itemize}
-  \item \textbf{QP1.} A moderação participativa prospectiva reduz a
-        hostilidade observável em um debate polarizado entre agentes
-        artificiais?
-  \item \textbf{QP2.} Qual é o padrão temporal desse efeito ao longo dos
-        turnos de um debate?
-  \item \textbf{QP3.} Em que medida a reformulação preserva a posição
+  \item \textbf{RQ1} A moderação  participativa (TIRAR O TERMO PARTICIPATIVA DO TEXTO) prospectiva reduz a
+        hostilidade em um debate improdutivo simulado entre agentes artificiais via LLM?
+  \item \textbf{RQ2} Qual é o padrão temporal desse efeito ao longo dos turnos de um debate?
+  \item \textbf{RQ3} Em que medida a reformulação preserva a posição
         substantiva do autor, evitando que a mitigação da hostilidade se
-        converta em supressão do dissenso?
+        converta em supressão do dissenso? (retirar essa rq3)
 \end{itemize}
 
-O recorte precisa ser declarado desde já: o experimento testa se o
-\textit{mecanismo} funciona sobre debatedores simulados, e não como usuários
-humanos reagiriam à mediação. São duas perguntas distintas, e apenas a primeira
-está ao alcance deste desenho. A segunda — se autores reais aceitariam a
-reformulação proposta — é investigada empiricamente por outra linha de
-trabalhos~\cite{argyle2023leveraging,katsaros2022reconsidering}, e sua ausência
-aqui é o que faz dos resultados uma estimativa de limite superior. A distinção
-é retomada nas Seções VII e VIII.
+A partir dessas perguntas de pesquisa, devemos estabelecer algo crucial para o entendimento do escopo do trabalho: o propósito é testar se o
+\textit{mecanismo} funciona sobre debatedores simulados, e não como usuários humanos reagiriam à mediação. São dois pontos diferentes, e apenas a primeira
+está ao nosso alcance. A segunda: se autores reais aceitariam a reformulação proposta já é uma segunda questão, que e investigada empiricamente por outra linha de trabalhos~\cite{argyle2023leveraging,katsaros2022reconsidering}. A distinção é retomada nas Seções VII e VIII.
 
-Cabe ainda uma observação sobre o objeto medido. A hostilidade avaliada neste
-trabalho é a que se manifesta no texto publicado, tal como classificada por um
-agente instruído com uma rubrica explícita. Não se trata de hostilidade
-percebida por leitores humanos, nem de intenção hostil do autor — duas
-grandezas correlacionadas, porém distintas, e ambas fora do alcance do
-instrumento aqui empregado.
+Cabe ainda uma observação sobre o objeto medido. A métrica do grau de hostilidade avaliada neste
+trabalho é a que se manifesta no texto publicado pelas personas ao longo do debate, tal como classificada por um
+agente instruído com uma rubrica explícita. Não se trata de hostilidade percebida por leitores humanos ou  de intenção hostil do autor, que parecem parecidas, mas dizem respeito a grandezas distintas, e ambas fora do alcance do experimento desenvolvido.
 
 O restante do artigo está organizado como segue. A Seção II revisa os trabalhos
 relacionados. A Seção III apresenta a fundamentação teórica. A Seção IV detalha
@@ -174,54 +159,40 @@ conclui.
 
 \subsection{Incivilidade e Debate Improdutivo Online}
 
-A literatura de comunicação política distingue dois fenômenos frequentemente
-confundidos. Papacharissi~\cite{papacharissi2004democracy} separa
-\textit{impoliteness} — violação de normas interpessoais de etiqueta, como tom
-rude ou linguagem vulgar — de \textit{incivility}, que constitui ameaça a
-valores democráticos por meio da deslegitimação e da exclusão do interlocutor.
-A distinção estabelece que ser rude não equivale a ser danoso à deliberação.
+
+A literatura de comunicação política distingue dois fenômenos frequentemente confundidos. Papacharissi~\cite{papacharissi2004democracy} define
+\textit{impoliteness} como violação de normas interpessoais de etiqueta (Ou falta de educação), como tom rude ou linguagem vulgar, e \textit{incivility} como comportamentos que proporcionam ameaça a valores democráticos, cruciais para o debate ocorrer, por meio da deslegitimação e da exclusão do interlocutor.
+A distinção estabelece que ser rude não equivale a violar preceitos democráticos claros.
 
 Coe, Kenski e Rains~\cite{coe2014online} operacionalizaram a incivilidade em
-cinco tipos binários — \textit{name-calling}, \textit{aspersion},
-\textit{lying}, \textit{vulgarity} e \textit{pejorative for speech} —, taxonomia
-posteriormente aplicada em estudos de fatores intergrupais~\cite{rains2017incivility}.
+cinco tipos binários: \textit{name-calling}, \textit{aspersion},
+\textit{lying}, \textit{vulgarity} e \textit{pejorative for speech}. Essa taxonomia posteriormente foi aplicada em estudos de fatores intergrupais~\cite{rains2017incivility}.
 Kenski, Coe e Rains~\cite{kenski2020perceptions} demonstraram que o público
 percebe severidades distintas entre esses tipos, sugerindo uma dimensão
 ordinal latente que a taxonomia categórica não expressa.
 
 Rossini~\cite{rossini2022beyond} avançou empiricamente sobre a distinção de
 Papacharissi ao separar incivilidade de intolerância: a primeira ocorre em
-contextos de engajamento discursivo produtivo — com opinião justificada e
-confronto genuíno com a discordância —, enquanto a segunda aparece em
+contextos de engajamento discursivo produtivo com opinião justificada e
+confronto genuíno com a discordância saudável, enquanto a segunda aparece em
 discussões homogêneas com menos deliberação. A implicação é contraintuitiva e
-central para este trabalho: a incivilidade interpessoal não é incompatível com
-a discussão democrática; o que ameaça a deliberação é a intolerância. Um
-sistema de moderação que suprimisse toda aspereza eliminaria, junto com o
-ruído, parte do sinal deliberativo.
+central para este trabalho: Rossini mostrou que a incivilidade interpessoal não é incompatível com
+a discussão democrática. Nesse sentido, o que ameaça a deliberação é a intolerância. 
 
 Bentivegna e Rega~\cite{bentivegna2022searching} decompõem o fenômeno em três
 dimensões — \textit{impoliteness}, deslegitimação individual e deslegitimação
-institucional —, validadas por survey com 797 respondentes. A deslegitimação
-individual, que enquadra o oponente como irracional, desonesto ou moralmente
-deficiente, é o conceito que sustenta o tratamento desse padrão como categoria
-própria, e não como mera gradação de rispidez. Mutz e Reeves~\cite{mutz2005new}
-demonstram experimentalmente que a incivilidade viola normas de interação
-respeitosa e produz reações negativas viscerais que se generalizam para além da
-interação imediata, reduzindo a confiança política — evidência que sustenta a
-premissa de que hostilidade interpessoal degrada a qualidade do debate e que
-mitigá-la é objetivo legítimo de design.
+institucional —, validadas por \textit{survey} com 797 respondentes. Respectivamente, a primeira foi definida como um conjunto de comportamentos no debate como linguagem vulgar, gritos, sarcasmos, insultos, ou qualquer outra comportamento desrespeitoso, a segunda como enquadrar o oponente como irracional, desonesto ou moralmente deficiente por ele ser quem ele é, ou seja, não é meramente rispidez ou desrespeito, mas sim invalidação clara de um indivíduo, por último, a terceira corresponde a comportamentos que visam a desregulação do regime democrático vigente e os mecanismos que regem ele dado que o adversário não representa o que o indivíduo acredita. Um exemplo claro desta última pode ser um indivíduo que deixa de votar a favor de uma proposta coerente para ele e para a sociedade só porque é de um partido no qual ele é oposição. 
+
+Mutz e Reeves \cite{mutz2005new} fornecem uma prova de conceito empírica para a viabilidade do isolamento da hostilidade no debate público televisionado. Ao manipularem experimentalmente os níveis de incivilidade mantendo o conteúdo constante, os autores demonstraram que redução da hostilidade preserva o ambiente interacional e a confiança política. Com isso, o presente trabalho redireciona essa premissa sociotécnica para as esferas digitais, com o objetivo de mitigar a hostilidade para viabilizar debates mais saudáveis e produtivos entre os participantes.
 
 Duas abordagens alternativas de mensuração merecem registro, por terem sido
 consideradas e descartadas. Escores contínuos probabilísticos, como os
 oferecidos por serviços comerciais de detecção de toxicidade, produzem um valor
 entre zero e um que representa a probabilidade de que um leitor perceba o texto
-como tóxico — grandeza distinta da severidade, e opaca quanto ao critério, além
-de não reutilizável por instrução. Kennedy et al.~\cite{kennedy2020constructing}
+como tóxico, grandeza distinta da severidade. Kennedy et al.~\cite{kennedy2020constructing}
 propõem abordagem metodologicamente mais rigorosa, decompondo o construto em
 componentes ordinais avaliados por trabalhadores de \textit{crowdsourcing} e
-transformando-os em variável com propriedades intervalares; ela exige, contudo,
-milhares de anotadores para calibração e produz uma variável contínua ajustada
-ao corpus, não uma escala discreta reaplicável por instrução.
+transformando-os em variável com propriedades intervalares. Com isso, o presente trabalho produziu uma escala análoga, variando o nível de hostilidade de maneira hierárquica com pontuações que variam de 0 a 4, a qual veremos nos próximos capítulos. 
 
 \subsection{Moderação Prospectiva Assistida por IA}
 
@@ -229,20 +200,16 @@ Um conjunto de trabalhos investiga intervenções que atuam antes da publicaçã
 que é precisamente o ponto em que D5 opera. Argyle et
 al.~\cite{argyle2023leveraging} demonstraram, em experimento de campo, que
 sugestões de reformulação geradas por LLM melhoram a qualidade percebida de
-conversas políticas em escala, com o autor podendo aceitar, editar ou ignorar a
-sugestão. Katsaros, Yang e Fratamico~\cite{katsaros2022reconsidering}
+conversas políticas polarizadas, sem manipular os debatedores, e com o autor podendo aceitar, editar ou ignorar a sugestão. Katsaros, Yang e Fratamico~\cite{katsaros2022reconsidering}
 reportaram que a intervenção durante a criação da mensagem reduz conteúdo
 ofensivo no Twitter. Tessler et al.~\cite{tessler2024ai} mostraram que a
-mediação por IA pode auxiliar grupos humanos a encontrar terreno comum em
-deliberação democrática.
+mediação por IA pode auxiliar grupos humanos a chegar a pontos comuns em um debate democrático.
 
-Esses estudos compartilham uma característica ausente do presente desenho: a
+Esses estudos compartilham uma característica ausente no trabalho desenvolvido: a
 decisão do autor sobre a reformulação. Em todos eles, o usuário permanece
-soberano sobre o texto final, e a taxa de aceitação constitui variável de
-resultado central. Katsaros et al.~\cite{katsaros2022reconsidering}, por
-exemplo, observaram que a maioria das mensagens sinalizadas acabou publicada
-sem revisão, o que qualifica substancialmente o efeito agregado da
-intervenção. A implicação dessa diferença para a interpretação dos resultados
+com a decisão final sobre o texto final publicado, e a taxa de aceitação constitui se faz variável do resultado central. Katsaros et al.~\cite{katsaros2022reconsidering}, por
+exemplo, observaram que 69\% das mensagens sinalizadas acabou publicada
+sem revisão, ou seja, a decisão do usuário final impacta diretamente nos resultados obtidos. A implicação dessa diferença para a interpretação dos resultados
 aqui reportados é tratada na Seção IV-D.
 
 Convém registrar o que distingue este trabalho dos anteriores. Argyle et
@@ -251,72 +218,57 @@ al.~\cite{katsaros2022reconsidering} medem o efeito de intervenções sobre
 participantes humanos em plataformas reais, e por isso capturam a dimensão
 comportamental que a simulação não alcança. Em contrapartida, não conseguem
 isolar o efeito da reformulação em si, pois a mensagem candidata rejeitada não
-entra na análise. O presente desenho faz o movimento inverso: sacrifica a
-validade externa comportamental para obter acesso integral ao contrafactual.
+entra na análise. O presente desenho faz o movimento inverso: desconsidera o critério comportamental em relação a reformulação para obter acesso integral ao que seria publicado.
+(REVISAR)
 As duas abordagens são complementares, e a Seção VIII descreve como articulá-las.
-
+ 
 \subsection{Simulação com Agentes LLM e Personas Sintéticas}
 
 Chuang et al.~\cite{chuang2023simulating} simularam dinâmicas de opinião com
 redes de agentes baseados em LLM e documentaram um viés relevante para este
 trabalho: agentes LLM tendem ao consenso e à polidez, o que distorce a
-simulação de conflito. Essa constatação orienta duas decisões metodológicas
-aqui adotadas — a calibragem explícita da escalada no prompt de comportamento e
-a recusa em delegar ao agente a decisão de aceite da reformulação.
+simulação de conflitos. Essa constatação orienta duas decisões metodológicas
+importantes, a calibragem explícita da escalada no \textit{prompt} de comportamento e
+a ausência de deixar o agente decidir sobre a reformulação.
 
-As personas empregadas derivam de um dataset estruturado de personas
+As personas empregadas derivam de um \textit{dataset} estruturado de personas
 sintéticas~\cite{li2026matraix}, com aproximadamente um milhão de registros e
-1.290 dimensões categóricas por persona, ancoradas em surveys reais. A escolha
-por personas derivadas de dataset, em vez de construídas manualmente, responde
-a uma exigência de auditabilidade: cada persona é rastreável a um registro
-identificável e a uma regra de classificação explícita.
+1.290 dimensões categóricas por \textit{persona}, ancoradas em \textit{surveys} reais. A escolha
+por personas derivadas de \textit{dataset}, permite a criação de um grupo de debatedores antagônicos por meio de regras claras de classificação de maneira fácil, reprodutível e rastreável, além de economizar tempo que esse trabalho não teve para capturar indivíduos reais.
 
 \section{Fundamentação Teórica}
 
 \subsection{As Três Patologias do Debate Improdutivo}
 
 Marc Angenot argumenta que a incompreensão mútua em debates não deriva de
-falha lógica ou má-fé, mas constitui condição estrutural da vida social — o
+falha lógica ou de caráter, mas se trata de uma condição natural da estrutura social que vivemos.
 \textit{diálogo de surdos}~\cite{angenot2008dialogues}. Dessa tese decorrem três
-categorias analíticas que estruturam o experimento.
+categorias analíticas que categorizam esse fenômeno e estruturam o experimento.
 
-A \textbf{incomensurabilidade discursiva} descreve interlocutores que operam a
-partir de universos discursivos incompatíveis, sem compartilhar valores,
-pressupostos ou critérios sobre o que constitui verdade~\cite{angenot2010discurso}.
-A \textbf{retórica da incompreensão} designa a recusa em reconhecer o adversário
-como ser racional dentro de seu próprio sistema de pensamento, degenerando em
-ataque, ironia e caricatura~\cite{angenot2008dialogues}. A \textbf{ilusão da
-racionalidade} nomeia a expectativa irrealista de que o debate tenda ao
-consenso, quando na prática argumenta-se para a própria audiência, em monólogos
-paralelos~\cite{angenot2006divergent}.
+A incomensurabilidade discursiva diz respeito a um estado em que os interlocutores não compartilham de visões de mundo, valores ou pressupostos sobre o que constitui a verdade, ou seja, operam sobre universos completamente distintos. Já a retórica da incompreensão caracteriza-se por reconhecer o adversário como um ser irracional, degenerado e o deslegitimá-lo em função do que pensa, geralmente o atacando com ironias, estereótipos e caricaturas. Por fim, a ilusão da racionalidade se faz presente quando existe a expectativa de que o debate irá chegar a um consenso quando na verdade os debatedores defendem seus pontos de vista com o objetivo de vencer ou se autoafirmar em seus próprios preceitos \cite{angenot2008dialogues} \cite{angenot2010discurso}. 
 
-A tese de Angenot tem uma consequência de projeto que orienta todo o
+
+A tese de Angenot traz uma consequência de projeto que orienta todo o
 experimento. Se a incompreensão fosse déficit informacional, a mitigação
-consistiria em fornecer informação; se fosse falha lógica, em corrigir o
+consistiria em fornecer informação necessária, se fosse falha lógica, em corrigir o
 raciocínio. Sendo condição estrutural, nenhuma das duas estratégias alcança o
-problema, e a intervenção precisa operar sobre a \textit{forma} da interação —
-que é precisamente o que a dimensão D5 propõe ao regular conduta em vez de
-conteúdo.
+problema, e a intervenção proposta trabalha no quesito da forma de como a interação se da no debate, reformulando como cada premissa seria publicada sem corroer o conteúdo que
+está sendo debatido.
 
-Essas categorias cumprem duplo papel no desenho. São o que o prompt de
-comportamento dos debatedores precisa provocar de forma controlada, pois sem
-debate genuinamente improdutivo não há o que mitigar e o experimento mediria
-apenas ruído. E são registradas pelo moderador como sinais qualitativos do
-mecanismo retórico em curso, em campo separado da pontuação numérica.
+Essas categorias cumprem duplo papel no desenho. São o que o \textit{prompt} que 
+configuram o comportamento dos debatedores para gerar genuinamente um debate improdutivo, 
+do contrário, não teríamos o que moderar. E são registradas pelo moderador como sinais qualitativos do mecanismo em curso conforme a discussão ocorre.
 
 A separação entre os dois registros é deliberada e merece explicitação. A
-escala numérica mede \textit{severidade} — quanto de hostilidade a mensagem
-carrega. As patologias descrevem \textit{mecanismo} — que tipo de dinâmica
-improdutiva está em operação. Uma mensagem de nível 2 e outra de nível 4 podem
-exibir a mesma patologia, e uma única mensagem pode exibir mais de uma. Colapsar
-as duas dimensões num índice único destruiria informação que a análise
-qualitativa dos registros aproveita.
+escala numérica mede severidade, ou seja, o quanto de hostilidade a mensagem
+carrega. As patologias descrevem o mecanismo: quais das três categorias de Angenot estão em curso. Uma mensagem de nível 2 e outra de nível 4 podem
+exibir a mesma patologia, e uma única mensagem pode exibir mais de uma. Veremos mais detalhes nos próximos capítulos.
 
 Cabe registrar que a operacionalização das categorias de Angenot como
 instrumento de detecção computacional é contribuição original deste programa de
 pesquisa. A obra é reconhecida na tradição de retórica e análise do discurso,
 mas sua aplicação por agentes LLM em moderação automatizada não possui
-precedente direto na literatura — o que significa, também, que não há
+precedente direto na literatura , o que significa, também, que não há
 \textit{benchmark} externo contra o qual validá-la.
 
 \subsection{A Dimensão D5 no Modelo de Cinco Dimensões}
@@ -327,29 +279,50 @@ Curadoria Colaborativa (D3), Exposição Mediada a Perspectivas Divergentes (D4)
 e Moderação Participativa (D5). A quinta dimensão distingue-se das demais por
 regular a conduta em vez de qualificar o conteúdo, e por não corresponder a uma
 fase isolada da espiral de criação de conhecimento: ela sustenta as condições
-de governança sem as quais as outras dimensões não se mantêm operantes.
+de governança sem as quais as outras dimensões não se mantêm operantes. 
 
-No modelo, a camada de IA atua como mediador sociotécnico — sumariza
-históricos, detecta violações de normas e oferece reformulações —, reservando
-ao humano a decisão ética final. O experimento aqui reportado isola essa
-operação de reformulação e a testa em ambiente controlado.
+Cabe dizer também, que nesse trabalho, nos referiremos a D5 apenas como ``Moderação Prospectiva'' e não ``Moderação Participativa'', dado que não existe ainda participação humana clara no ciclo de moderação. Além disso, no modelo, a camada de IA atua como mediador sociotécnico, no qual sumariza
+históricos, detecta violações de normas e oferece reformulações, este último sendo a abordagem proposta pelo Moderador D5. 
 
 \section{Metodologia}
 
 \subsection{Visão Geral do Desenho}
 
 O experimento compara duas condições sobre pares idênticos de personas
-debatendo o mesmo tema. Na condição de \textbf{controle}, a mensagem gerada
-pelo debatedor é publicada sem alteração. Na condição de \textbf{tratamento},
+debatendo o mesmo tema. Na condição de controle, a mensagem gerada
+pelo debatedor é publicada sem alteração. Na condição de tratamento,
 cada mensagem candidata passa pelo moderador D5, que a pontua e, quando o
-limiar é atingido, publica uma versão reformulada em seu lugar. A única
+limiar de hostilidade é igual ou maior que 2 publica uma versão reformulada em seu lugar. A única
 diferença entre as condições é a presença do moderador.
+
+A Figura~\ref{fig:pipeline} sintetiza o \textit{pipeline} completo, dos dados
+de entrada às métricas de análise, com as regras e as quantidades de cada
+etapa. As faixas seguem a ordem desta seção: a obtenção e a classificação das
+personas (Seção IV-B), a construção dos agentes em duas camadas de
+\textit{prompt} (Seção IV-C), a simulação do debate, cujo fluxo por turno é
+descrito a seguir e cujo moderador é detalhado na Seção IV-D, a avaliação cega feita pelo Juiz de Hostilidade
+e o registro por turno (Seções IV-E e IV-F) e a seleção do corpus de análise
+(Seção IV-G). As cores das setas indicam o tipo de dado que circula entre as
+etapas.
+
+\begin{figure*}[p]
+\centering
+\includegraphics[width=\textwidth,height=0.9\textheight,keepaspectratio]{figures/pipeline_cscw.pdf}
+\caption{\textit{Pipeline} experimental completo, dos dados de entrada às
+métricas de análise. Cada faixa corresponde a uma etapa descrita na Seção IV:
+obtenção e seleção das personas, construção dos agentes em duas camadas de
+\textit{prompt}, simulação do debate nas condições de controle e de
+tratamento, avaliação cega e registro, e seleção do corpus. As cores das setas
+indicam o tipo de dado que circula entre as etapas; o laço cinza leva o texto
+publicado ao turno seguinte.}
+\label{fig:pipeline}
+\end{figure*}
 
 A unidade experimental é a \textit{célula}, definida como a combinação de um
 tema e um par de personas. Cada célula é executada nas duas condições, com
-oito turnos alternados por debate — quatro mensagens de cada persona. Dois
-temas controversos foram empregados: \textit{Abortion} e \textit{Drug
-Legalization}. A Tabela~\ref{tab:desenho} resume os parâmetros.
+oito turnos alternados por debate, ou seja, quatro mensagens de cada persona. Dois
+temas polêmicos foram empregados: \textit{Abortion} e \textit{Drug
+Legalization}, e a escolha deles foi feita de maneira empírica. A Tabela~\ref{tab:desenho} resume os parâmetros.
 
 O fluxo de cada turno segue quatro etapas. O debatedor da vez recebe o
 histórico publicado e gera uma mensagem candidata. Na condição de controle, a
@@ -357,15 +330,15 @@ candidata é publicada sem alteração e o turno se encerra. Na condição de
 tratamento, a candidata é submetida ao moderador, que atribui a pontuação de
 hostilidade, decide sobre a intervenção e, quando esta é requerida, produz a
 reformulação que substitui o texto original. O que entra no histórico do debate
-é sempre o texto publicado — de modo que, sob tratamento, os turnos
+é sempre o texto publicado (o laço de histórico na
+Figura~\ref{fig:pipeline}), de modo que, sob tratamento, os turnos
 subsequentes respondem à versão moderada, e não à candidata. Em caso de falha
 irrecuperável do moderador, a candidata é publicada sem alteração e o turno
 recebe marcação específica no registro, o que permite excluí-lo da análise.
 
 O pareamento por célula é o que confere validade à comparação: controle e
-tratamento compartilham tema, par de personas, prompts e modelos, diferindo
-exclusivamente pela presença do moderador. A diferença intracelular remove,
-portanto, a variação atribuível às personas e ao tema.
+tratamento compartilham tema, par de personas, \textit{prompts} e modelos, diferindo
+exclusivamente pela presença do moderador.
 
 \begin{table}[htbp]
 \caption{Parâmetros do desenho experimental}
@@ -389,7 +362,7 @@ Limiar de intervenção & $\geq$ 2 \\
 
 \subsection{Personas: Seleção e Classificação}
 
-As personas foram extraídas de um dataset estruturado de um milhão de
+As personas foram extraídas de um \textit{dataset} estruturado de um milhão de
 registros~\cite{li2026matraix}, no qual cada persona armazena 1.290 dimensões
 categóricas de forma compactada, acompanhadas de um mapa de bits que assinala
 dimensões nulas. A convenção de decodificação não é documentada e precisou ser
@@ -401,68 +374,170 @@ incorreta produziria personas internamente coerentes, porém desvinculadas dos
 dados de origem.
 
 A classificação em polos políticos segue uma regra explícita, fundamentada em
-quatro obras, e organizada em três componentes: uma âncora, indicadores
-nucleares e indicadores periféricos. O critério definidor é a atitude frente à
-igualdade, conforme Bobbio~\cite{bobbio1995direita}: a esquerda concebe a
-desigualdade como socialmente produzida e removível; a direita, como natural ou
-inevitável. Esse critério fundamenta a âncora e os indicadores nucleares do
-eixo econômico. Jost et al.~\cite{jost2003political} fundamentam os indicadores
-periféricos do eixo social, ao definir o núcleo do conservadorismo como
+quatro obras, e organizada em três componentes: uma âncora que norteia o polo, indicadores
+principais (Eixo econômico) e indicadores secundários (Eixo social). Primeiramente, o critério que define o polo político é a posição da persona frente à igualdade, conforme o trabalho de Bobbio~\cite{bobbio1995direita}: a esquerda concebe a desigualdade como socialmente produzida e removível, já a direita, como natural ou inevitável para o progresso da sociedade. A escolha desse critério como âncora se deu pela sua relevância atual ter se mantido mesmo com um tempo considerável ter se passado desde sua formulação. Além do critério fundamentar a âncora, ele também certifica os indicadores principais do eixo econômico. 
+
+Jost et al.~\cite{jost2003political} fundamentam os indicadores
+secundários do eixo social, ao definir o núcleo do conservadorismo como
 resistência à mudança somada à justificação da desigualdade. Piurko, Schwartz e
-Davidov~\cite{piurko2011basic} sustentam o mapeamento de valores pessoais —
-universalismo e benevolência predizem esquerda; conformidade e tradição
+Davidov~\cite{piurko2011basic} sustentam o mapeamento de prioridade de valores, sendo o 
+universalismo e benevolência os quais predizem esquerda, enquanto conformidade e tradição
 predizem direita. Feldman e Johnston~\cite{feldman2014understanding} justificam
-a separação em eixo econômico e social, em vez da soma numa escala única.
+a separação do filtro em eixo econômico e social, em vez da soma numa escala única.
+
+A Tabela~\ref{tab:indicadores} consolida o mapeamento. Cada campo do
+\textit{dataset} é lido numa escala ordinal de cinco pontos
+(\texttt{Opposed} < \texttt{Skeptical} < \texttt{Neutral} < \texttt{Positive} <
+\texttt{Enthusiast}) e convertido num sinal ternário: $-1$ quando o valor
+aponta para a esquerda, $+1$ quando aponta para a direita e $0$ quando é
+neutro ou nulo. A binarização descarta intensidade de forma deliberada,
+\texttt{Enthusiast} e \texttt{Positive} recebem o mesmo sinal, assim como \texttt{Opposed} e \texttt{Skeptical} que recebem sinal inverso, essa decisão tem como fundamento priorizar  objetividade e auditabilidade. A única exceção de peso é
+\texttt{values\_priority} nos valores \texttt{Autonomy} e \texttt{Novelty},
+que recebem $-0,5$ por terem, em~\cite{piurko2011basic}, poder explicativo
+menor e menos consistente que universalismo e benevolência.
+
+\begin{table}[t]
+\caption{Mapeamento dos campos em sinais. O sinal negativo indica esquerda; o
+positivo, direita. Contradição no eixo econômico elimina o registro; no eixo
+social, a tolerância é definida pelo critério adotado.}
+\label{tab:indicadores}
+\centering
+\begin{tabular}{@{}p{2.35cm}p{2.5cm}p{2.5cm}@{}}
+\hline
+\textbf{Campo} & \textbf{Sinal $-1$ (esquerda)} & \textbf{Sinal $+1$ (direita)} \\
+\hline
+\multicolumn{3}{@{}l}{\textit{Principais --- eixo econômico}} \\
+\hline
+Mercado livre & Skeptical, Opposed & Positive, Enthusiast \\
+Regulação estatal & Positive, Enthusiast & Skeptical, Opposed \\
+Sindicatos & Positive, Enthusiast & Skeptical, Opposed \\
+\hline
+\multicolumn{3}{@{}l}{\textit{Secundários --- eixo social e valores}} \\
+\hline
+Imigração & Positive, Enthusiast & Skeptical, Opposed \\
+Porte de armas & Skeptical, Opposed & Positive, Enthusiast \\
+Pena capital & Skeptical, Opposed & Positive, Enthusiast \\
+Prioridade de valores & Community; Autonomy, Novelty ($-0,5$) & Tradition, Security \\
+Religiosidade & Secular & Devout, Observant \\
+\hline
+\end{tabular}
+\end{table}
+
+A decisão de polo não resulta da soma dos sinais, e sim de quatro condições
+conjuntivas avaliadas contra a âncora. Definindo como \textit{concordante} o
+indicador cujo sinal cai do mesmo lado da âncora e como \textit{contraditório}
+o que cai do lado oposto, um registro é retido se, e somente se:
+
+\begin{enumerate}[label=(\roman*), leftmargin=*, itemsep=2pt, topsep=4pt]
+  \item a âncora não é nula nem possuí valor igual a ``Centro'' ou
+        ``Apolítico'';
+  \item $n^{\text{contra}}_{\text{econômico}} = 0$, isto é, nenhum dos três
+        indicadores do eixo econômico aponta na direção oposta à âncora;
+  \item $n^{\text{concord}}_{\text{econômico}} +
+        n^{\text{concord}}_{\text{social}} \geq 1$, isto é, ao menos um
+        indicador não nulo corrobora a âncora;
+  \item $n^{\text{contra}}_{\text{social}} = 0$, isto é, nenhum indicador do
+        eixo social contradiz a âncora.
+\end{enumerate}
+
+
+
+Note-se que a condição (ii) é assimétrica em relação a (iv). A contradição no
+eixo econômico é eliminatória porque atinge o próprio critério de Bobbio que
+define o polo, enquanto a contradição no eixo social é secundária e, portanto,
+tolerável num critério mais permissivo. É essa assimetria que operacionaliza a
+separação em dois eixos proposta por Feldman e
+Johnston~\cite{feldman2014understanding}: os eixos não apenas são distintos,
+eles têm autoridade distinta sobre a decisão.
+
+O escore, $score = \sum_i s_i$, sobre todos os indicadores, não participa da
+decisão de elegibilidade, ele serve exclusivamente à \textit{ordenação} dos já
+elegíveis. Candidatos são ordenados por $|score|$ decrescente, com desempate
+por $n^{\text{concord}}_{\text{econômico}}$ e depois pelo número de campos não
+nulos. O efeito prático é selecionar as personas com mais evidência
+convergente, e não apenas as que passam pelo filtro.
+
+A Tabela~\ref{tab:exemplo} traz o cálculo completo da persona que encabeçou a
+ordenação no polo esquerda e foi efetivamente selecionada como \texttt{persona\_00}
+do polo, o registro \texttt{Q56224097}. Todos os oito indicadores são não
+nulos, seis concordam com a âncora e nenhum a contradiz, resultando em
+$score = -6{,}0$, a maior magnitude do polo. Sua contraparte no polo direita,
+\texttt{Q888061}, obteve $score = +5{,}0$ com três concordantes no eixo
+econômico. As
+duas compõem o \textit{pair-00} do experimento.
+
+\begin{table}[t]
+\caption{Cálculo para o registro \texttt{Q56224097}, Âncora \texttt{Left} ($sign = -1$).}
+\label{tab:exemplo}
+\centering
+\begin{tabular}{@{}p{2.4cm}p{1.9cm}rl@{}}
+\hline
+\textbf{Campo} & \textbf{Valor} & \textbf{Sinal} & \textbf{Status} \\
+\hline
+Mercado livre & Neutral & $0$ & neutro \\
+Regulação estatal & Positive & $-1$ & concord. econ. \\
+Sindicatos & Positive & $-1$ & concord. econ. \\
+Imigração & Positive & $-1$ & concord. social \\
+Porte de armas & Neutral & $0$ & neutro \\
+Pena capital & Skeptical & $-1$ & concord. social \\
+Prioridade de valores & Community & $-1$ & concord. social \\
+Religiosidade & Secular & $-1$ & concord. social \\
+Confiança instit. & Verifying & --- & ignorado \\
+\hline
+\multicolumn{2}{@{}l}{$n^{\text{concord}}_{\text{econômico}} = 2$, $n^{\text{contra}}_{\text{econômico}} = 0$} & \multicolumn{2}{r}{} \\
+\multicolumn{2}{@{}l}{$n^{\text{concord}}_{\text{social}} = 4$, $n^{\text{contra}}_{\text{social}} = 0$} & \multicolumn{2}{r}{$score = -6{,}0$} \\
+\hline
+\end{tabular}
+\end{table}
 
 A regra foi especificada em formato executável e conferida contra seis casos de
-trabalho resolvidos manualmente, incluindo os escores numéricos; todos
+trabalho resolvidos manualmente, incluindo pontuações numéricas, todos
 coincidiram. Entre os casos, dois são instrutivos por serem \textit{exclusões}:
-um registro rotulado como de direita foi descartado por contradição nuclear —
-seus indicadores econômicos apontavam na direção oposta ao rótulo —, e outro,
-de centro-direita, por ausência de evidência secundária. Um filtro ingênuo que
-tomasse o rótulo declarado ao pé da letra teria admitido ambos.
+um registro rotulado como de direita foi descartado por contradição no eixo
+econômico, seus indicadores econômicos apontavam na direção oposta a âncora,
+e outro, de centro-direita, por ausência de evidência no eixo social. Um filtro cego que
+tomasse a âncora como único critério teria produzido resultados incoerentes.
+
+O comportamento da regra sobre a amostra completa confirma que essas exclusões
+não são marginais. Entre os registros que chegaram à avaliação de coerência
+por terem âncora num dos dois polos, 230 foram descartados contra 121
+retidos, uma taxa de rejeição de 65,5\%: 115 por ausência de qualquer
+indicador não nulo que corroborasse a âncora, 72 por contradição no eixo
+econômico e 43 por contradição no eixo social. Os demais registros com âncora
+não nula haviam sido excluídos antes, por âncora central ou apolítica. A
+contradição no eixo econômico é especialmente reveladora do que a regra protege, o caso mais frequente é o perfil com posições contraditórias, como por exemplo declarar, ao mesmo
+tempo, apoio ao mercado livre e à regulação estatal e aos sindicatos. Filtrar
+apenas pela âncora (\texttt{political\_lean}) teria admitido os 230.
 
 Três campos foram deliberadamente excluídos da decisão de classificação. O
-nível de confiança institucional não especifica \textit{em quais} instituições
-a confiança recai, e esse sinal muda de direção conforme quem as controla;
-utilizá-lo produziria justamente o tipo de incoerência que a regra pretende
-evitar. O valor \textit{Achievement} cobre cerca de 72\% da amostra, sem poder
-discriminante. A religiosidade classificada como \textit{Spiritual} é ambígua e
-não implica tradição ou conformidade.
+nível de confiança institucional não especifica em quais instituições
+a confiança recai, o que deixa o campo com um uso muito ambíguo, e faz com que o seu valor dependa do contexto da persona, por exemplo, uma persona conservadora pode confiar no Estado dado que está alinhado com o que ele acredita e desconfiar dele caso o governo seja diferente de sua ideologia política pessoal. Excluí-lo da decisão, porém, não implica descartá-lo da descrição: o campo permanece no \textit{prompt} da persona, onde
+funciona como eixo de contraste de estilo entre personas de um mesmo polo,
+sem nunca ter participado da atribuição desse polo.
 
-O funil de seleção partiu de 200.000 registros nos dois \textit{shards}
+O valor "Conquistas Pessoais" para a prioridade de valores cobre cerca de 72\% da amostra, mas não demonstra critério determinante dado que conforme Piurko \cite{piurko2011basic}, mostra associação com o polo direita apenas em alguns contextos nacionais específicos, no restante de seu experimento, não houve fator determinante associado a esse atributo. Além disso, atributos como religiosidade classificada como "Espiritual" é ambígua e não implica um dos polos. 
+
+O funil de seleção partiu de 200.000 registros das duas partes do \textit{dataset Personas}
 obtidos, dos quais uma amostra de 2.000 foi decodificada com semente fixa.
 Desses, 399 (19,95\%) possuíam o atributo de posicionamento político não nulo,
 e a aplicação da regra em modo estrito produziu 101 elegíveis no polo esquerda
 e 20 no polo direita. Vinte personas foram selecionadas, dez por polo,
-ordenadas por magnitude do escore de coerência e pareadas por índice.
+ordenadas por magnitude da pontuação de coerência e pareadas por índice.
 
-O atributo de posicionamento político é deliberadamente \textit{cegado} no
-prompt final: nem o valor do atributo, nem o rótulo do polo aparecem no texto
-entregue ao agente. A persona é descrita apenas por suas posições
-substantivas. O motivo é que o rótulo político é uma das categorias sociais
-mais densamente representadas no pré-treinamento de modelos de linguagem, e vem
-acompanhado de um repertório cultural completo — vocabulário, bordões,
-caricatura de como fala alguém de determinado polo. Fornecê-lo levaria o modelo
-a debater o rótulo em vez das posições da persona, com dois riscos: importar
-atributos não declarados e achatar a variação interna a cada polo, puxando
-personas distintas para um protótipo comum. O rótulo é ainda redundante, pois
-na regra adotada ele é \textit{consequência} das posições substantivas, que
-permanecem no prompt. O valor segue registrado nos metadados do experimento — o
+O atributo de posicionamento político é deliberadamente omitido no
+\textit{prompt} final: nem o valor do atributo, nem a âncora do polo aparecem no texto do \textit{prompt} entregue ao agente. A persona é descrita apenas por suas posições principais e secundárias, ou seja, respectivamente, o eixo econômico e o eixo social. O motivo é que associar a posição política ao \textit{prompt} poderia enviesar o modelo de linguagem a associar algum tipo de vocabulário, posição  ou caricaturas nas personas em algum polo, o que desejamos evitar e trabalhar com um \textit{pipeline} neutro em todo o experimento.
+
+
+Fornecê-lo levaria o modelo a focar apenas na âncora em vez das posições da persona, com dois riscos: importar atributos implícitos não declarados e achatar a variação interna a cada polo, puxando personas distintas para um protótipo comum. A âncora, de certo modo, é ainda redundante, pois na regra adotada ele é consequência das posições do eixo econômico e social, que
+permanecem no \textit{prompt}. O valor segue registrado nos metadados do experimento, o
 ocultamento é do agente, não de quem conduz o estudo, e o polo permanece
 disponível como variável de pareamento. Pela mesma lógica, nenhuma informação
-de proveniência é incluída no prompt, evitando a reidentificação de entidades
+de proveniência é incluída no \textit{prompt}, evitando a reidentificação de entidades
 públicas cujos atributos foram derivados de fontes enciclopédicas.
 
 \subsection{Arquitetura de Dois Prompts}
 
-Cada debatedor é composto por duas camadas independentes, injetadas em conjunto
-como \textit{system prompt}. A \textbf{Camada 1} estabelece a identidade —
-atributos demográficos, valores e posicionamentos derivados do dataset — e é
-gerada por script, uma por persona, incluindo apenas atributos não nulos e a
-instrução explícita de derivar posições coerentemente sem inventar atributos. A
-\textbf{Camada 2} estabelece o comportamento discursivo e é um arquivo fixo,
-idêntico para as vinte personas.
+Cada uma das personas simuladas que irão debater entre si são formadas por duas camadas independentes: A Camada 1, que estabelece a identidade a partir dos valores dos campos extraídos da amostra do \textit{dataset} Personas 1M \cite{li2026matraix}, e a Camada 2 que firma o comportamento que as personas devem incorporar.
 
 A separação é deliberada: permite variar comportamento mantendo identidade
 constante, e torna auditável qual camada responde por qual característica da
@@ -490,18 +565,11 @@ para uma audiência imaginária; repetir pontos já refutados; nunca conceder \\
 \end{center}
 \end{table}
 
-A camada é complementada por regras de formato — turnos de uma a quatro
-frases, registro informal — e por uma instrução de escalada progressiva, que
-torna a hostilidade crescente ao longo do debate. Um \textit{guardrail}
+A camada é complementada por regras de formato onde turnos de uma a quatro
+frases ocorrem, registro informal, e por uma instrução de escalada progressiva, que torna a hostilidade crescente ao longo do debate. Um \textit{guardrail}
 identitário permanece ativo em ambas as condições, distinguindo ataque à
 conduta ou ao caráter, permitido, de ataque a identidade, religião,
-nacionalidade ou deficiência, proibido.
-
-Uma versão anterior da Camada 2 incluía um roteiro que pré-escrevia, para cada
-tema, a posição e a fonte de verdade de cada polo. Essa seção foi removida: ela
-tornava o conteúdo do debate um artefato do prompt, e não uma consequência dos
-atributos da persona, o que comprometeria a interpretação de qualquer efeito
-observado.
+nacionalidade ou deficiência, proibido. Essa escolha se deu tendo em vista que o foco do trabalho é verificar a moderação sob debates improdutivos simulados, o que se difere de por exemplo simular discursos de ódio.
 
 \subsection{O Moderador D5 e a Escala de Hostilidade}
 
@@ -530,12 +598,11 @@ Tabela~\ref{tab:escala} apresenta a escala e sua ancoragem teórica.
     \textit{incivility}; retórica da incompreensão &
     \cite{rossini2022beyond,angenot2008dialogues,coe2014online} \\
 3 & Deslegitimação. O oponente é enquadrado como irracional, desonesto ou
-    moralmente deficiente & Deslegitimação individual; \textit{name-calling},
-    percebido como a forma mais incivil &
+    moralmente deficiente & Deslegitimação individual; \textit{name-calling} &
     \cite{bentivegna2022searching,coe2014online,kenski2020perceptions} \\
 4 & Ataque pessoal explícito. Insulto direto; linguagem que alveja a
     identidade ou a dignidade & \textit{Intolerance}: estereotipação ofensiva;
-    efeitos sobre a confiança política &
+    efeitos sobre qualidade do debate &
     \cite{rossini2022beyond,kenski2020perceptions,mutz2005new} \\
 \bottomrule
 \end{tabularx}
@@ -543,31 +610,21 @@ Tabela~\ref{tab:escala} apresenta a escala e sua ancoragem teórica.
 \end{center}
 \end{table*}
 
-A escala é uma operacionalização ordinal original, não a adoção direta de
-instrumento existente. Ela sintetiza distinções consolidadas em três tradições
-de pesquisa, e a escolha por níveis discretos — em vez de classificação binária
-ou score contínuo — decorre de três requisitos: o uso instrucional por LLM
+A escala é uma operacionalização ordinal original, não há a adoção de algum 
+instrumento já existente. Ela sintetiza distinções consolidadas em três tradições
+de pesquisa, e a escolha por níveis discretos, em vez de classificação binária
+ou pontuação contínua decorre de três requisitos: o uso instrucional por LLM
 exige categorias com descritor verbal; a comparabilidade entre moderador e juiz
 exige escala comum; e a análise qualitativa dos registros exige níveis
-nomeáveis. Kennedy et al.~\cite{kennedy2020constructing} argumentam que a
-classificação binária descarta informação sobre severidade, o que a escala
-ordinal preserva.
+nomeáveis. Kennedy et al.~\cite{kennedy2020constructing} em seu trabalho sobre discurso de ódio, argumentam que a classificação binária restringe informação sobre severidade, o que a escala
+ordinal pode preservar facilmente.
 
-O limiar em 2 operacionaliza a fronteira conceitual entre \textit{impoliteness}
-e \textit{incivility}~\cite{papacharissi2004democracy,rossini2022beyond}: é o
-ponto em que o alvo da hostilidade migra do argumento para a pessoa. Intervir
-abaixo desse ponto suprimiria aspereza legítima, comprometendo a validade do
-experimento.
+O limiar de hostilidade com valor igual a ``2'' operacionaliza a fronteira conceitual entre \textit{impoliteness} e \textit{incivility}~\cite{papacharissi2004democracy,rossini2022beyond}: é o ponto em que o alvo da hostilidade migra do argumento para a pessoa. Intervir
+abaixo desse valor consideraria rigidez ou linguagem afiada legítima em debate improdutivo, comprometendo a validade do experimento.
 
-\textbf{Substituição automática e seu significado.} A reformulação substitui a
-candidata sem etapa de aceite do autor. A decisão é deliberada: simular o
-aceite por um agente LLM careceria de âncora empírica e estaria sujeita ao viés
-de consenso documentado em agentes LLM~\cite{chuang2023simulating}, produzindo
-taxas de aceitação artificialmente altas. Em decorrência, os resultados
-estimam o efeito sob \textit{compliance} total — um \textbf{limite superior} —,
-e a taxa de aceitação, variável central nos estudos com
-humanos~\cite{argyle2023leveraging,katsaros2022reconsidering}, não é observável
-neste desenho.
+Algo que devemos reforçar é que a reformulação substitui a candidata sem etapa de aceite do autor. A decisão é deliberada: simular o aceite por um agente LLM é escopo de um novo trabalho que não esse e estaria sujeita ao viés de consenso documentado em agentes LLM~\cite{chuang2023simulating}, produzindo provavelmente
+taxas de aceitação artificialmente altas. Com base nisso, os resultados
+estimam o efeito da moderação sob aceitação para toda reformulação, ou seja, a taxa de aceitação, variável central nos estudos com humanos~\cite{argyle2023leveraging,katsaros2022reconsidering}, não é observável neste desenho.
 
 \subsection{O Juiz e a Medição}
 
@@ -575,7 +632,7 @@ Um terceiro agente, cego à condição experimental, pontua cada mensagem
 \textit{publicada} na mesma escala 0--4, três vezes por mensagem, com a mediana
 como valor final. O juiz recebe a mensagem e o histórico que a precede, mas
 nenhuma informação sobre a condição, sobre a identidade das personas ou sobre a
-existência de moderação — e não tem acesso à mensagem candidata quando houve
+existência de moderação, e não tem acesso à mensagem candidata quando houve
 reformulação. A repetição mede a consistência intra-juiz, e os três valores
 individuais são preservados no registro, jamais substituídos pela agregação.
 
@@ -584,7 +641,7 @@ pontua a mensagem \textit{candidata} antes da publicação; o juiz pontua o que
 foi \textit{publicado}. Na condição de tratamento essas mensagens diferem
 sempre que houve intervenção, e confundi-las compararia uma mensagem com sua
 própria substituta. A escolha de modelos de famílias distintas para os dois
-papéis reforça a separação: evita que o mesmo modelo avalie favoravelmente a
+papéis reforça a separação: evita vieses e que o mesmo modelo avalie favoravelmente a
 própria produção.
 
 O registro de cada turno preserva simultaneamente a candidata, o texto
@@ -592,7 +649,7 @@ publicado, a pontuação do moderador, sua decisão de intervenção, a justific
 textual, as patologias detectadas e as três pontuações do juiz. Essa
 granularidade é o que torna o corpus reanalisável: métricas não previstas
 originalmente podem ser calculadas sem reexecutar os debates, e a distinção
-entre candidata e publicada — que é o objeto central do experimento —
+entre candidata e publicada, que é o foco do trabalho,
 permanece recuperável em cada turno.
 
 \subsection{Infraestrutura}
@@ -618,49 +675,50 @@ Juiz & \texttt{gemma2:9b-instruct-q4\_K\_M} & 0,0 \\
 \end{table}
 
 A opção por execução local não foi apenas pragmática. Tentativas iniciais com
-modelos gratuitos via API revelaram um problema de validade, e não apenas de
+modelos gratuitos via API (\textit{OpenRouter}) revelaram um problema de validade, e não apenas de
 conveniência. As falhas de disponibilidade não eram aleatórias entre condições:
 a condição de tratamento, que requer um modelo adicional e portanto uma
-chamada a mais por turno, falhava sistematicamente enquanto o controle
-completava. Um viés de disponibilidade correlacionado com a variável
-independente comprometeria qualquer comparação, pois os debates de tratamento
-que sobrevivessem seriam justamente os executados em condições de menor carga.
+chamada a mais por turno, falhava sistematicamente, além de existir limites de requisições diárias gratuitas.
 A migração para execução local eliminou a dependência de terceiros e tornou o
 custo marginal de cada réplica nulo, ao preço de restringir a escolha a modelos
-compatíveis com o hardware disponível — restrição cuja consequência é
+compatíveis com o hardware disponível, restrição cuja consequência é
 registrada na Seção VII.
 
 Todas as chamadas produzem registro persistente em disco, gravado de forma
 incremental a cada turno. Essa decisão de infraestrutura tem consequência
 metodológica: uma execução interrompida deixa registro parcial identificável, em
 vez de desaparecer, o que permite distinguir no corpus final entre debate
-ausente e debate incompleto — distinção de que o critério de seleção depende.
+ausente e debate incompleto, distinção de que o critério de seleção depende.
 
 \subsection{Seleção do Corpus de Análise}
 
 Nem toda execução registrada entra na análise. Três filtros são aplicados em
 sequência, e cada exclusão é registrada com seu motivo. Primeiro,
-\textbf{elegibilidade individual}: o debate precisa estar completo nos oito
-turnos, com uma pontuação por turno. Segundo, \textbf{identidade de prompt}:
-apenas execuções que compartilham a mesma versão dos prompts, identificada por
+elegibilidade individual: o debate precisa estar completo nos oito
+turnos, com uma pontuação por turno. Segundo, identidade de prompt:
+apenas execuções que compartilham a mesma versão dos \textit{prompts}, identificada por
 \textit{hash} criptográfico registrado no manifesto de cada execução. Terceiro,
-\textbf{integridade do par}: controle e tratamento da mesma célula sobrevivem
+integridade do par: controle e tratamento da mesma célula são tratados
 juntos ou são descartados juntos, pois a comparação é intracelular.
 
 O terceiro filtro merece justificativa, por ser o mais restritivo. Quando um
 debate de tratamento é interrompido — por exemplo, por falha de comunicação com
-o moderador —, seu par de controle permanece íntegro e tecnicamente utilizável.
+o moderador, seu par de controle permanece íntegro e tecnicamente utilizável.
 Mantê-lo, contudo, contaminaria a média da condição de controle com uma célula
 sem contrapartida, quebrando o pareamento que dá validade à comparação. O
 critério descarta dados válidos para preservar a estrutura do desenho.
 
 O corpus final compreende 11 células e 21 réplicas independentes, de um total
-de 60 execuções registradas; as 18 exclusões correspondem a testes de
-verificação com número distinto de turnos, execuções sob versões anteriores dos
-prompts, um debate interrompido por tempo limite e o controle órfão
-correspondente. Para a análise principal reporta-se o \textbf{desenho
-balanceado} — 10 células, 10 réplicas, 20 debates, com igual número de células
-por tema e de réplicas por célula —, com o corpus completo (42 debates) como
+de 60 execuções registradas. As 18 exclusões se distribuem em nove testes de
+verificação com número distinto de turnos (1, 3 ou 10), três execuções
+interrompidas antes de gravar a transcrição, um debate de tratamento
+interrompido por tempo limite do moderador, um debate de tratamento com
+pontuações do juiz incompletas e quatro controles órfãos, sem tratamento válido
+correspondente. Oito dessas execuções também usavam versões anteriores dos
+\textit{prompts}, mas foram barradas antes, pelo primeiro filtro. Parte das
+exclusões pertence a um terceiro tema, \textit{Gun Ownership}, que não chegou a
+formar nenhum par completo. Para a análise principal reporta-se o desenho
+balanceado: 10 células, 10 réplicas, 20 debates, com igual número de células por tema e de réplicas por célula, com o corpus completo (42 debates) como
 verificação de robustez. Reportar ambos permite verificar se a conclusão depende
 do critério de balanceamento, e o registro de cada exclusão com seu motivo
 torna o recorte auditável sem reexecução.
@@ -675,7 +733,7 @@ diferente dos demais para as médias reportadas.
 
 \subsection{Efeito Principal}
 
-A moderação participativa reduziu a hostilidade média de \textbf{3,15} para
+A moderação reduziu a hostilidade média de \textbf{3,15} para
 \textbf{1,96} na escala 0--4, uma diferença pareada de \textbf{$-$1,19}
 (DP~=~0,24). O efeito ocorreu na mesma direção em \textbf{todas as 10 células}
 do desenho balanceado, sem exceção. A Figura~\ref{fig:efeito} apresenta os
@@ -693,7 +751,7 @@ desvio-padrão entre células.}
 \begin{center}
 \begin{tabular}{@{}lccccc@{}}
 \toprule
-\textbf{Recorte} & \textbf{Cél.} & \textbf{Ctrl.} & \textbf{Trat.} &
+\textbf{Recorte} & \textbf{Rép.} & \textbf{Ctrl.} & \textbf{Trat.} &
 \textbf{$\Delta$} & \textbf{$\Delta<0$} \\
 \midrule
 Global & 10 & 3,15 & 1,96 & $-$1,19 & 10/10 \\
@@ -707,13 +765,13 @@ Corpus completo & 21 & 3,13 & 2,01 & $-$1,12 & 21/21 \\
 \end{center}
 \end{table}
 
-A concordância entre os dois temas é notável: $-$1,20 e $-$1,18, com
-sobreposição integral. Como os temas diferem substancialmente em vocabulário,
-enquadramento moral e saliência pública, a coincidência sugere que o efeito
-depende do mecanismo de moderação, e não das particularidades de um assunto.
+A concordância entre os dois temas é notável, $-$1,20 para \textit{Abortion} e $-$1,18 para \textit{Drug Legalization}, com
+sobreposição integral. Como os temas diferem substancialmente em vocabulário e
+enquadramento moral, a coincidência sugere que o efeito
+depende do mecanismo de moderação, e não das particularidades de um assunto, o que possibilita uma reprodutibilidade e ajustes mais objetivos para possíveis melhorias no moderador, nos \textit{prompts} ou no \textit{pipeline} em si.
 
-A verificação de robustez sobre o corpus completo — 21 réplicas, 42 debates —
-produz $\Delta = -1{,}12$ com efeito em 21 de 21 células. A conclusão não
+A verificação de robustez sobre o corpus completo — 11 células, 21 réplicas, 42 debates —
+produz $\Delta = -1{,}12$ com efeito em 21 de 21 réplicas. A conclusão não
 depende do balanceamento do desenho. Vale registrar que as réplicas não são
 reproduções exatas: o valor de semente registrado nos manifestos não é
 repassado ao mecanismo de amostragem dos modelos, de modo que cada réplica é
@@ -736,8 +794,8 @@ desloca a curva para baixo, mas não impede a escalada.}
 
 Ambas as condições escalam. No controle, a hostilidade parte de 2,2 e atinge
 4,0 no sétimo turno — o teto da escala. No tratamento, parte de 1,4 e alcança
-3,0 no oitavo. A moderação, portanto, \textbf{não impede a escalada: ela a
-retarda}. Sob tratamento, o oitavo turno situa-se no patamar que o controle
+3,0 no oitavo. A moderação, portanto, nesse experimento, mostrou que não impede a escalada: ela a
+retarda. Sob tratamento, o oitavo turno situa-se no patamar que o controle
 havia atingido no terceiro.
 
 Esse padrão tem uma consequência analítica. A diferença por turno isolado
@@ -747,7 +805,7 @@ continua subindo. A escala de cinco pontos deixa de registrar aumento na
 condição de controle, comprimindo artificialmente a diferença ao final do
 debate.
 
-A observação contraria uma expectativa intuitiva. Poder-se-ia supor que
+A observação contraria uma expectativa intuitiva. Poderíamos supor que
 debates mais longos ampliariam o efeito medido, já que haveria mais turnos
 hostis a moderar. Os dados apontam o contrário: a diferença acumulada cresce
 até o sexto turno e depois se estabiliza, e a diferença por turno encolhe. Se a
@@ -821,15 +879,18 @@ vez de se concentrar em poucos pares de personas.
 \label{fig:celulas}
 \end{figure}
 
-A Figura~\ref{fig:reformulacao} ilustra o mecanismo em operação num debate
-concreto sobre legalização de drogas. À esquerda, a mensagem candidata gerada
-pelo debatedor, pontuada em nível 3 pelo moderador; à direita, o texto
-efetivamente publicado após a reformulação. O caso é representativo do corpus:
-a célula exibe escalada de três pontos no controle e diferença pareada de
-$-$1,12, próxima da média global. O contraste torna visível o que a média
-agrega — o candidato encerra com um insulto direto à capacidade intelectual do
-oponente, ao passo que o texto publicado mantém a discordância substantiva
-sobre mercado regulado e proibição, sem o ataque pessoal.
+A Figura~\ref{fig:contencao} ilustra o efeito num debate concreto sobre
+legalização de drogas. Ela mostra o texto publicado pela mesma persona no sexto
+turno, nas duas condições da mesma célula. Sem moderação, a mensagem recebe
+nível 4 do juiz e termina expulsando o oponente da discussão; com moderação,
+recebe nível 1 e mantém a discordância substantiva sobre mercado regulado e
+crise dos opioides, sem o ataque pessoal. O caso é representativo do corpus: a
+célula exibe escalada de três pontos no controle e diferença pareada de
+$-$1,12, próxima da média global. Os dois textos não são a mesma mensagem com e
+sem edição, pois cada condição é um debate próprio, com histórico distinto.
+Ainda assim, a candidata do tratamento nesse turno também recebeu nível 4 do
+moderador e também terminava com ``Get out''. A diferença publicada decorre,
+portanto, da reformulação, e não de um debatedor menos hostil.
 
 Nem toda intervenção, contudo, alcançou esse resultado. Em parte das
 reformulações o moderador atribuiu nível elevado à candidata e, ainda assim,
@@ -839,9 +900,11 @@ no papel de moderador, não do mecanismo em si, e sua consequência para a
 interpretação é discutida na Seção VI-B.
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{figures/p08_reformulacao.png}}
-\caption{Mensagem candidata e texto publicado após a intervenção do moderador.}
-\label{fig:reformulacao}
+\centerline{\includegraphics[width=\columnwidth]{figures/exemplo_contencao.png}}
+\caption{Texto publicado no sexto turno da mesma célula, sem moderação
+(controle) e com moderação (tratamento), com a hostilidade atribuída pelo
+juiz.}
+\label{fig:contencao}
 \end{figure}
 
 \section{Discussão}
@@ -930,7 +993,7 @@ na mesma chamada que produz a reformulação. O que a taxa de 100\% mede é o
 preenchimento do campo, não a sobrevivência da posição. O caso descrito na
 Seção V-E — reformulações que declaram preservação enquanto carregam adiante a
 estrutura do ataque — mostra que a autodeclaração e a verificação podem
-divergir. Por isso a QP3 permanece parcialmente respondida, e a verificação
+divergir. Por isso a RQ3 permanece parcialmente respondida, e a verificação
 independente figura entre os trabalhos futuros.
 
 \section{Limitações}
@@ -982,7 +1045,7 @@ foi estabelecida.
 preservou na mesma chamada que produz a reformulação. A cobertura foi de 100\%
 das 72 reformulações, mas isso mede o preenchimento do campo, não a
 sobrevivência da posição, como discutido na Seção VI-D. A verificação
-independente permanece pendente, o que deixa a QP3 parcialmente respondida e
+independente permanece pendente, o que deixa a RQ3 parcialmente respondida e
 impede afastar por completo a objeção de que a moderação poderia estar
 suprimindo dissenso em vez de moderar sua forma.
 
@@ -1096,11 +1159,11 @@ contexto brasileiro.
 
 Este trabalho submeteu a dimensão de Moderação Participativa do modelo
 predecessor a verificação empírica por meio de simulação com agentes LLM. Em
-resposta à QP1, a moderação prospectiva reduziu a hostilidade média de 3,15
+resposta à RQ1, a moderação prospectiva reduziu a hostilidade média de 3,15
 para 1,96 numa escala de 0 a 4, com efeito consistente em todas as células e
-robusto ao recorte do corpus. Em resposta à QP2, o efeito não é uniforme no
+robusto ao recorte do corpus. Em resposta à RQ2, o efeito não é uniforme no
 tempo: a moderação retarda a escalada em cerca de cinco turnos, sem impedi-la.
-A QP3 permanece parcialmente respondida, pois a preservação argumentativa
+A RQ3 permanece parcialmente respondida, pois a preservação argumentativa
 dispõe apenas de evidência autodeclarada pelo moderador.
 
 A contribuição metodológica reside em três pontos. O primeiro é a

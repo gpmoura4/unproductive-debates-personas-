@@ -1,0 +1,228 @@
+% ============================================================================
+% Conceptual pipeline -- ISMSIT 2026 position paper
+% Compiles with pdflatex, xelatex or tectonic:  pdflatex pipeline_ismsit.tex
+% Output: pipeline_ismsit.pdf, included in the paper as a double-column figure.
+% Deliberately conceptual: no scale levels, thresholds, models, parameters,
+% classification rule or results (reserved for the empirical report).
+% ============================================================================
+\documentclass[border=4pt]{standalone}
+\usepackage{iftex}
+\ifXeTeX
+  \usepackage{fontspec}
+  \setmainfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,
+    BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage[scaled]{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes.multipart,calc,positioning}
+
+% --- Palette ----------------------------------------------------------------
+\definecolor{navy}{HTML}{22385C}
+\definecolor{panelgray}{HTML}{E5E7EB}
+\definecolor{peach}{HTML}{FBE3D0}
+\definecolor{sky}{HTML}{DCE6F4}
+\definecolor{mint}{HTML}{E3F0DA}
+\definecolor{flowdata}{HTML}{8B4A2B}
+\definecolor{flowconf}{HTML}{2E5E8C}
+\definecolor{flowcand}{HTML}{E8913A}
+\definecolor{flowpub}{HTML}{4E9A3A}
+\definecolor{flowrec}{HTML}{C8385A}
+\definecolor{flowloop}{HTML}{6F6F6F}
+\definecolor{argzone}{HTML}{DDEFD3}
+\definecolor{perszone}{HTML}{F6D3CF}
+
+\newcommand{\sep}{~$\cdot$~}
+\newcommand{\hd}[1]{\centering\textcolor{white}{\bfseries #1}}
+
+\tikzset{
+  every node/.style={font=\fontsize{6.4}{7.7}\selectfont},
+  band/.style={draw=gray!60, dashed, line width=0.7pt, rounded corners=6pt},
+  blabel/.style={fill=navy, text=white, rotate=90, rounded corners=3pt,
+    inner sep=3pt, align=center, font=\fontsize{7.2}{8.2}\selectfont\bfseries},
+  panel/.style={fill=panelgray, rounded corners=6pt},
+  tab/.style={fill=navy, text=white, rounded corners=2pt, inner xsep=6pt,
+    inner ysep=2.6pt, font=\fontsize{6.9}{8}\selectfont\bfseries},
+  card/.style={rectangle split, rectangle split parts=2,
+    rectangle split part fill={navy,#1}, draw=navy, line width=0.45pt,
+    align=left, inner xsep=3.2pt, inner ysep=2.4pt, anchor=north west},
+  card/.default=peach,
+  plain/.style={draw=navy, line width=0.45pt, fill=#1, align=left,
+    inner xsep=3.2pt, inner ysep=2.6pt, anchor=north west},
+  plain/.default=white,
+  flow/.style={-{Latex[length=2.3mm,width=2mm]}, line width=1.5pt},
+  lbl/.style={font=\fontsize{6}{7}\selectfont\bfseries, inner sep=1.5pt},
+  num/.style={circle, fill=navy, text=white, minimum size=3.6mm,
+    inner sep=0pt, font=\fontsize{6.2}{7}\selectfont\bfseries},
+  role/.style={circle, fill=#1, draw=navy, line width=0.45pt,
+    minimum size=6.4mm, inner sep=0pt, font=\fontsize{8.5}{9}\selectfont},
+  bridge/.style={preaction={draw=white, line width=4.5pt, -}},
+}
+
+\begin{document}
+\begin{tikzpicture}
+
+% ============================ LEGEND ========================================
+\draw[band] (0.9,0) rectangle (18.05,-1.28);
+\node[blabel, minimum width=1.05cm] at (0.9,-0.64) {KEY};
+\node[role=peach, minimum size=5.4mm, font=\fontsize{7}{8}\selectfont] (r1) at (1.65,-0.38) {\faRobot};
+\node[anchor=west] at (r1.east) {Debater agent (LLM)};
+\node[role=sky, minimum size=5.4mm, font=\fontsize{7}{8}\selectfont] (r2) at (5.0,-0.38) {\faEdit};
+\node[anchor=west] at (r2.east) {Prospective moderator (LLM)};
+\node[role=mint, minimum size=5.4mm, font=\fontsize{7}{8}\selectfont] (r3) at (9.3,-0.38) {\faBalanceScale};
+\node[anchor=west] at (r3.east) {Blind evaluator (LLM)};
+\foreach \c/\t/\x in
+  {flowdata/Persona data/1.4, flowconf/Agent prompt/3.9,
+   flowcand/Candidate message/6.4, flowpub/Published message/9.6,
+   flowrec/Scores and records/12.8, flowloop/History/16.1}{
+  \draw[flow, \c, line width=1.2pt] (\x,-0.95) -- ++(0.5,0);
+  \node[anchor=west] at (\x+0.54,-0.95) {\t};
+}
+
+% ============================ 1. COMPOSING THE DEBATERS =====================
+\draw[band] (0.9,-1.45) rectangle (18.05,-4.1);
+\node[blabel, minimum width=2.4cm] at (0.9,-2.775) {DEBATERS};
+
+\node[card, text width=2.85cm] (ds) at (1.5,-1.75)
+  {\hd{\faDatabase~~Synthetic personas}
+   \nodepart{two}Structured dataset of synthetic personas described along
+   categorical dimensions};
+\node[card, text width=2.95cm] (rule) at (5.0,-1.75)
+  {\hd{\faFilter~~Classification rule}
+   \nodepart{two}Explicit and auditable: antagonistic pairs composed in a
+   reproducible and traceable way};
+\node[card=sky, text width=5.35cm] (prompt) at (8.6,-1.75)
+  {\hd{\faLayerGroup~~Agent prompt}
+   \nodepart{two}\textbf{Identity:} the persona's positions; the political
+   label stays in the researchers' records and is withheld from the agent
+   (\textit{positions, not labels})\\[1pt]
+   \textbf{Behavior:} Angenot's pathologies provoked, not assumed, with
+   calibrated escalation\sep attacks on identity excluded (hate speech is a
+   different object)};
+\fill[panel] (14.75,-1.75) rectangle (17.8,-3.9);
+\node[tab] at (16.275,-1.75) {Debater agents};
+\node[role=peach, minimum size=8.5mm, font=\fontsize{12}{12}\selectfont]
+  (da) at (15.55,-2.55) {\faRobot};
+\node[role=peach, minimum size=8.5mm, font=\fontsize{12}{12}\selectfont]
+  (db) at (17.0,-2.55) {\faRobot};
+\node[below=0.5pt of da, font=\fontsize{6.4}{7.5}\selectfont\bfseries] {Pole A};
+\node[below=0.5pt of db, font=\fontsize{6.4}{7.5}\selectfont\bfseries] {Pole B};
+\node at (16.275,-3.62) {polarized and antagonistic};
+
+\draw[flow, flowdata] (ds.two east) -- (rule.two west |- ds.two east);
+\draw[flow, flowdata] (rule.two east) -- (prompt.two west |- rule.two east);
+\draw[flow, flowconf] (prompt.two east) -- (14.72,0 |- prompt.two east);
+
+% ============================ 2. PROSPECTIVE MODERATION =====================
+\draw[band] (0.9,-4.35) rectangle (18.05,-9.05);
+\node[blabel, minimum width=4.4cm] at (0.9,-6.7) {PROSPECTIVE\\MODERATION};
+
+\node[plain=peach, text width=1.85cm, minimum height=1.25cm] (deb) at (1.7,-4.65)
+  {\faRobot~\textbf{Debater}\\ on its turn, receives the published history
+   and writes a candidate};
+\node[plain=white, draw=flowcand, line width=1pt, text width=1.45cm,
+      minimum height=1.25cm] (cand) at (4.05,-4.65)
+  {\textbf{Candidate message}\\ not yet published};
+\node[plain=white, draw=flowpub, line width=1pt, text width=2.25cm,
+      minimum height=1.25cm] (pub) at (15.3,-4.65)
+  {\faComments~\textbf{Published}\\\textbf{message}\\ enters the debate history};
+
+% moderator panel
+\fill[panel] (7.0,-5.2) rectangle (14.9,-8.35);
+\node[tab] at (10.95,-5.2) {\faEdit~~Prospective moderator (D5)};
+\node[num] at (7.35,-5.72) {1};
+\node[anchor=west, text width=7.1cm] at (7.55,-5.72)
+  {Assesses the hostility of the candidate as an \textbf{ordinal severity},
+   not as a binary label or a probability of perceived toxicity};
+% boundary: argument -> person
+\node[fill=argzone, draw=flowpub, line width=0.6pt, minimum width=3.7cm,
+      minimum height=1.0cm, text width=3.5cm, align=center, anchor=north west]
+  (arg) at (7.3,-6.2)
+  {\textbf{Aimed at the argument}\\ harshness or sarcasm: legitimate
+   disagreement $\rightarrow$ \textbf{publish}};
+\node[fill=perszone, draw=flowrec, line width=0.6pt, minimum width=3.7cm,
+      minimum height=1.0cm, text width=3.5cm, align=center, anchor=north west]
+  (per) at (11.0,-6.2)
+  {\textbf{Aimed at the person}\\ the opponent becomes the object of the
+   message $\rightarrow$ \textbf{reformulate}};
+\draw[dashed, flowrec, line width=1.2pt] (11.0,-6.02) -- (11.0,-7.38);
+\node[anchor=north, text=flowrec, font=\fontsize{5.9}{7}\selectfont\bfseries]
+  at (11.0,-7.36) {boundary: hostility migrates from the argument to the person};
+\node[num] at (7.35,-8.02) {2};
+\node[anchor=west, text width=7.1cm] at (7.55,-8.02)
+  {Reformulates the \textbf{form} in which the premise is published, not its
+   content\sep the rewrite replaces the candidate (full compliance)};
+
+% with / without moderation
+\draw[flow, flowpub] (5.76,-4.92) -- (15.27,-4.92)
+  node[lbl, pos=0.5, above] {WITHOUT MODERATION: the candidate is published unchanged};
+\draw[flow, flowcand] (5.76,-5.65) -- (6.97,-5.65)
+  node[lbl, pos=0.5, below, font=\fontsize{5.4}{6}\selectfont\bfseries] {WITH D5};
+\draw[flow, flowpub] (14.9,-5.65) -- (15.27,-5.65);
+\draw[flow, flowcand] (deb.east) -- (cand.west |- deb.east);
+
+% history loop
+\draw[flow, flowloop] (pub.south) -- (pub.south |- 0,-8.75) -- (1.32,-8.75)
+  -- (1.32,-5.3) -- (1.67,-5.3);
+\node[lbl, fill=white, text=flowloop, font=\fontsize{6}{7}\selectfont]
+  at (6.0,-8.75) {\faHistory~\textbf{History:} later turns respond to the
+  published version (divergent histories)};
+\node[plain=mint, text width=4.05cm, anchor=north west] at (1.7,-6.45)
+  {\textbf{Controlled comparison:} the same debaters in debates with and
+   without moderation; only the moderator differs};
+
+% prompt -> debater
+\draw[flow, flowconf] (16.275,-3.9) -- (16.275,-4.22) -| (2.75,-4.62);
+
+% ============================ 3. EVALUATION AND RECORDS ======================
+\draw[band] (0.9,-9.3) rectangle (18.05,-11.55);
+\node[blabel, minimum width=2.0cm] at (0.9,-10.425) {EVALUATION};
+
+\node[card=peach, text width=8.45cm] (rec) at (1.5,-9.55)
+  {\hd{\faSave~~Records kept at every turn}
+   \nodepart{two}Candidate message\sep published text\sep decision of the
+   moderator and its justification\sep pathologies detected as signals of the
+   mechanism\\
+   The candidate remains recoverable, so the corpus can be reanalyzed under
+   criteria not foreseen at the outset};
+\node[card=mint, text width=6.55cm] (eval) at (11.0,-9.55)
+  {\hd{\faBalanceScale~~Blind evaluator}
+   \nodepart{two}Scores what was \textbf{published}; the moderator scores the
+   candidate\sep blind to the condition\sep preferably from a model family
+   distinct from the moderator's\\
+   \textit{Agreement among repeated runs measures decoding stability, not the
+   adequacy of the rubric}};
+
+\draw[flow, flowpub] (17.5,-5.92) -- (17.5,-9.52);
+\draw[flow, flowrec, bridge] (10.95,-8.35) -- (10.95,-9.18) -| (6.4,-9.52);
+\draw[flow, flowrec] (eval.two west) -- (rec.two east |- eval.two west);
+
+% ============================ 4. WHAT THE LENS YIELDS =======================
+\draw[band] (0.9,-11.8) rectangle (18.05,-14.1);
+\node[blabel, minimum width=2.1cm] at (0.9,-12.95) {THE LENS};
+
+\node[card=mint, text width=5.15cm] (obs) at (1.5,-12.05)
+  {\hd{\faEye~~Observable in simulation}
+   \nodepart{two}Candidate and published message side by side\sep effect
+   of prospective moderation estimable under controlled conditions\\
+   \textit{Read as an upper bound, obtained under full compliance}};
+\node[card, text width=5.0cm] (beyond) at (7.3,-12.05)
+  {\hd{\faEyeSlash~~Beyond the lens: open questions}
+   \nodepart{two}Author agency and acceptance rate\sep direct vs.\ indirect
+   effects (divergent histories)\sep suppression or delay of escalation\sep
+   hostility as perceived by humans};
+\node[card=sky, text width=4.2cm] (field) at (13.35,-12.05)
+  {\hd{\faUsers~~Complementary lens}
+   \nodepart{two}Field studies with human participants capture behavior and
+   acceptance, but not the rejected candidate};
+
+\draw[flow, flowrec] (5.0,0 |- rec.south) -- (5.0,-11.98);
+\draw[{Latex[length=2mm]}-{Latex[length=2mm]}, dashed, navy, line width=1pt]
+  (beyond.two east) -- (field.two west |- beyond.two east);
+
+\end{tikzpicture}
+\end{document}
